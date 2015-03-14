@@ -5,3 +5,7 @@
 *.properties
 *.netbeans_automatic_build
 *.netbeans_update_resources
+*.mf
+nbproject/
+build/
+dist/
