@@ -1,0 +1,2 @@
+http://pt-br.gitready.com/iniciante/2009/01/19/ignoring-files.html
+http://lucianosilva.com/2012/12/29/git-ignorando-arquivos/

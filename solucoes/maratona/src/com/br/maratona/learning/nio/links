@@ -1,0 +1,146 @@
+// exponenciacao matricial
+http://nayuki.eigenstate.org/page/fast-fibonacci-algorithms
+http://en.wikipedia.org/wiki/Exponentiation_by_squaring
+http://crbonilha.blogspot.com.br/2014/02/contest-delta-editorial-continuacao.html
+http://crbonilha.com/pt/implementacao-fast-doubling/#more-453
+http://www.luschny.de/math/factorial/FastFactorialFunctions.htm
+http://www.ime.usp.br/~schultz/maratona-ufsc/slides/2010-05-15-monoides-e-o-algoritmo-de-exponenciacao.pdf
+http://www.inf.ufrgs.br/~nicolas/pdf/maillard-erad.pdf
+http://simple.wikipedia.org/wiki/Exponentiation_by_squaring
+
+// exponencial modular
+http://en.wikipedia.org/wiki/Modular_exponentiation
+http://homepages.dcc.ufmg.br/~cunha/teaching/20121/aeds2/ex1g.pdf
+http://www.sbpcnet.org.br/livro/61ra/resumos/resumos/6157.htm
+http://paginas.fe.up.pt/~gtd/aed2/dinamica.pdf
+
+
+//logaritmo discreto
+http://pt.wikipedia.org/wiki/Logaritmo_discreto
+http://marathoncode.blogspot.com.br/2012/08/logaritmo-discreto.html
+
+// problemas com matriz
+http://br.spoj.com/problems/OLIMPJ09/
+http://br.spoj.com/problems/TRILHAS/
+http://br.spoj.com/problems/MINHOCA/
+http://br.spoj.com/problems/MATRIZ2/
+http://br.spoj.com/problems/ESCADA14/
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1559
+
+
+comparable
+// http://blog.caelum.com.br/ordenando-colecoes-com-comparable-e-comparator/
+
+
+//http://maratona.ime.usp.br/prim-fase14/maratona.pdf
+
+//inverso multiplicativo
+http://pt.wikipedia.org/wiki/Inverso_multiplicativo
+http://marathoncode.blogspot.com.br/2012/04/inverso-multiplicativo.html
+http://educar.sc.usp.br/matematica/m5p2t5.htm
+http://www.inf.ufsc.br/~wfrsilva/EuclidesExtendido/EuclidesExtendido.pdf
+
+
+// logaritimo discreto
+http://marathoncode.blogspot.com.br/2012/08/logaritmo-discreto.html
+
+
+// algoritmo majoritario
+http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html
+
+http://maratona.ime.usp.br/vagas14.html
+
+http://tutorials.jenkov.com/java-nio/nio-vs-io.html
+http://cs.brown.edu/courses/cs161/papers/j-nio-ltr.pdf
+http://stackoverflow.com/questions/12014356/java-nio-selectedkeys-and-channels-for-stdin-stdout-stderr
+http://www.javanio.info/filearea/bookexamples/unpacked/com/ronsoft/books/nio/channels/TestStdin.java
+
+
+// Oracle tutorial
+http://docs.oracle.com/javase/tutorial/
+
+// java generics class Pair
+
+//http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class
+//http://stackoverflow.com/questions/156275/what-is-the-equivalent-of-the-c-pairl-r-in-java
+
+Java IO
+http://www.tutorialspoint.com/java/java_files_io.htm
+http://docs.oracle.com/javase/tutorial/essential/io/
+http://docs.oracle.com/javase/tutorial/essential/io/cl.html
+http://tutorials.jenkov.com/java-nio/nio-vs-io.html
+http://www.ntu.edu.sg/home/ehchua/programming/java/J5b_IO_advanced.html
+
+Genrics Comparator
+//http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class
+
+Generics
+tutorial using
+http://docs.oracle.com/javase/tutorial/java/generics/
+http://docs.oracle.com/javase/tutorial/extra/generics/
+
+http://docs.oracle.com/javase/tutorial/extra/generics/index.html
+
+http://docs.oracle.com/javase/tutorial/java/generics/why.html
+http://www.tutorialspoint.com/java/java_generics.htm
+http://tutorials.jenkov.com/java-generics/index.html
+
+http://www.dummies.com/how-to/content/create-a-generic-class-in-java.html
+http://docs.oracle.com/javase/tutorial/java/generics/types.html
+http://math.hws.edu/javanotes/c10/s5.html
+http://stackoverflow.com/questions/156275/what-is-the-equivalent-of-the-c-pairl-r-in-java
+http://stackoverflow.com/questions/15808932/how-to-implement-pair-class-in-java-like-in-c
+http://stackoverflow.com/questions/15189949/making-a-generic-comparator-class
+http://stackoverflow.com/questions/5013947/create-a-compareto-to-a-generic-class-that-implements-comparable
+
+
+http://docs.oracle.com/javase/tutorial/java/generics/types.html
+
+// encoding base64
+http://www.gsmfans.org/index.php?topic=125951.0
+http://www.permadi.com/tutorial/urlEncoding/
+http://en.wikibooks.org/wiki/Algorithm_Implementation/Miscellaneous/Base64
+http://www.herongyang.com/encoding/Base64-Encoding-Algorithm.html
+http://stackoverflow.com/questions/6138127/how-to-do-url-decoding-in-java
+http://stackoverflow.com/questions/154536/encode-decode-urls-in-c
+
+* http://www.codeguru.com/cpp/cpp/algorithms/strings/article.php/c12759/URI-Encoding-and-Decoding.htm
+
+// criptografia
+https://pt.khanacademy.org/computing/computer-science
+
+// algoritmo interessante
+http://www.geeksforgeeks.org/mobile-numeric-keypad-problem/
+
+
+// string para decodificar
+http://www.baixedetudo.net/id/?url=687474703a2f2f667265616b73686172652e636f6d2f66696c65732f727a6d31666b66712f32342e486f7261732e5330374532342e4456445269702e587669442e4475626c61646f2e6176692e68746d6c
+http://www.baixedetudo.net/id/?url=687474703a2f2f667265616b73686172652e636f6d2f66696c65732f727a6d31666b66712f32342e486f7261732e5330374532342e4456445269702e587669442e4475626c61646f2e6176692e68746d6c
+
+// criptografia
+//https://pt.khanacademy.org/computing/computer-science/cryptography
+//http://fatosmatematicos.blogspot.com.br/2009/11/criptografando-atraves-de-matrizes.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
