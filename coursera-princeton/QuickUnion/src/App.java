@@ -1,6 +1,7 @@
 /**
  * Aplicacao do QuickUnion PC
  * Sistema percolado - fisica
+ * Algoritmo
  * */
 public class App {
 
