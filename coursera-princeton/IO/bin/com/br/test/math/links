@@ -1,0 +1,73 @@
+http://stackoverflow.com/questions/2844703/algorithm-to-find-the-factors-of-a-given-number-shortest-method
+http://en.wikipedia.org/wiki/Integer_factorization
+http://stackoverflow.com/questions/2267146/what-is-the-fastest-factorization-algorithm
+http://stackoverflow.com/questions/15697166/what-is-the-fastest-algorithm-to-calculate-all-factors-of-an-integer-number
+
+
+
+fator comum
+http://www.brasilescola.com/matematica/fator-comum.htm
+http://www.matematicadidatica.com.br/ColocarFatorEmEvidencia.aspx
+http://matematicamundial.blogspot.com.br/2012/07/exercicios-de-fatoracao.html
+http://descobrindoomundomatematico.blogspot.com.br/2010/07/fator-comum-em-evidencia.html
+
+
+http://www.quora.com/How-do-I-find-N-M-if-N-can-be-as-large-as-10-9-in-some-logarithmic-time
+
+
+
+pesquisas
+summation nested square root
+http://www.technotification.com/2014/01/who-is-face-behind-putnam-emoticon-on_28.html
+fator comum em evidência exercícios avançados
+how many divisors of N algorithm
+
+Perfect square
+http://stackoverflow.com/questions/295579/fastest-way-to-determine-if-an-integers-square-root-is-an-integer
+
+
+
+//https://brilliant.org/discussions/thread/10-basic-algorithms-every-programmer-should-know/?ref_id=691546
+//https://brilliant.org/practice/join/?subtopic=types-and-data-structures&chapter=strings
+//https://brilliant.org/wiki/factors/?utm_medium=social&utm_source=facebook&utm_campaign=fb_posts_03312015&utm_content
+
+/**
+ * http://en.wikipedia.org/wiki/Integer_factorization
+ * http://math.stackexchange.com/questions/631559/algorithms-for-finding-the-prime-factorization-of-an-integer
+ * www.codeproject.com/Tips/155308/Fast-Prime-Factoring-Algorithm
+ * 
+ * http://www.academia.edu/1066276/Prime_Factorisation_A_New_Approach
+ * http://www.vogella.com/tutorials/JavaAlgorithmsPrimeFactorization/article.html
+ * http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
+ * http://www.maths.uq.edu.au/~gjm/nhnrm_spl11.pdf
+ * http://arxiv.org/abs/1011.0506
+ * http://stackoverflow.com/questions/23287/largest-prime-factor-of-a-number
+ * 
+ * https://brilliant.org/wiki/prime-factorization/
+ * https://brilliant.org/wiki/rule-of-product/#rule-of-product-easy
+ * 
+ * 
+ * */
+ 
+ 
+ 
+Test primaridade
+https://primes.utm.edu/curios/includes/primetest.php 
+
+
+Teste primaridade AKS
+http://pt.wikipedia.org/wiki/Teste_de_primalidade_AKS
+http://marathoncode.blogspot.com.br/2012/03/numeros-primos.html
+
+
+Euler totient
+https://github.com/cslarsen/eulers-totient-function
+https://gist.github.com/cslarsen/1314317
+
+
+Format string
+http://examples.javacodegeeks.com/core-java/lang/string/java-string-format-example/
+
+Format String oracle tutorial
+https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
+https://gist.github.com/cslarsen
