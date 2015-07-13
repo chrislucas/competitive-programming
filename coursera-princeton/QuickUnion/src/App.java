@@ -6,6 +6,7 @@
 public class App {
 
 	public static int grid[][];
+	public static int sup, inf; 
 	public static int CLOSE = 0, OPEN = 1, EMPTY = 2;
 	
 	
@@ -22,15 +23,17 @@ public class App {
 	
 	public static void init(int n) {
 		grid = new int[n+2][n];
+		//grid = new int[n][n];
 		for(int i=0; i<n*n; i++)
 			grid[(i+10)/n][(i+10)%n] = i;
+			//grid[(i)/n][(i)%n] = i;
 			//for(int j=0; j<n; j++)
 				//grid[i][j] = i*n+j;
 		return;
 	}
 	
 	public static void main(String[] args) {
-		init(10);
+		init(5);
 
 	}
 
