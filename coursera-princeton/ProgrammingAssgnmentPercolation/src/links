@@ -19,3 +19,16 @@ http://stackoverflow.com/questions/7777439/can-i-use-both-printwriter-and-buffer
 http://stackoverflow.com/questions/5765978/why-need-printwriter
 http://docstore.mik.ua/orelly/java/fclass/ch06_02.htm
 http://tutorials.jenkov.com/java-io/bufferedoutputstream.html
+
+Pesquisar: bufferedinputstream vs bufferedreader performance
+Why is the performance of BufferedReader so much worse than BufferedInputStream?
+http://stackoverflow.com/questions/14301150/why-is-the-performance-of-bufferedreader-so-much-worse-than-bufferedinputstream
+Performance measure of BufferedReader Vs BufferedInputStream
+http://stackoverflow.com/questions/9903447/performance-measure-of-bufferedreader-vs-bufferedinputstream
+Difference between buffered reader and file reader and scanner class [duplicate]
+http://stackoverflow.com/questions/20838244/difference-between-buffered-reader-and-file-reader-and-scanner-class
+
+
+read text file from url java
+How to read a text file directly from Internet using Java?
+http://stackoverflow.com/questions/6259339/how-to-read-a-text-file-directly-from-internet-using-java
