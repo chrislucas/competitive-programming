@@ -57,14 +57,16 @@ public class Percolation {
 	 * @param i
 	 * @param j
 	 * */
-	private int idx2Dto1D(int i, int j) { return order*i + j; }
+	private int idx2Dto1D(int i, int j) {
+		return order * (i - 1) + j;
+	}
 	
 	/**
 	 * private int[] idx1Dto2D(int idx, int o) { return new int[] {idx/o, idx-o*(idx/o)}; }
 	 */
 
 	private void validate(int p, int q) {
-		if(p < 1 || p > order || q < 0 || q > order)
+		if(p < 1 || p > order || q < 1 || q > order)
 			throw new IndexOutOfBoundsException("row p or column q are out of bounds");
 	}
 	
@@ -105,13 +107,17 @@ public class Percolation {
 		perc.open(2,2);
 		StdOut.println(perc.percolates());
 		
+
+	}
+	
+	private void test(String uri) {
 		String url[] = {
 			"http://coursera.cs.princeton.edu/algs4/testing/percolation/input10.txt"
 			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/input20.txt"
 		};
-		BinaryIn bin = new BinaryIn(url[0]);
+		//BinaryIn bin = new BinaryIn(url[0]);
 		//byte s = ! bin.isEmpty() ? bin.readByte() : 0;
-		String s = ! bin.isEmpty() ? bin.readString() : "" ; 
-		System.out.println(s);
+		//String s = ! bin.isEmpty() ? bin.readString() : "" ; 
+		//System.out.println(s);
 	}
 }
