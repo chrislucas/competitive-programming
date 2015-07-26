@@ -17,6 +17,8 @@ public class Percolation {
 	 * */
 	
 	public Percolation (int n) {
+		if(n <= 0)
+			throw new java.lang.IllegalArgumentException("N should be > 0");
 		this.order = n;
 		// adicionando o +2 pois os indices comecao do 1
 		// logo teremos indices de 1 a N inclusive
@@ -24,7 +26,7 @@ public class Percolation {
 		wqu2 = new WeightedQuickUnionUF(order * order + 2);
 		TNode = order * order;
 		BNode = order * order + 1;
-		sites = new boolean[order * order + 2];		
+		sites = new boolean[order * order];	//[0 .. (order - 1(]		
 	}
 	// igual ao metodo union(p,q)
 	public void open(int p, int q) {
@@ -34,7 +36,6 @@ public class Percolation {
 			sites[ idx ] = true;
 			connectSites(p, q);
 		}
-		
 	}
 	// igual ao metodo isConnected(p, q)
 	public boolean isOpen(int p, int q) {
@@ -45,7 +46,7 @@ public class Percolation {
 	public boolean isFull(int p, int q) {
 		validate(p, q);
 		int idx = idx2Dto1D(p, q);
-		return wqu.connected(idx, TNode);
+		return wqu2.connected(idx, TNode);
 	}
 	
 	public boolean percolates() {
@@ -58,7 +59,7 @@ public class Percolation {
 	 * @param j
 	 * */
 	private int idx2Dto1D(int i, int j) {
-		return order * (i - 1) + j;
+		return order * (i - 1) + (j - 1);
 	}
 	
 	/**
@@ -66,48 +67,54 @@ public class Percolation {
 	 */
 
 	private void validate(int p, int q) {
-		if(p < 1 || p > order || q < 1 || q > order)
-			throw new IndexOutOfBoundsException("row p or column q are out of bounds");
+		if(p < 1 || p > order || q < 1 || q > order) {
+			String msg = String.format("row p %d or column %d are out of bounds", p , q);
+			throw new IndexOutOfBoundsException(msg);
+		}
 	}
 	
 	private void connectSites(int p, int q) {
-		// inner
-		if( p>1 && p<(order-1) && q>1 && q<(order-1) ) {
-			// top
-			if(isOpen(p-1, q)) {
-				union(idx2Dto1D(p, q), idx2Dto1D(p-1, q));
-			}
-			// bottom
-			if(isOpen(p+1, q)) {
-				union(idx2Dto1D(p, q), idx2Dto1D(p+1, q));
-			}
-			// left
-			if(isOpen(p, q+1)) {
-				union(idx2Dto1D(p, q), idx2Dto1D(p, q+1));
-			}
-			// right
-			if(isOpen(p, q-1)) {
-				union(idx2Dto1D(p, q), idx2Dto1D(p, q-1));
-			}
-		}
-		// border
-		else {
-			// top
-			//if(p > 1 && q <)
-		}
+		int site = idx2Dto1D(p, q);
+
+        if (q > 1 && q < order ) {
+        	if(isOpen(p, q-1))
+        		union(site, idx2Dto1D(p, q-1));
+        	if(isOpen(p, q+1))
+        		union(site, idx2Dto1D(p, q+1));
+        }
+
+        if (p >= 1 && p <= order){
+        	if(p == 1) {
+        		union(site, TNode);
+        	} else if(p == order) {
+        		union(site, BNode);
+        	}
+            if (p > 1 && isOpen(p-1, q)) 
+                union(site, idx2Dto1D(p-1, q));
+            if (p < order && isOpen(p+1, q))
+				union(site, idx2Dto1D(p+1, q));
+        } 
 	}
 	
 	private void union(int p, int q) {
 		wqu.union(p, q);
+		if(q != BNode)
+			wqu2.union(p, q);
 	}
 	
 	public static void main(String[] args) {
-		Percolation perc = new Percolation(2);
-		perc.open(1,2);
-		perc.open(2,2);
-		StdOut.println(perc.percolates());
-		
-
+	}
+	
+	
+	
+	private static void testOpenSite() {
+		//perc = new Percolation(10);
+		//perc.open(-1, 5);
+		//perc.open(0, 5);
+		//perc.open(11, 5);
+		//perc.open(5, -1);
+		//perc.open(5, 0);
+		//perc.open(5, 11);
 	}
 	
 	private void test(String uri) {

@@ -61,10 +61,8 @@ public class PercolationVisualizer {
     public static void main(String[] args) {
         In in = new In(args[0]);      // input file
         int N = in.readInt();         // N-by-N percolation system
-
         // turn on animation mode
         StdDraw.show(0);
-
         // repeatedly read in sites to open and draw resulting system
         Percolation perc = new Percolation(N);
         draw(perc, N);
