@@ -1,3 +1,4 @@
+import java.time.YearMonth;
 
 /**
  * @author C.Lucas <christoffer.luccas@gmail.com>
@@ -59,7 +60,7 @@ public class Percolation {
 	 * @param j
 	 * */
 	private int idx2Dto1D(int i, int j) {
-		return order * (i - 1) + (j - 1);
+		return order*(i-1)+(j-1);
 	}
 	
 	/**
@@ -75,14 +76,24 @@ public class Percolation {
 	
 	private void connectSites(int p, int q) {
 		int site = idx2Dto1D(p, q);
-
-        if (q > 1 && q < order ) {
-        	if(isOpen(p, q-1))
-        		union(site, idx2Dto1D(p, q-1));
-        	if(isOpen(p, q+1))
-        		union(site, idx2Dto1D(p, q+1));
+      
+		// look left and right
+		if (q >= 1 && q <= order ) {
+			if(q == 1) {
+	        	if(isOpen(p, q+1))
+	        		union(site, idx2Dto1D(p, q+1));	
+			} else if (q == order){
+				if(isOpen(p, q-1))
+	        		union(site, idx2Dto1D(p, q-1));
+			} else {
+				if(isOpen(p, q-1))
+	        		union(site, idx2Dto1D(p, q-1));
+	        	if(isOpen(p, q+1))
+	        		union(site, idx2Dto1D(p, q+1));	
+			}
         }
 
+		// look top and bottom
         if (p >= 1 && p <= order){
         	if(p == 1) {
         		union(site, TNode);
@@ -93,7 +104,7 @@ public class Percolation {
                 union(site, idx2Dto1D(p-1, q));
             if (p < order && isOpen(p+1, q))
 				union(site, idx2Dto1D(p+1, q));
-        } 
+        }
 	}
 	
 	private void union(int p, int q) {
@@ -103,6 +114,7 @@ public class Percolation {
 	}
 	
 	public static void main(String[] args) {
+		test();
 	}
 	
 	
@@ -117,14 +129,36 @@ public class Percolation {
 		//perc.open(5, 11);
 	}
 	
-	private void test(String uri) {
-		String url[] = {
-			"http://coursera.cs.princeton.edu/algs4/testing/percolation/input10.txt"
+	public static void test() {
+		String URLS[] = {
+			"http://coursera.cs.princeton.edu/algs4/testing/percolation/input6.txt"
+			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/input7.txt"
+			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/input10.txt"
 			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/input20.txt"
+			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/jerry47.txt"
+			,"http://coursera.cs.princeton.edu/algs4/testing/percolation/wayne98.txt"
 		};
 		//BinaryIn bin = new BinaryIn(url[0]);
 		//byte s = ! bin.isEmpty() ? bin.readByte() : 0;
 		//String s = ! bin.isEmpty() ? bin.readString() : "" ; 
 		//System.out.println(s);
+		//for(String url : URLS){}
+		int DELAY = 5;
+        
+		In in = new In(URLS[5]);       // input file
+        int N = in.readInt();         // N-by-N percolation system
+        // turn on animation mode
+        StdDraw.show(0);
+        // repeatedly read in sites to open and draw resulting system
+        Percolation perc = new Percolation(N);
+        PercolationVisualizer.draw(perc, N);
+        StdDraw.show(DELAY);
+        while (!in.isEmpty()) {
+            int i = in.readInt();
+            int j = in.readInt();
+            perc.open(i, j);
+            PercolationVisualizer.draw(perc, N);
+            StdDraw.show(DELAY);
+        }
 	}
 }
