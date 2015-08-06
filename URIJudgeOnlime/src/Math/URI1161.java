@@ -1,7 +1,5 @@
-package adhoc;
+package Math;
 
-import java.awt.AWTError;
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,9 +7,18 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class URI1235 {
-	static final PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out), true);
+public class URI1161 {
+	
+	public static final int MAX = 21;
+	public static final long[] fatorial = new long[MAX];
 
+	public static void init() {
+		fatorial[0] = 1;
+		fatorial[1] = 1;
+		for(int i=2; i<MAX; i++) {
+			fatorial[i] = fatorial[i-1] * i;
+		}
+	}
 	static class CompReader {
 		BufferedReader buffer;
 		InputStream in;
@@ -51,37 +58,28 @@ public class URI1235 {
 			return array;
 		}
 		public double nextDouble(String del) { return Double.parseDouble(next(del)); }
-		public long nextLong(String del) { return Long.parseLong(next(del)); }
-	}
-	
-	static void solution(int x) {
-		
-	}
-	
-	public static void main(String[] args) throws IOException {
-		CompReader reader = new CompReader();
-		int x = reader.nextInt("");
-		for(int i=0; i<x; i++) {
-			//int size[] = reader.arrayInt(" ", 3);
-			String in = reader.next("");
-			int sizeStr = in.length();
-			int mid = sizeStr/2;
-			//char[] answer = new char[sizeStr];
-			String answer = "";
-			for(int j=0; j<sizeStr; j++) {
-				if(j < mid) {
-					char c = in.charAt(mid - (j+1));
-					answer = answer.concat(Character.toString(c));
-					//answer[mid - (j+1)] = in.charAt(j);
-				}
-				else {
-					char c = in.charAt(mid + (sizeStr-j-1));
-					answer = answer.concat(Character.toString(c));
-					//answer[mid + (sizeStr-j-1)] = in.charAt(j);
-				}	
+		public double[] arrayDouble(String del, int size) {
+			double[] array = new double[size];
+			for(int idx=0;idx<size;) {
+				array[idx++] = nextDouble(del);
 			}
-			//answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
-			out.println(answer) ;
+			return array;
 		}
+		public long nextLong(String del) { return Long.parseLong(next(del)); }
+		public long[] arrayLong(String del, int size) {
+			long[] array = new long[size];
+			for(int idx=0;idx<size;) {
+				array[idx++] = nextLong(del);
+			}
+			return array;
+		}
+	}
+	
+	public static void main(String[] args) {
+		init();
+		CompReader reader = new CompReader();
+		PrintWriter out = new PrintWriter(System.out, true);
+		int[] in = reader.arrayInt(" ", 2);
+		out.println(fatorial[in[0]] + fatorial[in[1]]);
 	}
 }

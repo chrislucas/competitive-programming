@@ -1,7 +1,5 @@
 package adhoc;
 
-import java.awt.AWTError;
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,9 +7,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class URI1235 {
-	static final PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out), true);
-
+public class URI1585 {
 	static class CompReader {
 		BufferedReader buffer;
 		InputStream in;
@@ -54,34 +50,19 @@ public class URI1235 {
 		public long nextLong(String del) { return Long.parseLong(next(del)); }
 	}
 	
-	static void solution(int x) {
-		
-	}
-	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		CompReader reader = new CompReader();
-		int x = reader.nextInt("");
-		for(int i=0; i<x; i++) {
-			//int size[] = reader.arrayInt(" ", 3);
-			String in = reader.next("");
-			int sizeStr = in.length();
-			int mid = sizeStr/2;
-			//char[] answer = new char[sizeStr];
-			String answer = "";
-			for(int j=0; j<sizeStr; j++) {
-				if(j < mid) {
-					char c = in.charAt(mid - (j+1));
-					answer = answer.concat(Character.toString(c));
-					//answer[mid - (j+1)] = in.charAt(j);
-				}
-				else {
-					char c = in.charAt(mid + (sizeStr-j-1));
-					answer = answer.concat(Character.toString(c));
-					//answer[mid + (sizeStr-j-1)] = in.charAt(j);
-				}	
-			}
-			//answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
-			out.println(answer) ;
+		PrintWriter out = new PrintWriter(System.out, true);
+		int n = reader.nextInt("");
+		while(n>0){
+			int data[] = reader.arrayInt(" ", 2);
+			// http://www.mundoeducacao.com/matematica/area-losango.htm
+			// 3 formas de calcular área de um losango
+			// multiplicando as diagonais e dividir 2
+			// multiplicando base * altura
+			// Lado^2 *  seno(um dos angulos do losango)
+			out.printf("%d cm2\n", (data[0] * data[1]) / 2);
+			n--;
 		}
 	}
 }
