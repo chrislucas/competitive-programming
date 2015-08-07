@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class URI1161 {
 	
-	public static final int MAX = 21;
+	public static final int MAX = 22;
 	public static final long[] fatorial = new long[MAX];
 
 	public static void init() {
@@ -53,7 +53,11 @@ public class URI1161 {
 		public int[] arrayInt(String del, int size) {
 			int array[] = new int[size];
 			for(int idx = 0;idx<size;) {
-				array[idx++] = nextInt(del);
+				String ans = next(del);
+				if(ans == null)
+					return null;
+				else
+					array[idx++] = Integer.parseInt(ans);
 			}
 			return array;
 		}
@@ -75,11 +79,18 @@ public class URI1161 {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		init();
 		CompReader reader = new CompReader();
 		PrintWriter out = new PrintWriter(System.out, true);
-		int[] in = reader.arrayInt(" ", 2);
-		out.println(fatorial[in[0]] + fatorial[in[1]]);
+		int[] in = new int[2];
+		//BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		//String enter;
+		while ( (in = reader.arrayInt(" ", 2)) != null ) {
+			//String in[] = enter.split(" ");
+			int n = in[0];//Integer.parseInt(in[0]);
+			int m = in[1];//Integer.parseInt(in[1]);
+			out.println(fatorial[n] + fatorial[m]);
+		}
 	}
 }

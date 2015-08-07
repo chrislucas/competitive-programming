@@ -1,5 +1,5 @@
 package adhoc;
-
+//DONE
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -50,6 +50,7 @@ public class URI1585 {
 		public long nextLong(String del) { return Long.parseLong(next(del)); }
 	}
 	
+	// DONE
 	public static void main(String[] args) {
 		CompReader reader = new CompReader();
 		PrintWriter out = new PrintWriter(System.out, true);

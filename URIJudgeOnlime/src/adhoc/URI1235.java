@@ -80,7 +80,7 @@ public class URI1235 {
 					//answer[mid + (sizeStr-j-1)] = in.charAt(j);
 				}	
 			}
-			//answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
+			answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
 			out.println(answer) ;
 		}
 	}
