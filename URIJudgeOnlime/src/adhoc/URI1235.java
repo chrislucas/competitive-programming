@@ -1,6 +1,5 @@
 package adhoc;
 
-import java.awt.AWTError;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -54,34 +53,33 @@ public class URI1235 {
 		public long nextLong(String del) { return Long.parseLong(next(del)); }
 	}
 	
-	static void solution(int x) {
-		
-	}
-	
 	public static void main(String[] args) throws IOException {
-		CompReader reader = new CompReader();
-		int x = reader.nextInt("");
+		//CompReader reader = new CompReader();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String in = reader.readLine();
+		int x = Integer.parseInt(in);
 		for(int i=0; i<x; i++) {
 			//int size[] = reader.arrayInt(" ", 3);
-			String in = reader.next("");
+			in = reader.readLine();
 			int sizeStr = in.length();
 			int mid = sizeStr/2;
 			//char[] answer = new char[sizeStr];
 			String answer = "";
-			for(int j=0; j<sizeStr; j++) {
+			int limit = in.charAt(mid) == ' ' ? sizeStr-1 : sizeStr;
+			for(int j=0; j<limit; j++) {
 				if(j < mid) {
 					char c = in.charAt(mid - (j+1));
 					answer = answer.concat(Character.toString(c));
 					//answer[mid - (j+1)] = in.charAt(j);
-				}
-				else {
-					char c = in.charAt(mid + (sizeStr-j-1));
+				} else {
+					char c = in.charAt(sizeStr -(j - mid  + 1));
 					answer = answer.concat(Character.toString(c));
 					//answer[mid + (sizeStr-j-1)] = in.charAt(j);
 				}	
 			}
-			answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
-			out.println(answer) ;
+			//answer = answer.charAt(answer.length() - 1) == ' ' ? answer.substring(0, (answer.length()-2)) : answer;
+			String format = (i<x-1) ? "%s\n" : "%s";
+			out.printf(format, answer);
 		}
 	}
 }
