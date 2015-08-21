@@ -58,15 +58,15 @@ public class Percolation {
 	 * @param j
 	 * */
 	private int idx2Dto1D(int i, int j) {
-		return order * (i - 1) + j;
+		return order * i + j;
 	}
 	
-	/**
-	 * private int[] idx1Dto2D(int idx, int o) { return new int[] {idx/o, idx-o*(idx/o)}; }
-	 */
+
+	// private int[] idx1Dto2D(int idx, int order) { return new int[] {idx/order, idx-order*(idx/order)}; }
+
 
 	private void validate(int p, int q) {
-		if(p < 1 || p > order || q < 1 || q > order)
+		if(p < 1 || p > order || q < 1 || q > order*order)
 			throw new IndexOutOfBoundsException("row p or column q are out of bounds");
 	}
 	
