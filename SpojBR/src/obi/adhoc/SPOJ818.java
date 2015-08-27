@@ -37,7 +37,7 @@ public class SPOJ818 {
 				 if(airport[out-1] > max)
 					 max = airport[out-1];
 				 */
-				 int m = airport[in-1] > airport[out-1] ?airport[in-1] : airport[out-1];
+				 int m = airport[in-1] > airport[out-1] ? airport[in-1] : airport[out-1];
 				 max = max > m ? max : m;
 				 fly--;
 			 }
