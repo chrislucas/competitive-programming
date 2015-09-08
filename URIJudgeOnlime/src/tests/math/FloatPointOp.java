@@ -1,4 +1,4 @@
-package Math;
+package tests.math;
 
 public class FloatPointOp {
 	private static double epsilon = 0.00001;
@@ -16,7 +16,7 @@ public class FloatPointOp {
 
 	
 	public static void main(String[] args) {
-		//System.out.println(almostEquals(22.0/7.0, Math.PI));
+		//System.out.println(almostEquals(22.0/7.0, math.PI));
 		double[] numbers = {
 			1.101/101.0, 1.1/101.0, 1.00000000000001, 1.00000000000002
 		};

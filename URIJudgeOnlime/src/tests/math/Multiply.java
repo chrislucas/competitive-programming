@@ -1,4 +1,4 @@
-package Math;
+package tests.math;
 
 public class Multiply {
 
