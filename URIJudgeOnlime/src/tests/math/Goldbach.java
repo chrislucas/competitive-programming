@@ -8,6 +8,8 @@ public class Goldbach {
 	
 	private void init() {
 		primes = new boolean[LIMIT];
+		for(int i=0; i<LIMIT; i++)
+			primes[i] = true;
 		list = new int[LIMIT];
 	}
 	
