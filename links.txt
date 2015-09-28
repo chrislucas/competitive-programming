@@ -1,0 +1,29 @@
+bitmask
+http://crasseux.com/books/ctutorial/Masks.html#Masks
+
+Frequencia de letras em palavras da lingua inglesa
+http://scottbryce.com/cryptograms/stats.htm
+https://en.wikipedia.org/wiki/Letter_frequency
+
+marathoncode
+http://marathoncode.blogspot.com.br/2012/07/pilha-umapilha-e-uma-das-varias.html
+http://marathoncode.blogspot.com.br/search/label/threshold
+http://marathoncode.blogspot.com.br/search/label/union-find
+
+http://www.geeksforgeeks.org/strongly-connected-components/
+http://www.geeksforgeeks.org/bridge-in-a-graph/
+
+Union Find  - find cycles in graph
+http://www.geeksforgeeks.org/union-find/
+
+
+IME usp
+http://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/dfs1.html#maxV
+http://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/components.html
+
+ArrayList of Arraylisy
+http://stackoverflow.com/questions/19119655/how-to-operate-on-an-arraylist-of-arraylist-in-java
+http://stackoverflow.com/questions/19119655/how-to-operate-on-an-arraylist-of-arraylist-in-java
+
+Lista de adjacencia em python
+https://algocoding.wordpress.com/2014/08/24/adjacency-list-representation-of-a-graph-python-java/
