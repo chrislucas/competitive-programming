@@ -1,5 +1,9 @@
 package exercise;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class NSum {
 	
 	
@@ -24,6 +28,12 @@ public class NSum {
 		,n = 6
 		,q = 0;
 		System.out.println(nSum(array,n,q));
+	}
+	
+	// http://stackoverflow.com/questions/5054132/how-to-change-the-decimal-separator-of-decimalformat-from-comma-to-dot-point
+	public static void testFormatNumber() {
+		NumberFormat nf = NumberFormat.getNumberInstance(Locale.US);
+		DecimalFormat df = (DecimalFormat) nf;
 	}
 
 }

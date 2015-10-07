@@ -1,0 +1,10 @@
+How to resolve a Java Rounding Double issue
+http://stackoverflow.com/questions/179427/how-to-resolve-a-java-rounding-double-issue
+
+https://en.wikipedia.org/wiki/Signed_zero
+
+Why can't we use '==' to compare two float or double numbers 
+http://stackoverflow.com/questions/17898266/why-cant-we-use-to-compare-two-float-or-double-numbers
+
+Compare double to zero using epsilon
+http://stackoverflow.com/questions/13698927/compare-double-to-zero-using-epsilon
