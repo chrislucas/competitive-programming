@@ -36,7 +36,7 @@ public class NSum {
 		int array[] = {30,-40,-20,-10,40,0,10,5}
 		,n = 3
 		,q = 0;
-
+		
 		//array = In.readInts();
 		Stopwatch watch = new Stopwatch();
 		System.out.println(nSum(array,n,q));

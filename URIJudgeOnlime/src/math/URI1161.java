@@ -1,4 +1,4 @@
-package Math;
+package math;
 //Done
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -85,9 +85,9 @@ public class URI1161 {
 		PrintWriter out = new PrintWriter(System.out, true);
 		int[] in = new int[2];
 		//BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		//String enter;
+		//string enter;
 		while ( (in = reader.arrayInt(" ", 2)) != null ) {
-			//String in[] = enter.split(" ");
+			//string in[] = enter.split(" ");
 			int n = in[0];//Integer.parseInt(in[0]);
 			int m = in[1];//Integer.parseInt(in[1]);
 			out.println(fatorial[n] + fatorial[m]);

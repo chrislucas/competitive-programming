@@ -1,4 +1,4 @@
-package String;
+package string;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

@@ -24,8 +24,8 @@ import java.util.StringTokenizer;
  *      123
  * {@code
  *  final FastReader fastReader = FastReader.from(System.in);
- *     final String s1 = fastReader.next();
- *     final String s2 = fastReader.next();
+ *     final string s1 = fastReader.next();
+ *     final string s2 = fastReader.next();
  *     final int n = fastReader.nextInt();
  *     ...
  * }
@@ -38,7 +38,7 @@ import java.util.StringTokenizer;
 public final class FastReader {
 
     private final BufferedReader bufferedReader;
-    /* legacy class preferred over String#split and Scanner for performance */
+    /* legacy class preferred over string#split and Scanner for performance */
     private StringTokenizer tokenizer;
 
     private FastReader(final BufferedReader bufferedReader) {
@@ -99,7 +99,7 @@ public final class FastReader {
 
     /**
      * Returns the next {@code int} acquired by {@link StringTokenizer}
-     * using {@link Integer#parseInt(String)} on {@link #next()}.
+     * using {@link Integer#parseInt(string)} on {@link #next()}.
      * Moves on to the next line if the current line has been processed.
      *
      * @return Returns the next {@code int} acquired by {@link StringTokenizer}.
@@ -112,7 +112,7 @@ public final class FastReader {
 
     /**
      * Returns the next {@code long} acquired by {@link StringTokenizer}
-     * using {@link Long#parseLong(String)} on {@link #next()}.
+     * using {@link Long#parseLong(string)} on {@link #next()}.
      * Moves on to the next line if the current line has been processed.
      *
      * @return Returns the next {@code long} acquired by {@link StringTokenizer}.
@@ -125,7 +125,7 @@ public final class FastReader {
 
     /**
      * Returns the next {@code double} acquired by {@link StringTokenizer}
-     * using {@link Double#parseDouble(String)} on {@link #next()}.
+     * using {@link Double#parseDouble(string)} on {@link #next()}.
      * Moves on to the next line if the current line has been processed.
      *
      * @return Returns the next {@code double} acquired by {@link StringTokenizer}.
@@ -138,7 +138,7 @@ public final class FastReader {
 
     /**
      * Returns the next {@link BigDecimal} acquired by {@link StringTokenizer}
-     * using BigDecimal's String constructor on {@link #next()}.
+     * using BigDecimal's string constructor on {@link #next()}.
      * Moves on to the next line if the current line has been processed.
      *
      * @return Returns the next {@code BigDecimal} acquired by {@link StringTokenizer}.
@@ -151,7 +151,7 @@ public final class FastReader {
 
     /**
      * Returns the next {@link BigInteger} acquired by {@link StringTokenizer}
-     * using BigInteger's String constructor on {@link #next()}.
+     * using BigInteger's string constructor on {@link #next()}.
      * Moves on to the next line if the current line has been processed.
      *
      * @return Returns the next {@code BigInteger} acquired by {@link StringTokenizer}.

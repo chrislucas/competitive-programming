@@ -1,4 +1,4 @@
-package String;
+package string;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -86,8 +86,8 @@ public class URI1239 {
 		String ans = str.substring(0, inf);
 		str = str.substring(sup, str.length());
 		ans = ans.concat(tag).concat(str);
-		//String old = str.substring(inf, sup);
-		//String ans = str.replaceFirst(old, stag);
+		//string old = str.substring(inf, sup);
+		//string ans = str.replaceFirst(old, stag);
 		return ans;
 	}
 	

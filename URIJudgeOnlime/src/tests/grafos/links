@@ -1,0 +1,75 @@
+Kruskal
+http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
+		/*
+		matrix = new int[9][9];
+		matrix[0][1] = matrix[1][0] = 4;
+		matrix[0][7] = matrix[7][0] = 8;
+		matrix[1][2] = matrix[2][1] = 8;
+		matrix[1][7] = matrix[7][1] = 11;
+		matrix[2][3] = matrix[3][2] = 7;
+		matrix[2][5] = matrix[5][2] = 4;
+		matrix[2][8] = matrix[8][2] = 2;
+		matrix[3][4] = matrix[4][3] = 9;
+		matrix[3][5] = matrix[5][3] = 14;
+		matrix[4][5] = matrix[5][4] = 10;
+		matrix[5][6] = matrix[6][5] = 2;
+		matrix[6][8] = matrix[8][6] = 6;
+		matrix[6][7] = matrix[7][6] = 1;
+		matrix[7][8] = matrix[8][7] = 7;
+		*/
+http://codeforces.com/blog/entry/1740
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1152
+Problemas que usam kruskal
+*********** https://www.urionlinejudge.com.br/judge/pt/search?terms=kruskal&type=1
+11857 - Driving Range
+https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2957
+
+http://wiki.maratona.dcc.ufmg.br/index.php/REDOTICA
+http://crbonilha.blogspot.com.br/2012_10_01_archive.html
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1152
+
+
+Conjunto Disjunto
+http://marathoncode.blogspot.com.br/2013/01/conjuntos-disjuntos.html
+http://mattleao.blogspot.com.br/2015/03/conjuntos-disjuntos-disjoint-set.html
+http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
+
+Search kruskal cpp competitive
+http://algs4.cs.princeton.edu/43mst/KruskalMST.java.html
+https://github.com/lamphanviet/competitive-programming/blob/master/uva-online-judge/accepted-solutions/11857%20-%20Driving%20Range%20(Kruskal%20heap).cpp
+
+Union Find
+detect cycle in graph usng union find
+http://www.geeksforgeeks.org/union-find/
+http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/
+
+Comparable and Comparator
+http://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/
+http://stackoverflow.com/questions/16268896/sort-arraylist-using-comparable-interface
+http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/
+
+
+Karger’s algorithm for Minimum Cut | Set 1 (Introduction and Implementation)
+http://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/
+
+
+algorithms graph CP
+https://discuss.codechef.com/questions/49613/graph-algorithms-in-competitive-programming
+
+
+Dijkstra
+http://www.cs.bris.ac.uk/~montanar/teaching/dsa/dijkstra-handout.pdf
+
+PQueue Java
+http://www.programcreek.com/2009/02/using-the-priorityqueue-class-example/
+
+Interessante uso de Pqueue
+http://www.programcreek.com/2013/02/leetcode-merge-k-sorted-lists-java/
+
+
+Problemas com dijkstra
+http://crbonilha.blogspot.com.br/2013/04/o-algoritmo-de-dijkstra.html
+http://br.spoj.com/problems/MINIMO/
+http://wiki.maratona.dcc.ufmg.br/index.php/MINIMO
+https://www.urionlinejudge.com.br/judge/problems/view/1148
+http://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/
