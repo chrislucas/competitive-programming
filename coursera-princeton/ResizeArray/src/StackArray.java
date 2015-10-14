@@ -1,6 +1,11 @@
 import java.lang.reflect.Array;
 
 
+/**
+ * http://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
+ * http://stackoverflow.com/questions/4337187/creating-a-generic-array-instance-in-a-generic-method
+ * */
+
 public class StackArray<T> {
 
 	@SuppressWarnings("unused")
