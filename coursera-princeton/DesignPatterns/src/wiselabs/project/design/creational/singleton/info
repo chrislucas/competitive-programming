@@ -1,0 +1,25 @@
+Creational Pattern
+
+The implementation of singleton pattern has always been a controversial topic among developers.
+
+Pattern
+http://www.gofpatterns.com/design-patterns/module2/three-types-design-patterns.php
+
+Singleton, pattern or antipattern
+http://stackoverflow.com/questions/12755539/why-is-singleton-considered-an-anti-pattern
+http://stackoverflow.com/questions/11292109/why-implementing-a-singleton-pattern-in-java-code-is-sometimes-considered-an-a
+
+
+Commons concepts to implement singleton pattern
+
+* private construct to avoid instantiationof the class from other class
+* private static variable of the same class
+* public and static method  that returns the instance of the class
+
+
+Double-Checked Locking
+http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
+http://javarevisited.blogspot.com.br/2014/05/double-checked-locking-on-singleton-in-java.html
+http://javarevisited.blogspot.com.br/2014/05/double-checked-locking-on-singleton-in-java.html
+
+
