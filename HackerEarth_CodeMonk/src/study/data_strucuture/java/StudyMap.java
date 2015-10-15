@@ -1,6 +1,7 @@
 package study.data_strucuture.java;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +42,7 @@ public class StudyMap {
 		Map<Integer,List<String>> map = new HashMap<>();
 		List<String> words;
 		for(int i=0; i<sizeMap; i++) {
-			int qWords = randomRange(1, 15);
+			int qWords = randomRange(1, 25);
 			words = new ArrayList<>();
 			for(int j=0; j<qWords; j++) {
 				words.add(randomWords(15));
@@ -51,19 +52,47 @@ public class StudyMap {
 		return map;
 	}
 	
+	
 	public static <K, V> void loop(Map<K, V> map) {
 		Iterator<?> iterator = map.entrySet().iterator();
 		while(iterator.hasNext()) {
 			Map.Entry<K, V> pair = ((Map.Entry<K, V>) iterator.next());
-			Object key = pair.getKey();
+			//Object key = pair.getKey();
 			Object val = pair.getValue();
+			if(isCollection(val)) {
+				try {
+					List<?> list = (List<?>)val;
+					System.out.printf("%d\n",list.size());
+					for(Object o : list) {
+						System.out.println(o.toString());
+					}
+				} catch(ClassCastException ccex) {
+					System.out.println(ccex.getMessage());
+				}
+			}
 		}
 		return;
 	}
 	
+	public static <T> boolean isCollection(T clazz) {
+		// o eh uma instancia de List
+		//return Collection.class.isInstance(o);
+		// a sentenca abaixo eh eqivalente a de cima
+		//return o instanceof Collection;
+		
+		// o metodo isAssignableFrom testa se o argumento passado
+		// para ele uma instacel de <T>.class
+		return Collection.class.isAssignableFrom(clazz.getClass());
+	}
+	
+	public static <T> Class getTypeClass(T object) {
+		return null;
+	}
+	
 	public static void main(String[] args) {
 		setAlpha();
-		loop(fill(10));
+		loop(fill(100));
+		//System.out.println(isCollection(new ArrayList<>()));
 	}
 
 }
