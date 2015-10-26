@@ -40,6 +40,10 @@ public class GDCLCM {
 		}
 		return ans;
 	}
+
+	public static boolean isCongruent(int m, int n, int p) {
+		return gdc(Math.abs(m-n), p) < p;
+	}
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader buffer = new BufferedReader(new InputStreamReader(new BufferedInputStream(System.in)));
