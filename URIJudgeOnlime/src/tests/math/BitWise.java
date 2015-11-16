@@ -22,7 +22,7 @@ public class BitWise {
 		// para nao esquecer mais
 		// shift right =  m / 2 ^ n
 		System.out.println(127>>4);
-		table(4);
+		table(2);
 	}
 
 }

@@ -53,6 +53,7 @@ public class StudyMap {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	public static <K, V> void loop(Map<K, V> map) {
 		Iterator<?> iterator = map.entrySet().iterator();
 		while(iterator.hasNext()) {
