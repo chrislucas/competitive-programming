@@ -98,6 +98,31 @@ public class BinarySearchTree {
 			current = current.R;
 		return current.item;
 	}
+	
+	public <T extends Comparable<T>> boolean exclude(T value) {
+		return true;
+	}
+	
+	public <T extends Comparable<T>> boolean contain(Node<T> root, T value) {
+		if(root == null)
+			return false;
+		if(root.item.compareTo(value) == 0) {
+			return true;
+		} else {
+			// se o valor da raiz eh menor que o valor de busca
+			// percorrer a arvore pela direita
+			if(root.item.compareTo(value) < 0) {
+				return contain(root.R, value);
+			} else {
+				return contain(root.L, value);
+			}
+		}
+	}
+	
+	public boolean isEmpty() {
+		return this.root == null;
+	}
+	
 	/**
 	 * O nó mais a esquerda da arvore contem o maior valor
 	 * */
@@ -135,7 +160,7 @@ public class BinarySearchTree {
 		 * */
 		// BinarySearchTree.Node<Integer> node = new BinarySearchTree().new Node<>();
 		BinarySearchTree bst = new BinarySearchTree();
-		Integer values[] = new Integer[] {40, 25, 78, 10, 32};
+		Integer values[] = new Integer[] {40, 25, 127, 78, 10, 32};
 		for(Integer value : values)
 			bst.add(value);
 		bst.inOrder(bst.root);
@@ -150,6 +175,7 @@ public class BinarySearchTree {
 		System.out.printf("%s %s\n",
 				bst.max(bst.root),
 				bst.min(bst.root));
+		System.out.println(bst.contain(bst.root, 127));
 	}
 
 }

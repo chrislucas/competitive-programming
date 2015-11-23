@@ -14,6 +14,24 @@ Binary Tree to Binary Search Tree Conversion
 http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/
 
 
+exercicio BST
+Construct BST from given preorder traversal | Set 1
+http://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/
+http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+http://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/
+
+What is the algorithmic approach to invert a given binary tree?
+https://www.quora.com/What-is-the-algorithmic-approach-to-invert-a-given-binary-tree
+
+LeetCode – Invert Binary Tree (Java)
+http://www.programcreek.com/2014/06/leetcode-invert-binary-tree-java/
+
+http://www.careercup.com/question?id=60068
+
+How to construct BST given post-order traversal
+http://stackoverflow.com/questions/13167536/how-to-construct-bst-given-post-order-traversal
+
+
 Generics
 https://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
 http://www.angelikalanger.com/GenericsFAQ/FAQSections/TypeParameters.html
