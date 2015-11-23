@@ -1,2 +1,22 @@
 bst
+********* http://www.javabeat.net/binary-search-tree-traversal-java/
 http://algs4.cs.princeton.edu/32bst/BST.java.html
+
+Binary Search Tree Implementation in Java
+http://www.java-tips.org/java-se-tips-100019/24-java-lang/1903-binary-search-tree-implementation-in-java.html
+
+http://www.ime.usp.br/~pf/estruturas-de-dados/aulas/st-bst.html
+
+A program to check if a binary tree is BST or not
+http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+
+Binary Tree to Binary Search Tree Conversion
+http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/
+
+
+Generics
+https://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
+http://www.angelikalanger.com/GenericsFAQ/FAQSections/TypeParameters.html
+http://math.hws.edu/javanotes/c10/s5.html
+http://onewebsql.com/blog/generics-extends-super
+http://www.angelikalanger.com/GenericsFAQ/FAQSections/TypeParameters.html
