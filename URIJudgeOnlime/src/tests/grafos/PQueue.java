@@ -25,9 +25,9 @@ public class PQueue {
 	
 	static void init() {
 		Edge edges [] = {
-			new Edge(0,1,4), new Edge(0,7,8),new Edge(1,2,8)
-			,new Edge(2,8,2),new Edge(3,4,9), new Edge(3,5,14)
-			,new Edge(4,5,10),new Edge(5,6,2),new Edge(6,8,6)
+			 new Edge(0,1,4)	,new Edge(0,7,8)	,new Edge(1,2,8)
+			,new Edge(2,8,2)	,new Edge(3,4,9)	,new Edge(3,5,14)
+			,new Edge(4,5,10)	,new Edge(5,6,2)	,new Edge(6,8,6)
 		};
 		for(Edge e : edges)
 			pqueue.add(e);

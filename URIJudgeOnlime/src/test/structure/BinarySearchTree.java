@@ -149,7 +149,30 @@ public class BinarySearchTree {
 	}
 
 	public static void main(String[] args) {
-		codeTest();
+		// codeTest();
+		pfx();
+	}
+	
+	public static void pfx() {
+		double total = 1000.0;
+		double q = 0.0;
+		int i=0;
+		for(i=0; !almostEqual(q, total); i++) {
+			q += (total - q) * 0.1;
+			System.out.printf("%ds valor: %.30f\n", i, q);
+		}
+		System.out.println(1000.0 - 999.9999999999995);
+		double f = 0.0000000000005 - 10e-12;
+		System.out.printf("%.30f", f < 0 ? -f : f);
+	}
+	
+	public static boolean almostEqual(double a, double b) {
+		// 0.0000000000005
+		double F = 0.0000000000005; //10e-12 * 5;
+		if( ((a-b) < F && (a-b) > 0)|| -(a-b) < F ) {
+			return true;
+		}
+		return false;
 	}
 	
 	@SuppressWarnings("unchecked")
