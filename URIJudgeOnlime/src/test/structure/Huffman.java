@@ -128,7 +128,7 @@ public class Huffman {
             ,"https://www.youtube.com/watch?v=xQQt5myz00o"
         };;
         Huffman tree = new Huffman();
-        String encoded = tree.encode(text[2]);
+        String encoded = tree.encode(text[0]);
         System.out.println(encoded);
         String decoded = tree.decode(encoded);
         System.out.println(decoded);
