@@ -45,6 +45,18 @@ public class GDCLCM {
 		return gdc(Math.abs(m-n), p) < p;
 	}
 	
+	// https://brilliant.org/problems/sum-of-gcds-3/?utm_medium=social&utm_source=facebook&utm_campaign=fb_posts_12052015&utm_content=cc_sum_gcd
+	// https://brilliant.org/wiki/greatest-common-divisor/
+	// https://brilliant.org/wiki/greatest-common-divisor/#greatest-common-divisor-problem-solving
+	public static int sumGCD(int n, int m) {
+		int sum = 0;
+		while(n <= m) {
+			sum += gdc(n, m);
+			n++;
+		}
+		return sum;
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader buffer = new BufferedReader(new InputStreamReader(new BufferedInputStream(System.in)));
 		String in;
@@ -54,6 +66,7 @@ public class GDCLCM {
 		System.out.println(gdc(new int[] {20,30,60}));
 		System.out.println(lcm(new int[] {60,30,20}));
 		*/
+		System.out.println(sumGCD(1, 155));
 		while( !(in = buffer.readLine()).equals("0")) {
 			StringTokenizer tokenizer = new StringTokenizer(in, " ");
 			int n[] = new int[tokenizer.countTokens()];

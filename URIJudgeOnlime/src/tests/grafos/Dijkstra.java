@@ -36,7 +36,7 @@ public class Dijkstra {
 	static int minDistance(int dist[], boolean mst[]) {
 		int min = INFINITY, minIdx = 0;
 		for(int i=0; i<V; i++) {
-			if(mst[i] == false && dist[i] <= min) {
+			if(mst[i] == false && dist[i] < min) {
 				min = dist[i];
 				minIdx = i;
 			}
@@ -45,10 +45,10 @@ public class Dijkstra {
 	}
 	
 	static void dijkstraMatrix(int source) {
-		int distance[] = new int[V];
+		
 		// matrix e boolean mst soh existem quando usado matriz de adhacencia
 		int matrix[][] = {
-			{0, 4, 0, 0, 0, 0, 0, 8, 0},
+			/*{0, 4, 0, 0, 0, 0, 0, 8, 0},
             {4, 0, 8, 0, 0, 0, 0, 11, 0},
             {0, 8, 0, 7, 0, 4, 0, 0, 2},
             {0, 0, 7, 0, 9, 14, 0, 0, 0},
@@ -56,27 +56,41 @@ public class Dijkstra {
             {0, 0, 4, 0, 10, 0, 2, 0, 0},
             {0, 0, 0, 14, 0, 2, 0, 1, 6},
             {8, 11, 0, 0, 0, 0, 1, 0, 7},
-            {0, 0, 2, 0, 0, 0, 6, 7, 0}	
-		};						
-		boolean mst[] = new boolean[V];;
+            {0, 0, 2, 0, 0, 0, 6, 7, 0}*/
+			{0,3,0,3,0,0}
+			,{3,0,1,3,0,0}
+			,{0,1,0,2,0,3}
+			,{3,1,2,0,2,0}
+			,{0,0,0,2,0,2}
+			,{0,0,3,0,2,0}
+		};
+		V = matrix.length;
+		boolean mst[] = new boolean[V];
+		int distance[] = new int[V];
+		int path[] = new int[V];
 		for(int i=0; i<V; i++) {
 			distance[i] = INFINITY;
-			mst[i] = false;
+			mst[i] 		= false;
+			path[i] 	= -1;
 		}
 		distance[source] = 0;
+		path[source] = source;
 		for(int i=0; i<V-1; i++) {
-			int minCost = minDistance(distance, mst);
-			mst[minCost] = true;	// adiciona
+			int minNode = minDistance(distance, mst);
+			mst[minNode] = true;	// adiciona
 			for(int j=0; j<V; j++) {
-				int cost = distance[minCost] + matrix[minCost][j];
-				if(!mst[j] && matrix[minCost][j] != 0
-						&& distance[minCost] != INFINITY && cost < distance[j]) {
+				int cost = distance[minNode] + matrix[minNode][j];
+				if( ! mst[j] && matrix[minNode][j] > 0
+						// && distance[minCost] != INFINITY
+						&& cost < distance[j]) {
 					distance[j] = cost;
+					path[j] = minNode;
 				}
 			}
 		}
 		for(int i=0; i<V; i++) {
-			System.out.printf("%d %d\n", i, distance[i]);
+			if(path[i] > -1)
+			System.out.printf("%d", path[i]);
 		}
 	}
 	
@@ -90,8 +104,8 @@ public class Dijkstra {
 	
 	
 	public static void main(String[] args) {
-		init(9, 14);
-		dijkstraMatrix(8);
+		//init(9, 14);
+		dijkstraMatrix(0);
 
 	}
 

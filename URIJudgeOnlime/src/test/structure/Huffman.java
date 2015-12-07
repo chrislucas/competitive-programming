@@ -21,6 +21,7 @@ public class Huffman {
         public Node(Node left, Node right) {
             this.left       = left;
             this.right      = right;
+            this.frequency	= this.left.frequency + this.right.frequency;
         }
 
         public boolean isLeaf() {
@@ -126,11 +127,12 @@ public class Huffman {
             "banana"
             ,"Ana ama sua nana, sua mana e banana"
             ,"https://www.youtube.com/watch?v=xQQt5myz00o"
+            ,"0001111122233455"
         };;
         Huffman tree = new Huffman();
-        String encoded = tree.encode(text[0]);
+        String encoded = tree.encode(text[1]);
         System.out.println(encoded);
-        String decoded = tree.decode(encoded);
+        String decoded = Huffman.decode(encoded);
         System.out.println(decoded);
     }
 }

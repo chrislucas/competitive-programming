@@ -1,5 +1,6 @@
 bst
 ********* http://www.javabeat.net/binary-search-tree-traversal-java/
+http://www.ime.usp.br/~pf/estruturas-de-dados/aulas/st-bst.html
 http://algs4.cs.princeton.edu/32bst/BST.java.html
 
 Binary Search Tree Implementation in Java
@@ -38,6 +39,11 @@ http://www.algolist.net/Data_structures/Binary_search_tree/Removal
 
 BS
 https://pt.wikipedia.org/wiki/%C3%81rvore_bin%C3%A1ria
+
+Montar uma arvore binaria a partir dos arrays pre e inorder
+http://www.programcreek.com/2014/06/leetcode-construct-binary-tree-from-preorder-and-inorder-traversal-java/
+http://javabypatel.blogspot.in/2015/09/construct-binary-tree-from-inorder-and-pre-order-traversals.html
+
 
 
 Generics
