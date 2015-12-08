@@ -8,29 +8,12 @@ public class Dijkstra {
 
 	static final int INFINITY = Integer.MAX_VALUE;
 	static int V, E;
-	static Queue<Edge> pqueue = new PriorityQueue<Edge>();
-	static ArrayList<ArrayList<Edge>> list;
-	
-	// explicacao do que eh Edge em Kruskal.java
-	static class Edge implements Comparable<Edge> {
-		int s, d, w;
-		@Override
-		public int compareTo(Edge o) {
-			return this.w - o.w;
-		}
-		public Edge(int s, int d, int w) {
-			this.s = s;
-			this.d = d;
-			this.w = w;
-		}
-	}
-	
+	/*
 	static void init(int v, int e) {
 		V = v;
 		E = e;
-		Edge edges[] = {};
 	}
-	
+	*/
 	// verifica Qual no nao incluso na AGM tem menor custo para ser alcaçado
 	// o vertice como menor custo eh retornado
 	static int minDistance(int dist[], boolean mst[]) {
@@ -44,11 +27,11 @@ public class Dijkstra {
 		return minIdx;
 	}
 	
-	static void dijkstraMatrix(int source) {
+	static int[] dijkstraMatrix(int source) {
 		
 		// matrix e boolean mst soh existem quando usado matriz de adhacencia
 		int matrix[][] = {
-			/*{0, 4, 0, 0, 0, 0, 0, 8, 0},
+			{0, 4, 0, 0, 0, 0, 0, 8, 0},
             {4, 0, 8, 0, 0, 0, 0, 11, 0},
             {0, 8, 0, 7, 0, 4, 0, 0, 2},
             {0, 0, 7, 0, 9, 14, 0, 0, 0},
@@ -56,13 +39,13 @@ public class Dijkstra {
             {0, 0, 4, 0, 10, 0, 2, 0, 0},
             {0, 0, 0, 14, 0, 2, 0, 1, 6},
             {8, 11, 0, 0, 0, 0, 1, 0, 7},
-            {0, 0, 2, 0, 0, 0, 6, 7, 0}*/
-			{0,3,0,3,0,0}
+            {0, 0, 2, 0, 0, 0, 6, 7, 0}
+			/*{0,3,0,3,0,0}
 			,{3,0,1,3,0,0}
 			,{0,1,0,2,0,3}
 			,{3,1,2,0,2,0}
 			,{0,0,0,2,0,2}
-			,{0,0,3,0,2,0}
+			,{0,0,3,0,2,0}*/
 		};
 		V = matrix.length;
 		boolean mst[] = new boolean[V];
@@ -92,16 +75,8 @@ public class Dijkstra {
 			if(path[i] > -1)
 			System.out.printf("%d", path[i]);
 		}
-	}
-	
-	static void dijkstraList() {
-		while(!pqueue.isEmpty()) {
-			Edge e = pqueue.poll();
-			int s = e.s, w = e.w;
-		}
-	}
-	
-	
+		return distance;
+	}	
 	
 	public static void main(String[] args) {
 		//init(9, 14);
