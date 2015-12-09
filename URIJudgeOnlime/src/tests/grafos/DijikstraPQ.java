@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 
-
+// http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
 public class DijikstraPQ {
 	
 	// explicacao do que eh Edge em Kruskal.java
@@ -95,7 +95,7 @@ public class DijikstraPQ {
 		addEdge(new Edge(5, 2, 4));
 		addEdge(new Edge(5, 4, 10));
 		addEdge(new Edge(5, 6, 2));
-		addEdge(new Edge(6, 3, 14));
+		addEdge(new Edge(5, 3, 14));
 		addEdge(new Edge(6, 5, 2));
 		addEdge(new Edge(6, 7, 1));
 		addEdge(new Edge(6, 8, 6));
