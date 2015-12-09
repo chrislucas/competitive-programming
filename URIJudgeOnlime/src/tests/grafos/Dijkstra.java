@@ -54,11 +54,10 @@ public class Dijkstra {
 		for(int i=0; i<V; i++) {
 			distance[i] = INFINITY;
 			mst[i] 		= false;
-			path[i] 	= -1;
 		}
 		distance[source] = 0;
 		path[source] = source;
-		for(int i=0; i<V-1; i++) {
+		for(int i=0; i<V; i++) {
 			int minNode = minDistance(distance, mst);
 			mst[minNode] = true;	// adiciona
 			for(int j=0; j<V; j++) {
@@ -67,13 +66,23 @@ public class Dijkstra {
 						// && distance[minCost] != INFINITY
 						&& cost < distance[j]) {
 					distance[j] = cost;
-					path[i+1] = minNode;
+					path[j] = minNode;
 				}
 			}
 		}
-		for(int i=0; i<V; i++) {
-			if(path[i] > -1)
-			System.out.printf("%d", path[i]);
+		// find path
+		for(int i=0; i<V;i++) {
+			int node = i;
+			int pre = path[i];
+			System.out.printf("V(%d): ", i);
+			while(true) {
+				System.out.printf("%d ", pre);
+				if(pre == source)
+					break;
+				node = pre;
+				pre = path[node];
+			}
+			System.out.println("");
 		}
 		return distance;
 	}	

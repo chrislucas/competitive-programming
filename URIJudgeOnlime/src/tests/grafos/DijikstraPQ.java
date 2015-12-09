@@ -42,14 +42,16 @@ public class DijikstraPQ {
 	public static int[] dijkstra(Edge init) {
 		int [] distance = new int[V];
 		//boolean [] set = new boolean[V];
+		int [] path = new int[V];
 		for(int i=0; i<V; i++) {
 			distance[i] = INFINITY;
 			//set[i] = false;
 		}
 		// fila de prioridade com as arestas do grafo
 		Queue<Edge> pqueue 	= new DijikstraPQ.UniqueQueue<Edge>();
-		//set[init.s]			= true;
+		//set[init.s		= true;
 		distance[init.s] 	= 0;
+		path[init.s] 		= init.s;
 		pqueue.add(init);
 		while(!pqueue.isEmpty()) {
 			Edge top = pqueue.poll();
@@ -68,8 +70,14 @@ public class DijikstraPQ {
 						if(e.d != source)
 							pqueue.add(e);
 					}
+					path[destiny] = source;
 				}
 			}
+		}
+		int i=7;
+		while(path[i] != i) {
+			System.out.printf("%d ", path[i]);
+			i = path[i];
 		}
 		return distance;
 	}
