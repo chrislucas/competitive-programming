@@ -1,6 +1,7 @@
 package tests.grafos;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -22,6 +23,17 @@ public class DijikstraPQ {
 		}
 	}
 	
+	@SuppressWarnings("serial")
+	public static class UniqueQueue<E> extends PriorityQueue<E> {
+		@Override
+		public boolean offer(E e) {
+			boolean isAdd = false;
+			if(!super.contains(e))
+				isAdd = super.offer(e);
+			return isAdd;
+		}
+	}
+	
 	static ArrayList<ArrayList<Edge>> list;
 
 	static final int INFINITY = Integer.MAX_VALUE;
@@ -29,30 +41,33 @@ public class DijikstraPQ {
 	
 	public static int[] dijkstra(Edge init) {
 		int [] distance = new int[V];
-		boolean [] set = new boolean[V];
+		//boolean [] set = new boolean[V];
 		for(int i=0; i<V; i++) {
 			distance[i] = INFINITY;
-			set[i] = false;
+			//set[i] = false;
 		}
 		// fila de prioridade com as arestas do grafo
-		Queue<Edge> pqueue 	= new PriorityQueue<Edge>();
-		set[init.s]			= true;
+		Queue<Edge> pqueue 	= new DijikstraPQ.UniqueQueue<Edge>();
+		//set[init.s]			= true;
 		distance[init.s] 	= 0;
 		pqueue.add(init);
 		while(!pqueue.isEmpty()) {
 			Edge top = pqueue.poll();
 			// end.s e start.s sao iguais
 			int source = top.s;
-			set[source] = true;
+			//set[source] = true;
 			// pegar as arestas que estao ligadas ao vertice source(s)
 			for(Edge edge : list.get(source)) {
 				// somar a distance de s ate d
 				int destiny = edge.d,weight = edge.w;
 				int cost = distance[source] + weight;
-				if( ! set[destiny] && cost < distance[destiny]) {
+				if( /*! set[destiny] && */ cost < distance[destiny]) {
 					distance[destiny] = cost;
-					for(Edge e : list.get(destiny))
-						pqueue.add(e);
+					for(Edge e : list.get(destiny)) {
+						// se o vertice de destino for diferente do da fonte
+						if(e.d != source)
+							pqueue.add(e);
+					}
 				}
 			}
 		}
@@ -76,6 +91,12 @@ public class DijikstraPQ {
 		list.get(edge.s).add(edge);
 	}
 	
+	public static void addEdges(List<Edge> edges) {
+		for(Edge edge : edges) {
+			addEdge(edge);
+		}
+	}
+	
 	public static void test() {
 		init(9, 28);
 		addEdge(new Edge(0, 1, 4));
@@ -83,7 +104,7 @@ public class DijikstraPQ {
 		addEdge(new Edge(1, 0, 4));
 		addEdge(new Edge(1, 2, 8));
 		addEdge(new Edge(1, 7, 11));
-		addEdge(new Edge(2, 2, 8));
+		addEdge(new Edge(2, 8, 8));
 		addEdge(new Edge(2, 3, 7));
 		addEdge(new Edge(2, 5, 4));
 		addEdge(new Edge(2, 8, 2));

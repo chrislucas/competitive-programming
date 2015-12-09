@@ -1,4 +1,4 @@
-package com.br.maratona.spoj.br;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
