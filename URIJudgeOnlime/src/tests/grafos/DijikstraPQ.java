@@ -74,10 +74,19 @@ public class DijikstraPQ {
 				}
 			}
 		}
-		int i=7;
-		while(path[i] != i) {
-			System.out.printf("%d ", path[i]);
-			i = path[i];
+		// find path
+		for(int i=0; i<V;i++) {
+			int node = i;
+			int pre = path[i];
+			System.out.printf("V(%d): ", i);
+			while(true) {
+				System.out.printf("%d ", pre);
+				if(pre == init.s)
+					break;
+				node = pre;
+				pre = path[node];
+			}
+			System.out.println("");
 		}
 		return distance;
 	}
