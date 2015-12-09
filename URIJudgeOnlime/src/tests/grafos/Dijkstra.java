@@ -67,7 +67,7 @@ public class Dijkstra {
 						// && distance[minCost] != INFINITY
 						&& cost < distance[j]) {
 					distance[j] = cost;
-					path[j] = minNode;
+					path[i+1] = minNode;
 				}
 			}
 		}

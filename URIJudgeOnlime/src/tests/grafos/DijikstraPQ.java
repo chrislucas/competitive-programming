@@ -23,26 +23,36 @@ public class DijikstraPQ {
 	}
 	
 	static ArrayList<ArrayList<Edge>> list;
-	// fila de prioridade com as arestas do grafo
-	static Queue<Edge> pqueue = new PriorityQueue<Edge>();
+
 	static final int INFINITY = Integer.MAX_VALUE;
 	static int V, E;
 	
-	public static int[] dijkstra(int s) {
+	public static int[] dijkstra(Edge init) {
 		int [] distance = new int[V];
 		boolean [] set = new boolean[V];
-		
 		for(int i=0; i<V; i++) {
 			distance[i] = INFINITY;
 			set[i] = false;
 		}
-		distance[s] = 0;
+		// fila de prioridade com as arestas do grafo
+		Queue<Edge> pqueue 	= new PriorityQueue<Edge>();
+		set[init.s]			= true;
+		distance[init.s] 	= 0;
+		pqueue.add(init);
 		while(!pqueue.isEmpty()) {
-			Edge start = pqueue.poll();
-			for(Edge end : list.get(start.s)) {
-				int cost = distance[start.s] + end.w;
-				if(cost < distance[end.d]) {
-					distance[end.d] = cost;
+			Edge top = pqueue.poll();
+			// end.s e start.s sao iguais
+			int source = top.s;
+			set[source] = true;
+			// pegar as arestas que estao ligadas ao vertice source(s)
+			for(Edge edge : list.get(source)) {
+				// somar a distance de s ate d
+				int destiny = edge.d,weight = edge.w;
+				int cost = distance[source] + weight;
+				if( ! set[destiny] && cost < distance[destiny]) {
+					distance[destiny] = cost;
+					for(Edge e : list.get(destiny))
+						pqueue.add(e);
 				}
 			}
 		}
@@ -64,7 +74,6 @@ public class DijikstraPQ {
 		// a aresta com o vertice d (destiny) e
 		// o peso w (weight)
 		list.get(edge.s).add(edge);
-		pqueue.add(edge);
 	}
 	
 	public static void test() {
@@ -97,11 +106,12 @@ public class DijikstraPQ {
 		addEdge(new Edge(8, 2, 2));
 		addEdge(new Edge(8, 6, 6));
 		addEdge(new Edge(8, 7, 7));
-		dijkstra(0);
+		dijkstra(list.get(0).get(0));
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		 test();
 	}
 
 }
