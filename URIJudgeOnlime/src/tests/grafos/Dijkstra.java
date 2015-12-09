@@ -1,8 +1,8 @@
 package tests.grafos;
 
-import java.util.ArrayList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+//import java.util.ArrayList;
+//import java.util.PriorityQueue;
+//import java.util.Queue;
 
 public class Dijkstra {
 
@@ -14,7 +14,7 @@ public class Dijkstra {
 		E = e;
 	}
 	*/
-	// verifica Qual no nao incluso na AGM tem menor custo para ser alcaçado
+	// verifica Qual no nao incluso na AGM tem menor custo para ser alcaï¿½ado
 	// o vertice como menor custo eh retornado
 	static int minDistance(int dist[], boolean mst[]) {
 		int min = INFINITY, minIdx = 0;

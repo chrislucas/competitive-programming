@@ -6,7 +6,7 @@
 
 
 
-package com.br.certifciacao.cap7;
+package com.br.certificacao.cap7;
 
 
 import java.util.Random;
