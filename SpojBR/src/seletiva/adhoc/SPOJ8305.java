@@ -7,10 +7,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-import com.sun.org.apache.xml.internal.serializer.utils.StringToIntTable;
-
-import sun.util.locale.StringTokenIterator;
-
 public class SPOJ8305 {
 	public static BufferedReader buffer;
 	public static PrintWriter writer;
