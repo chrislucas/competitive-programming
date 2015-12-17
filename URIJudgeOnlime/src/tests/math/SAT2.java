@@ -1,5 +1,8 @@
 package tests.math;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * http://danielamaral.wikidot.com/paa-2007-1-projeto-1-componentes-fortemente-conectados#toc15
@@ -13,6 +16,40 @@ package tests.math;
 // http://www.cse.psu.edu/~kasivisw/2sat.pdf
 public class SAT2 {
 
+	static Map<Node, ArrayList<Edge>> map;
+	
+	static class Edge<T> {
+		Node<T> u, v;
+		Edge(Node<T> u, Node<T> v) {
+			this.u = v;
+			this.v = v;
+		}
+	}
+	
+	static class Node<T> {
+		T value;
+		boolean status;
+		Node (T value, boolean status) {
+			this.value = value;
+			this.status = status;
+		}
+	}
+	
+	public static <T> void addEdge(Node<T> u, Node<T> v) {
+		if(map.containsKey(u)) {
+			map.get(u).add(new Edge<T>(u, v));
+		} else {
+			ArrayList<Edge> array = new ArrayList<Edge>();
+			array.add(new Edge<T>(u, v));
+			map.put(u, array);
+		}
+	}
+	
+	public static void initAdjacencyList() {
+		map = new HashMap<Node, ArrayList<Edge>>();
+		
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
