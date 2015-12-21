@@ -17,6 +17,7 @@ import java.util.TreeSet;
  * http://tutorials.jenkov.com/java-collections/sortedmap.html
  * https://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html
  * http://beginnersbook.com/2013/12/treeset-class-in-java-with-example/
+ * http://www.devmedia.com.br/conjuntos-classificados-sortedset-em-java-gerando-jogos-para-mega-sena/26430
  * */
 
 public class SetCollection {
