@@ -17,39 +17,52 @@ public class URI1062 {
 	public static void main(String[] args) {
 		BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
-		String numbers;
-		ArrayList<Integer> out, list;
+		String quantity;
+		ArrayList<Integer> out;
 		Stack<Integer> stack = new Stack<>();
 		try {
-			while( ! (numbers = buffer.readLine()).equals("0")  ) {
+			while( ! (quantity = buffer.readLine()).equals("0")  ) {
+				int n = Integer.parseInt(quantity);
 				String setNumbers;
 				StringTokenizer tokenizer;
 				out = new ArrayList<>();
-
 				while( ! (setNumbers = buffer.readLine()).equals("0") ) {
 					tokenizer = new StringTokenizer(setNumbers, " ");
 					while(tokenizer.hasMoreTokens()) {
 						out.add(Integer.parseInt(tokenizer.nextToken()));
 					}
-					
-					int n = Integer.parseInt(numbers);
-					int acc = 1, acc2 = 0;
-					stack.push(acc);
-					while(! stack.empty() || acc > n) {
-						// se o topo da pilha
-						if(stack.peek() == out.get(acc2)) {
-							acc2++;
-							stack.pop();
+					int acc = 0;
+					for(int i=1; i<=n; i++) {
+						if(i == out.get(acc)) {
+							acc++;
 						}
-						stack.add(++acc);
+						else {
+							stack.add(i);
+						}
+						if( ! stack.empty() ) {
+							while(! stack.empty()  && stack.peek() == out.get(acc)) {
+								acc++;
+								stack.pop();
+							}
+						}
 					}
+					/*
+					while(! stack.empty() ) {
+						// se o topo da pilha
+						if(stack.peek() == out.get(acc)) {
+							acc++;
+							stack.pop();
+						} else {
+							break;
+						}
+					}*/
 					writer.printf("%s\n", stack.empty() ? "Yes" : "No");
 					while(!stack.empty())
 						stack.pop();
+					out.clear();
 				}
+				writer.printf("\n");
 			}
 		} catch(IOException ioex){}
-
 	}
-
 }
