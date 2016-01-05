@@ -8,8 +8,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import com.sun.imageio.plugins.common.InputStreamAdapter;
-
 public class JimAndOtthers {
 
 	static class Activity implements Comparable<Activity> {
@@ -61,9 +59,6 @@ public class JimAndOtthers {
 			for(Activity a : activities) {
 				writer.printf("%d ", a.order);
 			}
-			
 		} catch(IOException ioex) {}
-		
 	}
-
 }
