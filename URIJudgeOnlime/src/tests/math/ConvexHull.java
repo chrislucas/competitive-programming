@@ -46,8 +46,10 @@ public class ConvexHull {
 	 * (p2, q2, p1) and (p2, q2, q2) have different orientation
 	 * 
 	 * 2) special case
+	 * (p1, q1, p2), (p1, q1, q2), (p2, q2, p1) and (p2, q2, q2) are colinear
 	 * */
 	
+	// verifica se o Ponto 'B(x,y)' esta entre o segmento AC
 	public static boolean isOnSegment(Point2D a, Point2D b, Point2D c) {
 		if( b.x <= Math.max(a.x, c.x) && b.x >= Math.min(a.x, c.x) &&
 			b.y <= Math.max(a.y, c.y) && b.y >= Math.min(a.y, c.y))
@@ -80,7 +82,7 @@ public class ConvexHull {
 	
 	/*
 	 * 0 - a,b,c are colinear
-	 * 1 - clockwise
+	 * < 0 - clockwise
 	 * > 0  - counterclockwise 
 	 * if (a,b,c) is collinear, then orientation of (c,b,a) is collinear too
 	 * if (a,b,c) os clockwise. then orientation of (c,b,a) is counterclockwise and vice versa
@@ -98,15 +100,38 @@ public class ConvexHull {
 	}
 	
 	private static void testIsIntersetct() {
+		
 		Point2D p1, p2, q1, q2;
+		/*
 		p1 = new Point2D(1, 1);
 		q1 = new Point2D(10, 1);
 		p2 = new Point2D(1, 2);
 		q2 = new Point2D(10, 2);
 		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
+		p1 = new Point2D(10,0);
+		q1 = new Point2D(0,10);
+		p2 = new Point2D(0,0);
+		q2 = new Point2D(10, 10);
+		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
+		*/
+		p1 = new Point2D(-5,-5);
+		q1 = new Point2D(0,0);
+		p2 = new Point2D(1,1);
+		q2 = new Point2D(10, 10);
+		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
+		p1 = new Point2D(-5,-5);
+		q1 = new Point2D(3,3);
+		p2 = new Point2D(2,2);
+		q2 = new Point2D(10, 10);
+		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
+		p1 = new Point2D(-5,-5);
+		q1 = new Point2D(0,0);
+		p2 = new Point2D(-2,-2);
+		q2 = new Point2D(10, 0);
+		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
 	}
 	
-	@SuppressWarnings("unused")
+
 	private static void testMethodOrientation() {
 		Point2D [] points = {
 			 new Point2D(0, 0)
