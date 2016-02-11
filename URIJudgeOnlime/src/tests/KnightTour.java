@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 /**
  * http://marathoncode.blogspot.com.br/2012/05/algoritmos-de-tentativa-e-erro.html

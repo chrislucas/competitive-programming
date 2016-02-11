@@ -1,23 +1,63 @@
 package tests.math;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 public class ConvexHull {
 	
 	public static class Point2D {
 		private double x, y;
+		public static final Comparator<Point2D> By_Y_ASC  = new OrderByYAxis();
+		public static final Comparator<Point2D> By_YX_ASC = new OrderByYXAxes();
+		public static final Comparator<Point2D> BY_POLAR_ANG = new OrderByPolarAngle();
 		
 		public Point2D(double x, double y) {
 			this.x = x;
 			this.y = y;
 		}
 		
-		public static class OrderByAngle implements Comparator<Point2D> {
+		public static double distance(Point2D a, Point2D b) {
+			return 0.0;
+		}
+		
+		private static boolean almostEquals(double a, double b) {
+			double eps = 10e-6;
+			if(Math.abs(a-b) < eps)
+				return true;
+			return false;
+		}
+		
+		public static int compareValues(double a, double b) {
+			if(almostEquals(a, b))
+				return 0;
+			return (int) (a-b);
+		}
+		
+		private static class OrderByYAxis implements Comparator<Point2D> {
+			@Override
+			public int compare(Point2D p, Point2D q) {
+				return compareValues(p.y, q.y);
+			}
+		}
+		
+		private static class OrderByYXAxes implements Comparator<Point2D> {
+			@Override
+			public int compare(Point2D p, Point2D q) {
+				// se y1 e y2 sao iguals
+				int comp = compareValues(p.y, q.y);
+				if(comp == 0) {
+					// ordenrar pelo menor x
+					return compareValues(p.x, q.x);
+				}
+				return comp;
+			}
+		}
+		
+		private static class OrderByPolarAngle implements Comparator<Point2D> {
 			@Override
 			public int compare(Point2D o1, Point2D o2) {
 				return 0;
 			}
-			
 		}
 	}
 	
@@ -82,8 +122,8 @@ public class ConvexHull {
 	
 	/*
 	 * 0 - a,b,c are colinear
-	 * < 0 - clockwise
-	 * > 0  - counterclockwise 
+	 * > 0 - clockwise
+	 * < 0 - counterclockwise 
 	 * if (a,b,c) is collinear, then orientation of (c,b,a) is collinear too
 	 * if (a,b,c) os clockwise. then orientation of (c,b,a) is counterclockwise and vice versa
 	 * */
@@ -95,14 +135,21 @@ public class ConvexHull {
 	}
 
 	public static void main(String[] args) {
-		testIsIntersetct();
-		testMethodOrientation();
+		convexHull();
+	}
+	
+	public static void convexHull() {
+		Point2D [] points = {
+			 new Point2D(0, -1)
+			,new Point2D(10, -2)
+			,new Point2D(5,-2)
+			,new Point2D(3,-2)
+		};
+		Arrays.sort(points, Point2D.By_YX_ASC);
 	}
 	
 	private static void testIsIntersetct() {
-		
 		Point2D p1, p2, q1, q2;
-		/*
 		p1 = new Point2D(1, 1);
 		q1 = new Point2D(10, 1);
 		p2 = new Point2D(1, 2);
@@ -113,7 +160,6 @@ public class ConvexHull {
 		p2 = new Point2D(0,0);
 		q2 = new Point2D(10, 10);
 		System.out.println(doIntersect(p1, q1, p2, q2) ? "S" : "N");
-		*/
 		p1 = new Point2D(-5,-5);
 		q1 = new Point2D(0,0);
 		p2 = new Point2D(1,1);
@@ -139,7 +185,6 @@ public class ConvexHull {
 			,new Point2D(4, 4)
 			,new Point2D(1, 2)
 		};
-			
 		int o = orientation(points[0], points[2], points[3]);
 		System.out.println( o > 0 ? (o == 0 ? "colinear" : "horario") : "antihorario");
 	}

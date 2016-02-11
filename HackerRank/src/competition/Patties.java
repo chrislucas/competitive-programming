@@ -1,4 +1,4 @@
-package test;
+package competition;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

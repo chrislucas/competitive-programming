@@ -1,6 +1,6 @@
-package test;
+package tests;
 
-public class Main {
+public class PascalMatrix {
 
     public static int[][] memo(int q) {
         int [][] matrix = new int [q][q];

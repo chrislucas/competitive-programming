@@ -1,4 +1,4 @@
-package competition;
+package HackerEarth.competitive;
 
 
 import java.io.*;
