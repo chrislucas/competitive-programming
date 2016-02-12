@@ -2,6 +2,7 @@ package tests.math;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Stack;
 
 public class ConvexHull {
 	
@@ -17,7 +18,8 @@ public class ConvexHull {
 		}
 		
 		public static double distance(Point2D a, Point2D b) {
-			return 0.0;
+			double x1 = a.x, x2 = b.x, y1 = a.y, y2 =b.y;
+			return Math.sqrt( (x2-x1) * (x2-x1) + (y2-y1) * (y2-y1) );
 		}
 		
 		private static boolean almostEquals(double a, double b) {
@@ -135,19 +137,66 @@ public class ConvexHull {
 	}
 
 	public static void main(String[] args) {
-		convexHull();
-	}
-	
-	public static void convexHull() {
 		Point2D [] points = {
-			 new Point2D(0, -1)
-			,new Point2D(10, -2)
-			,new Point2D(5,-2)
-			,new Point2D(3,-2)
-		};
-		Arrays.sort(points, Point2D.By_YX_ASC);
+				 new Point2D(0, -1)
+				,new Point2D(10, -2)
+				,new Point2D(5,-2)
+				,new Point2D(3,-2)
+			};
+		convexHull(points);
 	}
 	
+	public static Stack<Point2D> convexHull(Point2D [] points) {
+
+		// O algoritmo eh divido em duas partes
+		// 1 - ordenar os pontos em ordem crescente em relação a Y e X
+		Arrays.sort(points, Point2D.By_YX_ASC);
+		// uma vez ordenados vem a parte 2
+		// 2 - escolher os pontos que serão inclusos no feixo convexo
+		// Os 2 primeirps pontos do vetor ordenado ja estao inclusos no feixo convexo
+		// Usando da tecnica de orientacao, pegamos os 2 primeiros pontos (p, q) e o
+		// proximo no vetor (ponto n) se a orientacao de (p q n ou [0,1,2]) nao 
+		// for antihorario, descartamos n(2) e partimos para os proximos 3 pontos
+		// [1,2,3], e assim por diante
+		
+		Point2D p0 = points[0];
+		int qPoints = 1, n = points.length;
+		for(int i=1; i<n; i++) {
+			while( i<n-1 && orientation(p0, points[i], points[i+1]) == 0)
+				i++;
+			points[qPoints] = points[i];
+			qPoints++;
+		}
+		// se apos a busca por pontos, menos de 3 foram incluidos
+		// no feixo convexo, entao nao eh possivel formar um feixo convexo
+		if(qPoints < 3 )
+			return null;
+		
+		Stack<Point2D> S = new Stack<>();
+		S.push(points[0]);
+		S.push(points[1]);
+		S.push(points[2]);
+		Point2D nextToTop, current, top;
+		for(int i=3; i<qPoints; i++) {
+			current = points[i];
+			nextToTop = S.peek();
+			S.pop();
+			top = S.peek();
+			S.pop();
+			S.push(nextToTop);
+			while(orientation(nextToTop, top, current) != 2) {
+				S.pop();
+				nextToTop = S.peek();
+				S.pop();
+				top = S.peek();
+				S.pop();
+				S.push(nextToTop);
+			}
+			S.push(current);
+		}
+		return S;
+	}
+/*	
 	private static void testIsIntersetct() {
 		Point2D p1, p2, q1, q2;
 		p1 = new Point2D(1, 1);
@@ -188,5 +237,5 @@ public class ConvexHull {
 		int o = orientation(points[0], points[2], points[3]);
 		System.out.println( o > 0 ? (o == 0 ? "colinear" : "horario") : "antihorario");
 	}
-
+*/
 }
