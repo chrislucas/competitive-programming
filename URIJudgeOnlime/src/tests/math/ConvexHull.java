@@ -19,7 +19,8 @@ public class ConvexHull {
 		
 		public static double distance(Point2D a, Point2D b) {
 			double x1 = a.x, x2 = b.x, y1 = a.y, y2 =b.y;
-			return Math.sqrt( (x2-x1) * (x2-x1) + (y2-y1) * (y2-y1) );
+			return Math.hypot(x2 - x1, y2 - y1);
+			//return Math.sqrt( (x2-x1) * (x2-x1) + (y2-y1) * (y2-y1) );
 		}
 		
 		private static boolean almostEquals(double a, double b) {
@@ -99,6 +100,15 @@ public class ConvexHull {
 		return false;
 	}
 	
+	public static Point2D next(Stack<Point2D> S) {
+		Point2D fst = S.peek();
+		S.pop();
+		Point2D snd = S.peek();
+		S.pop();
+		S.push(fst);
+		return snd;
+	}
+	
 	// segment line S'(a,b) S''(c,d)
 	public static boolean doIntersect(Point2D a, Point2D b, Point2D c, Point2D d) {
 		int o1 = orientation(a, b, c);
@@ -136,6 +146,7 @@ public class ConvexHull {
 		return value;
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Point2D [] points = {
 				 new Point2D(0, -1)
@@ -143,16 +154,19 @@ public class ConvexHull {
 				,new Point2D(5,-2)
 				,new Point2D(3,-2)
 			};
-		convexHull(points);
+		Stack<Point2D> convex = convexHull(points);
+		while( ! convex.isEmpty()) {
+			convex.pop();
+		}
 	}
 	
 	public static Stack<Point2D> convexHull(Point2D [] points) {
 
 		// O algoritmo eh divido em duas partes
-		// 1 - ordenar os pontos em ordem crescente em relação a Y e X
+		// 1 - ordenar os pontos em ordem crescente em relaï¿½ï¿½o a Y e X
 		Arrays.sort(points, Point2D.By_YX_ASC);
 		// uma vez ordenados vem a parte 2
-		// 2 - escolher os pontos que serão inclusos no feixo convexo
+		// 2 - escolher os pontos que serï¿½o inclusos no feixo convexo
 		// Os 2 primeirps pontos do vetor ordenado ja estao inclusos no feixo convexo
 		// Usando da tecnica de orientacao, pegamos os 2 primeiros pontos (p, q) e o
 		// proximo no vetor (ponto n) se a orientacao de (p q n ou [0,1,2]) nao 
@@ -176,21 +190,11 @@ public class ConvexHull {
 		S.push(points[0]);
 		S.push(points[1]);
 		S.push(points[2]);
-		Point2D nextToTop, current, top;
+		Point2D current;
 		for(int i=3; i<qPoints; i++) {
 			current = points[i];
-			nextToTop = S.peek();
-			S.pop();
-			top = S.peek();
-			S.pop();
-			S.push(nextToTop);
-			while(orientation(nextToTop, top, current) != 2) {
+			while(orientation(next(S), S.peek(), current) != 2) {
 				S.pop();
-				nextToTop = S.peek();
-				S.pop();
-				top = S.peek();
-				S.pop();
-				S.push(nextToTop);
 			}
 			S.push(current);
 		}
