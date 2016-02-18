@@ -4,8 +4,10 @@ http://www.geeksforgeeks.org/pattern-searching-set-8-suffix-tree-introduction/
 http://www.geeksforgeeks.org/suffix-array-set-1-introduction/
 https://discuss.codechef.com/questions/21385/a-tutorial-on-suffix-arrays
 
-
 http://algs4.cs.princeton.edu/63suffix/SuffixArray.java.html
+
+Segment Tree Lazy Propagation
+http://se7so.blogspot.com.br/2012/12/segment-trees-and-lazy-propagation.html
 
 
 Longest Common Pattern
@@ -14,3 +16,5 @@ https://sites.google.com/site/indy256/algo/suffix_array
 
 Longest common prefix array
 https://en.wikipedia.org/wiki/LCP_array
+
+
