@@ -1,7 +1,5 @@
 package test.structure;
 
-import java.util.concurrent.CompletableFuture;
-
 /**
  * 
  * @author C.Lucas
