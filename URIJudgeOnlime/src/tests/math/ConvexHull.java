@@ -10,7 +10,7 @@ public class ConvexHull {
 		private double x, y;
 		public static final Comparator<Point2D> By_Y_ASC  = new OrderByYAxis();
 		public static final Comparator<Point2D> By_YX_ASC = new OrderByYXAxes();
-		public static final Comparator<Point2D> BY_POLAR_ANG = new OrderByPolarAngle();
+		
 		
 		public Point2D(double x, double y) {
 			this.x = x;
@@ -21,6 +21,12 @@ public class ConvexHull {
 			double x1 = a.x, x2 = b.x, y1 = a.y, y2 =b.y;
 			return Math.hypot(x2 - x1, y2 - y1);
 			//return Math.sqrt( (x2-x1) * (x2-x1) + (y2-y1) * (y2-y1) );
+		}
+		
+		// square euclidian distance
+		public static double sqrEuclidianDistance(Point2D a, Point2D b) {
+			double x = b.x - a.x, y = b.y - a.y;
+			return x*x + y*y;
 		}
 		
 		private static boolean almostEquals(double a, double b) {
@@ -56,12 +62,6 @@ public class ConvexHull {
 			}
 		}
 		
-		private static class OrderByPolarAngle implements Comparator<Point2D> {
-			@Override
-			public int compare(Point2D o1, Point2D o2) {
-				return 0;
-			}
-		}
 	}
 	
 	public static class Segment {
@@ -69,6 +69,22 @@ public class ConvexHull {
 		public Segment(Point2D p, Point2D b) {
 			this.p = p;
 			this.b = b;
+		}
+	}
+	
+	public static class OrderByPolarAngle implements Comparator<Point2D> {
+		private Point2D pivot; 
+		public OrderByPolarAngle(Point2D pivot) {
+			this.pivot = pivot;
+		}
+		@Override
+		public int compare(Point2D p, Point2D q) {
+			return comparePoints(p, q);
+		}
+		// essa maneira de comparar pelo angulo polar do ponto p e q
+		// foi retirada do livro competitive programming
+		private int comparePoints(Point2D p, Point2D q) {
+			return 0;
 		}
 	}
 	
@@ -148,13 +164,26 @@ public class ConvexHull {
 	}
 
 
+
 	public static void main(String[] args) {
 		Point2D [] points = {
+			/*
+			 new Point2D(0,3)
+			,new Point2D(1,1)
+			,new Point2D(2,2)
+			,new Point2D(4,4)
+			,new Point2D(0,0)
+			,new Point2D(1,2)
+			,new Point2D(3,1)
+			,new Point2D(3,3)
+			 */
+				
 			 new Point2D(0, -1)
 			,new Point2D(10, -2)
 			,new Point2D(5,-2)
 			,new Point2D(3,-2)
 		};
+
 		Stack<Point2D> convex = convexHull(points);
 		while( ! convex.isEmpty()) {
 			Point2D p = convex.pop();
@@ -162,11 +191,32 @@ public class ConvexHull {
 		}
 	}
 	
+	
 	public static Stack<Point2D> convexHull(Point2D [] points) {
-
+		
+		// encontrar o ponto com menor y, se o houver mais de 1 ponto cujo
+		// menor valor de y for igual, comparar pegar o pnnto cujo valor x eh o menor
+		Point2D p0 = points[0];
+		for(int i=1; i<points.length; i++) {
+			Point2D aux = points[i];
+			int cmp = Point2D.compareValues(aux.y, p0.y);
+			if(cmp == 0) {
+				cmp = Point2D.compareValues(aux.x, p0.x);
+				if(cmp < 0) {
+					p0 = aux;
+				}
+			} else if(cmp < 0){
+				p0 = aux;
+			}
+		}
+		
+		Comparator<Point2D> BY_POLAR_ANG = new OrderByPolarAngle(p0);
+		
 		// O algoritmo eh divido em duas partes
 		// 1 - ordenar os pontos em ordem crescente em rela��o a Y e X
-		Arrays.sort(points, Point2D.By_YX_ASC);
+		//Arrays.sort(points, Point2D.By_YX_ASC);
+		Arrays.sort(points, 1, points.length, BY_POLAR_ANG);
+		
 		// uma vez ordenados vem a parte 2
 		// 2 - escolher os pontos que ser�o inclusos no feixo convexo
 		// Os 2 primeirps pontos do vetor ordenado ja estao inclusos no feixo convexo
@@ -175,7 +225,7 @@ public class ConvexHull {
 		// for antihorario, descartamos n(2) e partimos para os proximos 3 pontos
 		// [1,2,3], e assim por diante
 		
-		Point2D p0 = points[0];
+		
 		int qPoints = 1, n = points.length;
 		for(int i=1; i<n; i++) {
 			while( i<n-1 && orientation(p0, points[i], points[i+1]) == 0)

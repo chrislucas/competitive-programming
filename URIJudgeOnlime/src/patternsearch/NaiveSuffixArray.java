@@ -1,4 +1,4 @@
-package pattern_search;
+package patternsearch;
 
 import java.util.Arrays;
 
