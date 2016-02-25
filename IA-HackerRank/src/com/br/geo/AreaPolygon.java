@@ -74,7 +74,6 @@ public class AreaPolygon {
 			ans += points[i].x * points[i+1].y - points[i+1].x * points[i].y;
 		}
 		ans += points[s-1].x * points[0].y - points[0].x * points[s-1].y;	// Xn*Y0 - X0Yn
-		
 		return ans < 0 ? -ans * 0.5 : ans * 0.5 ;
 	}
 	

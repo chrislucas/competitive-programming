@@ -1,7 +1,14 @@
 area de poligonos simples convexos
 http://www.wikihow.com/Calculate-the-Area-of-a-Polygon
-
-// nesse tutorial tem uma abordagem que pega de 3 em 3 pontos
 http://geomalgorithms.com/a01-_area.html
-
 http://en.wikipedia.org/wiki/Shoelace_formula
+
+Polygon triangulation
+https://en.wikipedia.org/wiki/Polygon_triangulation
+
+Sweep line algorithm
+https://en.wikipedia.org/wiki/Sweep_line_algorithm
+http://www.geeksforgeeks.org/given-a-set-of-line-segments-find-if-any-two-segments-intersect/
+https://www.topcoder.com/community/data-science/data-science-tutorials/line-sweep-algorithms/
+Bentley–Ottmann algorithm
+https://en.wikipedia.org/wiki/Bentley%E2%80%93Ottmann_algorithm
