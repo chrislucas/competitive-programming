@@ -158,25 +158,36 @@ public class ConvexHull {
 	static int orientation(Point2D a, Point2D b, Point2D c) {
 		//int slopeA = ((b.y - a.y) /(b.x - a.x));
 		//int slopeB = ((c.y - b.y) /(c.x - b.x));
-		int value = (int)((b.y - a.y) * (c.x - b.x) ) - (int)((b.x - a.x) * (c.y - b.y));
+		// (b.x - a.x) * (c.y - b.y)
+		int value = (int)((b.y - a.y) * (c.x - b.x) ) - (int)((c.y - b.y) * (b.x - a.x));
 		return value;
 	}
 
-	
+
+
 	public static void main(String[] args) {
 		Point2D [] points = {
-				 new Point2D(0,3)
-				,new Point2D(1,1)
-				,new Point2D(2,2)
-				,new Point2D(4,4)
-				,new Point2D(0,0)
-				,new Point2D(1,2)
-				,new Point2D(3,1)
-				,new Point2D(3,3)
-			};
+			/*
+			 new Point2D(0,3)
+			,new Point2D(1,1)
+			,new Point2D(2,2)
+			,new Point2D(4,4)
+			,new Point2D(0,0)
+			,new Point2D(1,2)
+			,new Point2D(3,1)
+			,new Point2D(3,3)
+			 */
+				
+			 new Point2D(0, -1)
+			,new Point2D(10, -2)
+			,new Point2D(5,-2)
+			,new Point2D(3,-2)
+		};
+
 		Stack<Point2D> convex = convexHull(points);
 		while( ! convex.isEmpty()) {
-			convex.pop();
+			Point2D p = convex.pop();
+			System.out.println(p.toString());
 		}
 	}
 	
@@ -234,7 +245,7 @@ public class ConvexHull {
 		Point2D current;
 		for(int i=3; i<qPoints; i++) {
 			current = points[i];
-			while(orientation(next(S), S.peek(), current) != 2) {
+			while(orientation(next(S), S.peek(), current) <= 0) {
 				S.pop();
 			}
 			S.push(current);
