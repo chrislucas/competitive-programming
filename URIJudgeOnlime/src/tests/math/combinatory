@@ -1,0 +1,18 @@
+nCr
+http://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr
+https://www.quora.com/What-are-some-efficient-algorithms-to-compute-nCr
+https://discuss.codechef.com/questions/3869/best-known-algos-for-calculating-ncr-m
+
+nCr DP
+http://zobayer.blogspot.com.br/2009/08/calculate-ncr-using-dp.html
+http://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr
+
+
+Using Recurrence Relation for nCr
+The recurrence relation for nCr is C(i,k) = C(i-1,k-1) + C(i-1,k).
+Thus we can calculate nCr in time complexity O(n*r) and space complexity O(n*r).
+https://comeoncodeon.wordpress.com/category/algorithm/
+
+// problema relacionado http://www.spoj.com/problems/MARBLES/
+
+nPr
