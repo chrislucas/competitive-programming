@@ -2,6 +2,7 @@ package com.br.study.ia;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class PathFindMaze {
 	
@@ -23,7 +24,7 @@ public class PathFindMaze {
 	
 	public static int h, w, maze[][];
 	public static boolean visited[][];
-	public static LocationMaze S, D, pathFind [];
+	public static LocationMaze S, D, pathFind [], pre[][];
 	
 	private boolean search = true;
 	
@@ -37,6 +38,7 @@ public class PathFindMaze {
 		maze = new int [w][h];
 		visited = new boolean[w][h];
 		pathFind = new LocationMaze[w*h];
+		pre = new LocationMaze[w][h];
 		for(int i=0; i<w; i++){
 			for(int j=0; j<h; j++) {
 				maze[i][j] = 0;
@@ -52,7 +54,8 @@ public class PathFindMaze {
 		LocationMaze d 		= new LocationMaze(3, 3);
 		PathFindMaze path 	= new PathFindMaze(w, h, s, d);
 		//path.dfs(s, 0);
-		path.bfs(s);
+		//path.bfs(s);
+		path.bfsInMaze(s);
 	}
 	
 	private static LocationMaze[] possiblesMoves(LocationMaze source) {
@@ -108,8 +111,8 @@ public class PathFindMaze {
 		int acc = 0;
 		pathFind[acc++] = curr;
 		boolean goal = false;
-		while( ! queue.isEmpty()) {
-			LocationMaze head = queue.peek();
+		while( ! queue.isEmpty() ) {
+			LocationMaze head = queue.poll();
 			LocationMaze [] moves = possiblesMoves(head);
 			for(int k=0; k<moves.length; k++) {
 				if(moves[k] == null)
@@ -119,7 +122,9 @@ public class PathFindMaze {
 				if(!visited[i][j]) {
 					visited[i][j] = true;
 					pathFind[acc++] = moves[k];
+					pre[i][j] = head;
 					queue.add(moves[k]);
+					
 					if(D.equals(moves[k])) {
 						queue.clear();
 						goal = true;
@@ -127,16 +132,59 @@ public class PathFindMaze {
 					}
 				}
 			}
-			queue.poll();
+			//queue.poll();
 		}
 		if(goal) {
-			
+			for(int k=acc-1; k>-1; k--) {
+				LocationMaze l = pre[pathFind[k].i][pathFind[k].j];
+				if(l.equals(S))
+					break;
+				System.out.printf("%d %d\n", l.i, l.j);
+			}
 		}
+		/*
 		for(int i=pathFind.length-1; i>=0; i--) {
 			LocationMaze ant = pathFind[i];
-			if(ant == null || ant.equals(S))
+			if(ant == null)
 				break;
+			else if(ant.equals(S)) {
+				System.out.printf("%d %d\n", ant.i, ant.j);
+				break;
+			}
 			System.out.printf("%d %d\n", ant.i, ant.j);
+		}
+		*/
+	}
+	
+	public void bfsInMaze(LocationMaze source) {
+		Queue<LocationMaze> queue = new LinkedList<>();
+		queue.add(source);
+		boolean goal = false;
+		int acc = 0;
+		while(!queue.isEmpty()) {
+			LocationMaze s = queue.poll();
+			if(s.equals(D)) {
+				pathFind[acc++] = s;
+				goal = true;
+				break;
+			}
+			if(visited[s.i][s.j])
+				continue;
+			visited[s.i][s.j] = true;
+			pathFind[acc++] = s;
+			LocationMaze [] neighboors = possiblesMoves(s);
+			for(int i=0; i<neighboors.length; i++) {
+				if(neighboors[i] == null)
+					break;
+				queue.add(neighboors[i]);
+			}
+		}
+		if(goal) {
+			for(LocationMaze loc : pathFind) {
+				if(loc == null)
+					continue;
+				System.out.printf("%d %d\n", loc.i, loc.j);
+			}
 		}
 	}
 

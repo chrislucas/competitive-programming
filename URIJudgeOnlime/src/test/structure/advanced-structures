@@ -8,6 +8,15 @@ http://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
 https://www.cs.princeton.edu/~wayne/teaching/fibonacci-heap.pdf
 https://en.wikipedia.org/wiki/Fibonacci_heap
 
+Pairing_heap
+https://en.wikipedia.org/wiki/Pairing_heap
+
+Astar
+https://github.com/graphhopper/graphhopper/blob/master/core/src/main/java/com/graphhopper/routing/AStar.java
+
+
+DFS
+http://ww3.algorithmdesign.net/handouts/DFS.pdf
 
 Maze problems
 https://en.wikipedia.org/wiki/Maze_solving_algorithm

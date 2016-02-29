@@ -11,11 +11,19 @@ import java.util.Queue;
 public class BreadthFirstSearch {
 	public static ArrayList<ArrayList<Integer>> adjacent;
 	public static int vertices;
+	private static boolean [] visited;
+	
+	public static void init(int vertx) {
+		adjacent = new ArrayList<ArrayList<Integer>>();
+		vertices = vertx;
+		visited = new boolean[vertices];
+		for(int i=0; i<vertx; i++) {
+			adjacent.add(new ArrayList<>());
+		}
+	}
 	
 	public static void BFS(int source) {
-		boolean[] visited = new boolean[vertices];
-		for(int i=0; i<vertices; i++)
-			visited[i] = i == source ? true : false;
+		visited[source] = true;
 		Queue<Integer> queue = new LinkedList<>(); 
 		queue.add(source);
 		while(!queue.isEmpty()) {
