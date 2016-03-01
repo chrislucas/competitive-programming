@@ -176,14 +176,17 @@ public class PathFindMaze {
 			for(int i=0; i<neighboors.length; i++) {
 				if(neighboors[i] == null)
 					break;
+				pre[neighboors[i].i][neighboors[i].j] = s;
 				queue.add(neighboors[i]);
 			}
 		}
 		if(goal) {
-			for(LocationMaze loc : pathFind) {
-				if(loc == null)
-					continue;
-				System.out.printf("%d %d\n", loc.i, loc.j);
+			for(int k=acc-1; k>-1; k--) {
+				LocationMaze loc = pathFind[k];
+				if(loc == null || loc.equals(S))
+					break;
+				LocationMaze anc = pre[loc.i][loc.j];
+				System.out.printf("%d %d\n", anc.i, anc.j);
 			}
 		}
 	}
