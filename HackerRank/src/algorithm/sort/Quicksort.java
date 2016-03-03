@@ -31,16 +31,18 @@ public class Quicksort {
 			sort(set, i, right);
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static int partition(Comparable [] set, int lo, int hi) {
 		return 0;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static void qSort(Comparable [] set, int lo, int hi) {
 		if(hi<=lo)
 			return;
 		int i = partition(set, lo, hi);
-		sort(set, lo, i-1);
-		sort(set,i+1, hi);
+		qSort(set, lo, i-1);
+		qSort(set,i+1, hi);
 	}
 	
 
