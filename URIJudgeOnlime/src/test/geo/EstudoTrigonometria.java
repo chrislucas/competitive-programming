@@ -199,20 +199,28 @@ public class EstudoTrigonometria {
 	}
 	
 	public static double cossec(double med) {
-		return 0.0;
+		// seno de 0 e 180 e 360 = 0
+		// assim teriamos uma divisao por zero
+		if(med %  180 == 0)
+			return 0;
+		return 1 / Math.sin(med*Math.PI/180);
 	}
 	
 	public static double sec(double med) {
-		return 0.0;
+		// cos de 90 e 270 = 0
+		// assim teriamos uma divisao por zero
+		if(med == 90 || med == 270)
+			return 0;
+		return 1 / Math.cos(med*Math.PI/180);
 	}
 	
 	public static void ftg(String f) {
-		int acc = f.equals("tan") ? 1 : 45;
+		int acc = f.equals("tan") || f.equals("cos") ? 1 : 45;
 		//System.out.println(gdc(315, 180));
 		//System.out.println(45 * Math.PI / 180);
 		//System.out.println(45 / 180.0 * Math.PI);
-		System.out.printf("%f %f\n", cotg(270), cotg2(360));
-		/*
+		//System.out.printf("%f %f\n", cotg(270), cotg2(360));
+		
 		for(int i=0; i<=360; i += acc) {
 			double ans = 0.0;
 			if(f.equals("sin"))
@@ -226,7 +234,7 @@ public class EstudoTrigonometria {
 			}
 			System.out.printf("%d %f\n", i, ans);
 		}
-		*/
+		
 	}
 
 
