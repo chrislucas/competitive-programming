@@ -37,17 +37,17 @@ public class SelectElement {
 	}
 	
 	// funcao partition do algoritmo Quick Sort
-	public static <T extends Comparable<T>> int partition(T [] set, int l, int r) {
-		T aux = set[r];
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static int partition(Comparable [] set, int l, int r) {
+		Comparable aux = set[r];
 		int i = l, j;
 		for(j=l; j<=r-i; j++) {
-			//
 			if(set[j].compareTo(aux) <= 0) {
-				swap(set, j, i);
+				swap(set, i, j);
 				i++;
 			}
 		}
-		swap(set, j, i);
+		swap(set, i, j);
 		return i;
 	}
 	

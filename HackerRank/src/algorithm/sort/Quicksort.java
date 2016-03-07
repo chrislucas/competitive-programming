@@ -16,10 +16,10 @@ public class Quicksort {
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static void sort2(Comparable [] set, int left, int right) {
+	public static void sort(Comparable [] set, int left, int right) {
 		int i = left, j = right, mid = /*right */((right - left) / 2) + left;
 		Comparable pivot = set[mid];
-		do {
+		/*do*/while(i <= j) {
 			// varrer da esquerda para direita enquatno
 			// os elementos a esquerda do 'pivot' forem menores
 			// e descobrir o indice do elemento que nao atende a essa prerrogativa
@@ -39,39 +39,43 @@ public class Quicksort {
 				i++;
 				j--;
 			}
-		} while(i <= j);
+		} /*while(i <= j)*/;
 		if(left < j)
-			sort2(set, left, j);
+			sort(set, left, j);
 		if(i < right)
-			sort2(set, i, right);
+			sort(set, i, right);
 	}
 	
 	@SuppressWarnings("rawtypes")
-	public static void sort3(Comparable [] set, int lo, int hi) {
-		if(hi<=lo)
-			return;
-		int i = partition(set, lo, hi);
-		sort3(set, lo, i-1);
-		sort3(set, i+1, hi);
+	public static void sort2(Comparable [] set, int lo, int hi) {
+		if(lo < hi) {
+			int i = partition(set, lo, hi);
+			sort2(set, lo, i-1);
+			sort2(set, i+1, hi);
+		}
+		return;
 	}
 	
-	public static void qSortIterative() {
+	//http://www.geeksforgeeks.org/iterative-quick-sort/
+	@SuppressWarnings("rawtypes")
+	public static void sort3(Comparable [] set, int lo, int hi) {
 		
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static int partition(Comparable [] set, int lo, int hi) {
-		int mid = (hi - lo) / 2 + lo;
-		Comparable c = set[/*hi*/mid];
-		int i = lo-1;
+		//int mid = ((hi-lo)/2)+lo;
+		Comparable c = set[hi/*mid*/];
+		int i = lo;
 		for(int j=lo; j<=hi-1; j++) {
-			if(set[j].compareTo(c) <=0 ) {
-				i++;
+			Comparable p = set[j];
+			if(p.compareTo(c)<=0) {
 				swap(set, i, j);
+				i++;
 			}
 		}
-		swap(set, i+1, hi);
-		return i+1;
+		swap(set, i, hi);
+		return i;
 	}
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -79,9 +83,9 @@ public class Quicksort {
 		int i=lo, j=hi;
 		Comparable pivot = set[(hi - lo) / 2 + lo];	// middle
 		while(i <= j) {
-			while(set[i].compareTo(pivot) < 0)
+			while(set[i].compareTo(pivot) < 0 && i < hi)
 				i++;
-			while(set[j].compareTo(pivot) > 0)
+			while(set[j].compareTo(pivot) > 0 && j > lo)
 				j--;
 			if(i <= j) {
 				swap(set, i, j);
@@ -92,19 +96,17 @@ public class Quicksort {
 		return i;
 	}
 	
-
-	
-
 	public static void main(String[] args) {
 		Character [] set = {'z', 'v', 'e', 'a', 'w', 'p', 's', 'S'
-				,'i', 'f', 'g', 'b', 'm', 'o', 'l', 'a', 'r', 't'
+				,'i', 'f', 'g', 'b', 'm', 'o', 'l', 'a', 'r', 't', 'A', 'c'
 				,'c', 'h', 'k', 'y', 'j', 'A', 'B', 'c', 'm', 'u', 'q', 'x'}; 
 		/*
-		sort2(set, 0, set.length-1);
+		sort(set, 0, set.length-1);
 		for(Character c : set)
 			System.out.printf("%c ", c);
-		*/
-		sort3(set, 0, set.length-1);
+	*/
+		
+		sort2(set, 0, set.length-1);
 		for(Character c : set)
 			System.out.printf("%c ", c);
 		 
