@@ -1,7 +1,13 @@
+package algs.jar;
 
+import edu.princeton.cs.algs4.BinaryIn;
+import edu.princeton.cs.algs4.BinaryOut;
 
 import java.io.BufferedInputStream;
 import java.io.PrintStream;
+
+import edu.princeton.cs.algs4.BinaryIn;
+import edu.princeton.cs.algs4.BinaryOut;;
 
 public class Main {
 	

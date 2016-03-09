@@ -1,3 +1,6 @@
+package algs.jar;
+import  edu.princeton.cs.algs4.Stopwatch;
+
 /*
  * http://introcs.cs.princeton.edu/java/41analysis/
  * 	http://introcs.cs.princeton.edu/java/41analysis/ThreeSum.java
@@ -12,6 +15,7 @@
  *  http://www.cs.princeton.edu/introcs/41analysis/64Kints.txt
  *  http://www.cs.princeton.edu/introcs/41analysis/128Kints.txt
  * */
+
 
 public class NSum {
 	
