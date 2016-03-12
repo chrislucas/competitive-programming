@@ -1,3 +1,4 @@
+package algs.jar;
 /****************************************************************************
  *  Compilation:  javac PercolationVisualizer.java
  *  Execution:    java PercolationVisualizer input.txt
@@ -16,7 +17,13 @@
  *
  ****************************************************************************/
 
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdDraw;
+
 import java.awt.Font;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdDraw;
 
 public class PercolationVisualizer {
 

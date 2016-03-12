@@ -1,16 +1,22 @@
+package algs.jar;
 
+//import edu.princeton.cs.algs4.In;
+//import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 /**
  * @author C.Lucas <christoffer.luccas@gmail.com>
  * 
  * */
 
+
+
 public class Percolation {
-	private int order	//	order of matrix
+	public int order	//	order of matrix
 	,tNode 				//	virtual node top
 	,bNode;				//	virtual node bottom
-	private WeightedQuickUnionUF wqu, wqu2;		// quick union objects
-	private boolean[] sites;					// arrays representing sites open or blocking
+	public WeightedQuickUnionUF wqu, wqu2;		// quick union objects
+	public boolean[] sites;					// arrays representing sites open or blocking
 	
 	/**
 	 * constructor
@@ -120,7 +126,7 @@ public class Percolation {
 	}
 	
 	public static void main(String[] args) {
-		test();
+		//test();
 	}
 	
 	
@@ -134,7 +140,7 @@ public class Percolation {
 		//perc.open(5, 0);
 		//perc.open(5, 11);
 	}
-	
+/*
 	public static void test() {
 		String URLS[] = {
 			"http://coursera.cs.princeton.edu/algs4/testing/percolation/input6.txt"
@@ -171,4 +177,5 @@ public class Percolation {
             StdDraw.show(DELAY);
         }
 	}
+*/	
 }

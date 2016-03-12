@@ -1,4 +1,8 @@
+package algs.jar;
 
+//import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
 	/**
@@ -8,17 +12,19 @@ public class PercolationStats {
 	private static final double T = 1.96;
 	private double[] results;
 	
+	public Percolation perc;
+	
 	public PercolationStats(int n, int t) {
 		if(n <= 0 || t <= 0)
 			throw new IllegalArgumentException("Illegal Argument");
-		results = setResults(n, t);
+		results = new double[t]; // setResults(n, t);
 	}
-	
+	/*
 	private double[] setResults(int n, int t) {
 		results = new double[t];
 		for(int i=0; i<t; i++){
 			int counter = 0;
-			Percolation perc = new Percolation(n);
+			perc = new Percolation(n);
 			while(!perc.percolates()){
 				int q;
 				int p;
@@ -33,6 +39,7 @@ public class PercolationStats {
 		}
 		return this.results;
 	}
+	*/
 	
 	private double[] getResults() {
 		return this.results;
@@ -71,8 +78,8 @@ public class PercolationStats {
 		String number[] = line.split(" ");
 		*/
 	}
-	
-	private static void teste(int n, int t) {
+	/*
+	public static void teste(int n, int t) {
 		
 		PercolationStats pStats = new PercolationStats(n, t);
 		double mean = pStats.mean();
@@ -83,7 +90,7 @@ public class PercolationStats {
 		String fmt = String.format("mean %18s = %f\nstddev %18s = %f\n95% confidence interval = %f, %f",
 				" ", mean, " ", stddev, cLow, cHigh);
 				*/
-		
+		/*
 		String fmt = String.format("mean %17s = %s\nstddev %15s = %s\n95 confidence interval = %s, %s", 
 				" ",
 				String.valueOf(mean).replace(',', '.'), " ",
@@ -96,4 +103,5 @@ public class PercolationStats {
 		StdOut.println(fmt);
 		StdOut.println(fmt2);
 	}
+	*/
 }
