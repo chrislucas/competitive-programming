@@ -4,6 +4,7 @@ package algorithm.sort;
 /*
  * https://www.hackerrank.com/challenges/quicksort2
  * https://en.wikipedia.org/wiki/Quicksort#Algorithm
+ * https://pt.wikipedia.org/wiki/Quicksort#Java
  * */
 
 public class Quicksort {
