@@ -3,7 +3,8 @@ package algorithm.sort;
 
 /*
  * https://www.hackerrank.com/challenges/quicksort2
- * 
+ * https://en.wikipedia.org/wiki/Quicksort#Algorithm
+ * https://pt.wikipedia.org/wiki/Quicksort#Java
  * */
 
 public class Quicksort {
@@ -49,8 +50,8 @@ public class Quicksort {
 	@SuppressWarnings("rawtypes")
 	public static void sort2(Comparable [] set, int lo, int hi) {
 		if(lo < hi) {
-			int i = partition(set, lo, hi);
-			sort2(set, lo, i-1);
+			int i = partition2(set, lo, hi);
+			sort2(set, lo, i /*i-1*/); // aparetemente para usar o metodo partition2 e partition4, o ultimo parametro deve ser i nao i-1
 			sort2(set, i+1, hi);
 		}
 		return;
@@ -62,54 +63,113 @@ public class Quicksort {
 		
 	}
 	
+	/**
+	 * Essa forma de particionar o array eh conhecida como 'Lomuto partition scheme'
+	 * atribuida por Nico Lomuto e popularizada por Bentley nos seu livro programming pearls
+	 * Esse esquema coloca esse algoritmo na ordem O n^2 quando o array ja esta ordenado
+	 * ou todos os elementos sao iguais
+	 * */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static int partition(Comparable [] set, int lo, int hi) {
-		//int mid = ((hi-lo)/2)+lo;
-		Comparable c = set[hi/*mid*/];
+		Comparable pivot = set[hi];		// pegar o ultimo elemento como pivo
 		int i = lo;
 		for(int j=lo; j<=hi-1; j++) {
-			Comparable p = set[j];
-			if(p.compareTo(c)<=0) {
+			Comparable p = set[j];			// para cada elemento a esquerda do pivo
+			// verificar se tal elemento e menor que o pivot
+			if(p.compareTo(pivot)<=0) {
+				// se for menor que o pivo, set[i] esta no lugar de set[j] 
 				swap(set, i, j);
 				i++;
 			}
 		}
-		swap(set, i, hi);
+		// comportamento interessante. Essa troca ate onde meu conhecimento limitado
+		// me leva a acreditar, nao faz trocas erradas, no caso de uma ordenacao em ordem
+		// crescente, essa troca nao ocorre entre set[i] < set[hi]
+		// as variaveis i e hi assumem duas situacoes, set[i] < set[hi] ou no caso de
+		// hi for o indice do maior elemento no array (ou subarray, se ja ocorreu um particionamento),
+		// no final do loop, i eh igual a hi, logo ocorre uma troca entre o mesmo elemento
+		swap(set, i, hi);	
 		return i;
 	}
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static int partition2(Comparable[]set, int lo, int hi) {
+	public static int partition2(Comparable [] set, int lo, int hi) {
 		int i=lo, j=hi;
 		Comparable pivot = set[(hi - lo) / 2 + lo];	// middle
-		while(i <= j) {
+		while(i < j) {
 			while(set[i].compareTo(pivot) < 0 && i < hi)
 				i++;
 			while(set[j].compareTo(pivot) > 0 && j > lo)
 				j--;
-			if(i <= j) {
+			if(i < j) {
 				swap(set, i, j);
 				i++;
 				j--;
 			}	
 		}
-		return i;
+		return j;
+	}
+	
+	@SuppressWarnings({ "rawtypes" })
+	public static int partition3(Comparable [] set, int lo, int hi) {
+		return 0;
+	}
+	
+	/*
+	 * Esse metodo de particao segue o modelo de Hoare, nome do
+	 * criador do algoritmo Quicksort Charles antony Richard Hoare : https://en.wikipedia.org/wiki/Tony_Hoare
+	 * */
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static int partition4(Comparable [] set, int lo, int hi) {
+		Comparable pivot = set[lo];
+		int i = lo-1;
+		int j = hi+1;
+		while(i<j) {
+			// verificar se os elementos a direita do pivo(pois pivot eh o set[lo])
+			// sao menores que o pivot, se sim, aumente o indice 'i', ate que ache um
+			// elemento maior, assim o indice i indicara o elemento que esta na posicao errada
+			do {
+				++i;
+			} while(set[i].compareTo(pivot) < 0);
+				
+			// para o indice  'j', veriricar quais elementos sao maiores que o pivot
+			// para colocalos a direita do pivot
+			do {
+				--j;
+			} while(set[j].compareTo(pivot) > 0);
+				
+			if(i < j) {
+				swap(set, i, j);
+			}	
+		}
+		return j;
 	}
 	
 	public static void main(String[] args) {
+		sortArrayInt();
+	}
+	
+	@SuppressWarnings("unused")
+	private static void sortArrayInt() {
+		Integer [] set = {5,1,2,9,3,4,10,7,8,6};
+		sort2(set, 0, set.length-1);
+		printArray(set);
+	}
+	
+	@SuppressWarnings("unused")
+	private static void sortArrayChar() {
 		Character [] set = {'z', 'v', 'e', 'a', 'w', 'p', 's', 'S'
 				,'i', 'f', 'g', 'b', 'm', 'o', 'l', 'a', 'r', 't', 'A', 'c'
 				,'c', 'h', 'k', 'y', 'j', 'A', 'B', 'c', 'm', 'u', 'q', 'x'}; 
-		/*
-		sort(set, 0, set.length-1);
-		for(Character c : set)
-			System.out.printf("%c ", c);
-	*/
-		
 		sort2(set, 0, set.length-1);
-		for(Character c : set)
-			System.out.printf("%c ", c);
-		 
+		printArray(set);
+	}
+	
+	public static <T> void printArray (T [] array) {
+		for(T e : array) {
+			System.out.printf("%s ", e.toString());
+		}
 	}
 
 }
