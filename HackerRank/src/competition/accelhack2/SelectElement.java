@@ -101,7 +101,7 @@ public class SelectElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//BufferedReader  buffer = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader  buffer = new BufferedReader(new InputStreamReader(System.in));
 		solution(new int [] {2, 6, 10}, 2);
 	}
 
