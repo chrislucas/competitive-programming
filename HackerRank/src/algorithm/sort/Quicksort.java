@@ -5,6 +5,7 @@ package algorithm.sort;
  * https://www.hackerrank.com/challenges/quicksort2
  * https://en.wikipedia.org/wiki/Quicksort#Algorithm
  * https://pt.wikipedia.org/wiki/Quicksort#Java
+ * http://www.algolist.net/Algorithms/Sorting/Quicksort
  * */
 
 public class Quicksort {
@@ -150,15 +151,13 @@ public class Quicksort {
 		sortArrayInt();
 	}
 	
-	@SuppressWarnings("unused")
-	private static void sortArrayInt() {
+	public static void sortArrayInt() {
 		Integer [] set = {5,1,2,9,3,4,10,7,8,6};
 		sort2(set, 0, set.length-1);
 		printArray(set);
 	}
-	
-	@SuppressWarnings("unused")
-	private static void sortArrayChar() {
+
+	public static void sortArrayChar() {
 		Character [] set = {'z', 'v', 'e', 'a', 'w', 'p', 's', 'S'
 				,'i', 'f', 'g', 'b', 'm', 'o', 'l', 'a', 'r', 't', 'A', 'c'
 				,'c', 'h', 'k', 'y', 'j', 'A', 'B', 'c', 'm', 'u', 'q', 'x'}; 

@@ -1,9 +1,17 @@
 package challenges;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
+
 public class StudyQS {
 	
-	// https://www.hackerrank.com/challenges/quicksort2
+	static final PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
 	
+	// https://www.hackerrank.com/challenges/quicksort2
 	public static <T> void swap(T [] set, int a, int b) {
 		T aux = set[a];
 		set[a] = set[b];
@@ -11,37 +19,65 @@ public class StudyQS {
 		return;
 	}
 	
-	/**
-	 * Essa forma de particionar o array eh conhecida como 'Lomuto partition scheme'
-	 * atribuida por Nico Lomuto e popularizada por Bentley nos seu livro programming pearls
-	 * Esse esquema coloca esse algoritmo na ordem O n^2 quando o array ja esta ordenado
-	 * ou todos os elementos sao iguais
-	 * */
+	// esquema de Hoare, autor do algoritmo quick sort
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static int partition(Comparable [] set, int lo, int hi) {
-		Comparable pivot = set[hi];		// pegar o ultimo elemento como pivo
-		int i = lo;
-		for(int j=lo; j<=hi-1; j++) {
-			Comparable p = set[j];			// para cada elemento a esquerda do pivo
-			// verificar se tal elemento e menor que o pivot
-			if(p.compareTo(pivot)<=0) {
-				// se for menor que o pivo, set[i] esta no lugar de set[j] 
+		Comparable pivot = set[lo];
+		int i = lo-1;
+		int j = hi+1;
+		while(i<j) {
+			// verificar se os elementos a direita do pivo(pois pivot eh o set[lo])
+			// sao menores que o pivot, se sim, aumente o indice 'i', ate que ache um
+			// elemento maior, assim o indice i indicara o elemento que esta na posicao errada
+			do {
+				++i;
+			} while(set[i].compareTo(pivot) < 0);
+				
+			// para o indice  'j', veriricar quais elementos sao maiores que o pivot
+			// para colocalos a direita do pivot
+			do {
+				--j;
+			} while(set[j].compareTo(pivot) > 0);
+				
+			if(i < j) {
 				swap(set, i, j);
-				i++;
-			}
+			}	
 		}
-		// comportamento interessante. Essa troca ate onde meu conhecimento limitado
-		// me leva a acreditar, nao faz trocas erradas, no caso de uma ordenacao em ordem
-		// crescente, essa troca nao ocorre entre set[i] < set[hi]
-		// as variaveis i e hi assumem duas situacoes, set[i] < set[hi] ou no caso de
-		// hi for o indice do maior elemento no array (ou subarray, se ja ocorreu um particionamento),
-		// no final do loop, i eh igual a hi, logo ocorre uma troca entre o mesmo elemento
-		swap(set, i, hi);	
-		return i;
+		return j;
+	}
+	
+	@SuppressWarnings("rawtypes")
+	public static void sort(Comparable [] set, int lo, int hi) {
+		if(lo < hi) {
+			int i = partition(set, lo, hi);
+			sort(set, lo, i); // aparetemente para usar o metodo partition2 e partition4, o ultimo parametro deve ser i nao i-1
+			showArray(set, lo, hi);
+			sort(set, i+1, hi);
+		}
+		return;
+	}
+	
+	
+	public static <T> void showArray(T [] set, int lo, int hi) {
+		while(lo<hi)
+			writer.printf("%s ", set[lo++].toString());
+		writer.println("");
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			int n = Integer.parseInt(reader.readLine());
+			Integer i = 0, set [] = new Integer[n];
+			StringTokenizer numbers = new StringTokenizer(reader.readLine(), " ");
+			while(numbers.hasMoreTokens()) {
+				set[i++] = Integer.parseInt(numbers.nextToken());
+			}
+			if(set.length == 1)
+				return;
+			sort(set, 0, set.length-1);
+		} catch(IOException ioex) {}
+		
 
 	}
 
