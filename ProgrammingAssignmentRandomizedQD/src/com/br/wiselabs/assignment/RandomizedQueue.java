@@ -34,8 +34,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 		@SuppressWarnings("unused")
 		public Item item;
 		@SuppressWarnings("unused")
-		public Node<Item> next, parent;		// referencia para o proximo e para o anterior
-		@SuppressWarnings("unused")
 		Node(Item item) {
 			this.item = item;
 		}

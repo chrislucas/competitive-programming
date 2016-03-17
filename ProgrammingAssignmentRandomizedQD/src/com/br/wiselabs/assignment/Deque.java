@@ -3,8 +3,6 @@ package com.br.wiselabs.assignment;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import com.br.wiselabs.exercises.GenericDeque.Node;
-
 import edu.princeton.cs.algs4.RandomSeq;
 /**
  * http://algs4.cs.princeton.edu/code/
@@ -14,7 +12,6 @@ public class Deque<Item> implements Iterable<Item> {
 	public Node<Item> first, last; 
 	public int size;
 	
-	@SuppressWarnings("unchecked")
 	public Deque() {
 		size = 0;
 	}

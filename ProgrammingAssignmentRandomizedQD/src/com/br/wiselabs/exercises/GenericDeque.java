@@ -79,7 +79,6 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		}
 		Item item = last.item;
 		Node<Item> parent = last.parent;
-		//last = null;
 		last = parent;
 		this.size--;
 		return item;
@@ -140,11 +139,21 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		deque.addLast(10);
 		deque.addFirst(10);
 		deque.addFirst(12);
+
+		
+		Iterator<Integer> iterator = deque.iterator();
+		while(iterator.hasNext()) {
+			Integer i = iterator.next();
+			StdOut.printf("%d ", i);
+		}
+		
+		StdOut.println();
+		
 		deque.removeFirst();
 		deque.removeFirst();
 		deque.removeLast();
 		
-		Iterator<Integer> iterator = deque.iterator();
+		iterator = deque.iterator();
 		while(iterator.hasNext()) {
 			Integer i = iterator.next();
 			StdOut.printf("%d ", i);
