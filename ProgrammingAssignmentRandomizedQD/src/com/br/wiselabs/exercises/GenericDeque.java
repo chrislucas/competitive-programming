@@ -32,12 +32,14 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		else {
 			Node<Item> head = first;		// a referencia sempre mais a esquerda da lista
 			// a referencia mais a direita da lista
-			Node<Item> tail = first == last ? first : last;	//first.next == null ? first : first.next;;
+			//first == last ? first : last;
+			//Node<Item> tail = last; 
 			first 		 = new Node<Item>(item);			// cria o novo primeiro (mais a esquerda)
-			tail.parent  = size == 1 ? first : head;		// o elemento anterior ao elemento mais a direita
+			//size == 1 ? first : head;
+			//tail.parent  = head;							// o elemento anterior ao elemento mais a direita
 			head.parent  = first;
 			first.next 	 = head;							// o proximo elemento apos o i-th
-			last 		 = tail;
+			//last 		 = tail;
 		}
 		this.size++;
 	}
@@ -68,6 +70,7 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		Item item 		= first.item;
 		Node<Item> next = first.next;
 		//first = null;
+		next.parent = null;
 		first = next;
 		this.size--;
 		return item;
@@ -78,9 +81,12 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 			throw new NoSuchElementException();
 		}
 		Item item = last.item;
-		Node<Item> parent = last.parent;
+		Node<Item> parent = last.parent;		// o penultimo se tornara o ultimo
+		// o ultimo nao tem proximo, pois eh o ULTIMO
+		parent.next = null;
+		// o penultimo se tornou o ulitmo
 		last = parent;
-		this.size--;
+		this.size--;		// diminui o tamanho da lista
 		return item;
 	}
 	
@@ -149,15 +155,18 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		
 		StdOut.println();
 		
+		deque.removeLast();
 		deque.removeFirst();
 		deque.removeFirst();
 		deque.removeLast();
+		deque.removeFirst();
 		
 		iterator = deque.iterator();
 		while(iterator.hasNext()) {
 			Integer i = iterator.next();
 			StdOut.printf("%d ", i);
 		}
+		
 	}
 
 }
