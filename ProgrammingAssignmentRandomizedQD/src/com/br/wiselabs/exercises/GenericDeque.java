@@ -145,7 +145,9 @@ public class GenericDeque<Item> implements Iterable<Item>  {
 		deque.addLast(10);
 		deque.addFirst(10);
 		deque.addFirst(12);
-
+		deque.addFirst(17);
+		deque.addFirst(18);
+		deque.addLast(100);
 		
 		Iterator<Integer> iterator = deque.iterator();
 		while(iterator.hasNext()) {
