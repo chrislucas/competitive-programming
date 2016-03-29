@@ -57,7 +57,11 @@ public class DetectCycleGraphIII {
 		for(Edge edge : list.get(source)) {
 			if(color[edge.d] == G)
 				return true;
+			// esse condicional
+			// if(color[edge.d] == W && dfs(edge.d)) return true;
+			// eh igual ao abaixo, porem para mim o debaixo eh mais intuitivo
 			if(color[edge.d] == W) {
+				// se encontrar um ciclo, vai ficar retornando TRUE ate devolver todos os nos da pilha
 				if(dfs(edge.d))
 					return true;
 			}
