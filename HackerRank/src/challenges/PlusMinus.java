@@ -8,6 +8,12 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 
+/*
+ * https://www.hackerrank.com/challenges/plus-minus
+ * DONE 100%
+ * 
+ * */
+
 public class PlusMinus {
 
 	public static double[] solution(int [] array) {

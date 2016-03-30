@@ -61,7 +61,7 @@ public class KosarajuSCC {
 		addEdge(1, 0);
 		addEdge(2, 1);
 		addEdge(3, 4);
-		addEdge(2, 1);
+		//addEdge(2, 1);
 		boolean[] visited = new boolean[v];
 		for(int i=0; i<v; i++) {
 			visited[i] = false;
