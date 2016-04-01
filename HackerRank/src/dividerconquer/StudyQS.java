@@ -51,15 +51,44 @@ public class StudyQS {
 		if(lo < hi) {
 			int i = partition(set, lo, hi);
 			sort(set, lo, i); // aparetemente para usar o metodo partition2 e partition4, o ultimo parametro deve ser i nao i-1
-			showArray(set, lo, hi);
 			sort(set, i+1, hi);
+			showArray(set, lo, hi);
 		}
 		return;
 	}
 	
 	
+	/*
+	 * 
+	 * Pesquisar por quicksort in-place
+	 * http://stackoverflow.com/questions/29609909/inplace-quicksort-in-java
+	 * http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/7-Sort/quick-sort2.html
+	 * */
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static void in_place(Comparable [] set, int lo, int hi) {
+		if(set.length > 1) {
+			Comparable pivot = set[lo];
+			int lf = lo;
+			int ri = hi;
+			while(lf<ri) {
+				while(set[lf].compareTo(pivot) < 0)
+					lf++;
+				while(set[ri].compareTo(pivot) > 0)
+					ri--;
+				if(lf < ri)
+					swap(set, lf, ri);
+			}
+			if(lo < ri)
+				in_place(set, lo, ri);
+			if(lf < hi)
+				in_place(set, lf, hi);
+		}
+		return;
+	}
+	
 	public static <T> void showArray(T [] set, int lo, int hi) {
-		while(lo<hi)
+		while(lo<=hi)
 			writer.printf("%s ", set[lo++].toString());
 		writer.println("");
 	}
@@ -73,9 +102,9 @@ public class StudyQS {
 			while(numbers.hasMoreTokens()) {
 				set[i++] = Integer.parseInt(numbers.nextToken());
 			}
-			if(set.length == 1)
-				return;
-			sort(set, 0, set.length-1);
+			//if(set.length == 1)
+				//return;
+			in_place(set, 0, set.length-1);
 		} catch(IOException ioex) {}
 		
 
