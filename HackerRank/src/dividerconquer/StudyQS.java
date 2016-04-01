@@ -39,7 +39,7 @@ public class StudyQS {
 				--j;
 			} while(set[j].compareTo(pivot) > 0);
 				
-			if(i < j) {
+			if(i<j) {
 				swap(set, i, j);
 			}	
 		}
@@ -71,18 +71,22 @@ public class StudyQS {
 			Comparable pivot = set[lo];
 			int lf = lo;
 			int ri = hi;
-			while(lf<ri) {
+			while(lf<=ri) {
 				while(set[lf].compareTo(pivot) < 0)
 					lf++;
 				while(set[ri].compareTo(pivot) > 0)
 					ri--;
-				if(lf < ri)
+				if(lf <= ri) {
 					swap(set, lf, ri);
+					lf++;
+					ri--;
+				}
 			}
 			if(lo < ri)
 				in_place(set, lo, ri);
 			if(lf < hi)
 				in_place(set, lf, hi);
+			showArray(set, lf, ri);
 		}
 		return;
 	}
@@ -104,10 +108,7 @@ public class StudyQS {
 			}
 			//if(set.length == 1)
 				//return;
-			in_place(set, 0, set.length-1);
+			sort(set, 0, set.length-1);
 		} catch(IOException ioex) {}
-		
-
 	}
-
 }
