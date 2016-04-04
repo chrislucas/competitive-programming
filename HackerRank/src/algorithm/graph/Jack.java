@@ -86,6 +86,8 @@ public class Jack {
 				return;
 			}
 			
+			visited = new boolean[vertices+1];
+			
 			Queue<Edge> pq = new PriorityQueue<>();
 			Edge edge = list.get(1).get(0);
 			cost[edge.source] = 0;
@@ -108,8 +110,10 @@ public class Jack {
 						real[dest] 	 = realCost;
 						cost[dest]	 = sum;
 						for(Edge e : list.get(dest)) {
-							if(e.dest != source)
+							//if(!visited[e.dest] && e.dest != source) {
+								//visited[e.dest] = true;
 								pq.add(e);
+							//}	
 						}
 						path[dest] = source;
 					}
@@ -137,6 +141,7 @@ public class Jack {
 	
 	public static void add(int s, int d, int w) {
 		list.get(s).add(new Edge(s, d, w));
+		list.get(d).add(new Edge(d, s, w));
 	}
 
 	public static void main(String[] args) {
