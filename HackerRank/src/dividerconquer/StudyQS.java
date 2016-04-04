@@ -7,6 +7,17 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
+
+/*
+ * Ler com atenção
+ * https://en.wikipedia.org/wiki/Quicksort#Algorithm
+ * 
+ * 
+ * DONE
+ * https://www.hackerrank.com/challenges/quicksort2
+ * 
+ * */
+
 public class StudyQS {
 	
 	static final PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
@@ -48,15 +59,49 @@ public class StudyQS {
 	
 	@SuppressWarnings("rawtypes")
 	public static void sort(Comparable [] set, int lo, int hi) {
-		if(lo < hi) {
-			int i = partition(set, lo, hi);
-			sort(set, lo, i); // aparetemente para usar o metodo partition2 e partition4, o ultimo parametro deve ser i nao i-1
+		if(lo < hi && set.length > 1) {
+			int i = p(set, lo, hi);
+			sort(set, lo, i-1); // aparetemente para usar o metodo partition2 e partition4, o ultimo parametro deve ser i nao i-1
 			sort(set, i+1, hi);
 			showArray(set, lo, hi);
 		}
 		return;
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static int p(Comparable [] set, int lo, int hi) {
+		Comparable pivot = set[lo];
+		Comparable [] llist, rlist;
+		int s = hi-lo+1;
+		llist = new Comparable[s];
+		rlist = new Comparable[s];
+		int counterL = 0, counterR = 0;
+		
+		for(int i=lo+1; i<=hi; i++) {
+			if(set[i].compareTo(pivot) < 0) {
+				llist[counterL++] = set[i];
+			}
+			else if(set[i].compareTo(pivot) > 0) {
+				rlist[counterR++] = set[i];
+			}
+		}
+
+		// colocar os elementos a esquerda do pivot
+		for(int i=0, c=lo; i<counterL; i++)
+			set[c++] = llist[i];
+		// colocar o pivot no lugar
+		set[lo+counterL] = pivot;
+		// colocar os elementos a direita do pivot
+		for(int i=0, c=lo+counterL+1; i<counterR; i++)
+			set[c++] = rlist[i];
+		
+		return lo + counterL;
+	}
+	
+	static <T> void  merge(T [] set, T [] aux, int idx) {
+		for(T a : aux)
+			set[idx++] = a;
+	}
 	
 	/*
 	 * 
@@ -72,10 +117,12 @@ public class StudyQS {
 			int lf = lo;
 			int ri = hi;
 			while(lf<=ri) {
-				while(set[lf].compareTo(pivot) < 0)
+				while(set[lf].compareTo(pivot) < 0){
 					lf++;
-				while(set[ri].compareTo(pivot) > 0)
+				}	
+				while(set[ri].compareTo(pivot) > 0) {
 					ri--;
+				}
 				if(lf <= ri) {
 					swap(set, lf, ri);
 					lf++;
@@ -86,7 +133,6 @@ public class StudyQS {
 				in_place(set, lo, ri);
 			if(lf < hi)
 				in_place(set, lf, hi);
-			showArray(set, lf, ri);
 		}
 		return;
 	}
