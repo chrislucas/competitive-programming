@@ -110,14 +110,14 @@ public class Jack {
 						real[dest] 	 = realCost;
 						cost[dest]	 = sum;
 						for(Edge e : list.get(dest)) {
-							//if(!visited[e.dest] && e.dest != source) {
-								//visited[e.dest] = true;
+							if(!visited[e.dest]) {
 								pq.add(e);
-							//}	
+							}	
 						}
 						path[dest] = source;
 					}
 				}
+				visited[source] = true;
 			}	// fim while(queue)
 			writer.printf("%d\n", cost[vertices]);
 		} catch(IOException ioex){}
