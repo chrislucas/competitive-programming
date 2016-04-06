@@ -61,6 +61,21 @@ public class SherlockArray {
 		return sum==0;
 	}
 	
+	public static boolean s3(int [] a) {
+		int s = a.length;
+		if(s == 1)
+			return true;
+		int i = 0, j = s-1;
+		int l = a[i++], r = a[j--];
+		while(i!=j && i<j){
+			if(r<l)
+				r += a[j--];
+			else
+				l += a[i++];
+		}
+		return l - r == 0;
+	}
+	
 	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
@@ -73,7 +88,7 @@ public class SherlockArray {
 				for(int j=0; tk.hasMoreTokens(); j++) {
 					array[j] = Integer.parseInt(tk.nextToken());
 				}
-				writer.printf("%s\n", s2(array) ? "YES" : "NO");
+				writer.printf("%s\n", s3(array) ? "YES" : "NO");
 			}
 			//writer.printf("%s", s2(new int[]{1,1,5,7,10,14}) ? "YES" : "NO");
 		} catch(IOException ioex) {}

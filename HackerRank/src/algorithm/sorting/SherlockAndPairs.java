@@ -9,6 +9,14 @@ package algorithm.sorting;
  **/
 
 public class SherlockAndPairs {
+	
+	public static long nCr(long n, long r) {
+		return 0;
+	}
+	
+	public static long nPr(long n, long r) {
+		return 0;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
