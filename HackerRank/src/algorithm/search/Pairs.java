@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /*
@@ -26,6 +27,14 @@ public class Pairs {
 				if(abs(set[i]-set[j])==k)
 					acc++;
 		}
+		return acc;
+	}
+	
+	// diminuir complexidade do algoritmo
+	public static int f2(int [] set, int k) {
+		Arrays.sort(set);
+		int acc = 0;
+		int s 	= set.length;
 		return acc;
 	}
 	
