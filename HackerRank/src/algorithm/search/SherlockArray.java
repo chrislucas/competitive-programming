@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 /*
  * https://www.hackerrank.com/challenges/sherlock-and-array
- * 
+ * DONE
  * */
 
 public class SherlockArray {

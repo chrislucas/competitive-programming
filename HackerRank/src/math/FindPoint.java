@@ -8,6 +8,11 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
+
+/*
+ * https://www.hackerrank.com/challenges/find-point
+ * */
+
 public class FindPoint {
 
 	
