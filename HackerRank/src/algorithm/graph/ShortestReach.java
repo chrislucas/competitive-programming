@@ -20,18 +20,18 @@ import java.util.StringTokenizer;
 public class ShortestReach {
 	
 	static ArrayList<ArrayList<Integer>> list;
+	static PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
 	static final int L = 6;
 	static int vertices, distance[];
 	static boolean [] visited;
 	
 	
 	public static void add(int u, int v) {
+		// segundo o problema todas as arestas que possuem um vertice alcançavel(mr obvio) tem peso 6
+		distance[u] = distance[v] = 6;
 		list.get(u).add(v);
 	}
-	
-	public static int min() {
-		return 0;
-	}
+
 	
 	public static void bfs(int source) {
 		Queue<Integer> queue = new LinkedList<>();
@@ -41,33 +41,35 @@ public class ShortestReach {
 		while(!queue.isEmpty()) {
 			int s = queue.poll();
 			for(Integer d : list.get(s)) {
-				/*
 				int cost = distance[d];
-				cost = cost < 0 ? 6 : cost + 6;
-				if( ! visited[d]&& cost < distance[d] ) {
+				if( ! visited[d] && cost <= distance[d]) {
 					distance[d] = cost;
+					visited[d]	= true;
 					queue.add(d);
 				}
-				*/
 			}
 		}
+		
+		for(int i=1; i<=vertices; i++) {
+			if(i!=source)
+				writer.printf("%d ", distance[i]);
+		}
+		writer.printf("\n");
 	}
 	
 	public static void init(int v) {
 		vertices 	= v;
 		visited 	= new boolean[v+1];
 		distance 	= new int[v+1];
-		list 		= new ArrayList<>();
+		list 		= new ArrayList<ArrayList<Integer>>();
 		for(int i=0; i<v+1; i++) {
-			list.add(new ArrayList<>());
+			list.add(new ArrayList<Integer>());
 			distance[i] = -1;
 		}
-			
 	}
 	
 	public static void run()  {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
 		try {
 			int cases = Integer.parseInt(reader.readLine());
 			for(int i=0; i<cases; i++) {
@@ -83,15 +85,13 @@ public class ShortestReach {
 					add(y, x);
 				}
 				// da onde parte a busca
-				int source = Integer.parseInt(reader.readLine());
+				int source = Integer.parseInt(new StringTokenizer(reader.readLine(), " ").nextToken());
 				bfs(source);
 			}
 		} catch(IOException ioex) {}
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		run();
 	}
-
 }
