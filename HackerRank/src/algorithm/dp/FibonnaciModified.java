@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
 
@@ -45,6 +44,28 @@ public class FibonnaciModified {
 	 * 84266613096281243382112
 	 *
 	 */
+	
+	static class Number {
+		private int[] number;							// array que representara o numero calculado
+		private int digits;								// contador de digitos
+		// representacao do numerom como string
+		private static final StringBuilder representation = new StringBuilder();
+		
+		@Override
+		public String toString() {
+			for(int i=digits-1; i>-1; i--)
+				representation.append(number[i]);
+			return representation.toString();
+		}
+		
+		public static double log(double n, long base) {
+			return Math.log10(n) / Math.log10(base);
+		}
+		
+		public static long countDigits(long n, int base) {
+			return Math.round(log(n, base)) + 1;
+		}
+	}
 
 	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

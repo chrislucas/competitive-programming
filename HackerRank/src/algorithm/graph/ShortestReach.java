@@ -12,7 +12,8 @@ import java.util.StringTokenizer;
 
 /*
  * https://www.hackerrank.com/challenges/bfsshortreach
- * 
+ * DONE mas esse problema eh estranho. Uma bfs resolveu o problema, mas eu achei que deveria usar
+ * algo mais sofisticado como o dijkstra
  * ler isso http://www.geeksforgeeks.org/applications-of-depth-first-search/
  * 
  * */
@@ -28,7 +29,7 @@ public class ShortestReach {
 	
 	public static void add(int u, int v) {
 		// segundo o problema todas as arestas que possuem um vertice alcançavel(mr obvio) tem peso 6
-		distance[u] = distance[v] = 6;
+		//distance[u] = distance[v] = 6;
 		list.get(u).add(v);
 	}
 
@@ -41,8 +42,8 @@ public class ShortestReach {
 		while(!queue.isEmpty()) {
 			int s = queue.poll();
 			for(Integer d : list.get(s)) {
-				int cost = distance[d];
-				if( ! visited[d] && cost <= distance[d]) {
+				int cost = distance[s] + 6;
+				if( ! visited[d] /*&& cost <= distance[d]*/) {
 					distance[d] = cost;
 					visited[d]	= true;
 					queue.add(d);
