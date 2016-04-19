@@ -1,11 +1,13 @@
 package algorithm.dp;
 
 /*
+ * http://www.algorithmist.com/index.php/Coin_Change
+ * https://sohagbuet.wordpress.com/2014/03/27/coin-change-problem/
  * https://www.hackerrank.com/challenges/coin-change
  * 
  * Problema do TROCO. Dado um conjunto de Moedas C = {C1, C2, C3 ... Cn}
  * com quantidade infinita de Cn (veja, temos ilimitadas C1 C2 Cn). De quantas
- * formas e possível combina-las para atingir um valor N
+ * formas e possï¿½vel combina-las para atingir um valor N
  * 
  * Por exemplo
  * 
@@ -65,6 +67,34 @@ public class CoinChange {
 		int excluding = topDown(coins, changes, N - coins[changes - 1]);
 		
 		return including + excluding;
+	}
+	
+	
+	/**
+	 * Diminuindo o custo de espaÃ§o para N
+	 * */
+	public static int reduceSpaceBottomUp(int [] coins, int N) {
+		int s = coins.length;
+		int [] space = new int[N+1];
+		/**
+		 * Novamente o caso base 0 de troco, tem 1 solucao
+		 * nao usar moeda alguma
+		 * */
+		space[0] = 1;
+		
+		//como sera que esse parte de comporta ?
+		for(int i=1; i<=N; i++) {
+			for(int j=0; j<s; j++)
+				space[i] += space[ i - coins[j] < 0 ? 0 : i - coins[j] ];
+		}
+		
+		for(int i=0; i<s; i++) {
+			for(int j=coins[i]; j<=N; j++) {
+				space[j] += space[j - coins[i]];
+			}
+		}
+		
+		return space[N];
 	}
 
 	public static void main(String[] args) {
