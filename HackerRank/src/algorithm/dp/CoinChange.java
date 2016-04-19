@@ -39,10 +39,10 @@ public class CoinChange {
 			// j representa a n-esima moeda do conjunto
 			for (int j=0; j<s; j++) {
 				// incluindo a j-esima moeda
-				int inc = i - coins[j];
-				int x 	= inc >= 0 ? space[i-inc][j] : 0;
+				int d = i - coins[j];
+				int x = d > 2 ? space[d][j] : 0;
 				// excluindo a jth moeda
-				int y 	= j > 0 ? space[i][j-1] : 0;
+				int y = j > 0 ? space[i][j-1] : 0;
 				space[i][j] = x + y;
 			}
 		}
