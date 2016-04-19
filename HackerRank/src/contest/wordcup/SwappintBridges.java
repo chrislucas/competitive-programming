@@ -1,4 +1,4 @@
-package competition.wordcup;
+package contest.wordcup;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package competition.accelhack2;
+package contest.accelhack2;
 
 
 import java.io.BufferedReader;
