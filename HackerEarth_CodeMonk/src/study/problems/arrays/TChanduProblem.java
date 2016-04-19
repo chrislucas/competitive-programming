@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 
 /**
  * https://www.hackerearth.com/code-monk-array-strings/algorithm/terrible-chandu/
+ * DONE
  * */
 
 public class TChanduProblem {

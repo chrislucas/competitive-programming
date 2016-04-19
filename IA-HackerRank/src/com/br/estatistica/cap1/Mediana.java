@@ -1,4 +1,4 @@
-package estatistica.cap1;
+package com.br.estatistica.cap1;
 
 import java.util.Arrays;
 

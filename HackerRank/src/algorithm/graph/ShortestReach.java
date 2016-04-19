@@ -36,16 +36,17 @@ public class ShortestReach {
 	
 	public static void bfs(int source) {
 		Queue<Integer> queue = new LinkedList<>();
-		visited[source] = true;
+		//visited[source] = true;
 		distance[source] = 0;
 		queue.add(source);
 		while(!queue.isEmpty()) {
 			int s = queue.poll();
+			visited[s]	= true;
 			for(Integer d : list.get(s)) {
 				int cost = distance[s] + 6;
 				if( ! visited[d] /*&& cost <= distance[d]*/) {
 					distance[d] = cost;
-					visited[d]	= true;
+					//visited[d]	= true;
 					queue.add(d);
 				}
 			}

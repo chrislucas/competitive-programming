@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
+// DONE
+
 public class ChanduConsecutiveProblem {
 
 	static final InputStream is = new BufferedInputStream(System.in, 2<<12);
