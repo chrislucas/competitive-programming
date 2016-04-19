@@ -1,4 +1,4 @@
-package competition;
+package contest;
 
 
 import java.io.*;

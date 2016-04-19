@@ -1,5 +1,7 @@
 package tests.math;
 
+import java.math.BigInteger;
+
 public class Combinatory {
 	
 	public static long nPr(long n, long p) {
@@ -9,6 +11,19 @@ public class Combinatory {
 		}
 		return n;
 	}
+	
+	public static BigInteger perm(long n, long p) {
+		long d = (n - p), x = n - 1;
+		BigInteger val = BigInteger.valueOf(x);
+		BigInteger ans = BigInteger.valueOf(n);
+		while(x>d) {
+			ans = ans.multiply(val);
+			val = val.subtract(BigInteger.valueOf(1));
+			x--;
+		}
+		return ans;
+	}
+	
 	// n! /(n-p)!p!
 	public static long nCr1(long n, long p) {
 		long diff = n-p;
