@@ -150,6 +150,14 @@ public class CoinChange {
 			return tk.nextToken();
 		}
 		
+		public static String readLine() {
+			String line = null;
+			try {
+				line = buffer.readLine();
+			} catch(IOException ioex) {}
+			return line;
+		}
+		
 		public static String read() {
 			return read(null);
 		}
@@ -166,8 +174,13 @@ public class CoinChange {
 			return Long.parseLong(read(delimiter));
 		}
 		
-		public static int [] nextInt(String delimiter, int size) {
-			return null;
+		public static int [] readInts(String delimiter) {
+			StringTokenizer token = new StringTokenizer(readLine(), delimiter);
+			int i = 0, array []  = new int[token.countTokens()];
+			while(token.hasMoreTokens()) {
+				array[i++] = Integer.parseInt(token.nextToken());
+			}
+			return array; 
 		}
 		
 		public static void pritf(String format, Object ... objects) {
