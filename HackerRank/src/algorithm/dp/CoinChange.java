@@ -1,5 +1,14 @@
 package algorithm.dp;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
+
+import sun.util.locale.StringTokenIterator;
+
 /*
  * http://www.algorithmist.com/index.php/Coin_Change
  * https://sohagbuet.wordpress.com/2014/03/27/coin-change-problem/
@@ -42,13 +51,13 @@ public class CoinChange {
 			for (int j=0; j<s; j++) {
 				// incluindo a j-esima moeda
 				int d = i - coins[j];
-				int x = d > 2 ? space[d][j] : 0;
+				int x = d >= 0 ? space[d][j] : 0;
 				// excluindo a jth moeda
 				int y = j > 0 ? space[i][j-1] : 0;
 				space[i][j] = x + y;
 			}
 		}
-		return space[N][s];
+		return space[N][s-1];
 	}
 	
 	public static int topDown(int [] coins, int changes, int N) {
@@ -82,12 +91,6 @@ public class CoinChange {
 		 * */
 		space[0] = 1;
 		
-		//como sera que esse parte de comporta ?
-		for(int i=1; i<=N; i++) {
-			for(int j=0; j<s; j++)
-				space[i] += space[ i - coins[j] < 0 ? 0 : i - coins[j] ];
-		}
-		
 		for(int i=0; i<s; i++) {
 			for(int j=coins[i]; j<=N; j++) {
 				space[j] += space[j - coins[i]];
@@ -96,10 +99,84 @@ public class CoinChange {
 		
 		return space[N];
 	}
-
+	
+	// fazendo uns testes
+	public static int f(int [] coins, int N) {
+		int s = coins.length;
+		int [] space = new int[N+1];
+		space[0] = 1;		
+		//como sera que esse parte de comporta ?
+		for(int i=1; i<=N; i++) {
+			for(int j=0; j<s; j++)
+				space[i] += space[ i - coins[j] < 0 ? 0 : i - coins[j] ];
+		}
+		return space[N];
+	}
+	
+	public static void run() {
+		int [] coins = {1,2,3};
+		int N = 4;
+		System.out.println(topDown(coins, coins.length, N));
+		System.out.println(bottomUp(coins, N));
+		System.out.println(reduceSpaceBottomUp(coins, N));
+		System.out.println(f(coins, N));
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		run();
+		CompIO.init();
+	}
+	
+	public static class CompIO {
+		private CompIO() {  throw new UnsupportedOperationException(); }
+		private static BufferedReader buffer;
+		private static PrintWriter writer;
+		private static StringTokenizer tk;
+		
+		public static void init() {
+			buffer = new BufferedReader(new InputStreamReader(System.in));
+			writer = new PrintWriter(new OutputStreamWriter(System.out), true);
+		}
+		
+		public static String read(String delimiter) {
+			while(tk == null || ! tk.hasMoreTokens()) {
+				try {
+					if(delimiter == null)
+						tk = new StringTokenizer(buffer.readLine());
+					else
+						tk = new StringTokenizer(buffer.readLine(), delimiter);
+				} catch(IOException ioex){}
+			}
+			return tk.nextToken();
+		}
+		
+		public static String read() {
+			return read(null);
+		}
+		
+		public static int readInt(String delimiter) {
+			return Integer.parseInt(read(delimiter));
+		}
+		
+		public static double readDouble(String delimiter) {
+			return Double.parseDouble(read(delimiter));
+		}
+		
+		public static long readLong(String delimiter) {
+			return Long.parseLong(read(delimiter));
+		}
+		
+		public static int [] nextInt(String delimiter, int size) {
+			return null;
+		}
+		
+		public static void pritf(String format, Object ... objects) {
+			writer.printf(format, objects);
+		}
+		
+		public static void print(String data) {
+			writer.printf("%s\n", data);
+		}
 	}
 
 }
