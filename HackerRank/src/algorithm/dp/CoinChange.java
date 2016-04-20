@@ -42,13 +42,13 @@ public class CoinChange {
 			for (int j=0; j<s; j++) {
 				// incluindo a j-esima moeda
 				int d = i - coins[j];
-				int x = d > 2 ? space[d][j] : 0;
+				int x = d >= 0 ? space[d][j] : 0;
 				// excluindo a jth moeda
 				int y = j > 0 ? space[i][j-1] : 0;
 				space[i][j] = x + y;
 			}
 		}
-		return space[N][s];
+		return space[N][s-1];
 	}
 	
 	public static int topDown(int [] coins, int changes, int N) {
@@ -83,10 +83,7 @@ public class CoinChange {
 		space[0] = 1;
 		
 		//como sera que esse parte de comporta ?
-		for(int i=1; i<=N; i++) {
-			for(int j=0; j<s; j++)
-				space[i] += space[ i - coins[j] < 0 ? 0 : i - coins[j] ];
-		}
+
 		
 		for(int i=0; i<s; i++) {
 			for(int j=coins[i]; j<=N; j++) {
@@ -96,10 +93,32 @@ public class CoinChange {
 		
 		return space[N];
 	}
+	
+	/**
+	 * Tentando algo diferente
+	 * */
+	public static int f(int [] coins, int N) {
+		int s = coins.length;
+		int [] space = new int[N+1];
+		space[0] = 1;
+		for(int i=1; i<=N; i++) {
+			for(int j=0; j<s; j++)
+				space[i] += space[ i - coins[j] < 0 ? 0 : i - coins[j] ];
+		}
+		return space[N];
+	}
+	
+	public static void runTest() {
+		int [] array = {1,2,3};
+		int N = 4;
+		System.out.println(bottomUp(array, N));
+		System.out.println(reduceSpaceBottomUp(array, N));
+		System.out.println(f(array, N));
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		runTest();
 	}
 
 }
