@@ -10,7 +10,8 @@ import java.util.StringTokenizer;
 /*
  * https://www.hackerrank.com/challenges/maxsubarray
  * 
- * ALMOST 
+ * ALMOST DONE
+ * NOW DONE BARALHO
  * 
  * */
 
@@ -31,15 +32,36 @@ public class MaxSubArray {
 				parcial = 0;
 				ans[1] = i+1;
 			}
-			// pequena moficicacao no algoritmo para resolver um problema
+			// pequena moficicacao no algoritmo para resolver o problema
+			// da soma maxima nao consecutivas
+			
 			if(array[i] > 0) {
+				// para o caso de nem todos os elementos do array serem negativos
+				// pois ans[3] eh responsavel pelo somatorio do array e pode ocorrer
+				// desse somatorio comecar com numero negativo e nem todos os elementos
+				
+				// existem 2 casos : o array so possui elementos negativos, entao a soma
+				// nao contigua eh o menor numero negativo desse array
+				// o segundo caso eh um array com todos ou pelo menos 1 numero negativo
+				// entao a soma maxima nao continua e a soma dos elementos positivos
+				if(ans[3] < 0)
+					ans[3] = 0;
 				ans[3] += array[i];
 			}
-			else {
-				if(array[i] > array[i-1])
+			
+			// para os numeros negativos. BUscar o menor numero negativo (mais prox. do 0)
+			// isso se a soma ate o momento for negativa
+			if(ans[3] < 0) {
+				// se o valor atual for maior que o anterior
+				// guarde o menor valor
+				if(array[i] > array[i-1]) {
 					ans[3] = array[i];
-				if(array[i] > ans[0])
+				}
+				// se o valor atual for maior que o menor valor ja registrado
+				// guarde esse menor valor
+				if(array[i] > ans[0]) {
 					ans[0] = array[i];
+				}	
 			}
 		}
 		return ans;
@@ -76,7 +98,7 @@ public class MaxSubArray {
 			for(x = 0; tk.hasMoreTokens() ;x++)
 				set[x] = Integer.parseInt(tk.nextToken());
 			long [] ans = kadane1D(set);
-			writer.printf("%d %d\n", ans[0], ans[3]);
+			writer.printf("\n%d %d", ans[0], ans[3]);
 		}
 	}
 }
