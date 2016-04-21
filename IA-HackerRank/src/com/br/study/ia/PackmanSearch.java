@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -19,8 +20,9 @@ public class PackmanSearch {
 
 	static boolean [][] visited;
 	static int dimX, dimY;
-	static Place [][] map;
+	static Place [][] map, parent;
 	static Place origin, destiny;
+	static ArrayList<Place> path;
 	
 	static class Place {
 		private String label;
@@ -46,7 +48,9 @@ public class PackmanSearch {
 		dimX = dx;
 		dimY = dy;
 		map = new Place[dimX][dimY];
+		parent = new Place[dimX][dimY];
 		visited = new boolean[dimX][dimY];
+		path = new ArrayList<>();
 	}
 	
 	public static void add(int x, int y, String label) {
@@ -58,41 +62,80 @@ public class PackmanSearch {
 		map[x][y] = place;
 	}
 	
-	public static Place[] validSpace(int x, int y) {
-		Place [] places = new Place[4];
-		int counter = 0;
-		if(x < dimX-1) {
-			places[counter++] = map[x+1][y];
+	public static void setMap(int x, int y, String label) {
+		map[x][y].label = label;
+	}
+	
+	public static void setParent(int x, int y, Place ancestor) {
+		parent[x][y] = ancestor;
+	}
+	
+	public static void add(int x, int y, Place place) {
+		map[x][y] = place;
+	}
+	
+	public static Stack<Place> validSpaceStack(int x, int y) {
+		Stack<Place>places = new Stack<Place>();
+		// % representa uma parede
+
+		if(x > 0 && ! map[x-1][y].label.equals("%")) {	//UP
+			places.push( map[x-1][y] );
 		}
-		if(x > 0) {
-			places[counter++] = map[x-1][y];
+		if(y > 0 && ! map[x][y-1].label.equals("%")){	//LEFT
+			places.push(map[x][y-1]);
 		}
-		if(y < dimY-1) {
-			places[counter++] = map[x][y+1];
+		if(y < dimY-1 && ! map[x][y+1].label.equals("%")) {	// RIGHT
+			places.push(map[x][y+1]);
 		}
-		if(y > 0){
-			places[counter++] = map[x][y-1];
+		if(x < dimX-1 && ! map[x+1][y].label.equals("%")) {	//DOWN
+			places.push(map[x+1][y] );
 		}
-		return null;
+		return places;
+	}
+	
+	public static Queue<Place> validSpaceQueue(int x, int y) {
+		Queue<Place> places = new LinkedList<Place>();
+		// % representa uma parede
+		if(x > 0 && ! map[x-1][y].label.equals("%")) {	// UP
+			places.add( map[x-1][y] );
+		}
+		if(y > 0 && ! map[x][y-1].label.equals("%")){ // LEFT
+			places.add(map[x][y-1]);
+		}
+		if(y < dimY-1 && ! map[x][y+1].label.equals("%")) {	//RIGHT
+			places.add(map[x][y+1]);
+		}
+		if(x < dimX-1 && ! map[x+1][y].label.equals("%")) {	// DOWN
+			places.add(map[x+1][y] );
+		}
+		return places;
 	}
 	
 	public static void dfs(int x, int y) {
 		Stack<Place> stack = new Stack<Place>();
 		stack.push(map[x][y]);
 		visited[x][y] = true;
-		
 		while( ! stack.isEmpty() ) {
 			Place curr = stack.pop();
+			//CompIO.pritf("%d %d\n", curr.x, curr.y);
+			path.add(new Place(curr.x, curr.y, null));
 			if(curr.equals(destiny)) {
 				break;
 			}
-			for(Place neighboor : validSpace(curr.x, curr.y)) {
+			Stack<Place> places = validSpaceStack(curr.x, curr.y);
+			while( ! places.empty() ) {
+				Place neighboor = places.pop();
 				int dx = neighboor.x, dy = neighboor.y;
 				if( ! visited[dx][dy] ) {
 					visited[dx][dy] = true;
 					stack.push(neighboor);
+					setParent(dx, dy, curr);
 				}
 			}
+		}
+		CompIO.printf("%d\n", path.size());
+		for(Place place : path) {
+			CompIO.printf("%d %d\n", place.x, place.y);
 		}
 	}
 	
@@ -100,20 +143,27 @@ public class PackmanSearch {
 		Queue<Place> queue = new LinkedList<>();
 		queue.add(map[x][y]);
 		visited[x][y] = true;
-		
 		while( ! queue.isEmpty() ) {
 			Place curr = queue.poll();
+			//CompIO.pritf("%d %d\n", curr.x, curr.y);
+			path.add(new Place(curr.x, curr.y, null));
 			if(curr.equals(destiny)) {
 				break;
 			}
-			
-			for(Place neighboor : validSpace(curr.x, curr.y)) {
+			Queue<Place> places = validSpaceQueue(curr.x, curr.y);
+			while( ! places.isEmpty()  ) {
+				Place neighboor = places.poll();
 				int dx = neighboor.x, dy = neighboor.y;
 				if( ! visited[dx][dy] ) {
 					visited[dx][dy] = true;
 					queue.add(neighboor);
+					setParent(dx, dy, curr);
 				}
 			}
+		}
+		CompIO.printf("%d\n", path.size());
+		for(Place place : path) {
+			CompIO.printf("%d %d\n", place.x, place.y);
 		}
 	}
 	
@@ -126,14 +176,21 @@ public class PackmanSearch {
 		int [] dim = CompIO.readInts(" ");
 		PackmanSearch.init(dim[0], dim[1]);
 		
+		add(src[0], src[1], origin);
+		add(dt[0], dt[1], destiny);
+		
 		for(int i=0; i<dim[0]; i++) {
-			String [] e = CompIO.readStrings("");
+			String [] e = CompIO.readStrings();
 			for(int j=0; j<e.length; j++) {
 				add(i, j, e[j]);
 			}
 		}
-		
+		//
 		bfs(src[0], src[1]);
+		//System.out.println("");
+		//visited = new boolean[dimX][dimY];
+		//dfs(src[0], src[1]);
+		return;
 	}
 	
 	
@@ -184,12 +241,17 @@ public class PackmanSearch {
 		}
 		
 		public static String [] readStrings(String delimiter) {
-			StringTokenizer tk = new StringTokenizer(CompIO.readLine(), " ");
+			StringTokenizer tk = new StringTokenizer(CompIO.readLine(), delimiter);
 			String [] array = new String[tk.countTokens()];
 			int i=0;
 			while(tk.hasMoreTokens()) {
 				array[i++] = tk.nextToken();
 			}
+			return array;
+		}
+		
+		public static String [] readStrings() {
+			String [] array = CompIO.readLine().split("");
 			return array;
 		}
 		
@@ -210,7 +272,7 @@ public class PackmanSearch {
 			return array; 
 		}
 		
-		public static void pritf(String format, Object ... objects) {
+		public static void printf(String format, Object ... objects) {
 			writer.printf(format, objects);
 		}
 		
