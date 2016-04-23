@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -24,13 +25,21 @@ public class PackmanSearch {
 	static Place origin, destiny;
 	static ArrayList<Place> path;
 	
-	static class Place {
+	static class Place implements Comparable<Place> {
 		private String label;
-		private int x, y;
+		private int x, y, w;
 		public Place() {}
 		public Place(int x, int y, String label) {
 			this.x = x;
 			this.y = y;
+			this.w = 1;
+			this.label = label;
+		}
+		
+		public Place(int x, int y, int w,  String label) {
+			this.x = x;
+			this.y = y;
+			this.w = w;
 			this.label = label;
 		}
 		
@@ -41,16 +50,21 @@ public class PackmanSearch {
 			if(this.x == place.x && this.y == place.y && this.label == place.label)
 				return true;
 			return false;
-		}	
+		}
+		
+		@Override
+		public int compareTo(Place that) {
+			return this.w - that.w;
+		}
 	}
 	
 	public static void init(int dx, int dy) {
 		dimX = dx;
 		dimY = dy;
-		map = new Place[dimX][dimY];
-		parent = new Place[dimX][dimY];
+		map 	= new Place[dimX][dimY];
+		parent 	= new Place[dimX][dimY];
 		visited = new boolean[dimX][dimY];
-		path = new ArrayList<>();
+		path 	= new ArrayList<>();
 	}
 	
 	public static void add(int x, int y, String label) {
@@ -62,6 +76,10 @@ public class PackmanSearch {
 		map[x][y] = place;
 	}
 	
+	public static void add(int x, int y, Place place) {
+		map[x][y] = place;
+	}
+	
 	public static void setMap(int x, int y, String label) {
 		map[x][y].label = label;
 	}
@@ -70,24 +88,21 @@ public class PackmanSearch {
 		parent[x][y] = ancestor;
 	}
 	
-	public static void add(int x, int y, Place place) {
-		map[x][y] = place;
-	}
+
 	
 	public static Stack<Place> validSpaceStack(int x, int y) {
-		Stack<Place>places = new Stack<Place>();
+		Stack<Place> places = new Stack<Place>();
 		// % representa uma parede
-
 		if(x > 0 && ! map[x-1][y].label.equals("%")) {	//UP
 			places.push( map[x-1][y] );
 		}
 		if(y > 0 && ! map[x][y-1].label.equals("%")){	//LEFT
 			places.push(map[x][y-1]);
 		}
-		if(y < dimY-1 && ! map[x][y+1].label.equals("%")) {	// RIGHT
+		if(y+1 < dimY && ! map[x][y+1].label.equals("%")) {	// RIGHT
 			places.push(map[x][y+1]);
 		}
-		if(x < dimX-1 && ! map[x+1][y].label.equals("%")) {	//DOWN
+		if(x+1 < dimX && ! map[x+1][y].label.equals("%")) {	//DOWN
 			places.push(map[x+1][y] );
 		}
 		return places;
@@ -113,28 +128,52 @@ public class PackmanSearch {
 	
 	public static void dfs(int x, int y) {
 		Stack<Place> stack = new Stack<Place>();
-		stack.push(map[x][y]);
+		stack.add(map[x][y]);
 		visited[x][y] = true;
-		while( ! stack.isEmpty() ) {
+		boolean F = false;
+		while( ! stack.empty() ) {
 			Place curr = stack.pop();
 			//CompIO.pritf("%d %d\n", curr.x, curr.y);
 			path.add(new Place(curr.x, curr.y, null));
 			if(curr.equals(destiny)) {
+				F = true;
 				break;
 			}
-			Stack<Place> places = validSpaceStack(curr.x, curr.y);
-			while( ! places.empty() ) {
-				Place neighboor = places.pop();
+			Queue<Place> places = validSpaceQueue(curr.x, curr.y);
+			while( ! places.isEmpty() ) {
+				Place neighboor = places.poll();
 				int dx = neighboor.x, dy = neighboor.y;
-				if( ! visited[dx][dy] ) {
+				if( visited[dx][dy] == false ) {
 					visited[dx][dy] = true;
+					neighboor.w = curr.w + 1;
 					stack.push(neighboor);
 					setParent(dx, dy, curr);
 				}
 			}
 		}
+		
+		if( ! F )
+			return;
+		
 		CompIO.printf("%d\n", path.size());
 		for(Place place : path) {
+			CompIO.printf("%d %d\n", place.x, place.y);
+		}
+		
+		path = new ArrayList<>();
+		path.add(destiny);
+		int sx = destiny.x, sy = destiny.y;
+		for(Place anc = parent[sx][sy]; ;anc = parent[anc.x][anc.y] ) {
+			if( anc.equals(origin) ) {
+				path.add(anc);
+				break;
+			}
+			path.add(anc);
+		}
+		
+		CompIO.printf("%d\n", path.size() - 1);
+		for(int i = path.size() - 1; i >= 0; i--) {
+			Place place  = path.get(i);
 			CompIO.printf("%d %d\n", place.x, place.y);
 		}
 	}
@@ -143,11 +182,12 @@ public class PackmanSearch {
 		Queue<Place> queue = new LinkedList<>();
 		queue.add(map[x][y]);
 		visited[x][y] = true;
+		boolean F = false;
 		while( ! queue.isEmpty() ) {
 			Place curr = queue.poll();
-			//CompIO.pritf("%d %d\n", curr.x, curr.y);
 			path.add(new Place(curr.x, curr.y, null));
 			if(curr.equals(destiny)) {
+				F = true;
 				break;
 			}
 			Queue<Place> places = validSpaceQueue(curr.x, curr.y);
@@ -155,17 +195,46 @@ public class PackmanSearch {
 				Place neighboor = places.poll();
 				int dx = neighboor.x, dy = neighboor.y;
 				if( ! visited[dx][dy] ) {
+					neighboor.w = curr.w + 1;			// quantidade de passos que se deve caminhar no grafo para chegar ao ponto [dx][dy]
 					visited[dx][dy] = true;
 					queue.add(neighboor);
 					setParent(dx, dy, curr);
 				}
 			}
 		}
+		
+		if(!F)
+			return;
+		
 		CompIO.printf("%d\n", path.size());
 		for(Place place : path) {
 			CompIO.printf("%d %d\n", place.x, place.y);
 		}
+		
+		// realizar o caminho contrario para verificar qual o menor caminho nesse GRID
+		// Todo o no expandido a partir de um nó PAI tem o custo da soma de se alcançar o
+		// NO antetior +1
+		path = new ArrayList<>();
+		path.add(destiny);
+		int sx = destiny.x, sy = destiny.y;
+		for(Place anc = parent[sx][sy]; ;anc = parent[anc.x][anc.y] ) {
+			if( anc.equals(origin) ) {
+				path.add(anc);
+				break;
+			}
+			path.add(anc);
+		}
+		
+		CompIO.printf("%d\n", path.size() - 1);
+		for(int i = path.size() - 1; i >= 0; i--) {
+			Place place  = path.get(i);
+			CompIO.printf("%d %d\n", place.x, place.y);
+		}
 	}
+	
+	//static void nextMove(int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, String [] grid){
+        //Your logic here
+    //}
 	
 	public static void run() {
 		CompIO.init();
@@ -181,15 +250,15 @@ public class PackmanSearch {
 		
 		for(int i=0; i<dim[0]; i++) {
 			String [] e = CompIO.readStrings();
-			for(int j=0; j<e.length; j++) {
+			for(int j=0; j<dim[1]/*e.length*/; j++) {
 				add(i, j, e[j]);
 			}
 		}
 		//
-		bfs(src[0], src[1]);
+		//bfs(src[0], src[1]);
 		//System.out.println("");
 		//visited = new boolean[dimX][dimY];
-		//dfs(src[0], src[1]);
+		dfs(src[0], src[1]);
 		return;
 	}
 	
