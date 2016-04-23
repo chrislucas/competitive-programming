@@ -1,24 +1,20 @@
-package com.br.study.ia;
+package com.br.study.ia.search;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Stack;
-import java.util.StringTokenizer;
+
 
 /**
  * https://www.hackerrank.com/challenges/pacman-dfs
  * https://www.hackerrank.com/challenges/pacman-bfs
+ * DONE :)
  * */
 
-public class PackmanSearch {
-
+public class TemplatePackmanJava {
+	
 	static boolean [][] visited;
 	static int dimX, dimY;
 	static Place [][] map, parent;
@@ -88,25 +84,23 @@ public class PackmanSearch {
 		parent[x][y] = ancestor;
 	}
 	
-
-	
-	public static Stack<Place> validSpaceStack(int x, int y) {
-		Stack<Place> places = new Stack<Place>();
-		// % representa uma parede
-		if(x > 0 && ! map[x-1][y].label.equals("%")) {	//UP
-			places.push( map[x-1][y] );
+	static void nextMove(int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, String [] grid){
+		origin = new Place(pacman_r, pacman_c, "P");
+		destiny = new Place(food_r, food_c, ".");
+		
+		TemplatePackmanJava.init(r, c);
+		add(pacman_r, pacman_c, origin);
+		add(food_r, food_c, destiny);
+		
+		for(int i=0; i<r; i++) {
+			for(int j=0; j<c; j++) {
+				add(i, j, String.valueOf(grid[i].charAt(j)));
+			}
 		}
-		if(y > 0 && ! map[x][y-1].label.equals("%")){	//LEFT
-			places.push(map[x][y-1]);
-		}
-		if(y+1 < dimY && ! map[x][y+1].label.equals("%")) {	// RIGHT
-			places.push(map[x][y+1]);
-		}
-		if(x+1 < dimX && ! map[x+1][y].label.equals("%")) {	//DOWN
-			places.push(map[x+1][y] );
-		}
-		return places;
-	}
+		bfs(pacman_r, pacman_c);
+		//dfs(pacman_r, pacman_c);
+		return;
+    }
 	
 	public static Queue<Place> validSpaceQueue(int x, int y) {
 		Queue<Place> places = new LinkedList<Place>();
@@ -155,9 +149,9 @@ public class PackmanSearch {
 		if( ! F )
 			return;
 		
-		CompIO.printf("%d\n", path.size());
+		System.out.printf("%d\n", path.size());
 		for(Place place : path) {
-			CompIO.printf("%d %d\n", place.x, place.y);
+			System.out.printf("%d %d\n", place.x, place.y);
 		}
 		
 		path = new ArrayList<>();
@@ -171,10 +165,10 @@ public class PackmanSearch {
 			path.add(anc);
 		}
 		
-		CompIO.printf("%d\n", path.size() - 1);
+		System.out.printf("%d\n", path.size() - 1);
 		for(int i = path.size() - 1; i >= 0; i--) {
 			Place place  = path.get(i);
-			CompIO.printf("%d %d\n", place.x, place.y);
+			System.out.printf("%d %d\n", place.x, place.y);
 		}
 	}
 	
@@ -206,9 +200,9 @@ public class PackmanSearch {
 		if(!F)
 			return;
 		
-		CompIO.printf("%d\n", path.size());
+		System.out.printf("%d\n", path.size());
 		for(Place place : path) {
-			CompIO.printf("%d %d\n", place.x, place.y);
+			System.out.printf("%d %d\n", place.x, place.y);
 		}
 		
 		// realizar o caminho contrario para verificar qual o menor caminho nesse GRID
@@ -225,128 +219,30 @@ public class PackmanSearch {
 			path.add(anc);
 		}
 		
-		CompIO.printf("%d\n", path.size() - 1);
+		System.out.printf("%d\n", path.size() - 1);
 		for(int i = path.size() - 1; i >= 0; i--) {
 			Place place  = path.get(i);
-			CompIO.printf("%d %d\n", place.x, place.y);
+			System.out.printf("%d %d\n", place.x, place.y);
 		}
 	}
-	
-	//static void nextMove(int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, String [] grid){
-        //Your logic here
-    //}
-	
-	public static void run() {
-		CompIO.init();
-		int [] src = CompIO.readInts(" ");
-		origin = new Place(src[0], src[1], "P");
-		int [] dt = CompIO.readInts(" ");
-		destiny = new Place(dt[0], dt[1], ".");
-		int [] dim = CompIO.readInts(" ");
-		PackmanSearch.init(dim[0], dim[1]);
-		
-		add(src[0], src[1], origin);
-		add(dt[0], dt[1], destiny);
-		
-		for(int i=0; i<dim[0]; i++) {
-			String [] e = CompIO.readStrings();
-			for(int j=0; j<dim[1]/*e.length*/; j++) {
-				add(i, j, e[j]);
-			}
-		}
-		//
-		//bfs(src[0], src[1]);
-		//System.out.println("");
-		//visited = new boolean[dimX][dimY];
-		dfs(src[0], src[1]);
-		return;
-	}
-	
 	
 	public static void main(String[] args) {
-		run();
-	}
-	
-	
-	public static class CompIO {
-		private CompIO() {  throw new UnsupportedOperationException(); }
-		private static BufferedReader buffer;
-		private static PrintWriter writer;
-		private static StringTokenizer tk;
-		
-		public static void init() {
-			buffer = new BufferedReader(new InputStreamReader(System.in));
-			writer = new PrintWriter(new OutputStreamWriter(System.out), true);
-		}
-		
-		public static String read(String delimiter) {
-			while(tk == null || ! tk.hasMoreTokens()) {
-				try {
-					if(delimiter == null)
-						tk = new StringTokenizer(buffer.readLine());
-					else
-						tk = new StringTokenizer(buffer.readLine(), delimiter);
-				} catch(IOException ioex){}
-			}
-			return tk.nextToken();
-		}
-		
-		public static String readLine() {
-			String line = null;
-			try {
-				line = buffer.readLine();
-			} catch(IOException ioex) {}
-			return line;
-		}
-		
-		public static char [] readChars(String delimiter) {
-			StringTokenizer tk = new StringTokenizer(CompIO.readLine(), " ");
-			char [] array = new char[tk.countTokens()];
-			int i=0;
-			while(tk.hasMoreTokens()) {
-				array[i++] = tk.nextToken().toCharArray()[0];
-			}
-			return array;
-		}
-		
-		public static String [] readStrings(String delimiter) {
-			StringTokenizer tk = new StringTokenizer(CompIO.readLine(), delimiter);
-			String [] array = new String[tk.countTokens()];
-			int i=0;
-			while(tk.hasMoreTokens()) {
-				array[i++] = tk.nextToken();
-			}
-			return array;
-		}
-		
-		public static String [] readStrings() {
-			String [] array = CompIO.readLine().split("");
-			return array;
-		}
-		
-		public static String read() {
-			return read(null);
-		}
-		
-		public static int readInt(String delimiter) {
-			return Integer.parseInt(read(delimiter));
-		}
-		
-		public static int [] readInts(String delimiter) {
-			StringTokenizer token = new StringTokenizer(readLine(), delimiter);
-			int i = 0, array []  = new int[token.countTokens()];
-			while(token.hasMoreTokens()) {
-				array[i++] = Integer.parseInt(token.nextToken());
-			}
-			return array; 
-		}
-		
-		public static void printf(String format, Object ... objects) {
-			writer.printf(format, objects);
-		}
-		
-		public static void print(String data) {
-			writer.printf("%s\n", data);
-		}
-	}
+        Scanner in = new Scanner(System.in);
+        int pacman_r = in.nextInt();
+        int pacman_c = in.nextInt();
+        
+        int food_r = in.nextInt();
+        int food_c = in.nextInt();
+        
+        int r = in.nextInt();
+        int c = in.nextInt();
+    
+        String grid[] = new String[r];
+
+        for(int i = 0; i < r; i++) {
+            grid[i] = in.next();
+        }
+
+        nextMove( r, c, pacman_r, pacman_c, food_r, food_c, grid);
+    }
 }
