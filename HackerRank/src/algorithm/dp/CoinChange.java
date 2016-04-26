@@ -7,8 +7,6 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-import sun.util.locale.StringTokenIterator;
-
 /*
  * http://www.algorithmist.com/index.php/Coin_Change
  * https://sohagbuet.wordpress.com/2014/03/27/coin-change-problem/
@@ -90,7 +88,6 @@ public class CoinChange {
 		 * nao usar moeda alguma
 		 * */
 		space[0] = 1;
-		
 		for(int i=0; i<s; i++) {
 			for(int j=coins[i]; j<=N; j++) {
 				space[j] += space[j - coins[i]];
@@ -100,10 +97,14 @@ public class CoinChange {
 		return space[N];
 	}
 	
-	// fazendo uns testes
+
+	/**
+	 * Tentando algo diferente
+	 * */
 	public static int f(int [] coins, int N) {
 		int s = coins.length;
 		int [] space = new int[N+1];
+
 		space[0] = 1;		
 		//como sera que esse parte de comporta ?
 		for(int i=1; i<=N; i++) {
