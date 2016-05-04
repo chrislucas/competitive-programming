@@ -1,4 +1,4 @@
-package com.br.competitive;
+package com.br.competitive.backtracking;
 
 public class EightQueenProblem {
 
