@@ -40,6 +40,8 @@ public class PIE {
 	// https://www.urionlinejudge.com.br/judge/pt/problems/view/1512
 	// solucao do link acima
 	public static long sol(long n, long a, long b) {
+		// http://webbuild.knu.ac.kr/~trj/disc/mat/lecture_12.pdf
+		// melhor explicação do uso de LCM na contagem de elemeno de um conjunto
 		return Math.floorDiv(n, a) + Math.floorDiv(n, b) - (n / lcm(a,b));
 	}
 	
