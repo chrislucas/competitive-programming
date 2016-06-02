@@ -17,7 +17,6 @@ public class KMP {
 	}
 	
 	public static void kmp(String pattern, String text) {
-		
 		return;
 	}
 	
