@@ -32,6 +32,25 @@ public class FiniteAutomata {
 		System.out.println(0^1^0^1^0^1^0);
 	}
 	
+	/*
+	 * In FA (Finite Automata) algorithm, we preprocess
+	 * the patetern and build a 2D array tha represents
+	 * a FA. Once the FA is built, the searching is simple.
+	 * 
+	 * We star from the first state of automata and first char
+	 * of the text, at every step, we consider next char of text
+	 * look for the next state in FA and move to new state
+	 * If we reach final state, then pattern was found in text.
+	 * Time complexity of the search is O(n)
+	 * 
+	 * O numero de estados numa FA eh M+1, onde M é o comprimento
+	 * do 'pattern' a ser encontrado.
+	 * 
+	 * A principal ação para a construção da FA é pegar o
+	 * proximo estado a partir do estado atual para todos
+	 * os caracteres possiveis no pattern
+	 * */
+	
 	public static void main(String[] args) {
 		xor();
 	}
