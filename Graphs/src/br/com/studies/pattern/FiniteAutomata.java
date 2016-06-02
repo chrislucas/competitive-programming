@@ -51,8 +51,59 @@ public class FiniteAutomata {
 	 * os caracteres possiveis no pattern
 	 * */
 	
+	public static int nextState(String pattern, int lenPattern, int state, String x) {
+		if(state < lenPattern && String.valueOf(pattern.charAt(state)).equals(x)) {
+			return state + 1;
+		}
+		int i;
+		for(int ns = state; ns > 0; ns--) {
+			if(String.valueOf(pattern.charAt(state)).equals(x)) {
+				for (i = 0; i < ns-1; i++) {
+					if(pattern.charAt(i) != pattern.charAt(state-ns+i+1))
+						break;
+				}
+				if(i == ns-1)
+					return ns;
+			}
+		}
+		return 0;
+	}
+	
+	static final int CHARS = 1<<8;
+	
+	public static void compute(String pattern, int lenPattern, int [][] table) {
+		for(int state=0; state<lenPattern; ++state) {
+			for(int x=0; x<CHARS; ++x) {
+				table[state][x] =  nextState(pattern, lenPattern, state, String.valueOf((char)x));
+			}
+		}
+	}
+	
+	public static void search(String pattern, String text) {
+		int lenPattern 	= pattern.length();
+		int lenText		= text.length();
+		// o valor 256 vem do total de numeros de caracteres
+		// no patteern e no texto (segundo o tutoriall, 
+		// acredito que 256 seja o numero de todos os caracters da tabela ASCII)
+		int [][] table = new int [lenPattern+1][CHARS];
+		compute(pattern, lenPattern, table);
+		int state = 0;
+		for(int i=0; i<lenText; i++) {
+			state = table[state][text.charAt(i)];
+			if(state == lenPattern)
+				System.out.printf("Pattern encontrado no indice %d\n", i-lenPattern+1);
+		}
+	}
+	
+	public static void run() {
+		String pattern 	= "AABAACAADAABAAABAA";
+		String text		= "AABA";
+		search(pattern, text);
+	}
+	
 	public static void main(String[] args) {
-		xor();
+		//xor();
+		run();
 	}
 
 }
