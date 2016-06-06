@@ -19,9 +19,9 @@ public class ModExp {
 		long ans = 1;
 		boolean [] bin = decToBin((int)e);
 		for(boolean bit : bin) {
-			ans = ans * ans % m;
+			ans = (ans * ans) % m;
 			if(bit)
-				ans = ans * b % m;
+				ans = (ans * b) % m;
 		}
 		return ans;
 	}
@@ -46,6 +46,8 @@ public class ModExp {
 		System.out.println(decToBin(7));
 		System.out.println(expmod(672, 1456, 15));
 		System.out.println(modularBinaryExpLF(672, 1456, 15));
+		System.out.println(modularBinaryExpLF(3, 20, Integer.MAX_VALUE));
+		System.out.println(modularBinaryExpLF(3, 20, Integer.MAX_VALUE - 1));
 	}
 	
 	public static void main(String[] args) {
