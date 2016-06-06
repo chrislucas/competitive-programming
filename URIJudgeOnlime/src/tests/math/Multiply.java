@@ -1,5 +1,13 @@
 package tests.math;
 
+
+/*
+ * gdc
+ * inverso multiplicativo
+ * exponential by squaring
+ * inverso modular multiplicativo
+ * */
+
 public class Multiply {
 
 	static long gcd(long a, long b) {

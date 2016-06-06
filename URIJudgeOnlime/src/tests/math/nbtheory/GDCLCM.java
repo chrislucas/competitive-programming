@@ -1,4 +1,4 @@
-package tests.math;
+package tests.math.nbtheory;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package tests.math;
+package tests.math.geom;
 
 import java.util.Arrays;
 import java.util.Comparator;

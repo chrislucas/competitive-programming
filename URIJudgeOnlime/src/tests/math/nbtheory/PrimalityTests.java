@@ -1,4 +1,4 @@
-package tests.math;
+package tests.math.nbtheory;
 
 public class PrimalityTests {
 
