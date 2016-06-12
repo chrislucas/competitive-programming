@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * DONE
  * */
 
-public class ExecA {
+public class A {
 	
 	public static long f(long m, int n) {
 		long ans = 1;
