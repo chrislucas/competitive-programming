@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 /*
  * https://www.urionlinejudge.com.br/judge/pt/problems/view/1398
+ * DONE
  * */
 public class URI1398 {
 	
@@ -61,7 +62,7 @@ public class URI1398 {
 		int acc = 0;
 		// conversao base 2 para base 10 passo a passo
 		// usando aritmetica modular
-		for(int idx=0; idx<bin.length(); idx++) {
+		for(int idx=0; idx<bin.length()-1; idx++) {
 			acc = acc * 2/*acc << 1*/;
 			acc += bin.charAt(idx) & 0x0f;
 			acc %= MOD;
