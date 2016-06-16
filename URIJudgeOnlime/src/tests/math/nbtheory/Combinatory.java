@@ -95,8 +95,9 @@ public class Combinatory {
 	}
 	// C(n, r) == C(n, n - r)
 	public static long nCr2(long n, long p) {
+		// se p for maior que a metade de n
 		if(p > n / 2)
-			p = n - p;
+			p = n - p;	// uso da propriedade do coeficiente binomial
 		long ans = 1;
 		for(long i=1; i<=p; i++) {
 			ans = ans * (n - p + i);
@@ -109,7 +110,11 @@ public class Combinatory {
 	public static void main(String[] args) {
 		//System.out.println(nPr(100, 5));
 		//System.out.println(nCr1(10, 7));
-		//System.out.println(nCr2(10, 7));
+		System.out.println(nCr2(5, 4));
+		//table(3);
+	}
+	
+	public static void test() {
 		int [][] set = {
 			{
 				1,2,3
@@ -126,7 +131,6 @@ public class Combinatory {
 		};
 		subset(set[3]);
 		System.out.println(subsetEven(set[3]));
-		//table(3);
 	}
 
 }
