@@ -15,6 +15,7 @@ import java.util.Arrays;
 
 public class CCODIGO {
 	
+	// ideia furada
 	public static int test(char [] seq) {
 		char l_char = ' ';
 		int count = 0;
@@ -47,8 +48,31 @@ public class CCODIGO {
 			while(i < j && distances[i] == 0) i++;
 			while(i < j && distances[j] == 0) j--;
 			int k = distances[i];
+			if( 26 - distances[j] < k)
+				k = 26 -  distances[j];
+			distances[i] -= k;
+			distances[j] = (distances[j] + k) % 26;
+			ans+= k;
 		}
+		if(j == i)
+			ans += distances[i];
 		return ans;
+	}
+	
+	public static void runTest() {
+		String [] seq = {
+			"abcde"
+			,"abcz"
+			,"abdz"
+			,"abcxyz"
+			,"abcdefghijklmnopqrstuvwxyz"
+			,"aaaaaaaaa"
+			,"zzzzzzzzz"
+			,"zzzzbzzzz"
+		};
+		for(String s : seq) {
+			
+		}
 	}
 	
 	static class CompIO {
@@ -82,15 +106,33 @@ public class CCODIGO {
 		String in = "";
 		//CompIO.printf("%d", 'z' - '\0');
 		while( ! (in = CompIO.read()).equals("*") ) {
-			
+	/*		
 			int len = in.length();
 			char [] seq = new char[len];
 			for(int i=0; i<len; i++) {
 				seq[i] = in.charAt(i); //(char) (in.charAt(i) - '\0');
 			}
-			CompIO.printf("%d\n", test(seq));
+	*/		
+			CompIO.printf("%d\n", test(in.toCharArray()));
 			
 			//CompIO.printf("%d\n", test(in));
 		}
+	}
+	
+	public static void bmToCharArray() {
+		String in = "";
+		int len = in.length();
+		
+		long s = System.currentTimeMillis();
+		char [] new_s = new char[len];
+		System.arraycopy(in, 0, new_s, 0, len);
+		System.out.printf("%f", (s - System.currentTimeMillis()) / 1000);
+		
+		s = System.currentTimeMillis();
+		new_s = new char[len];
+		for(int i=0; i<len; i++) {
+			new_s[i] = in.charAt(i); //(char) (in.charAt(i) - '\0');
+		}
+		System.out.printf("%f", (s - System.currentTimeMillis()) / 1000);
 	}
 }
