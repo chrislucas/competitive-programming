@@ -71,7 +71,7 @@ public class CCODIGO {
 			,"zzzzbzzzz"
 		};
 		for(String s : seq) {
-			
+			test(s);
 		}
 	}
 	
@@ -103,8 +103,9 @@ public class CCODIGO {
 
 	public static void main(String[] args) {
 		CompIO.construct();
-		String in = "";
+		runTest();
 		//CompIO.printf("%d", 'z' - '\0');
+		String in = "";
 		while( ! (in = CompIO.read()).equals("*") ) {
 	/*		
 			int len = in.length();
