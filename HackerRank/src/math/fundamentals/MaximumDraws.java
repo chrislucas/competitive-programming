@@ -6,8 +6,10 @@ package math.fundamentals;
 
 public class MaximumDraws {
 
-	public static void solver() {
-		
+	public static int solver(int pares) {
+		// n-pares * 2 =  quantidade de meias
+		// quantidade / 2 + 1 = maximo de meias a se procurar
+		return pares + 1;
 	}
 	
 	public static void main(String[] args) {
