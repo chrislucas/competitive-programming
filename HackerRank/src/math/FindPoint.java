@@ -11,6 +11,7 @@ import java.util.StringTokenizer;
 
 /*
  * https://www.hackerrank.com/challenges/find-point
+ * DONE
  * */
 
 public class FindPoint {

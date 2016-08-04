@@ -1,5 +1,12 @@
 package math.fundamentals;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
 
 /*
  * https://www.hackerrank.com/challenges/find-point
@@ -83,13 +90,34 @@ public class FindPoint {
 	
 
 	public static void solver() {
-		
+		InputStream in = new BufferedInputStream(System.in, 2048);
+		BufferedReader buffer = new BufferedReader(new InputStreamReader(in));
+		FindPoint ref = new FindPoint();
+		PrintWriter out = new PrintWriter(System.out, true);
+		try {
+			String enter = buffer.readLine();
+			int n = Integer.parseInt(enter);
+			while(n>0) {
+				enter = buffer.readLine();
+				StringTokenizer token = new StringTokenizer(enter, " ");
+				int x1 = Integer.parseInt(token.nextToken());
+				int y1 = Integer.parseInt(token.nextToken());
+				int x2 = Integer.parseInt(token.nextToken());
+				int y2 = Integer.parseInt(token.nextToken());
+				Point2D a = ref.new Point2D(x1, y1);
+				Point2D b = ref.new Point2D(x2,y2);
+				out.println(a.symmetricPoints(b));
+				n--;
+			}
+		} catch(IOException ioex) {
+			
+		}	
 	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//runTest();
+		runTest();
 	}
 
 }

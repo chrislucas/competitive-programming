@@ -3,7 +3,6 @@ package math.fundamentals;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 
@@ -11,6 +10,7 @@ import java.util.StringTokenizer;
  * http://math.stackexchange.com/questions/1153794/adding-to-an-average-without-unknown-total-sum
  * http://math.stackexchange.com/questions/22348/how-to-add-and-subtract-values-from-an-average
  * https://en.wikipedia.org/wiki/Average
+ * DONE
  * */
 
 public class FillingJars {
