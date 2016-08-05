@@ -46,7 +46,7 @@ public class FindPoint {
 			return String.format("%d %d", this.x, this.y);
 		}
 		
-		public Point2D symmetricPoints(Point2D b) {
+		public Point2D symmetricPoint(Point2D b) {
 			Point2D p = null;
 			Point2D a = this;
 			// p sera o ponto simetrico relacionado aos pontos a e b
@@ -106,7 +106,7 @@ public class FindPoint {
 				int y2 = Integer.parseInt(token.nextToken());
 				Point2D a = ref.new Point2D(x1, y1);
 				Point2D b = ref.new Point2D(x2,y2);
-				out.println(a.symmetricPoints(b));
+				out.println(a.symmetricPoint(b));
 				n--;
 			}
 		} catch(IOException ioex) {
