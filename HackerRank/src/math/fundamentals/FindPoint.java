@@ -24,7 +24,7 @@ import java.util.StringTokenizer;
  * 
  * Problem
  * https://www.hackerrank.com/challenges/find-point
- * 
+ * DONE
  * */
 
 public class FindPoint {
@@ -58,11 +58,11 @@ public class FindPoint {
 			return p;
 		}
 		
-		public Point2D reflection(Point2D b) {
+		public Point2D symmetric(Point2D b) {
 			// Tem a formula marota, 2b - a
 			Point2D p = null;
 			Point2D a = this;
-			p = minus(multiply(2, b), a);
+			p = minus(a, multiply(2, b));
 			return p;
 		}
 		
@@ -80,12 +80,12 @@ public class FindPoint {
 		Point2D a,b;
 		a = ref.new Point2D(7, 4);
 		b = ref.new Point2D(3, -11);
-		System.out.println(a.symmetricPoints(b));
+		System.out.println(a.symmetricPoint(b));
+		System.out.println(a.symmetric(b));
 		a = ref.new Point2D(4, -2);
 		b = ref.new Point2D(2, 6);
-		System.out.println(a.symmetricPoints(b));
-		
-		System.out.println(a.reflection(b));
+		System.out.println(a.symmetricPoint(b));
+		System.out.println(a.symmetric(b));
 	}
 	
 
@@ -106,7 +106,7 @@ public class FindPoint {
 				int y2 = Integer.parseInt(token.nextToken());
 				Point2D a = ref.new Point2D(x1, y1);
 				Point2D b = ref.new Point2D(x2,y2);
-				out.println(a.symmetricPoint(b));
+				out.printf("%s\n", a.symmetric(b));
 				n--;
 			}
 		} catch(IOException ioex) {
@@ -118,6 +118,7 @@ public class FindPoint {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		runTest();
+		//solver();
 	}
 
 }
