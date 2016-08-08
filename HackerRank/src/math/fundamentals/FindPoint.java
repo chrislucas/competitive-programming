@@ -1,5 +1,12 @@
 package math.fundamentals;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
 
 /*
  * https://www.hackerrank.com/challenges/find-point
@@ -17,7 +24,7 @@ package math.fundamentals;
  * 
  * Problem
  * https://www.hackerrank.com/challenges/find-point
- * 
+ * DONE
  * */
 
 public class FindPoint {
@@ -39,7 +46,7 @@ public class FindPoint {
 			return String.format("%d %d", this.x, this.y);
 		}
 		
-		public Point2D symmetricPoints(Point2D b) {
+		public Point2D symmetricPoint(Point2D b) {
 			Point2D p = null;
 			Point2D a = this;
 			// p sera o ponto simetrico relacionado aos pontos a e b
@@ -51,11 +58,11 @@ public class FindPoint {
 			return p;
 		}
 		
-		public Point2D reflection(Point2D b) {
+		public Point2D symmetric(Point2D b) {
 			// Tem a formula marota, 2b - a
 			Point2D p = null;
 			Point2D a = this;
-			p = minus(multiply(2, b), a);
+			p = minus(a, multiply(2, b));
 			return p;
 		}
 		
@@ -73,23 +80,45 @@ public class FindPoint {
 		Point2D a,b;
 		a = ref.new Point2D(7, 4);
 		b = ref.new Point2D(3, -11);
-		System.out.println(a.symmetricPoints(b));
+		System.out.println(a.symmetricPoint(b));
+		System.out.println(a.symmetric(b));
 		a = ref.new Point2D(4, -2);
 		b = ref.new Point2D(2, 6);
-		System.out.println(a.symmetricPoints(b));
-		
-		System.out.println(a.reflection(b));
+		System.out.println(a.symmetricPoint(b));
+		System.out.println(a.symmetric(b));
 	}
 	
 
 	public static void solver() {
-		
+		InputStream in = new BufferedInputStream(System.in, 2048);
+		BufferedReader buffer = new BufferedReader(new InputStreamReader(in));
+		FindPoint ref = new FindPoint();
+		PrintWriter out = new PrintWriter(System.out, true);
+		try {
+			String enter = buffer.readLine();
+			int n = Integer.parseInt(enter);
+			while(n>0) {
+				enter = buffer.readLine();
+				StringTokenizer token = new StringTokenizer(enter, " ");
+				int x1 = Integer.parseInt(token.nextToken());
+				int y1 = Integer.parseInt(token.nextToken());
+				int x2 = Integer.parseInt(token.nextToken());
+				int y2 = Integer.parseInt(token.nextToken());
+				Point2D a = ref.new Point2D(x1, y1);
+				Point2D b = ref.new Point2D(x2,y2);
+				out.printf("%s\n", a.symmetric(b));
+				n--;
+			}
+		} catch(IOException ioex) {
+			
+		}	
 	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//runTest();
+		runTest();
+		//solver();
 	}
 
 }
