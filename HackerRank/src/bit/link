@@ -1,5 +1,40 @@
 https://www.hackerrank.com/domains/algorithms/bit-manipulation/page/1
 
 
+Complemento 1,2
+https://www.hackerrank.com/challenges/2s-complement
+http://producao.virtual.ufpb.br/books/camyle/introducao-a-computacao-livro/livro/livro.chunked/ch03s04.html
+http://codeforces.com/profile/rng_58
+https://en.wikipedia.org/wiki/Two%27s_complement
+https://pt.wikipedia.org/wiki/Complemento_para_dois
+https://pt.wikipedia.org/wiki/Representa%C3%A7%C3%A3o_de_n%C3%BAmeros_com_sinal#Complemento_para_um
+
+http://www.inf.ufes.br/~zegonc/material/Introducao_a_Computacao/Aritmetica_binaria_Complemento.pdf
+http://www.math.grin.edu/~rebelsky/Courses/152/97F/Readings/student-binary
+https://en.wikipedia.org/wiki/Binary_operation
+http://www.doc.ic.ac.uk/~eedwards/compsys/arithmetic/
+
 material conditional
 https://en.wikipedia.org/wiki/Material_conditional
+
+https://en.wikipedia.org/wiki/Bitwise_operation
+http://lab.polygonal.de/2007/05/10/bitwise-gems-fast-integer-math/
+http://www.advanced-ict.info/mathematics/bitwise.html
+http://www.cprogramming.com/tutorial/bitwise_operators.html
+
+Combinatoria
+http://www.cs.utsa.edu/~wagner/knuth/
+http://www-cs-staff.stanford.edu/~knuth/news.html
+https://www.amazon.com/Art-Computer-Programming-Fascicle-Techniques/dp/0321580508
+https://github.com/fabien-todescato/zcube/blob/master/papers/TAOCP-7.1.3-Bitwise%20Tricks%20and%20Techniques.pdf
+
+Math
+https://graphics.stanford.edu/~seander/bithacks.html
+http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/
+http://stackoverflow.com/questions/5542854/what-are-some-great-ways-to-take-advantage-of-bitwise-operators
+
+
+http://playground.arduino.cc/Code/BitMath
+https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/e/bitwise-operators
+http://stackoverflow.com/questions/7199625/mathematical-equation-for-and-bitwise-operation
+http://stackoverflow.com/questions/3319974/do-bitwise-operators-other-than-shifts-make-any-mathematical-sense-in-base-10
