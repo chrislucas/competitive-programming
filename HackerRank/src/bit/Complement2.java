@@ -13,7 +13,7 @@ public class Complement2 {
 		StringBuilder sb = new StringBuilder();
 		while(n > 0) {
 			sb.append( (n & 1) == 1 ? "1" : "0");
-			n <<= 1;
+			n >>= 1;
 		}
 		return sb.reverse().toString();
 	}
@@ -27,27 +27,25 @@ public class Complement2 {
 		return ~n + 1;
 	}
 	
-	public static int comp2(int n) {
+	public static int fx2(int n) {
 		n = ((n < 0) ? -n  : n);
 		int pow2 = 1 << n;
-		pow2 -= n;
-		String rs = toBin(pow2);
-		System.out.println(rs);
-		return 0;
+		pow2 = pow2 - (pow2 - n);
+		return pow2;
 	}
 	
 	
-	public static int comp1(int n) {
-		return 0;
-	}
-	
-	public static void runComp2() {
-		comp2(-2);
+	public static void runTest() {
+		int n = complementOne(30);
+		int m = complementTwo(30);
+		int o = fx2(30);
+		System.out.printf("%d %d %d\n%s\n%s", m, n, o, toBin(m < 0 ? -m : m), toBin(n < 0 ? -n : n));
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		runComp2();
+		//runComp2();
+		runTest();
 	}
 
 }
