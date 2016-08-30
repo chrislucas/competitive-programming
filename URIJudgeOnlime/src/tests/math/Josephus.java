@@ -7,47 +7,75 @@ public class Josephus {
  * https://www.urionlinejudge.com.br/judge/pt/problems/view/1032
  * http://www.spoj.com/problems/ANARC08H/
  * */	
-	public static int sRecursive(int n, int p) {
-		if(n == 1) {
-			return 1;
+	public static int sRecursive(int i, int n, int p) {
+		if(n == i) {
+			return n;
 		}
 		else {
-			int s = (sRecursive(n-1, p)+p-1) % n + 1;
-			return s;
+			// (sRecursive(i, n-1, p) + p-1) % n + 1;
+			int s = sRecursive(i, n-1, p); 
+			return (s+p-1)%n+1;
 		}
 	}
 	
-	public static int sIterative(int n, int p) {
-		int idx = 1;
-		for(int i=1; i<=n; i++) {
+	public static int sIterative(int i, int n, int p) {
+		int idx = i;
+		while(i<n) {
 			idx = (idx+p-1)%i+1;
+			i++;
 		}
 		return idx;
 	}
 	
 	public static void fx() {
 		for(int i=1;i<Integer.MAX_VALUE;i++) {
-			if(sRecursive(17, i) == 13) {
+			int ans = sIterative(2, 17, i);
+			if(/*sRecursive*/ans == 13) {
 				System.out.println(i);
 				break;
 			}	
 		}
 	}
 	
+	public static int solver(boolean [] S, int kill, int n, int p) {
+		int count = S.length-1;
+		while( count > 1 ) {
+			if(S[kill]) {
+				S[kill] = false;
+				count--;
+				kill += p-1;
+				kill %= count;
+			}
+			
+			else {
+				kill++;
+			}
+		}
+		return 0;
+	}
+	
+	public static void runList() {
+		System.out.println(sRecursive(1, 17, 5));
+		int n = 17, p = 5;
+		boolean [] S = new boolean [n+1];
+		S[0] = false;
+		for(int i=1; i<n+1; i++)
+			S[i] = true;
+		
+		solver(S, 1, n, p);
+		
+	}
+	
 	public static void run() {
-		System.out.printf("%d %d\n%d %d\n%d %d"
-			,sRecursive(5, 2)
-			,sIterative(5, 2)
-			,sRecursive(14, 2)
-			,sIterative(14, 2)
-			,sRecursive(17, 7)
-			,sIterative(17, 7)
-		);
+		System.out.println(sRecursive(2, 9, 3));
+		System.out.println(sIterative(2, 9, 3));
+		//fx();
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		run();
+		//run();
+		runList();
 	}
 
 }
