@@ -1,5 +1,11 @@
 package adhoc;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
+
 /*
  * https://www.urionlinejudge.com.br/judge/pt/problems/view/1032
  * 
@@ -40,10 +46,9 @@ public class URI1032 {
 	
 	public static int sIterative(int n) {
 		int idx = 1;
-		int i = 1;
-		while(i<=n) {
-			int p = SET[i-1];
-			idx = (idx+p-1)%i+1;
+		for(int i=1; i<=n; i++) {
+			int p 	= SET[i-1];
+			idx 	= (idx+p-1)%i+1;
 			i++;
 		}
 		return idx;
@@ -55,8 +60,15 @@ public class URI1032 {
 	
 	public static void main(String[] args) {
 		init();
-		test();
-		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
+		try {
+			String in;
+			while( ! (in = reader.readLine()).equals("0") ) {
+				int n = Integer.parseInt(in);
+				writer.printf("%d\n", sIterative(n));
+			}
+		} catch(Exception ex) {}
 	}
 	
 }
