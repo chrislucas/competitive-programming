@@ -54,18 +54,14 @@ public class Josephus {
 	public static int solver(boolean [] S, int kill, int n, int p) {
 		int count = S.length-1;
 		while( count > 1 ) {
+			kill = (kill + p - 1) % n;
 			if(S[kill]) {
 				S[kill] = false;
 				count--;
-				kill += p-1;
-				kill %= count;
 			}
-			
-			else {
-				kill++;
-			}
+			kill = kill % n + 1;
 		}
-		return 0;
+		return kill;
 	}
 	
 	public static void runTechModular() {
