@@ -22,12 +22,12 @@ import java.io.PrintWriter;
  * http://stackoverflow.com/questions/4845260/josephus-for-large-n-facebook-hacker-cup
  * http://cs.stackexchange.com/questions/58078/josephus-problem-a-faster-solution
  * http://www.exploringbinary.com/powers-of-two-in-the-josephus-problem/
- * 
+ * DONE
  * */
 
 public class URI1032 {
 
-	public static final int S = 400000;
+	public static final int S = 40000;
 	public static int [] SET;
 	public static int count = 0;
 	
@@ -36,12 +36,14 @@ public class URI1032 {
 		boolean P [] = new boolean[S+1];
 		for(int i=2; i<S; i++)
 			P[i] = true;
-
-		for(int i = 2; i*i<=S; i++) {
+		
+		for(int i=2; i<=S; i++) {
+		//for(int i = 2; i*i<=S; i++) {
 			if(P[i]) {
-				for(int j=i; j*i<=S; j++) {
-					int idx = j*i;
-					P[idx] = false;
+				for(int j=i+i; j<=S; j+=i) {
+				//for(int j=i; j*i<=S; j++) {
+					//int idx = j*i;
+					P[j] = false;
 				}
 			}
 		}
@@ -55,20 +57,20 @@ public class URI1032 {
 	
 	
 	public static int it(int n) {
-		int idx = 1, i = 1;
-		for(int j=0; i<n; i++, j++) {
-			idx = (idx+SET[j])%i+1;
+		int idx = 0;
+		for(int i=n, j=1; i>=0; i--, j++) {
+			idx = (idx+SET[i])%j;
 		}
 		return idx;
 	}
 	
-	public static int re(int n) {
+	public static int re(int n, int N) {
 		if(n == 1)
-			return n;
+			return 0;
 		else {
-			int p = re(n-1);
-			int j = SET[n-2];
-			return (p+j-1)%n+1;
+			int j = SET[N-n];
+			int p = re(n-1, N);
+			return (p+j)%n;
 		}
 	}
 	
@@ -121,7 +123,7 @@ public class URI1032 {
 					S[i] = true;
 				writer.printf("%d\n", so(S, S.length));
 				*/
-				writer.printf("%d\n", re(n)+1);
+				writer.printf("%d %d\n", re(n, n)+1, it(n)+1);
 			}
 			writer.close();
 		} catch(IOException ex) {}
