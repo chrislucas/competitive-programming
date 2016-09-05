@@ -51,28 +51,43 @@ public class Josephus {
 		return idx;
 	}
 	
-	public static int solver(boolean [] S, int kill, int n, int p) {
-		int count = S.length-1;
-		while( count > 1 ) {
-			kill = (kill + p - 1) % n;
-			if(S[kill]) {
-				S[kill] = false;
+	public static int solver(boolean [] S, int kill, int n,  int p) {
+		int count = n;
+		int idx = kill, counter = 0;
+		while(count > 1) {			
+			if(S[idx]) {
+				counter++;
+			}
+			if(counter == p) {
+				S[idx] = false;
+				counter = 0;
 				count--;
 			}
-			kill = kill % n + 1;
+			if(count==1)
+				break;
+			idx = idx%n+1;
 		}
-		return kill;
+		return idx;
 	}
 	
-	public static void runTechModular() {
-		int n = 17, p = 5;
-		boolean [] S = new boolean [n+1];
-		for(int i=2; i<n+1; i++)
-			S[i] = true;
-		solver(S, 2, n, p);
+	public static void runTestSolver() {
+		int n = 17, p [] = {5, 7}, ans = 0;
+		int g = p[0];
+		for ( ;g <= n; g++) {
+			boolean[] S = new boolean[n+1];
+			for(int i=0; i<n+1; i++)
+				S[i] = true;
+			S[0] = S[1] = false;
+			ans = solver(S, 2, n, g);
+			if(ans == 13)
+				break;
+		}
+		System.out.println(g);
 	}
 	
 	public static void run() {
+		System.out.println(sIterative(17, 3));
+		System.out.println(sRecursive(17, 3));
 		System.out.println(sRecursive(5, 9, 3));
 		System.out.println(sIterative(5, 9, 3));
 	}
@@ -80,7 +95,7 @@ public class Josephus {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//run();
-		runTechModular();
+		runTestSolver();
 	}
 
 }
