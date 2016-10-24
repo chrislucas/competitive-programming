@@ -6,6 +6,28 @@ package com.br.practice.track.algorithm.dp;
 
 public class Bitmskdp {
 
+	
+	public static int setNBit(int val, int nth) {
+		return val | 1 << nth;
+	}
+	
+	public static int unsetNBit(int val, int nth) {
+		return val & ~(1 << nth);
+	}
+	
+	public static boolean isSetNBit(int val, int nth) {
+		return (val & 1 << nth) > 0;
+	}
+	
+	public static boolean isSetNBit2(int val, int nth) {
+		// val / 2 ^ nth
+		return	(val >> nth & 1) > 0;
+	}
+	
+	public static int toggleBit(int val, int nth) {
+		return val ^ 1 << nth;
+	}
+	
 	/*
 	 * Problema
 	 * 
@@ -73,10 +95,46 @@ public class Bitmskdp {
 		return -1;
 	}
 	
+	/*
+	 * Dado um conjunto de M numeros inteiros
+	 * contar quantos subconjuntos formados por M inteiros
+	 * existem, tal que a soma dos M inteiros e maior ou igual
+	 * a um valor arbritario
+	 * 
+	 * A {n+1, n+2, ..., n+n}
+	 * */
+	public static int countSubsets(int [] set, int value) {
+		int count = 0;
+		int len = set.length;
+		for(int i=0; i<(1<<len); i++) {
+			int acc = 0;
+			for(int j=0; j<len; j++) {
+			//for(int j=len-1; j>-1; j--){
+				if( (i & 1<<j) > 0) {
+					System.out.printf("1");
+					acc += set[j];
+				}
+				else
+					System.out.printf("0");
+			}
+			System.out.printf("\n");
+			//count += acc >= value ? 1 : 0;
+			if(acc>=value)
+				count++;
+		}
+		return count;
+	}
+	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//System.out.println(setNBit(setNBit(10, 2), 0));
+		//System.out.printf("%d %d %d\n", unsetNBit(10, 1), ~(1 << 1), ~10);
+		//System.out.println(isSetNBit2(128, 6));
+		//System.out.println(toggleBit(10, 2));
+		int [][] multiset = {
+			{1,2,3}
+		};
+		System.out.println(countSubsets(multiset[0], 4));
 	}
 
 }
