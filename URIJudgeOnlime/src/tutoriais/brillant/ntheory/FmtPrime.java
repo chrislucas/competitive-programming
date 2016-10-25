@@ -6,7 +6,7 @@ import java.util.Random;
 /*
  * https://brilliant.org/wiki/prime-testing/
  * https://brilliant.org/wiki/fermats-little-theorem/
- * 
+ * https://pt.wikipedia.org/wiki/Teste_de_primalidade_de_Fermat
  * parece um bom material
  * http://www.orm.mtm.ufsc.br/arquivos/downloads/congruencia
  * */
@@ -68,12 +68,12 @@ public class FmtPrime {
 		int max = (p-1);
 		for(int i=0; i<it; i++) {
 			int a = random.nextInt(max) + 1;
-			System.out.printf("a: %d\n", a);
+			//System.out.printf("a: %d\n", a);
 			// calcular a^(p-1) mod p
 			//if(expmod2(num, max, p) != 1)
 				//return false;
 			// a^p congruente a 'a' mod p
-			if(expmod2(a, p, p) != a)
+			if(expmod4(a, p, p) != a)
 				return false;
 		}
 		return true;
@@ -167,11 +167,13 @@ public class FmtPrime {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//System.out.printf("%.30f", (1234.0 * 564.0) / Long.MAX_VALUE);
-		
-		System.out.printf("%s %s\n"
+		System.out.printf("%s %s %s\n"
 			,fermat(123, 1000)
 			,fermat(15, 1000)
+			,fermat(151, 15100)
 		);
+		
+		System.out.println(expmod0(2, 10, 10));
 		
 		/*
 		BigInteger  a = new BigInteger("9223372036854775807")
