@@ -2,7 +2,8 @@ package tutoriais.brillant.ntheory;
 
 /*
  * https://brilliant.org/wiki/prime-testing/
- * tps://en.wikipedia.org/wiki/Carmichael_number
+ * https://en.wikipedia.org/wiki/Carmichael_number
+ * https://en.wikipedia.org/wiki/Carmichael_function
  * */
 
 public class CarmichaelNumbers {

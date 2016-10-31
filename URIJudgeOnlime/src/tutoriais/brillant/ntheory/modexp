@@ -1,5 +1,10 @@
+https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/fast-modular-exponentiation
 https://en.wikipedia.org/wiki/Modular_exponentiation
 http://www.ime.usp.br/~fmario/mac2166/aula7.html
+http://www.ime.usp.br/~fmario/mac2166/aula7.html
+https://www.hackerearth.com/practice/notes/powerful-tricks-with-calculation-modulo/
+https://www.hackerrank.com/challenges/power-of-large-numbers
+
 
 Primary test
 https://www.topcoder.com/community/data-science/data-science-tutorials/primality-testing-non-deterministic-algorithms/
@@ -14,6 +19,42 @@ calculadora
 http://comnuan.com/cmnn02/cmnn02008/
 http://www.dcode.fr/modular-exponentiation-calculus
 http://www.programminglogic.com/basic-modular-arithmetic/
+
+Rabin-Miller
+http://code.activestate.com/recipes/410681-rabin-miller-probabilistic-prime-test/
+https://codingvoding.wordpress.com/2010/04/10/miller%E2%80%93rabin-primality-test/
+
+
+Pesquisar por
+fast modulo exponential SPOJ, ACM ICPC
+OJ
+http://codeforces.com/blog/entry/14516?mobile=true
+http://codeforces.com/blog/entry/3186?mobile=true
+http://www.spoj.com/problems/MPOWER/
+http://www.spoj.com/problems/MOD/
+http://br.spoj.com/problems/FAST2/
+http://www.spoj.com/problems/FAST2/
+http://www.spoj.com/problems/LCPCP2/
+http://www.spoj.com/problems/ZSUM/
+https://www.hackerearth.com/practice/notes/number-theory-1/
+https://www.hackerearth.com/practice/notes/mod-integer-exponentiation-useful-in-competetive-programming/
+https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/
+https://www.hackerearth.com/practice/notes/fast-matrix-exponentiation-2/
+
+Tutoriais
+https://uva.onlinejudge.org/board/viewtopic.php?t=42690
+
+Ler
+https://www.quora.com/How-do-I-find-the-value-of-nCr-1000000007-for-the-large-number-n-n-10-6-in-C
+
+Pesquisar por
+fermat primality test SPOJ
+http://www.spoj.com/problems/PON/
+http://www.spoj.com/problems/PAGAIN/
+http://www.spoj.com/problems/NUMTRY/
+https://www.codechef.com/problems/INSOMB1
+https://codingvoding.wordpress.com/2010/04/10/miller%E2%80%93rabin-primality-test/
+
 
 Integer factorization
 https://en.wikipedia.org/wiki/Integer_factorization#Factoring_algorithms
@@ -37,3 +78,12 @@ exemplo a ^ b, a = 7, b = 10, acc=1
 	a = (7 ^ 8) * (7 ^ 8) = (7 ^ 16) // esse passo eh feito no algoritmo mas o que retorna e o valor de 'acc'
 	b = 1 / 2 = 0 // isso numa divisao inteira
 // fim
+
+Reflexao sobre exponenciao modular rapuida
+https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/fast-modular-exponentiation
+a ^ b mod c
+5 ^ 117 mod 19
+1) converter 'b' em binario
+1110101
+2) da direita para esquerda utilize somente os 1's como potencia de 2
+(2^0)+(2^2)+(2^4)+(2^5)+(2^6)
