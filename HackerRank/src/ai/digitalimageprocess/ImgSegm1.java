@@ -1,5 +1,7 @@
 package ai.digitalimageprocess;
 
+import java.util.ArrayList;
+
 /*
  * https://en.wikipedia.org/wiki/Connected-component_labeling
  * http://homepages.inf.ed.ac.uk/rbf/HIPR2/connect.htm
@@ -24,17 +26,20 @@ public class ImgSegm1 {
 		return true;
 	}
 	
-	public static boolean is4connected(int x, int y) {
+	public static ArrayList<Point2D> is4connected(int x, int y) {
+		ArrayList<Point2D> points = new ArrayList<>();
 		if( ! validate(x, y) )
-			return false;
+			//return false;
+			return points;
+		
 		int X [] = {1,-1,0,0};
 		int Y [] = {0,0,1,-1};
-		int counter = 0;
+
 		for(int i=0; i<X.length; i++) {
 			if( ! validate(x+X[i], y+Y[i]) )
-				return false;
+				//return false;
 		}
-		return counter == 4;
+		return points;
 	}
 	
 	public static class Point2D {
@@ -51,7 +56,7 @@ public class ImgSegm1 {
 			for(int j=0; j<limY; j++){
 				if(grid[i][j] == 0)
 					continue;
-				System.out.printf("%d %d %s", i, j, is4connected(i, j));
+				is4connected(i, j);
 			}
 		}
 	}
