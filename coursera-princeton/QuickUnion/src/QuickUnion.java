@@ -35,12 +35,12 @@ public class QuickUnion {
 	}
 	
 	public static void main(String[] args) {
-		tetRoot();
+		testRoot();
 		int data[] = null;
 		init(10, data);
 	}
 	
-	public static void tetRoot() {
+	public static void testRoot() {
 		/*
 		 * {0,1,9,4,9,6,6,7,8,0};
 		 * {0,1,1,8,3,0,5,7,8,8};

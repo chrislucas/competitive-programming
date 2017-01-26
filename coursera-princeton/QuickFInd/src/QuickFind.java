@@ -14,7 +14,9 @@ public class QuickFind {
 		int rootp = data[p],
 			rootq = data[q];
 		for(int i=0; i<data.length; i++) {
+			// se o i-esimo elemento for filho de rootp como era o elemento p
 			if(data[i] == rootp)
+				// ele sera agora filho do pai do elemento q
 				data[i] = rootq;
 		}
 	}

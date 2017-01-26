@@ -6,7 +6,7 @@ package com.br.study.ia.imagepro;
 
 /**
  * 
- * Operação baica em https://en.wikipedia.org/wiki/Mathematical_morphology
+ * Operação basica em https://en.wikipedia.org/wiki/Mathematical_morphology
  * */
 
 public class MorphologicalOpDilation {

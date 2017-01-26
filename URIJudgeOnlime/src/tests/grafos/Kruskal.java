@@ -41,8 +41,11 @@ public class Kruskal {
 			}
 		}
 		static int root(int i) {
-			while( i != subset[i])
+			while( i != subset[i]) {
+				subset[i] = subset[subset[i]];	// path compression
 				i = subset[i];
+			}
+				
 			return i;
 		}
 		static void union(int p, int q) {
