@@ -29,7 +29,6 @@ public class ImgSegm1 {
 	public static ArrayList<Point2D> is4connected(int x, int y) {
 		ArrayList<Point2D> points = new ArrayList<>();
 		if( ! validate(x, y) )
-			//return false;
 			return points;
 		
 		int X [] = {1,-1,0,0};
@@ -37,7 +36,7 @@ public class ImgSegm1 {
 
 		for(int i=0; i<X.length; i++) {
 			if( ! validate(x+X[i], y+Y[i]) )
-				//return false;
+				points.add(new Point2D(x+X[i], y+Y[i]));
 		}
 		return points;
 	}
@@ -51,12 +50,14 @@ public class ImgSegm1 {
 	}
 	
 	public static void runTest4connectivity() {
-		
 		for(int i=0; i<limX; i++) {
 			for(int j=0; j<limY; j++){
 				if(grid[i][j] == 0)
 					continue;
-				is4connected(i, j);
+				ArrayList<Point2D> points = is4connected(i, j);
+				for(Point2D point : points) {
+					
+				}
 			}
 		}
 	}
