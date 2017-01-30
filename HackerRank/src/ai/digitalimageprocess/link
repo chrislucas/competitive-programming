@@ -1,0 +1,40 @@
+“Two-pass algorithm” implementation in Java
+http://codereview.stackexchange.com/questions/55250/two-pass-algorithm-implementation-in-java
+
+https://www.hackerrank.com/domains/ai/image-analysis/difficulty:easy/page:1
+http://www.imageprocessingplace.com/downloads_V3/root_downloads/tutorials/contour_tracing_Abeer_George_Ghuneim/connect.html
+http://radio.feld.cvut.cz/matlab/toolbox/images/binary6.html
+http://www.imageprocessingplace.com/downloads_V3/root_downloads/tutorials/contour_tracing_Abeer_George_Ghuneim/4con.html
+
+Pesquisa
+4 pixel connectivity algorithm
+https://en.wikipedia.org/wiki/Connected-component_labeling
+https://en.wikipedia.org/wiki/Digital_topology
+https://courses.cs.washington.edu/courses/cse373/00au/
+https://courses.cs.washington.edu/courses/cse373/00au/chcon.pdf
+
+Binary Image Analysis
+https://courses.cs.washington.edu/courses/cse373/00au/chcon.pdf
+
+http://radio.feld.cvut.cz/matlab/toolbox/images/binary6.html
+
+Exemplo em Java
+https://courses.cs.washington.edu/courses/cse576/02au/homework/hw3/ConnectComponent.java
+
+
+Connectivity Pixel
+https://en.wikipedia.org/wiki/Pixel_connectivity
+https://en.wikipedia.org/wiki/Pixel_connectivity#4-connected
+http://homepages.inf.ed.ac.uk/rbf/HIPR2/connect.htm
+
+Algorithms for testing connectivity -
+Implementation on binary images 
+http://www.eng.tau.ac.il/~danar/Miscellaneous/rotem-project.pdf
+
+Basic Algorithms for Digital Image Analysis:
+a course
+http://progmat.uw.hu/oktseg/kepelemzes/lec11_skeleton_4.pdf
+
+
+http://www.imageprocessingplace.com/downloads_V3/root_downloads/tutorials/contour_tracing_Abeer_George_Ghuneim/connectivity.html
+http://www.imageprocessingplace.com/downloads_V3/root_downloads/tutorials/contour_tracing_Abeer_George_Ghuneim/connect.html
