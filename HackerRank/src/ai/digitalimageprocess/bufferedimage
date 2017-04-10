@@ -1,0 +1,15 @@
+http://alvinalexander.com/blog/post/java/getting-rgb-values-for-each-pixel-in-image-using-java-bufferedi
+
+ * https://www.hackerrank.com/challenges/the-captcha-cracker
+ 
+ Treinamento com Image da oracle
+ https://docs.oracle.com/javase/tutorial/2d/images/loadimage.html
+ * https://docs.oracle.com/javase/tutorial/2d/images/
+ 
+ 
+ BITWISE and RGBA
+ https://ryanclark.me/rgb-to-hex-via-binary-shifting/
+ http://www.fayewilliams.com/2011/09/21/bitwise-rgba-values/
+ http://stackoverflow.com/questions/18022364/how-to-convert-rgb-color-to-int-in-java
+ http://stackoverflow.com/questions/7358533/how-to-pack-argb-to-one-integer-uniquely
+ http://stackoverflow.com/questions/19277010/bit-shift-and-bitwise-operations-to-encode-rgb-values

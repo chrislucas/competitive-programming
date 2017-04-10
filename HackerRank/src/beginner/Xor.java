@@ -22,6 +22,10 @@ public class Xor {
 		return (~x & y) | (x & ~y);
 	}
 	
+	public static boolean isPoweroF2(long n) {
+		return (n & (n-1)) == 0;
+	}
+	
 
 	public static void main(String[] args) {
 		System.out.println(opXorSimulate(15,7));
