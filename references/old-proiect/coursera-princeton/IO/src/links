@@ -1,0 +1,109 @@
+Judge ONline
+http://www.codechef.com/wiki/java
+
+
+FAST IO
+http://www.cpe.ku.ac.th/~jim/java-io.html
+http://www.codechef.com/wiki/java
+http://bufferedbyteswriter.blogspot.com.br/2013/03/java-fast-inputoutput.html
+http://stackoverflow.com/questions/2296685/how-to-read-input-with-multiple-lines-in-java
+http://codereview.stackexchange.com/questions/32302/simple-i-o-class-for-reading-input-data-fast
+http://codereview.stackexchange.com/questions/32302/simple-i-o-class-for-reading-input-data-fast
+
+// diferences between PrintStream and PrintWriter
+http://stackoverflow.com/questions/2822005/java-difference-between-printstream-and-printwriter
+http://stackoverflow.com/questions/11372546/printstream-vs-printwriter
+http://way2java.com/io/printstream-vs-printwriter/
+
+
+// classe estática
+http://javafree.uol.com.br/topic-889102-esta-e-para-os-mestre-no-java-Classe-estaticas.html
+http://www.snippetit.com/2014/02/java-static-initializer-static-constructor/
+http://www.devmedia.com.br/conceitos-e-exemplo-classes-e-membros-estaticos-estrutura-da-linguagem/18814
+
+// blocos estaticos
+http://vanillajava.blogspot.com.br/2011/07/java-secret-are-static-blocks.html
+http://crunchify.com/java-static-methods-variables-static-block-and-class-with-example/
+http://stackoverflow.com/questions/12448465/in-what-order-are-static-blocks-and-static-variables-in-a-class-executed
+http://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+http://beginnersbook.com/2013/04/java-static-class-block-methods-variables/
+http://coderanch.com/t/619529/Performance/java/static-method-static-block
+
+
+static methods vs static block performance
+http://beginnersbook.com/2013/04/java-static-class-block-methods-variables/
+http://stackoverflow.com/questions/8189473/static-block-vs-static-method-initializing-static-fields
+http://crunchify.com/java-static-methods-variables-static-block-and-class-with-example/
+http://vanillajava.blogspot.com.br/2011/07/java-secret-are-static-blocks.html
+
+BufferedReader vs BufferedInputStream
+http://stackoverflow.com/questions/14301150/why-is-the-performance-of-bufferedreader-so-much-worse-than-bufferedinputstream
+http://stackoverflow.com/questions/9903447/performance-measure-of-bufferedreader-vs-bufferedinputstream
+http://www.kegel.com/java/wp-javaio.html
+http://nadeausoftware.com/articles/2008/02/java_tip_how_read_files_quickly
+http://tutorials.jenkov.com/java-io/bufferedreader.html
+http://objectmix.com/java/74842-bufferedinputstream-vs-bufferedreader.html
+https://uk.answers.yahoo.com/question/index?qid=20111007133835AAWwWrv
+
+
+Tutorial tokenizer Java
+http://www.java-samples.com/showtutorial.php?tutorialid=236
+http://www.mkyong.com/java/java-stringtokenizer-example/
+https://docs.oracle.com/javase/7/docs/api/java/util/StringTokenizer.html
+http://www.java-samples.com/showtutorial.php?tutorialid=236
+
+Pesquisar por: http://docs.oracle.com/javase/7/docs/api/java/nio/channels/SeekableByteChannel.html
+
+
+StreamTokenizer vs
+http://www.coderanch.com/t/375451/java/java/StreamTokenizer-StringTokenizer
+http://stackoverflow.com/questions/8873672/java-streamtokenizer
+http://tutorials.jenkov.com/java-io/streamtokenizer.html
+http://docs.oracle.com/javase/7/docs/api/java/io/StreamTokenizer.html
+http://www.tutorialspoint.com/java/io/java_io_streamtokenizer.htm
+
+
+ACM Java IO : pesquisar bufferedinputstream competitive programming
+http://www.codechef.com/viewsolution/1760653
+http://discuss.codechef.com/questions/55818/faster-input-in-java
+https://github.com/DuskMelody/ACM/blob/master/src/Main1.java
+http://stackoverflow.com/questions/5423785/competitive-programming-and-input
+http://codesaviour.com/java-fast-io-input-output/118/
+
+
+pesquisar:
+java.util.BufferedInputStream read Numbers fastIO
+
+
+BufferedInputStream
+http://docs.oracle.com/javase/7/docs/api/java/io/BufferedInputStream.html
+http://www.tutorialspoint.com/java/io/java_io_bufferedinputstream.htm
+
+BitWise tutorial
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op3.html
+
+Random
+http://stackoverflow.com/questions/3594177/random-number-between-10-and-10-in-javascript
+http://stackoverflow.com/questions/363681/generating-random-integers-in-a-range-with-java
+http://docs.oracle.com/javase/7/docs/api/java/util/Random.html#nextInt%28int%29
+
+
+estava estudando
+http://tutorials.jenkov.com/java-io/bufferedinputstream.html
+http://www.codechef.com/viewsolution/1760653
+http://stackoverflow.com/questions/5423785/competitive-programming-and-input
+http://www.codechef.com/viewsolution/231823
+https://github.com/KU-Competitive-Programming/ku-engineering-expo-2014/blob/master/src/edu/kuacm/expo2014/utils/HttpUtils.java
+http://tutorials.jenkov.com/java-io/inputstreamreader.html
+http://www.codechef.com/wiki/tutorial-dynamic-programming
+http://stackoverflow.com/questions/2207006/modular-exponentiation-for-high-numbers-in-c
+https://brilliant.org/wiki/remainder-factor-theorem/?utm_medium=social&utm_source=facebook&utm_campaign=fb_posts_03192015&utm_content=remainder_factor_theorem_wiki
+https://brilliant.org/wiki/modular-arithmetic/
+
+
+interessante
+memoria em Java
+http://www.javaworld.com/article/2077496/testing-debugging/java-tip-130--do-you-know-your-data-size-.html
+
+
+
