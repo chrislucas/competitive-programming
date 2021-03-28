@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllAlgorithmsCP.iml" filepath="$PROJECT_DIR$/AllAlgorithmsCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeforces/codeforces.iml" filepath="$PROJECT_DIR$/codeforces/codeforces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-hackercup/facebook-hackercup.iml" filepath="$PROJECT_DIR$/facebook-hackercup/facebook-hackercup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google-codejam/google-codejam.iml" filepath="$PROJECT_DIR$/google-codejam/google-codejam.iml" />
+    </modules>
+  </component>
+</project>
