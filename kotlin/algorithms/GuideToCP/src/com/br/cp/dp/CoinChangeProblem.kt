@@ -44,20 +44,20 @@ fun greedySolution(values:  Array<Int>, target: Int) : Map<Int, Int> {
 
 const val INF = Int.MAX_VALUE - 1
 
-fun rec(values: Array<Int>, target: Int): Int {
+fun findMinAmountOfCoinsRecursively(values: Array<Int>, target: Int): Int {
     if (target < 0)
         return INF
     else if(target == 0)
         return 0
     var min = INF
     for (v in values) {
-        val p = rec(values, target - v) + 1
+        val p = findMinAmountOfCoinsRecursively(values, target - v) + 1
         min = min(min, p)
     }
     return min
 }
 
-fun it(values: Array<Int>, target: Int): Int {
+fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
     val (l, c) = arrayOf(target + 1, values.size + 1)
     val memo = Array(l) { Array(c) { 0 } }
     for (i in 1 .. 6) {
@@ -83,7 +83,7 @@ private fun sampleGreedyAlgorithm() {
 
 
 private fun sampleRec() {
-    println(rec(arrayOf(1,3,4), 6))
+    println(findMinAmountOfCoinsRecursively(arrayOf(1,3,4), 6))
 }
 
 
