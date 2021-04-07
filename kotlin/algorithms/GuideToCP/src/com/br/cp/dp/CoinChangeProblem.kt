@@ -24,10 +24,10 @@ import java.lang.Integer.min
 /**
  *
  * Solucao com algoritmo goluso
- * 
+ *
  * */
 
-fun greedySolution(values:  Array<Int>, target: Int) : Map<Int, Int> {
+fun greedySolution(values: Array<Int>, target: Int): Map<Int, Int> {
     var (acc, idx) = arrayOf(0, values.size - 1)
     values.sort()
     val h = mutableMapOf<Int, Int>()
@@ -47,7 +47,7 @@ const val INF = Int.MAX_VALUE - 1
 fun findMinAmountOfCoinsRecursively(values: Array<Int>, target: Int): Int {
     if (target < 0)
         return INF
-    else if(target == 0)
+    else if (target == 0)
         return 0
     var min = INF
     for (v in values) {
@@ -57,12 +57,25 @@ fun findMinAmountOfCoinsRecursively(values: Array<Int>, target: Int): Int {
     return min
 }
 
+private fun findMinAmountOfCoinsWithMemorization(memo: Array<Int>, values: Array<Int>, target: Int): Int {
+    if (target < 0) {
+        return INF
+    } else if (memo[target] != INF) {
+        return memo[target]
+    }
+    for (v in values) {
+        val p = findMinAmountOfCoinsWithMemorization(memo, values, target - v) + 1
+        memo[target] = min(p, memo[target])
+    }
+    return memo[target]
+}
+
 fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
     val (l, c) = arrayOf(target + 1, values.size + 1)
     val memo = Array(l) { Array(c) { 0 } }
-    for (i in 1 .. 6) {
+    for (i in 1..target) {
         for (j in values.indices) {
-            memo[i][j] = min(memo[i-1][j] + 1, memo[i][j])
+            memo[i][j] = min(memo[i - 1][j] + 1, memo[i][j])
         }
     }
 
@@ -71,21 +84,31 @@ fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
 
 
 private fun sampleGreedyAlgorithm() {
-    println(greedySolution(arrayOf(1,2,5), 12))
-    println(greedySolution(arrayOf(2,1,5), 12))
+    println(greedySolution(arrayOf(1, 2, 5), 12))
+    println(greedySolution(arrayOf(2, 1, 5), 12))
     /**
      * Aqui temos um exemplo onde a solucao com um algoritmo guloso falha
      * a saida otimizada eh 3:2 (2 moedas de valor 3), mas a que o algoritmo produz
      * eh 4:1, 1:2 (1 moeda de 4 e 2 de 1)
      * */
-    println(greedySolution(arrayOf(1,3,4), 6))
+    println(greedySolution(arrayOf(1, 3, 4), 6))
 }
 
 
 private fun sampleRec() {
-    println(findMinAmountOfCoinsRecursively(arrayOf(1,3,4), 6))
+    arrayOf(
+        arrayOf(1, 3, 4) to 6,
+        arrayOf(1, 2, 5) to 12,
+        arrayOf(2, 1, 5) to 12,
+        arrayOf(1, 2, 3, 4) to 4
+    ).forEach { (values, target) ->
+        val memo = Array(target + 1) { INF }
+        memo[0] = 0
+        println(findMinAmountOfCoinsWithMemorization(memo, values, target))
+        println(findMinAmountOfCoinsRecursively(values, target))
+        println(findMinAmountOfCoinsIteratively(values, target))
+    }
 }
-
 
 fun main() {
     sampleRec()

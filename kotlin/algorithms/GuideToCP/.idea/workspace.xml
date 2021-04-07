@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db61e20c-85f9-4a65-b4db-9d0a228e33e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/cp4book2/cp4book2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/cp4book2/raw/probability_theory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raw/refs_coin_change_problem" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_coin_change_problem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw/refs_dp" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_dp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -47,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CoinChangeProblemKt">
     <configuration name="CoinChangeProblemKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="GuideToCP" />
       <option name="VM_PARAMETERS" />
@@ -61,9 +58,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PropertiesInDynamicProgrammingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="GuideToCP" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.tutorials.geeksforgeeks.PropertiesInDynamicProgrammingKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CoinChangeProblemKt" />
+        <item itemvalue="Application.PropertiesInDynamicProgrammingKt" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +102,37 @@
           <line>52</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt</url>
+          <line>60</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt</url>
+          <line>62</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt</url>
+          <line>73</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/CoinChangeProblem.kt</url>
+          <line>69</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="memo[target]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
