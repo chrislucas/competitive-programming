@@ -142,8 +142,8 @@ private fun compareAllImplementations() {
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
     ).forEach { (values, target) ->
-        println(findMinimunCoinChangeBottomUpSolution(values, target))
         println(findMinAmountOfCoinsIteratively(values, target))
+        println(findMinimunCoinChangeBottomUpSolution(values, target))
         val memo = Array(target + 1) { INF }
         memo[0] = 0
         println(findMinAmountOfCoinsWithMemorization(memo, values, target))

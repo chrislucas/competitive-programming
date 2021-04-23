@@ -61,3 +61,6 @@ Y
 )src/com/br/cp/site/ds/kotlin/heap/Heap.kt,b/0/b09d79c5759af94c6c469d5789e735ce73ac1c89
 d
 4src/com/br/cp/site/ds/kotlin/heap/PQueueAsMinHeap.kt,6/3/637e71e0d7261532b62cb0a11a7367b871230d83
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
