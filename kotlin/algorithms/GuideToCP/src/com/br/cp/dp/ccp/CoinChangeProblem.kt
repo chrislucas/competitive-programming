@@ -92,24 +92,15 @@ fun memoization(values: Array<Int>, memo: Array<Int>, target: Int): Int {
 
 fun it(values: Array<Int>, target: Int): Int {
     val solution = Array(target + 1) { Array(values.size) { 0 } }
-    /**
-     * O espaco da solucao usando a tecnica bottom Up vai de 1 .. target
-     * construindo a solucao "debaixo para cima"
-     * */
-    for (iTarget in 1..target) {
+
+    for(i in 0 .. target) {
+        solution[i][0] = INF
+    }
+
+    for (subproblem in 1..target) {
         for (j in values.indices) {
-            solution[iTarget][j] = INF
-            val subTarget = iTarget - values[j]
-            //  values[j] > iTarget esse valor nao entra na subsolucao do problema
-            if (subTarget >= 0) {
-                solution[iTarget][j] = if (j == 0) {
-                    solution[iTarget][subTarget] + 1
-                } else {
-                    min(solution[iTarget][j], solution[iTarget][subTarget] + 1)
-                }
-            } else {
-                solution[iTarget][j] = solution[iTarget - 1][j]
-            }
+            val subTarget = subproblem - values[j]
+
         }
     }
 
@@ -152,7 +143,6 @@ private fun compareRecAndItSolution() {
         val (c, timeC) = simpleCounterTime {
             itOptimized(coins, target)
         }
-
 
         println(
             String.format(

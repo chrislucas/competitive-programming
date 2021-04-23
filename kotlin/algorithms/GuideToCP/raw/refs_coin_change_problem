@@ -1,176 +1,513 @@
-/**
- * Esboco da arvore de recursao para o problema
 
-    para funcao recurso FN(S, V) -> S = (1,3,4) V = 6
+    para funcao recurso FN(S, T) -> S = (1,3,4) T = 6
+    T = target -> valor alvo que se quer alcancar
+    S = conjunto de moedas disponiveis para utilizar numa soma e obter T
 
- *
- * Definimos um valor muito alto como INFINITO para compararmos com a solucao encontrada
- * pelo algoritmo recursivo
- *
+    Definimos um valor muito alto como "INFINITO" para compararmos com a solucao encontrada
+    pelo algoritmo recursivo
 
- * INF = (1 << 31) - 1
- *
- * se (v == 0) return  0
- * se (v < 0) return  INF
- *
- * m = INF
- * para s in S -> s = 1, V = 5 -> fn(5 - 1)
- * para s in S -> s = 1, V = 4 -> fn(4 - 1)
- * para s in S -> s = 1, V = 3 -> fn(3 - 1)
- * para s in S -> s = 1, V = 2 -> fn(2 - 1)
- * para s in S -> s = 1, V = 1 -> fn(1 - 1)
- *
+    INF = (1 << 31) - 1
 
-    fn(V - s)
+     // algoritmo recursivo
+     fn(S, V) {
+          se (v == 0)
+             return  0
+          senao se(v < 0)
+             return  INF
+         // senao
+          m = INF
+          para s in S
+              r = fn(S, V - s)
+              m = min(r, m)
+          return m
+     }
 
-    para s in S -> s = 1, V = 0, return p = fn(0) + 1, p = 1
-    m = min(m,p) -> m = 1, V = 1
+    para s in S -> s = 1, T = 5 -> fn(S, 5 - 1) -> fn(T - s)
+        T > 0 entao prossiga
+    para s in S -> s = 1, T = 4 -> fn(S, 4 - 1) -> fn(T - s)
+         T > 0 entao prossiga
+    para s in S -> s = 1, T = 3 -> fn(S, 3 - 1) -> fn(T - s)
+         T > 0 entao prossiga
+    para s in S -> s = 1, T = 2 -> fn(S, 2 - 1) -> fn(T - s)
+         T > 0 entao prossiga
+    para s in S -> s = 1, T = 1 -> fn(S, 1 - 1) -> fn(T - s)
+         T == 0
+    entao return 0 // sabemos que f(S, 0) = 0
 
-    para s in S -> s = 3, V = 1 -> fn(1 - 3) = return p = fn(-2) + 1, p = INF + 1
-    m = min(m = 1, p =  INF + 1) -> m = 1, V = 1
+    para s in S -> s = 1, T = 1 = fn(S, T - s) -> fn(S, 1 - 1)
+        T == 0 -> fn(S, T) retorna 0
+        p = fn(S, T) + 1, p = 1
+        m = INF
+        m = min(m=INF, p=1) -> m = 1
 
-    para s in S -> s = 4, V = 1 -> fn(1 - 4) = return p = fn(-3) + 1, p = INF + 1
-    m = min(m = 1, p =  INF + 1) -> m = 1, V = 1
+    para s in S -> s = 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3) // importante colocar o calculo para mostrar que a operacao se repete portanto o algoritmo pode ser otimizado
+        T = -2 return INF
+        p = fn(T) + 1, p = INF + 1
+        m = min(m = 1, p =  INF + 1) -> m = 1
+
+    para s in S -> s = 4, T = 1 -> fn(T - s) = fn (1 - 4)
+        T = -3 return INF
+        p = fn(T) + 1, p = INF + 1
+        m = min(m = 1, p =  INF + 1) -> m = 1
 
     fim do loop
-    Para instancia do problema S = (1, 3, 4); V = 1
+    Para instancia do problema S = (1, 3, 4); T = 1
     m = 1 (1 moeda e 1)
+    sabemos entao que
+    fn({1,3,4}, 1) = 1
     ------------------------------------------------------------------------------------------------------------------
-    Para instancia do problema S = (1, 3, 4); V = 2, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 2, m = INF
 
-    para s in S -> s = 1, V = 2 -> fn(2 - 1) = return p = fn(1) + 1, p = 2
-    m = min(m = INF, p = 2) -> m = 2, V = 2
+    para s in S -> s = 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1) = f(S, 1)
+        sabemos que f(S , 1) = 1 entao
+        p = fn(S, 1) + 1, p = 2
+        m = min(p, m), m = 2
+    para s in S -> s = 3, T = 1 -> fn(S, T - s)  = fn(S, 1 - 3)
+        T = -2
+        return INF
+        m = 2
+        p = fn(T) + 1, p = INF
+        m = min(p, m), m = 2
 
-    para s in S -> s = 3, V = 2 -> fn(2 - 3) = return p = fn(-1) + 1, p = INF + 1
-    m = min(m = 1, p = INF) -> m = 2, V = 2
-
-    para s in S -> s = 4, V = 2 -> fn(2 - 4) = return p = fn(-2) + 1, p = INF + 1
-    m = min(m = 1, p = INF) -> m = 2, V = 2
+    para s in S -> s = 4, T = 2 -> fn(T - s) = fn(2 - 4)
+        T = -2
+        return INF
+        m = 2
+        p = fn(T) + 1, p = INF
+        m = min(p, m), m = 2
 
     fim loop
-    Para instancia do problema S = (1, 3, 4); V = 2, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 2, m = INF
     min = 2 (2 moedas de 1)
+    sabemos que f(S, 2) = 2
     ------------------------------------------------------------------------------------------------------------------
-    Para instancia do problema S = (1, 3, 4); V = 3, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 3, m = INF
 
-    para s in S -> s = 1, V = 3 -> fn(3 - 1) = return p = fn(2) + 1, p = 3
-    m = min(m = INF, p = 3) -> m = 3, V = 3
+    para s in S -> s = 1, T = 3 -> fn(S, T - s) = fn(S, 3 - 1)
+        sabendo que f(S, 2) = 2
+        m = INF
+        p = fn(2) + 1, p = 3
+        m = min(m = INF, p = 3), m = 3
 
-    para s in S -> s = 3, V = 3 -> fn(3 - 3) = return p = fn(0) + 1, p = 1
-    m = min(m = 3, p = 3) -> m = 1, V = 3
+    para s in S -> s = 3, T = 3 -> fn(S, T - s) =  fn(S, 3 - 3)
+        f(S, 0) = 0
+        p = f(0) + 1, p = 1
+        m = 3
+        m = min(m, p), m = 1
 
-    para s in S -> s = 4, V = 3 -> fn(3 - 4) = return p = fn(-1) + 1, p = INF
-    m = min(m = 1, p = INF) -> m = 1, V = 3
+    para s in S -> s = 4, T = 3 -> fn(S, T - s) = fn(S, 3 - 4)
+        T = -1, T < 0 return INF
+        p = fn(S, -1) + 1, p = INF
+        m = min(m = 1, p = INF) -> m = 1, T = 3
 
     fim loop
-    Para instancia do problema S = (1, 3, 4); V = 3, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 3, m = INF
     min = 1 (1 moeda de 3)
     ------------------------------------------------------------------------------------------------------------------
-    Para instancia do problema S = (1, 3, 4); V = 4, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 4, m = INF
 
-    para s in S -> s = 1, V = 4 -> fn(4 - 1) = return p = fn(3) + 1, p = 2
-    m = min(m = INF, p = 2) -> m = 2, V = 4
+    para s in S -> s = 1, T = 4 -> fn(S, T - s) = fn(S, 4 - 1)
+        sabemos que f(S, 3) = 1 entao
+        p = fn(S, 3) + 1, p = 2
+        m = min(m = INF, p = 2) -> m = 2, T = 4
 
-    para s in S -> s = 3, V = 4 -> fn(4 - 3) = return p = fn(1) + 1, p = ?
-    m = min(m = 2, p = ?) -> m = 2, V = 4
+    para s in S -> s = 3, T = 4 -> fn(S, T - s) = fn(S, 4 - 3)
+        T = 1
+        // para T = 1, fn(S, 1) -> 1
+        // mas o algoritmo nao memoriza esse resultado entao vamos calcular novamente
+        m = INF
 
-        para s in S -> s = 1, V = 1 -> fn(1 - 1) = return p = fn(1) + 1, p = 1
-        m = min(m = 2, p = 1) -> m = 1, V = 1
+        para s in S -> s = 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1)
+            T = 0, return 0 // sabemos que f(S, 0) = 0
+            m = INF
+            p = fn(S, 1) + 1, p = 1
+            m = min(m = INF, p = 1) -> m = 1
 
-        para s in S -> s = 3, V = 1 -> fn(1 - 3) = return p = fn(-2) + 1, p = INF
-        m = min(m = 1, p = INF) -> m = 1, V = 1
+        para s in S -> s = 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3)
+            T = -2 return INF
+            p = fn(S, -2) + 1, p = INF
+            m = min(m = 1, p = INF) -> m = 1
 
-        para s in S -> s = 4, V = 1 -> fn(1 - 4) = return p = fn(-3) + 1, p = INF
-        m = min(m = 1, p = INF) -> m = 1, V = 1
+        para s in S -> s = 4, T = 1 -> fn(S, T - s) = fn(1 - 4)
+            T = -3, return INF
+            p = fn(S, -3) + 1, p = INF
+            m = min(m = 1, p = INF) -> m = 1, T = 1
 
-       fim loop
-       Para instancia do problema S = (1, 3, 4); V = 1, m = INF
-       min = 1
-       (Por isso que para instancia S = (1, 3 , 4); s = 3; V = 4 fn(4 - 1 = 1) + 1 = 2, a instancia do subproblema resultou em
-       min = 1)
+        fim loop
+        Para instancia do problema S = (1, 3, 4),  T = 1, m = INF temos que fn(S, T)
+        min = 1
 
-    para s in S -> s = 3, V = 4 -> fn(4 - 3) = return p = fn(1) + 1, p = 2 (p = 2 eh explicado no loop acima)
-    m = min(m = 2, p = 2) -> m = 2, V = 4
+    // Voltando ao problema original fn({1,3,4}, 4), s = 3 apos resolver o subproblema s = 1, T = 1
+    Para instancia S = (1, 3, 4); s = 3; T = 4 -> fn(S, T - s) = fn(S, 4 - 3)
+        T = 1
+        // apos resolver o subproblema fn(S, T) S = {1, 3, 4} e T = 1 sabemos que
+        // fn(S, 1) = 1
+        p = fn(S, 1) + 1, p = 2
+        m = INF
+        m = min(m, p) -> m = 2
 
-    para s in S -> s = 4, V = 4 -> fn(4 - 4) = return p = fn(0) + 1, p = 1
-    m = min(m = 2, p = 1) -> m = 1, V = 4
+    para s in S -> s = 4, T = 4 -> fn(S, T - s) = fn(S, 4 - 4)
+        T = 0, return 0
+        p = fn(0) + 1, p = 1
+        m = 2
+        m = min(m, p) -> m = 1, T = 4
 
     fim loop
-    Para instancia do problema S = (1, 3, 4); V = 4, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 4, m = INF
     min = 1 (1 moeada de 4)
     ------------------------------------------------------------------------------------------------------------------
-    Para instancia do problema S = (1, 3, 4); V = 5, m = INF
+    Para instancia do problema S = (1, 3, 4); T = 5, m = INF
 
-    para s in S -> s = 1, V = 5 -> fn(5 - 1) = return p = fn(4) + 1, p = 2 (acima vemos que f(4) = 1)
-    m = min(m = INF, p = 2) -> m = 2, V = 5
+    para s in S -> s = 1, T = 5 -> fn(S, T - s) =  fn(S, 5 - 1)
+        T = 4
+        // acima vemos que f(S, 4) = 1  mas nao estamos memorizacao entao vamos calcular tudo de novo
+        m = INF
+        p = fn(4) + 1, p = 2
+        m = min(m = INF, p = 2) -> m = 2
 
-    para s in S -> s = 3, V = 5 -> fn(5 - 3) = return p = fn(2) + 1, p = ?
-        para s in S -> s = 1, V = 2 -> fn(2 - 1) = return p = fn(1) + 1, p = ?
-            para s in S -> s = 1, V = 1 -> fn(1 - 1) = return p = fn(0) + 1, p = 1
-                m = min(m = INF, p = 2) -> m = 1, V = 1
+        para s in S -> s = 3, T = 5 -> fn(S, T - s) = fn(S, 5 - 3)
+            T = 2
+            // sabemos que fn(S, 2) = 2 mas vamos recalcular porque assim foi escrito o algoritmo
+            m = INF
 
-            para s in S -> s = 3, V = 1 -> fn(1 - 3) = return p = fn(-2) + 1, p = INF
-            m = min(m = 1, p = INF) -> m = 1, V = 1
+            para s in S -> s = 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1)
+                T = 1
+                // sabemos o resultado de fn(S, 1) = 1
+                min = INF
 
-            para s in S -> s = 4, V = 1 -> fn(1 - 4) = return p = fn(-3) + 1, p = INF
-            m = min(m = 1, p = INF) -> m = 1, V = 1
+                para s in S -> s = 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1) -> fn(S, 0) = 0
+                    T = 0
+                    // sabemos que fn(S, 0) = 0
+                    m = INF
+                    p = fn(S, 0) + 1, p = 1
+                    m = min(p, m), m = 1
+                    entao temos que para o subproblema S{1, 3, 4} e T = 1 a resposta eh 1
 
-            fim loop
-            Para instancia do problema S = (1, 3, 4); V = 1, m = INF
-            min = 1 (1 moeada de 4)
+                para s in S -> s = 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3) -> fn(S, -2) = INF
+                    T = -2 retorna INF
+                    p = fn(S, -2), p = INF
+                    m = 1
+                    m = min(m, p), m = 1
 
-        para s in S -> s = 1, V = 2 -> fn(2 - 1) = return p = fn(1) + 1, p = 2 (acima vimos que f(1) = 1)
-        m = min(m = INF, p = 2) -> m = 2, V = 2
+                para s in S -> s = 4, T = 1 -> fn(S, T - s) = fn(S, 1 - 4) -> fn(S, -3) = INF
+                    T = -32 retorna INF
+                    p = fn(S, -3), p = INF
+                    m = 1
+                    m = min(m, p), m = 1
 
-        para s in S -> s = 3, V = 2 -> fn(2 - 3) = return p = fn(-1) + 1, p = INF
-        m = min(m = 2, p = INF) -> m = 2, V = 2
+                entao temos que para o subproblema S{1, 3, 4} e T = 1 a resposta eh 1
 
-        para s in S -> s = 4, V = 2 -> fn(2 - 4) = return p = fn(-2) + 1, p = INF
-        m = min(m = 2, p = INF) -> m = 2, V = 2
+            // voltando ao subproblema S {1, 3, 4}, T = 2
+            para s in S -> s = 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1) ->  // fn(S, 2) = min(m, fn(S, 0) + 1)
+                T = 1 -> fn(S, T) retorna 1
+                m = INF
+                p = fn(S, 1) + 1, p = 2
+                m = min(p, m), m = 2
 
-        fim loop
-        Para instancia do problema S = (1, 3, 4); V = 2, m = INF
-        min = 2 (2 moeada de 1)
+            para s in S -> s = 3, T = 2 -> fn(S, T - s) = fn(S, 2 - 3) ->  // fn(S, -1) = min(m, fn(S, -1) + 1)
+                T = -1 -> INF
+                m = 2
+                p = fn(S, -1) + 1, p = INF
+                m = min(p, m), m = 2
 
-    para s in S -> s = 3, V = 5 -> fn(5 - 3) = return p = fn(2) + 1, p = 3 (vimos acima que f(2) = 2)
-    m = min(m = 2, p = 3) -> m = 2, V = 2
+            para s in S -> s = 4, T = 2 -> fn(S, T - s) = fn(S, 2 - 4) ->  // fn(S, -2) = min(m, fn(S, -2) + 1)
+                T = -2 -> INF
+                m = 2
+                p = fn(S, -2) + 1, p = INF
+                m = min(p, m), m = 2
 
-    para s in S -> s = 4, V = 5 -> fn(5 - 4) = return p = fn(1) + 1, p = 2 (vimos acima que f(1) = 1)
-        para s in S -> s = 1, V = 1 -> fn(1 - 1) = return p = fn(0) + 1, p = 1 (vimos acima que f(0) = 0)
-        m = min(m = INF, p = 1) -> m = 1, V = 1
+            // para o subproblema S{1,3,4}; T = 2 min = 2
 
-        para s in S -> s = 3, V = 1 -> fn(1 - 3) = return p = fn(-2) + 1, p = INF
-        m = min(m = 1, p = INF) -> m = 1, V = 1
+        // voltando ao subproblema S {1, 3, 4} ; T = 5
+        para s in S -> s = 3, T = 5 -> fn(S, T - s) = fn(S, 5 - 3) ->  // fn(S, 5) = min(m, fn(S, 2) + 1)
+            T = 2 -> fn(S, T) retonar 2
+            m = 2
+            p = fn(S, 2) + 1, p = 3
+            m = min(p, m), m = 2
 
-        para s in S -> s = 4, V = 1 -> fn(1 - 4) = return p = fn(-3) + 1, p = INF
-        m = min(m = 1, p = INF) -> m = 1, V = 1
+        para s in S -> s = 4, T = 5 -> fn(S, T - s) = fn(S, 5 - 4) -> // fn(S, 5) = min(m, fn(S, 1) + 1)
+            T = 1
+            // segue a mesma ideia. Sabemos que fn(S, 1) = 1, mas ...
+            m = 2
 
-        fim loop
-        Para instancia do problema S = (1, 3, 4); V = 1, m = 1
-        min = 1
-    para s in S -> s = 4, V = 5 -> fn(5 - 4) = return p = fn(1) + 1, p = 2 (vimos acima que f(1) = 1)
-    m = min(m = 2, p = 2) -> m = 2, V = 2
+            para s in S -> s = 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1)
+                T = 0 -> fn(S, 0) retorna 0
+                m = INF
+                p = fn(S, 0) + 1, p = 1
+                m = min(p, m), m = 1
 
-    fim loop
-    Para instancia do problema S = (1, 3, 4); V = 4, m = INF
-    min = 2 (1, 3 = 4)
+            para s in S -> s = 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3)
+                T = -2 -> fn(S, T) retorna INF
+                m = 1
+                p = fn(S, 0) + 1, p = 1
+                m = min(p, m), m = 1
+
+            para s in S -> s = 4, T = 1 -> fn(S, T - s) = fn(S, 1 - 4)
+                T = -3 -> fn(S, T) retorna INF
+                m = 1
+                p = fn(S, 0) + 1, p = 1
+                m = min(p, m), m = 1
+
+        // volta para o subproblema S {1, 3, 4} ; T = 5
+        para s in S -> s = 4, T = 5 -> fn(S, T - s) = fn(S, 5 - 4) -> // min(m, fn(S, 1))
+            T = 1 -> fn(S, 1) = 1
+            m = 2
+            p = fn(S, 1) + 1 = 2
+            m = min(p, m), m = 2
+
+       // fim do loop
+       // para instancia do problema S {1, 3, 4}; T = 5 min = 2
+       // a menor quantidade de moedas utilizadas sao 2
+       // {1:1, 1:4}
+    ------------------------------------------------------------------------------------------------------------------
+    Para instancia do problema S = (1, 3, 4); T = 6, m = INF
+
+    para s in S -> s = 3, T = 6 -> fn(S, T - s) =  fn(S, 6 - 3)
+        T = 3 -> fn(S, T)
+        m = INF
+
+        para s in S = 1, T = 3 -> fn(S, T - s) = fn(S, 3 - 1)
+            T = 2 -> fn(S, T)
+            m = INF
+
+            para s in S  = 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1)
+                T = 1 -> fn(S, T)
+                m = INF
+
+                para s in S  = 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1)
+                    T = 0 -> fn(S, 0) retorna 0
+                    p = fn(S, 0) + 1, p = 1
+                    m = INF
+                    m = min(p, m), m = 1
+
+                ... // resumindo por que ja cansamos de calcular isso
+                para s in S  = 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3)
+                ... // idem
+                para s in S  = 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1)
+
+                // fim do looo
+                // para a instancia S{1, 3, 4}; T = 1 -> min = 1
+
+            // voltando para instancia S{1, 3, 4}; T = 2
+            para s in S  = 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1)
+                T = 1 -> fn(S, T) retorna 1
+                p = fn(S, T) + 1, p = 2
+                m = INF
+                m = min(p, m), m = 2
+
+            para s in S  = 3, T = 2 -> fn(S, T - s) = fn(S, 2 - 3)
+                T = -1 retorna INF
+                p = INF
+                m = 2
+                m = min(p, m), m = 2
+
+            para s in S  = 4, T = 2 -> fn(S, T - s) = fn(S, 2 - 4)
+                T = -2 retorna INF
+                p = INF
+                m = 2
+                m = min(p, m), m = 2
+
+            // fim do loop
+            // para instancia S{1,3,4}; T=2 -> min = 2
+
+        // voltando para instancia S{1,3,4}; T=3
+        para s in S = 1, T = 3 -> fn(S, T - s) = fn(S, 3 - 1)
+            T = 2 -> fn(S, T) retorna 2
+            m = INF
+            p = fn(S, T) + 1, p = 3
+            m = min(m, p), m = 3
+
+        para s in S = 3, T = 3 -> fn(S, T - s) = fn(S, 3 - 3)
+            T = 0 -> fn(S, T) retorna 0
+            m = 3
+            p = fn(S, T) + 1, p = 1
+            m = min(m, p), m = 1
+
+        para s in S = 4, T = 3 -> fn(S, T - s) = fn(S, 3 - 4)
+            T = 1 -> fn(S, T) retorna INF
+            m = 1
+            p = fn(S, T) + 1, p = INF
+            m = min(m, p), m = 1
+
+        // fim do loop
+        // para instancia S{1, 3, 4}; T = 3 -> min = 1
+
+    // voltando para instancia do problema S {1, 3, 4}; T = 6
+    para s in S -> s = 3, T = 6 -> fn(S, T - s) =  fn(S, 6 - 3)
+        T = 3 -> fn(S, 3) retorna 1
+        m = 3
+        p = fn(S, T) + 1, p = 2
+        m = min(p, m), m = 2
+
+    para s in S -> s = 4, T = 6 -> fn(S, T - s) =  fn(S, 6 - 4)
+        T = 2
+        m = 2
+
+        para s in S -> s = 1, T = 2 -> fn(S, T - s) = fn(S, 1)
+            T = 1
+            m = INF
+
+            para s in S -> s = 1, T = 1 -> fn(S, T - s) = fn(S, 0)
+                T = 0 retorna 0
+                p = fn(S, 0) + 1, p = 1
+                m = INF
+                m = min(m, p), m = 1
+
+            ...
+            para s in S -> s = 3, T = 1 -> fn(S, T - s) = fn(S, -2)
+            ...
+            para s in S -> s = 4, T = 1 -> fn(S, T - s) = fn(S, -3)
+            // FIM do loop
+            // S {1, 3, 4}; T = 1 -> min = 1
+
+        para s in S -> s = 1, T = 2 -> fn(S, T - s) = fn(S, 1)
+            T = 1 retorna 1
+            p = fn(S, 1) + 1, p = 2
+            m = INF
+            m = min(m, p), m = 2
+
+        para s in S -> s = 3, T = 2 -> fn(S, T - s) = fn(S, -1)
+            T = -1 retorna INF
+            p = fn(S, -1) + 1, p = INF
+            m = 2
+            m = min(m, p), m = 2
+
+        para s in S -> s = 4, T = 2 -> fn(S, T - s) = fn(S, -2)
+            T = -2 retorna INF
+            p = fn(S, -2) + 1, p = INF
+            m = 2
+            m = min(m, p), m = 2
+
+        // FIM do loop
+        // para instancia S {1,3,4}; T = 2 -> min = 2
+
+    // instancia S {1, 3, 4}; T = 6
+    para s in S -> s = 4, T = 6 -> fn(S, T - s) =  fn(S, 6 - 4), m = 2
+        T = 2
+        m = INF
+
+        para s in S -> 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1)
+            T = 1
+            m = INF
+
+            para s in S -> 1, T = 1 -> fn(S, T - s) = fn(S, 1 - 1)
+                T = 0, fn(S, 0) retorna 0
+                p = fn(S, 0), p = 1
+                m = INF
+                m = min (p, m), m = 1
+             ...
+             para s in S -> 3, T = 1 -> fn(S, T - s) = fn(S, 1 - 3)
+             ...
+             para s in S -> 4, T = 1 -> fn(S, T - s) = fn(S, 1 - 4)
+             // FIM do loop
+             // m = 1
+
+          para s in S -> 1, T = 2 -> fn(S, T - s) = fn(S, 2 - 1)
+                T = 1, fn(S,T) retorna 1
+                p = fn(S, T) + 1, p = 2
+                m = INF
+                m = min(m, p), m = 2
+
+         para s in S -> 3, T = 2 -> fn(S, T - s) = fn(S, 2 - 3)
+            T = -1 retorna INF
+            p = INF + 1
+            m = 2
+            m = min(m, p), m = 2
+
+         para s in S -> 4, T = 2 -> fn(S, T - s) = fn(S, 2 - 4)
+            T = -2 retorna INF
+            p = INF + 1
+            m = 2
+            m = min(m, p), m = 2
+
+        // fim do loop
+        // m = 2
+
+    para s in S -> s = 4, T = 6 -> fn(S, T - s) =  fn(S, 6 - 4), m = 2
+        T = 2, fn(S, T) -> retorna 2
+        m = 2
+        p = fn(S, T) + 1, p = 3
+        m = min(m, p), m = 2
+
+    // fim do loop
+    // instancia S {1, 3, 4}; T = 6 -> min = 2
+
+
+
+
+
+
+
 
 
 // matriz para resolver usando com programacao dinamica
 
-instancia do problema S =(1,3,4); V = 6
-linha  -> valores de 1 a V. Resolvemos os subproblemas 1. 2, 3 ... para chegar na solucao de valor V
-coluna -> valores de moedas a disponiveis para resolver o problema
-s 1 3 4 ->
-0 0 0 0
-1 1 INF INF
-2 2 INF INF
-3 3 1 INF
-4 4 2 1
-5 5 3 4
-6 6 2 4
+instancia do problema S =(2,5,6,8); T = 11
 
-memo[i][j] = memo[i][j] + min(memo[i-1][j] + 1, s[j])
+M = [S.size + 1, T + 1] -> [0 .. S] [0 .. T] ->
+[quantidade de moedas usadas do conjuto para solucionar o problema][sub-problema 0 .. T-1 e problema original T]
+
+solucao final estara em M[S.size][T], que sera construida de "baixo-pra-cima(bottomUp)"
+
+M[0 .. S] -> montamos a solucao do problema a partir de 0 moedas ate a quantidade de moedas no conjunto S
+
+// Para zero moedas no conjunto S (conjunto nulo) nao existe um solucao para nenhum T que se queira alcancar
+// entao
+for i de 0 .. T
+    M[0][i] = INFINITO
+
+// Para qualquer quantidade de modelas
+
+linha  ->  i de 1 ate S.size // sera usado como indice
+coluna ->  j de 1 ate T // os valores que j assume sao os subproblemas de 1 ate o valor T
+
+loop i de 1 a S
+    // pulamos a coluna 0 porque para T = 0 nao importa quantas moedas usemos que a resposta vai ser 0
+
+    loop subproblema de 1 a T
+        se S[i-1] - subproblema >= 0   // eh possivel usar a ith moeda do conjunto S para resolver o subproblema ?
+            sim, mas ao incluir essa moeda eu tenho uma solucao com menos moedas do que a solucao sem ela ?
+            M[i][subproblema] = min(M[i][S[i] - subproblema ], M[i-1][subproblema])
+        senao
+            // se a moeda em questao excede o valor do subproblema nao a utilize-a, utilize o resultado do subproblema
+            // anterior que utilizava 1 moeda a menos.
+            // (pode ocorrer que o subproblema anterior com 1 moeda a menos nao tenha solucao tbm,
+                por exemplo:
+                Seja S = {2, 3, 4}
+                i = 2 que significa que estamos tentando usar 2 moedas de S {2, 3}
+                subproblema - S[i - 1] = 1 - 3 = -2
+                nao da para resolver o subproblema = 1 com 2 moedas
+                e se tentarmos resolver com uma - o subproblema anterior
+                i = 1
+                subproblema - S[i-1] = 1 - 2 = -1
+                voltando mais 1
+                i = 0
+                sabemos que usando zero moedas ao existe solucao para qualquer valor de T e definimos
+                que nesse caso M[0][0 .. T] = INF
+                entao
+                M[i-1][subproblema] = ja tinha o valor INF e ele se propagou ate o
+                subproblemka i = 2 la do inicio do exemplo
+                M[i][subproblema] = M[i-1][subproblema]  e
+             )
+            M[i][subproblema] = M[i-1][subproblema]
+
+ S =(2,5,6,8); T = 4
+i = 1 moeda
+    com a 1-th moeda de S verificar se eh possivel resolver do subproblema 1 ate T
+        subproblema = 1
+            subTarget = subproblema - S[i - 1] = 1 - 2 = -1
+            subTarget < 0 entao
+                M[i][subproblema] = M[i-1][subproblema] // lembrando que M[0][0 .. T] = INF
+        subproblema = 2
+            subTarget = subproblema - S[i - 1] = 2 - 2 = 0
+            subTarget >= 0
+                // qual solucao desse subproblema utiliza menor quantidade de moedas.
+                // a que adiciona a ith moeda ou a solucao anterior que nao adiciona
+                M[i][subproblema] = min(M[i][subTarget] + 1, M[i-1][subproblema])
+
+
+Referencias
+https://www.codesdope.com/course/algorithms-coin-change/
 
 
 // MIN Coin change
