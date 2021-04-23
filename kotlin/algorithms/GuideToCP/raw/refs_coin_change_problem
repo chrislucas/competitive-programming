@@ -172,3 +172,8 @@ s 1 3 4 ->
 
 memo[i][j] = memo[i][j] + min(memo[i-1][j] + 1, s[j])
 
+
+// MIN Coin change
+https://riptutorial.com/dynamic-programming/example/25891/minimum-number-of-coins-to-get-total
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
+
