@@ -71,17 +71,53 @@ private fun findMinAmountOfCoinsWithMemorization(memo: Array<Int>, values: Array
 }
 
 fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
-    val (l, c) = arrayOf(target + 1, values.size + 1)
-    val memo = Array(l) { Array(c) { 0 } }
-    for (i in 1..target) {
-        for (j in values.indices) {
-            memo[i][j] = min(memo[i - 1][j] + 1, memo[i][j])
+    val memory = Array(target + 1) { Array(values.size + 1) { 0 } }
+    /**
+     * Restricao do problema
+     * Seja T um target > 0 e S um conjunto nao vazio de valores inteiros > 0
+     * para um subproblema onde T = 0 nao existe combinacao de S cuja some seja igual a T
+     * Logo para solucao iterativa com uma matriz 2D M = [0 .. T][0 .. S.size]
+     * M[i=0 .. T][0] = INF -> qualquer i-esimo subproblema que usa zero moedas tem resposta INF ou
+     * melhor explicado nao tem solucao
+     * */
+    for (i in 0 .. values.size) {
+        memory[i][0] = INF
+    }
+    for (subproblem in 1..target) {
+        for (i in 1..values.size) {
+            val subTarget = subproblem - values[i - 1]
+            // da para usar o ith-1 valor para resolver o subproblema
+            memory[subproblem][i] = if (subTarget < 0) {
+                // nao
+                memory[subproblem][i-1] //
+            } else {
+                // min(excluindo values[i], incluindo values[i]) na solucao
+                min(memory[subproblem][i-1], memory[subTarget][i] + 1)
+            }
         }
     }
-
-    return memo[l - 1][c - 1]
+    return memory[target][values.size - 1]
 }
 
+private fun findMinimunCoinChangeBottomUpSolution(values: Array<Int>, target: Int): Int {
+    val memory = Array(values.size + 1) { Array(target + 1) { 0 } }
+    // pra zero moedas a resposta sera INF para qualquer valor TARGET
+    for (i in 0..target) {
+        memory[0][i] = INF
+    }
+    for (i in 1..values.size) {
+        for (subproblem in 1..target) {
+            val subTarget = subproblem - values[i - 1]
+            if (subTarget >= 0) {
+                // min(excluindo values[i], incluindo values[i]) na solucao
+                memory[i][subproblem] = min(memory[i - 1][subproblem], memory[i][subTarget] + 1)
+            } else {
+                memory[i][subproblem] = memory[i - 1][subproblem]
+            }
+        }
+    }
+    return memory[values.size][target]
+}
 
 private fun sampleGreedyAlgorithm() {
     println(greedySolution(arrayOf(1, 2, 5), 12))
@@ -94,22 +130,27 @@ private fun sampleGreedyAlgorithm() {
     println(greedySolution(arrayOf(1, 3, 4), 6))
 }
 
-
-private fun sampleRec() {
+private fun compareAllImplementations() {
     arrayOf(
+        arrayOf(2, 5, 6, 8) to 11,
+        arrayOf(1, 5, 6, 8) to 11,
+        arrayOf(2, 5) to 2,
         arrayOf(1, 3, 4) to 6,
+        arrayOf(1, 3, 6) to 7,
+        arrayOf(2, 3, 8) to 15,
         arrayOf(1, 2, 5) to 12,
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
     ).forEach { (values, target) ->
+        println(findMinimunCoinChangeBottomUpSolution(values, target))
+        println(findMinAmountOfCoinsIteratively(values, target))
         val memo = Array(target + 1) { INF }
         memo[0] = 0
         println(findMinAmountOfCoinsWithMemorization(memo, values, target))
         println(findMinAmountOfCoinsRecursively(values, target))
-        println(findMinAmountOfCoinsIteratively(values, target))
     }
 }
 
 fun main() {
-    sampleRec()
+    compareAllImplementations()
 }

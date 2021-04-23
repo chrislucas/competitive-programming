@@ -442,17 +442,70 @@
 
 // matriz para resolver usando com programacao dinamica
 
-instancia do problema S =(1,3,4); T = 6
-linha  -> valores de 1 a T. Resolvemos os subproblemas 1. 2, 3 ... para chegar na solucao de valor T
-coluna -> valores de moedas a disponiveis para resolver o problema
-s 1 3 4 ->
-0 0 0 0
-1 1 INF INF
-2 2 INF INF
-3 3 1 INF
-4 4 2 1
-5 5 3 4
-6 6 2 4
+instancia do problema S =(2,5,6,8); T = 11
 
-memo[i][j] = memo[i][j] + min(memo[i-1][j] + 1, s[j])
+M = [S.size + 1, T + 1] -> [0 .. S] [0 .. T] ->
+[quantidade de moedas usadas do conjuto para solucionar o problema][sub-problema 0 .. T-1 e problema original T]
+
+solucao final estara em M[S.size][T], que sera construida de "baixo-pra-cima(bottomUp)"
+
+M[0 .. S] -> montamos a solucao do problema a partir de 0 moedas ate a quantidade de moedas no conjunto S
+
+// Para zero moedas no conjunto S (conjunto nulo) nao existe um solucao para nenhum T que se queira alcancar
+// entao
+for i de 0 .. T
+    M[0][i] = INFINITO
+
+// Para qualquer quantidade de modelas
+
+linha  ->  i de 1 ate S.size // sera usado como indice
+coluna ->  j de 1 ate T // os valores que j assume sao os subproblemas de 1 ate o valor T
+
+loop i de 1 a S
+    // pulamos a coluna 0 porque para T = 0 nao importa quantas moedas usemos que a resposta vai ser 0
+
+    loop subproblema de 1 a T
+        se S[i-1] - subproblema >= 0   // eh possivel usar a ith moeda do conjunto S para resolver o subproblema ?
+            sim, mas ao incluir essa moeda eu tenho uma solucao com menos moedas do que a solucao sem ela ?
+            M[i][subproblema] = min(M[i][S[i] - subproblema ], M[i-1][subproblema])
+        senao
+            // se a moeda em questao excede o valor do subproblema nao a utilize-a, utilize o resultado do subproblema
+            // anterior que utilizava 1 moeda a menos.
+            // (pode ocorrer que o subproblema anterior com 1 moeda a menos nao tenha solucao tbm,
+                por exemplo:
+                Seja S = {2, 3, 4}
+                i = 2 que significa que estamos tentando usar 2 moedas de S {2, 3}
+                subproblema - S[i - 1] = 1 - 3 = -2
+                nao da para resolver o subproblema = 1 com 2 moedas
+                e se tentarmos resolver com uma - o subproblema anterior
+                i = 1
+                subproblema - S[i-1] = 1 - 2 = -1
+                voltando mais 1
+                i = 0
+                sabemos que usando zero moedas ao existe solucao para qualquer valor de T e definimos
+                que nesse caso M[0][0 .. T] = INF
+                entao
+                M[i-1][subproblema] = ja tinha o valor INF e ele se propagou ate o
+                subproblemka i = 2 la do inicio do exemplo
+                M[i][subproblema] = M[i-1][subproblema]  e
+             )
+            M[i][subproblema] = M[i-1][subproblema]
+
+ S =(2,5,6,8); T = 4
+i = 1 moeda
+    com a 1-th moeda de S verificar se eh possivel resolver do subproblema 1 ate T
+        subproblema = 1
+            subTarget = subproblema - S[i - 1] = 1 - 2 = -1
+            subTarget < 0 entao
+                M[i][subproblema] = M[i-1][subproblema] // lembrando que M[0][0 .. T] = INF
+        subproblema = 2
+            subTarget = subproblema - S[i - 1] = 2 - 2 = 0
+            subTarget >= 0
+                // qual solucao desse subproblema utiliza menor quantidade de moedas.
+                // a que adiciona a ith moeda ou a solucao anterior que nao adiciona
+                M[i][subproblema] = min(M[i][subTarget] + 1, M[i-1][subproblema])
+
+
+Referencias
+https://www.codesdope.com/course/algorithms-coin-change/
 

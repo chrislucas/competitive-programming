@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d62ce8f-229e-4d30-bd5e-a6be6cdf8d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cp4book2/raw/probability_theory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw/ds" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/graph/DijskstraPQ2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/uf/UnionFind.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/graph/Dijkstra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/graph/DijkstraPQ.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/WeightedQuickUnionKt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/uf/WeightedQuickUnionKt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuideToCP/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -24,6 +37,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.br.cp.site.ds.kotlin.uf" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,15 +52,5 @@
       <updated>1616896321211</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-955" y="490" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617080113440">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-955" y="490" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1617080113440" />
-    <state x="-1034" y="304" key="new project wizard" timestamp="1617080025656">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1034" y="304" key="new project wizard/0.0.1280.800/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1617080025656" />
   </component>
 </project>
