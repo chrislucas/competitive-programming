@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db61e20c-85f9-4a65-b4db-9d0a228e33e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/libraries/KotlinJavaRuntime__5_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/cp4book2/cp4book2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/cp4book2/raw/probability_theory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/raw/ds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/dp/graph/DijskstraPQ2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/heap/Heap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/heap/PQueueAsMinHeap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/uf/UnionFind.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/uf/WeightedQuickUnionKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f07452984dca3207c3101fa98330ce7298844fe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b4ead8720db54b9c64bb860587a615c8aebaec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCCPMatrixMemorySpace.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/tutorials/geeksforgeeks/PropertiesInDynamicProgramming.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/tutorials/geeksforgeeks/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/exts/ArrayExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/0/e/0efe9f2b6e5db37b155f37cae714867430b3f551" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/3/c/3cc071cebe3453ec0a940042c6ca506383611bd6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/2/e/2e955de165067430742236f886db482bb1e6e90c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5d248b52e74b88883b3e6f4ea4e240532306f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/dp/graph/Dijkstra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/dp/graph/DijkstraPQ.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/WeightedQuickUnionKt.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/refs_coin_change_problem" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_coin_change_problem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/refs_dp" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_dp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCCPMatrixMemorySpace.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCCPMatrixMemorySpace.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CCPMemorySpaceOptimized.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblemCombinatory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +61,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.MinQuantityCoinChangeProblemKt" />
+      <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.ccp.mincoin.MinQuantityCoinChangeProblemKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,6 +83,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MinQuantityCoinChangeProblemKt" />
+        <item itemvalue="Application.MinQuantityCoinChangeProblemKt" />
         <item itemvalue="Application.PropertiesInDynamicProgrammingKt" />
       </list>
     </recent_temporary>
@@ -128,71 +103,66 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>47</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>52</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>60</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>62</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>65</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>69</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>118</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>98</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt</url>
+          <line>43</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
           <line>92</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
-          <line>112</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>95</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
-          <line>81</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
-          <line>86</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
-          <line>88</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt</url>
-          <line>84</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>90</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="memo[target]" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

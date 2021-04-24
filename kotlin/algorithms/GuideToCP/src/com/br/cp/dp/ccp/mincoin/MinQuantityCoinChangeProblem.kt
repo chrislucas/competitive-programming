@@ -1,5 +1,6 @@
-package com.br.cp.dp
+package com.br.cp.dp.ccp.mincoin
 
+import com.br.cp.simpleCounterTime
 import java.lang.Integer.min
 
 
@@ -27,7 +28,7 @@ import java.lang.Integer.min
  *
  * */
 
-fun greedySolution(values: Array<Int>, target: Int): Map<Int, Int> {
+fun greedyAlgorithmSolution(values: Array<Int>, target: Int): Map<Int, Int> {
     var (acc, idx) = arrayOf(0, values.size - 1)
     values.sort()
     val h = mutableMapOf<Int, Int>()
@@ -42,14 +43,14 @@ fun greedySolution(values: Array<Int>, target: Int): Map<Int, Int> {
     return h
 }
 
-const val INF = Int.MAX_VALUE - 1
+const val INFINITY = Int.MAX_VALUE - 1
 
 fun findMinAmountOfCoinsRecursively(values: Array<Int>, target: Int): Int {
     if (target < 0)
-        return INF
+        return INFINITY
     else if (target == 0)
         return 0
-    var min = INF
+    var min = INFINITY
     for (v in values) {
         val p = findMinAmountOfCoinsRecursively(values, target - v) + 1
         min = min(min, p)
@@ -59,8 +60,8 @@ fun findMinAmountOfCoinsRecursively(values: Array<Int>, target: Int): Int {
 
 private fun findMinAmountOfCoinsWithMemorization(memo: Array<Int>, values: Array<Int>, target: Int): Int {
     if (target < 0) {
-        return INF
-    } else if (memo[target] != INF) {
+        return INFINITY
+    } else if (memo[target] != INFINITY) {
         return memo[target]
     }
     for (v in values) {
@@ -71,6 +72,7 @@ private fun findMinAmountOfCoinsWithMemorization(memo: Array<Int>, values: Array
 }
 
 fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
+    // [sub0, sub1, sub2, subn ... target] [values[0] .. values[n]]
     val memory = Array(target + 1) { Array(values.size + 1) { 0 } }
     /**
      * Restricao do problema
@@ -80,39 +82,40 @@ fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
      * M[i=0 .. T][0] = INF -> qualquer i-esimo subproblema que usa zero moedas tem resposta INF ou
      * melhor explicado nao tem solucao
      * */
-    for (i in 0 .. values.size) {
-        memory[i][0] = INF
+    for (i in 0 .. target) {
+        memory[i][0] = INFINITY
     }
-    for (subproblem in 1..target) {
+    for (subProblem in 1..target) {
         for (i in 1..values.size) {
-            val subTarget = subproblem - values[i - 1]
+            val subTarget = subProblem - values[i - 1]
             // da para usar o ith-1 valor para resolver o subproblema
-            memory[subproblem][i] = if (subTarget < 0) {
+            if (subTarget < 0) {
                 // nao
-                memory[subproblem][i-1] //
+                memory[subProblem][i] = memory[subProblem][i-1] //
             } else {
                 // min(excluindo values[i], incluindo values[i]) na solucao
-                min(memory[subproblem][i-1], memory[subTarget][i] + 1)
+                memory[subProblem][i] = min(memory[subProblem][i-1], memory[subTarget][i] + 1)
             }
         }
     }
-    return memory[target][values.size - 1]
+    return memory[target][values.size]
 }
 
-private fun findMinimunCoinChangeBottomUpSolution(values: Array<Int>, target: Int): Int {
+private fun findMinimumCoinChangeBottomUpSolution(values: Array<Int>, target: Int): Int {
+    // [values[0] .. values[n]] [sub0, sub1, sub2, subn ... target]
     val memory = Array(values.size + 1) { Array(target + 1) { 0 } }
     // pra zero moedas a resposta sera INF para qualquer valor TARGET
     for (i in 0..target) {
-        memory[0][i] = INF
+        memory[0][i] = INFINITY
     }
     for (i in 1..values.size) {
-        for (subproblem in 1..target) {
-            val subTarget = subproblem - values[i - 1]
+        for (subProblem in 1..target) {
+            val subTarget = subProblem - values[i - 1]
             if (subTarget >= 0) {
                 // min(excluindo values[i], incluindo values[i]) na solucao
-                memory[i][subproblem] = min(memory[i - 1][subproblem], memory[i][subTarget] + 1)
+                memory[i][subProblem] = min(memory[i - 1][subProblem], memory[i][subTarget] + 1)
             } else {
-                memory[i][subproblem] = memory[i - 1][subproblem]
+                memory[i][subProblem] = memory[i - 1][subProblem]
             }
         }
     }
@@ -120,14 +123,14 @@ private fun findMinimunCoinChangeBottomUpSolution(values: Array<Int>, target: In
 }
 
 private fun sampleGreedyAlgorithm() {
-    println(greedySolution(arrayOf(1, 2, 5), 12))
-    println(greedySolution(arrayOf(2, 1, 5), 12))
+    println(greedyAlgorithmSolution(arrayOf(1, 2, 5), 12))
+    println(greedyAlgorithmSolution(arrayOf(2, 1, 5), 12))
     /**
      * Aqui temos um exemplo onde a solucao com um algoritmo guloso falha
      * a saida otimizada eh 3:2 (2 moedas de valor 3), mas a que o algoritmo produz
      * eh 4:1, 1:2 (1 moeda de 4 e 2 de 1)
      * */
-    println(greedySolution(arrayOf(1, 3, 4), 6))
+    println(greedyAlgorithmSolution(arrayOf(1, 3, 4), 6))
 }
 
 private fun compareAllImplementations() {
@@ -142,12 +145,33 @@ private fun compareAllImplementations() {
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
     ).forEach { (values, target) ->
-        println(findMinimunCoinChangeBottomUpSolution(values, target))
-        println(findMinAmountOfCoinsIteratively(values, target))
-        val memo = Array(target + 1) { INF }
-        memo[0] = 0
-        println(findMinAmountOfCoinsWithMemorization(memo, values, target))
-        println(findMinAmountOfCoinsRecursively(values, target))
+
+        val (a, timerA) = simpleCounterTime {
+            findMinimumCoinChangeBottomUpSolution(values, target)
+        }
+        val (b, timerB) = simpleCounterTime {
+            findMinAmountOfCoinsIteratively(values, target)
+        }
+        val (c, timerC) = simpleCounterTime {
+            val memo = Array(target + 1) { INFINITY }
+            memo[0] = 0
+            findMinAmountOfCoinsWithMemorization(memo, values, target)
+        }
+        val (d, timerD) = simpleCounterTime {
+            findMinAmountOfCoinsRecursively(values, target)
+        }
+
+        String.format("BottomUp 1) %.3f, %d - BottomUp 2) %.3f, %d - RecMemoization %.3f, %d - Rec %.3, %d\n",
+            timerA / 1000.0,
+            a,
+            timerB / 1000.0,
+            b,
+            timerC / 1000.0,
+            c,
+            timerD / 1000.0,
+            d
+        )
+
     }
 }
 
