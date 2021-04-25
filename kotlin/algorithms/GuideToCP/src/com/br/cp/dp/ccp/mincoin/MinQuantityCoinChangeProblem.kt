@@ -139,8 +139,6 @@ private fun sampleGreedyAlgorithm() {
 private fun compareAllImplementations() : String {
     val buffer = StringBuilder()
     val instances = arrayOf(
-        arrayOf(2, 5, 6, 8) to 11,
-        arrayOf(1, 5, 6, 8) to 11,
         arrayOf(2, 5) to 2,
         arrayOf(1, 3, 4) to 6,
         arrayOf(1, 3, 6) to 7,

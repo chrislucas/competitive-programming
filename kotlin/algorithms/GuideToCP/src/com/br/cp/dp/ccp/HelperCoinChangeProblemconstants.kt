@@ -2,7 +2,9 @@ package com.br.cp.dp.ccp
 
 val INSTANCE_PROBLEMS =
     arrayOf(
+        arrayOf(2, 5, 6, 8) to 11,
         arrayOf(1) to 6,
+        arrayOf(1, 5, 6, 8) to 11,
         arrayOf(1, 5, 6, 8) to 11,
         (arrayOf(1, 3, 4) to 6),
         (arrayOf(1, 3, 4) to 0),

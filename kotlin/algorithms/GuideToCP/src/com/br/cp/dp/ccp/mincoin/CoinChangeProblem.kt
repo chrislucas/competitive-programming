@@ -47,7 +47,7 @@ fun it(values: Array<Int>, target: Int): Int {
         for (j in 1 .. values.size) {
             val subTarget = subProblem - values[j - 1]
             solution[subProblem][j] = if (subTarget >= 0) {
-                min(solution[subProblem][j-1], solution[subProblem][subTarget])
+                min(solution[subProblem][j-1], solution[subTarget][j] + 1)
             } else {
                  solution[subProblem][j-1]
             }
@@ -65,11 +65,10 @@ fun itOptimized(values: Array<Int>, target: Int): Int {
         for (value in values) {
             val subTarget = instance - value
             if (subTarget >= 0) {
-                memory[instance] = min(memory[instance - 1], memory[subTarget] + 1)
+                memory[instance] = min(memory[instance], memory[subTarget] + 1)
             }
         }
     }
-
     return memory[target]
 }
 

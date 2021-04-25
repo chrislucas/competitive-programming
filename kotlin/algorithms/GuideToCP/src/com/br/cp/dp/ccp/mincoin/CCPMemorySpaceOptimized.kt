@@ -15,8 +15,11 @@ fun bottomUpOptimized(values: Array<Int>, target: Int): Int {
     val memory = Array(target + 1) { infinity }
     memory[0] = 0
     for (instance in 1..target) {
-        for (value in values) {
-            val subTarget = instance - value
+        // usar i valores para atigin o valor objetivo (instance)
+        for (i in 1 .. values.size) {
+        //for (value in values) {
+            //val subTarget = instance - value
+            val subTarget = instance - values[i-1]
             if (subTarget >= 0) {
                 memory[instance] = min(memory[instance], memory[subTarget] + 1)
             }
@@ -44,7 +47,6 @@ fun bottomUp(values: Array<Int>, target: Int): Int {
     }
     return memory[target][values.size]
 }
-
 
 private fun testAlgorithms() {
     INSTANCE_PROBLEMS.forEachIndexed { i, (values, target) ->
