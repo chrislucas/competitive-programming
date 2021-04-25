@@ -1,8 +1,10 @@
 package com.br.cp.dp.ccp.mincoin
 
 import com.br.cp.dp.ccp.INSTANCE_PROBLEMS
+import com.br.cp.exts.log
 import com.br.cp.simpleCounterTime
 import java.lang.Integer.min
+import java.lang.StringBuilder
 
 
 /**
@@ -134,7 +136,8 @@ private fun sampleGreedyAlgorithm() {
     println(greedyAlgorithmSolution(arrayOf(1, 3, 4), 6))
 }
 
-private fun compareAllImplementations() {
+private fun compareAllImplementations() : String {
+    val buffer = StringBuilder()
     val instances = arrayOf(
         arrayOf(2, 5, 6, 8) to 11,
         arrayOf(1, 5, 6, 8) to 11,
@@ -146,7 +149,7 @@ private fun compareAllImplementations() {
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
     ) + INSTANCE_PROBLEMS
-    instances.forEach { (values, target) ->
+    instances.sliceArray(0 .. 30).forEachIndexed { i, ( values, target) ->
         val (a, timerA) = simpleCounterTime {
             findMinimumCoinChangeBottomUpSolution(values, target)
         }
@@ -162,8 +165,11 @@ private fun compareAllImplementations() {
             findMinAmountOfCoinsRecursively(values, target)
         }
 
-        String.format(
-            "BottomUp 1) %.3f, %d - BottomUp 2) %.3f, %d - RecMemoization %.3f, %d - Rec %.3, %d\n",
+        val msg = String.format(
+            "P(%d) -> | instance %s | BottomUp - T(%.3f), R(%d) | BottomUp - T(%.3f), R(%d) | " +
+                    "RecMemoization - T(%.3f), R(%d) | Rec T(%.3f), R(%d) | Unico: %s\n",
+            i + 1,
+            Pair(values.log(), target),
             timerA / 1000.0,
             a,
             timerB / 1000.0,
@@ -171,11 +177,18 @@ private fun compareAllImplementations() {
             timerC / 1000.0,
             c,
             timerD / 1000.0,
-            d
+            d,
+            arrayOf(a, b, c, d).distinct()
         )
+        buffer.append(msg)
     }
+
+    return buffer.toString()
 }
 
 fun main() {
-    compareAllImplementations()
+    val (result, time) = simpleCounterTime {
+        compareAllImplementations()
+    }
+    println(String.format("Tempo de execucao T(%.3f)\nResultado\n%s", time / 1000.0, result))
 }

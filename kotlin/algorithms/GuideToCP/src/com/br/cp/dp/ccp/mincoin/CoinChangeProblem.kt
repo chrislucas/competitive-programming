@@ -1,6 +1,7 @@
 package com.br.cp.dp.ccp.mincoin
 
 import com.br.cp.dp.ccp.INSTANCE_PROBLEMS
+import com.br.cp.exts.log
 import com.br.cp.simpleCounterTime
 
 import java.lang.Integer.min
@@ -74,7 +75,7 @@ fun itOptimized(values: Array<Int>, target: Int): Int {
 
 
 private fun compareRecAndItSolution() {
-    INSTANCE_PROBLEMS.forEach { (coins, target) ->
+    INSTANCE_PROBLEMS.forEachIndexed { i, (coins, target) ->
         val (b, timeB) = simpleCounterTime {
             it(coins, target)
         }
@@ -92,7 +93,10 @@ private fun compareRecAndItSolution() {
 
         println(
             String.format(
-                "Rec (%.3f, %d) - BottomUpd(%.3f, %d) - Rec Memoization(%.3f, %d) - BottomUpMemoryOptimized(%.3f, %d)\n",
+                "P(%d) -> |instance %s | Rec - T(%.3f), R(%d) | BottomUpd - T(%.3f), R(%d) | " +
+                        "Rec Memoization - T(%.3f), R(%d) | BottomUpMemoryOptimized T(%.3f), R(%d)| Unico: %s\n",
+                (i + 1),
+                Pair(coins.log(), target),
                 timeA / 1000.0,
                 a,
                 timeB / 1000.0,
@@ -100,7 +104,8 @@ private fun compareRecAndItSolution() {
                 timeC / 1000.0,
                 c,
                 timeD / 1000.0,
-                d
+                d,
+                arrayOf(a,b,c,d).distinct()
             )
         )
     }
