@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db61e20c-85f9-4a65-b4db-9d0a228e33e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/problems/codeforces/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/problems/oj/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/knapsack/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCCPMatrixMemorySpace.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCCPMatrixMemorySpace.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CCPMemorySpaceOptimized.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/CoinChangeProblemCombinatory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw/refs_dp" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_dp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/knapsack/KnapSackProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/knapsack/ZeroOneKnapsackProblem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -51,7 +55,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.43573162" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
   <component name="RunManager" selected="Application.MinQuantityCoinChangeProblemKt">
     <configuration name="MinQuantityCoinChangeProblemKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -144,25 +153,57 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
-          <line>92</line>
+          <line>94</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
-          <line>95</line>
+          <line>97</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
-          <line>90</line>
+          <line>92</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>148</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt</url>
+          <line>62</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt</url>
+          <line>122</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GuideToCP$MinQuantityCoinChangeProblemKt.ic" NAME="MinQuantityCoinChangeProblemKt Coverage Results" MODIFIED="1619360802210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

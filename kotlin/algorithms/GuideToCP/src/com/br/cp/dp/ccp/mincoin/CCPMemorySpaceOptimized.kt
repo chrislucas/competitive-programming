@@ -1,6 +1,6 @@
-package com.br.cp.dp.ccp
+package com.br.cp.dp.ccp.mincoin
 
-import com.br.cp.dp.ccp.mincoin.INFINITY
+import com.br.cp.dp.ccp.INSTANCE_PROBLEMS
 import com.br.cp.simpleCounterTime
 import kotlin.math.min
 
@@ -10,7 +10,8 @@ import kotlin.math.min
  *
  */
 fun bottomUpOptimized(values: Array<Int>, target: Int): Int {
-    val memory = Array(target + 1) { INFINITY }
+    val infinity = (1 shl  30) - 1
+    val memory = Array(target + 1) { infinity }
     memory[0] = 0
     for (instance in 1..target) {
         for (value in values) {
@@ -23,18 +24,22 @@ fun bottomUpOptimized(values: Array<Int>, target: Int): Int {
     return memory[target]
 }
 
-/**
- * https://riptutorial.com/dynamic-programming/example/25891/minimum-number-of-coins-to-get-total
- * a solucao proposta no link acima monta uma matriz [target][values.size+1]
- * */
 fun bottomUp(values: Array<Int>, target: Int): Int {
-    val memory = Array(values.size) { Array(target + 1) { 0 } }
-    for (instance in values.indices) {
-        for (j in 0..target) {
-
+    val memory = Array(target + 1) { Array(values.size  + 1) { 0 } }
+    val infinity = (1 shl  30) - 1
+    for (i in 0 .. values.size) {
+        memory[i][0] = infinity
+    }
+    for (instance in 1 .. target) {
+        for (i in 1..values.size) {
+            val subTarget = instance - values[i]
+            memory[instance][i] = if (subTarget >= 0) {
+              min(memory[instance][i-1], memory[instance][subTarget])
+            } else {
+                memory[instance][i-1]
+            }
         }
     }
-
     return memory[values.size][target]
 }
 

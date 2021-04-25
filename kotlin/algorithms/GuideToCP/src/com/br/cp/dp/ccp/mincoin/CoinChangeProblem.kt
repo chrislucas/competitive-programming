@@ -38,8 +38,9 @@ fun memoization(values: Array<Int>, memo: Array<Int>, target: Int): Int {
 fun it(values: Array<Int>, target: Int): Int {
     // [0 .. target][values[0] .. values[n]]
     val solution = Array(target + 1) { Array(values.size + 1) { 1 } }
+    val infinity = (1 shl  30) - 1
     for(i in 0 .. target) {
-        solution[i][0] = INFINITY
+        solution[i][0] = infinity
     }
     for (subProblem in 1..target) {
         for (j in 1 .. values.size) {
@@ -56,7 +57,19 @@ fun it(values: Array<Int>, target: Int): Int {
 }
 
 fun itOptimized(values: Array<Int>, target: Int): Int {
-    return 0
+    val infinity = (1 shl 30) - 1
+    val memory = Array(target + 1) { infinity }
+    memory[0] = 0
+    for (instance in 1 .. target) {
+        for (value in values) {
+            val subTarget = instance - value
+            if (subTarget >= 0) {
+                memory[instance] = min(memory[instance - 1], memory[subTarget] + 1)
+            }
+        }
+    }
+
+    return memory[target]
 }
 
 

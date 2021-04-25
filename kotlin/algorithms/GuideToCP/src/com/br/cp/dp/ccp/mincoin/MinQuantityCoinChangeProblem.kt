@@ -1,5 +1,6 @@
 package com.br.cp.dp.ccp.mincoin
 
+import com.br.cp.dp.ccp.INSTANCE_PROBLEMS
 import com.br.cp.simpleCounterTime
 import java.lang.Integer.min
 
@@ -82,7 +83,7 @@ fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
      * M[i=0 .. T][0] = INF -> qualquer i-esimo subproblema que usa zero moedas tem resposta INF ou
      * melhor explicado nao tem solucao
      * */
-    for (i in 0 .. target) {
+    for (i in 0..target) {
         memory[i][0] = INFINITY
     }
     for (subProblem in 1..target) {
@@ -91,10 +92,10 @@ fun findMinAmountOfCoinsIteratively(values: Array<Int>, target: Int): Int {
             // da para usar o ith-1 valor para resolver o subproblema
             if (subTarget < 0) {
                 // nao
-                memory[subProblem][i] = memory[subProblem][i-1] //
+                memory[subProblem][i] = memory[subProblem][i - 1] //
             } else {
                 // min(excluindo values[i], incluindo values[i]) na solucao
-                memory[subProblem][i] = min(memory[subProblem][i-1], memory[subTarget][i] + 1)
+                memory[subProblem][i] = min(memory[subProblem][i - 1], memory[subTarget][i] + 1)
             }
         }
     }
@@ -134,7 +135,7 @@ private fun sampleGreedyAlgorithm() {
 }
 
 private fun compareAllImplementations() {
-    arrayOf(
+    val instances = arrayOf(
         arrayOf(2, 5, 6, 8) to 11,
         arrayOf(1, 5, 6, 8) to 11,
         arrayOf(2, 5) to 2,
@@ -144,8 +145,8 @@ private fun compareAllImplementations() {
         arrayOf(1, 2, 5) to 12,
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
-    ).forEach { (values, target) ->
-
+    ) + INSTANCE_PROBLEMS
+    instances.forEach { (values, target) ->
         val (a, timerA) = simpleCounterTime {
             findMinimumCoinChangeBottomUpSolution(values, target)
         }
@@ -161,7 +162,8 @@ private fun compareAllImplementations() {
             findMinAmountOfCoinsRecursively(values, target)
         }
 
-        String.format("BottomUp 1) %.3f, %d - BottomUp 2) %.3f, %d - RecMemoization %.3f, %d - Rec %.3, %d\n",
+        String.format(
+            "BottomUp 1) %.3f, %d - BottomUp 2) %.3f, %d - RecMemoization %.3f, %d - Rec %.3, %d\n",
             timerA / 1000.0,
             a,
             timerB / 1000.0,
@@ -171,7 +173,6 @@ private fun compareAllImplementations() {
             timerD / 1000.0,
             d
         )
-
     }
 }
 
