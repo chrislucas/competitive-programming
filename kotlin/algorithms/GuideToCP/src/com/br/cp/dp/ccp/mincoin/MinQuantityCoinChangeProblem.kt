@@ -147,7 +147,7 @@ private fun compareAllImplementations() : String {
         arrayOf(2, 1, 5) to 12,
         arrayOf(1, 2, 3, 4) to 4
     ) + INSTANCE_PROBLEMS
-    instances.sliceArray(0 .. 30).forEachIndexed { i, ( values, target) ->
+    instances.sliceArray(0 .. 15).forEachIndexed { i, ( values, target) ->
         val (a, timerA) = simpleCounterTime {
             findMinimumCoinChangeBottomUpSolution(values, target)
         }
