@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="db61e20c-85f9-4a65-b4db-9d0a228e33e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/raw/gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/ConstantsCCPCountSolutions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5d248b52e74b88883b3e6f4ea4e240532306f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b4ead8720db54b9c64bb860587a615c8aebaec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/HelperCoinChangeProblemconstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/HelperCoinChangeProblemconstants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuideToCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GuideToCP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geocomp/geocomp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geocomp/geocomp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GuideToCP/META-INF/GuideToCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw/refs_coin_change_problem" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_coin_change_problem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw/refs_dp" beforeDir="false" afterPath="$PROJECT_DIR$/raw/refs_dp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/AlgorithmsExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/exts/AlgorithmsExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/HelperCoinChangeProblemconstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/ConstantsCoinChangeProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CountSolutions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CountSolutions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" afterDir="false" />
@@ -15,6 +32,41 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ExtKt">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/classic-cs-problems">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ExtKt">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/classic-cs-problems/ExtKt">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="classic-cs-problems" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExtKt" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,72 +102,58 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.43573162" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExtKt/src/main/kotlin/com/br/extkt" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.23684211" />
+    <property name="project.structure.side.proportion" value="0.23493975" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.CoinChangeProblemKt">
-    <configuration name="CCPMemorySpaceOptimizedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\GuideToCP\ExtKt\src\main\kotlin\com\br\extkt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.FibonacciProblemKt">
+    <configuration name="CoinChangeProblemCombinatoryKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.ccp.combinatory.CoinChangeProblemCombinatoryKt" />
       <module name="GuideToCP" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.ccp.mincoin.CCPMemorySpaceOptimizedKt" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CoinChangeProblemKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="GuideToCP" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.ccp.mincoin.CoinChangeProblemKt" />
-      <option name="WORKING_DIRECTORY" />
+      <module name="GuideToCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciProblemKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.cp.chp1.FibonacciProblemKt" />
+      <module name="classic-cs-problems.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MinQuantityCoinChangeProblemKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="GuideToCP" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.ccp.mincoin.MinQuantityCoinChangeProblemKt" />
-      <option name="WORKING_DIRECTORY" />
+      <module name="GuideToCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PropertiesInDynamicProgrammingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="GuideToCP" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.br.cp.dp.tutorials.geeksforgeeks.PropertiesInDynamicProgrammingKt" />
-      <option name="WORKING_DIRECTORY" />
+      <module name="GuideToCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CoinChangeProblemKt" />
-        <item itemvalue="Application.MinQuantityCoinChangeProblemKt" />
-        <item itemvalue="Application.CCPMemorySpaceOptimizedKt" />
-        <item itemvalue="Application.MinQuantityCoinChangeProblemKt" />
-        <item itemvalue="Application.PropertiesInDynamicProgrammingKt" />
+        <item itemvalue="Kotlin.FibonacciProblemKt" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +205,36 @@
           <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt</url>
           <line>64</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>50</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>52</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>60</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>68</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt</url>
+          <line>70</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
