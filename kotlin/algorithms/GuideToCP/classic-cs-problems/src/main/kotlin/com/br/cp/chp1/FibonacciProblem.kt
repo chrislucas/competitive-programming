@@ -3,7 +3,7 @@ package com.br.cp.chp1
 import com.br.extkt.simpleCounterTime
 
 
-private fun rec(ith: Int): Int = if (ith < 2) 1 else rec(ith - 1) + rec(ith - 2)
+private fun rec(ith: Int): Int = if (ith < 3) 1 else rec(ith - 1) + rec(ith - 2)
 
 private fun memoization(ith: Int, buffer: Array<Int>): Int {
     return when {
@@ -23,20 +23,20 @@ private fun memoization(ith: Int, buffer: Array<Int>): Int {
 
 private val RANGE = 1..50
 
-private fun runFibonacciRec() {
-
-    val builder = StringBuilder()
+private fun runFibonacciRec(): MutableMap<Int, Int> {
+    val result = mutableMapOf<Int, Int>()
     val (_, time) = simpleCounterTime {
         RANGE.forEach {
-            builder.append("${rec(it)}\n")
+            result[it] = rec(it)
         }
+        Unit
     }
     println(String.format("Fibonacci Rec: %s. %.3f", RANGE, time / 1000.0))
-    // println(builder.toString())
+    return result
 }
 
-private fun runFibonacciMemoization() {
-    val builder = StringBuilder()
+private fun runFibonacciMemoization(): MutableMap<Int, Int> {
+    val result = mutableMapOf<Int, Int>()
     val (_, time) = simpleCounterTime {
         RANGE.forEach {
             val memo = Array(it + 1) { 0 }
@@ -45,14 +45,17 @@ private fun runFibonacciMemoization() {
             if (it > 1) {
                 memo[2] = 1
             }
-            builder.append("${memoization(it, memo)}\n")
+            result[it] = memoization(it, memo)
         }
+        Unit
     }
     println(String.format("Fibonacci Memo: %s. %.3f", RANGE, time / 1000.0))
-    // println(builder.toString())
+    return result
 }
 
 fun main() {
-    runFibonacciRec()
-    runFibonacciMemoization()
+    val resultA = runFibonacciRec()
+    val resultB = runFibonacciMemoization()
+    println(resultA == resultB)
+    println("$resultA\n$resultB")
 }
