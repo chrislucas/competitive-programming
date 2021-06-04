@@ -43,10 +43,6 @@ G
 raw/dp,9/a/9a86d86d9069f7fe38375912b9f6077f0b134b72
 N
 src/com/br/cp/dp/graph/Prim.kt,2/6/263b4cba2c63b9934c1e8e8f774d6ca76cbc8106
-K
-facebook-hackercup/raw/refs,6/b/6b5428f8b9dd9eba834e244082ef932ebf0d6641
-O
-cp4book2/raw/probability_theory,3/c/3cc071cebe3453ec0a940042c6ca506383611bd6
 V
 &src/com/br/cp/dp/graph/DijskstraPQ2.kt,8/4/844d3067a9926574feb942449dcb8ff771c30f3b
 T

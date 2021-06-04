@@ -7,6 +7,10 @@ https://www.geeksforgeeks.org/dynamic-programming/
 https://www.geeksforgeeks.org/coin-change-dp-7/?ref=leftbar-rightbar
 
 
+Solving Double Counting Problems with Dynamic Programming
+Algorithm
+https://iopscience.iop.org/article/10.1088/1742-6596/1746/1/012058/pdf
+
 https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
 https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/
 
@@ -20,3 +24,13 @@ http://ace.cs.ohio.edu/~razvan/courses/cs4040/lecture19.pdf
 knapsacke 0-1 problem
 https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/?ref=leftbar-rightbar
 https://riptutorial.com/dynamic-programming/topic/7972/knapsack-problem
+
+Sum over Subsets | Dynamic Programming
+https://www.geeksforgeeks.org/sum-subsets-dynamic-programming/
+
+Bitmasking
+https://en.wikipedia.org/wiki/Mask_(computing)
+https://blog.bitsrc.io/the-art-of-bitmasking-ec58ab1b4c03
+https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/
+geeksforgeeks.org/bitmasking-and-dynamic-programming-set-1-count-ways-to-assign-unique-cap-to-every-person/
+https://noic.com.br/materiais-informatica/ideias/bitmask/

@@ -2,7 +2,7 @@ package com.br.cp.dp.ccp.mincoin
 
 import com.br.cp.dp.ccp.INSTANCE_PROBLEMS
 import com.br.cp.exts.log
-import com.br.cp.simpleCounterTime
+import com.br.cp.exts.simpleCounterTime
 import java.lang.Integer.min
 
 const val INF = Int.MAX_VALUE - 1
