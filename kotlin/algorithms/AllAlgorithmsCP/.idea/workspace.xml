@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8d62ce8f-229e-4d30-bd5e-a6be6cdf8d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/raw/ds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/dp/graph/DijskstraPQ2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/uf/UnionFind.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/graph/Dijkstra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/graph/DijkstraPQ.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/WeightedQuickUnionKt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/uf/WeightedQuickUnionKt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GuideToCP/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -52,5 +50,17 @@
       <updated>1616896321211</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
