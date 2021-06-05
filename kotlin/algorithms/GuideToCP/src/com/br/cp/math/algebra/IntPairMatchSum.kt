@@ -1,4 +1,4 @@
-package com.br.cp.algebra
+package com.br.cp.math.algebra
 
 // https://www.geeksforgeeks.org/two-pointers-technique/
 

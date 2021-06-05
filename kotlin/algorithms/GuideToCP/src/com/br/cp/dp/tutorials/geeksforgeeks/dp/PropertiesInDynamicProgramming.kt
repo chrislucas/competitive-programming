@@ -27,10 +27,10 @@ import com.br.cp.exts.log
 
 
 private fun classicalFibonacciProblem(n: Int): Int {
-    if (n < 2) {
-        return 1
+    return if (n < 2) {
+        1
     } else {
-        return classicalFibonacciProblem(n - 1) + classicalFibonacciProblem(n - 2)
+        classicalFibonacciProblem(n - 1) + classicalFibonacciProblem(n - 2)
     }
 }
 
