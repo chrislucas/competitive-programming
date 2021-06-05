@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GuideToCP.iml" filepath="$PROJECT_DIR$/GuideToCP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/geocomp/geocomp.iml" filepath="$PROJECT_DIR$/geocomp/geocomp.iml" />
     </modules>
   </component>
 </project>
