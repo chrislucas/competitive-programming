@@ -4,13 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AllAlgorithmsCP.iml" filepath="$PROJECT_DIR$/AllAlgorithmsCP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/codeforces_old/codeforces_old.iml" filepath="$PROJECT_DIR$/codeforces_old/codeforces_old.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cp4book2_old/cp4book2_old.iml" filepath="$PROJECT_DIR$/cp4book2_old/cp4book2_old.iml" />
-      <module fileurl="file://$PROJECT_DIR$/facebook-hackercup-old/facebook-hackercup-old.iml" filepath="$PROJECT_DIR$/facebook-hackercup-old/facebook-hackercup-old.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/google-codejam-old/google-codejam-old.iml" filepath="$PROJECT_DIR$/google-codejam-old/google-codejam-old.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.iml" />
     </modules>
   </component>
