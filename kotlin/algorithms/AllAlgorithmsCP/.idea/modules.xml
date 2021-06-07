@@ -3,11 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AllAlgorithmsCP.iml" filepath="$PROJECT_DIR$/AllAlgorithmsCP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.iml" />
     </modules>
   </component>
 </project>
