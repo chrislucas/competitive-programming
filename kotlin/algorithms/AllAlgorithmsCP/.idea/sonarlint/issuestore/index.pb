@@ -27,8 +27,6 @@ n
 >src/com/br/cp/site/algebra/kotlin/FastFourierTransformation.kt,c/2/c26d82579228474103554a61b5c1d68eff136772
 B
 raw/divide_conquer,9/3/930d4523955a9d07199642dc7595346623c74faf
-U
-%src/com/br/cp/dp/graph/BellmanFord.kt,3/3/33075d2b2e809491f9b86d94cf7ac290dc7760de
 d
 4src/com/br/cp/site/algebra/groovy/DiscreteLog.groovy,f/7/f7bee14e15ede32ee0db1c3e2968868038cbf6ed
 `
@@ -39,8 +37,6 @@ d
 4src/com/br/cp/site/ds/java/WeightedQuickUnionJv.java,a/c/aca9da6eaf74706b5d9c6dd1c313874f1c0a625b
 6
 raw/dp,9/a/9a86d86d9069f7fe38375912b9f6077f0b134b72
-N
-src/com/br/cp/dp/graph/Prim.kt,2/6/263b4cba2c63b9934c1e8e8f774d6ca76cbc8106
 6
 raw/ds,2/4/246ff6390bfc2d9da9a634d05335679c136d0dbb
 g
