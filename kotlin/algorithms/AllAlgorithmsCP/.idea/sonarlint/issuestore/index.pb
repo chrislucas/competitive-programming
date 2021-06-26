@@ -27,8 +27,6 @@ n
 >src/com/br/cp/site/algebra/kotlin/FastFourierTransformation.kt,c/2/c26d82579228474103554a61b5c1d68eff136772
 B
 raw/divide_conquer,9/3/930d4523955a9d07199642dc7595346623c74faf
-U
-%src/com/br/cp/dp/graph/BellmanFord.kt,3/3/33075d2b2e809491f9b86d94cf7ac290dc7760de
 d
 4src/com/br/cp/site/algebra/groovy/DiscreteLog.groovy,f/7/f7bee14e15ede32ee0db1c3e2968868038cbf6ed
 `
@@ -37,20 +35,8 @@ W
 'src/com/br/cp/site/ds/package-info.java,a/e/aeec26016e82495ea57aff589c106588d3de6295
 d
 4src/com/br/cp/site/ds/java/WeightedQuickUnionJv.java,a/c/aca9da6eaf74706b5d9c6dd1c313874f1c0a625b
-G
-src/com/br/cp/dp/SSM.kt,9/d/9d227ad1c9cdf9dc4bb9915b964a82cc36e6f76d
 6
 raw/dp,9/a/9a86d86d9069f7fe38375912b9f6077f0b134b72
-N
-src/com/br/cp/dp/graph/Prim.kt,2/6/263b4cba2c63b9934c1e8e8f774d6ca76cbc8106
-K
-facebook-hackercup/raw/refs,6/b/6b5428f8b9dd9eba834e244082ef932ebf0d6641
-O
-cp4book2/raw/probability_theory,3/c/3cc071cebe3453ec0a940042c6ca506383611bd6
-V
-&src/com/br/cp/dp/graph/DijskstraPQ2.kt,8/4/844d3067a9926574feb942449dcb8ff771c30f3b
-T
-$src/com/br/cp/dp/graph/DijkstraPQ.kt,3/b/3b577b7fdf6a0ce92c7af07035a4f7bc0edf578b
 6
 raw/ds,2/4/246ff6390bfc2d9da9a634d05335679c136d0dbb
 g
@@ -61,10 +47,3 @@ Y
 )src/com/br/cp/site/ds/kotlin/heap/Heap.kt,b/0/b09d79c5759af94c6c469d5789e735ce73ac1c89
 d
 4src/com/br/cp/site/ds/kotlin/heap/PQueueAsMinHeap.kt,6/3/637e71e0d7261532b62cb0a11a7367b871230d83
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-B
-cp4book/.gitignore,a/3/a3a42f6e8cabbd50a044eadc828df328ef1820e3
-E
-codeforces/.gitignore,e/7/e7ee8bcfd69fc95f847e1b52ba46b0fb4cf3ddf4

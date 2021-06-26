@@ -3,7 +3,7 @@ package com.br.cp.chp1
 import com.br.extkt.simpleCounterTime
 
 
-private fun rec(ith: Int): Int = if (ith < 3) 1 else rec(ith - 1) + rec(ith - 2)
+private fun rec(ith: Int): Int = if (ith < 2) ith else rec(ith - 1) + rec(ith - 2)
 
 private fun memoization(ith: Int, buffer: Array<Int>): Int {
     return when {
@@ -20,8 +20,7 @@ private fun memoization(ith: Int, buffer: Array<Int>): Int {
     }
 }
 
-
-private val RANGE = 1..50
+private val RANGE = 1..60
 
 private fun runFibonacciRec(): MutableMap<Int, Int> {
     val result = mutableMapOf<Int, Int>()

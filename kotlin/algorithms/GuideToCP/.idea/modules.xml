@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.iml" filepath="$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuideToCP.iml" filepath="$PROJECT_DIR$/GuideToCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide.iml" filepath="$PROJECT_DIR$/.idea/modules/guide.iml" />
     </modules>
   </component>
 </project>
