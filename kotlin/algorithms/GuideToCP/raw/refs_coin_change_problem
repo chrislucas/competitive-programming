@@ -509,3 +509,11 @@ i = 1 moeda
 Referencias
 https://www.codesdope.com/course/algorithms-coin-change/
 
+
+// MIN Coin change
+https://riptutorial.com/dynamic-programming/example/25891/minimum-number-of-coins-to-get-total
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
+
+
+Coin change bfs
+https://www.geeksforgeeks.org/coin-change-bfs-approach/?ref=rp

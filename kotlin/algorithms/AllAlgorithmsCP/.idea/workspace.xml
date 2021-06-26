@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8d62ce8f-229e-4d30-bd5e-a6be6cdf8d4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/groovy-all-2.4.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/ExtKt/src/main/kotlin/com/br/extkt/AlgorithmsExt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/classic-cs-problems/raw/kotlin_for_data_science" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/classic-cs-problems/raw/quantra_quantitative_finance" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/classic-cs-problems/src/main/kotlin/com/br/cp/chp1/FibonacciProblem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/classic-cs-problems/src/main/kotlin/com/br/cp/problems/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/guide/src/main/kotlin/com/br/guide/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/a_star_algorithm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/bitmask" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/fast_fourier_ntt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/general_refs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/raw/probability" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/bitmask/BitmaskFun.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/ConstantsCCPCountSolutions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/ConstantsCoinChangeProblem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/combinatory/CoinChangeProblemCombinatory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/combinatory/CountSolutions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/mincoin/CCPMemorySpaceOptimized.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/mincoin/CoinChangeProblem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/mincoin/MinQuantityCCPMatrixMemorySpace.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/problems/codeforces/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/problems/oj/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/graphs/HamiltonianPath.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/knapsack/ZeroOneKnapsackProblem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/knapsack/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/lcs/LCS.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/ds/automatos/AutomatoFinitoDeterministic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/ds/automatos/AutomatoFinitoNaoDeterministico.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/ds/automatos/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/exts/AlgorithmsExt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/search/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/training/uri/adhoc/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book2/raw/probability_theory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/facebook-hackercup/raw/refs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuideToCP/raw/refs_coin_change_problem" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/raw/refs_coin_change_problem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuideToCP/raw/refs_dp" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/raw/refs_dp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/MinQuantityCoinChangeProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../GuideToCP/src/com/br/cp/dp/ccp/mincoin/MinQuantityCoinChangeProblem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +70,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
@@ -45,5 +92,8 @@
       <updated>1616896321211</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

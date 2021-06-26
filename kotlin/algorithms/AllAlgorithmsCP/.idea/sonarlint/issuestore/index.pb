@@ -64,3 +64,7 @@ d
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+B
+cp4book/.gitignore,a/3/a3a42f6e8cabbd50a044eadc828df328ef1820e3
+E
+codeforces/.gitignore,e/7/e7ee8bcfd69fc95f847e1b52ba46b0fb4cf3ddf4
