@@ -1,1 +1,1 @@
-D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\bookstatcomp\build\classes\kotlin\main\com\br\algorithms\SampleKt.class
+/Users/chrislucas/Documents/repositories/github/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/bookstatcomp/build/classes/kotlin/main/com/br/algorithms/SampleKt$main$1.class:/Users/chrislucas/Documents/repositories/github/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/bookstatcomp/build/classes/kotlin/main/com/br/algorithms/SampleKt.class

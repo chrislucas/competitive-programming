@@ -5,3 +5,8 @@ package com.br.cp.chp1
  * https://understanding-recursion.readthedocs.io/en/latest/04%20Counting.html
  * https://stackoverflow.com/questions/41203214/counting-recursive-calls-of-a-function
  * */
+
+
+fun main() {
+    println(0xff)
+}
