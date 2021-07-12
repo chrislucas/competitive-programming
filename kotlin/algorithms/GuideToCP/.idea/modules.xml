@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2078593358/ExtKt.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuideToCP.iml" filepath="$PROJECT_DIR$/GuideToCP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide.iml" filepath="$PROJECT_DIR$/.idea/modules/guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide.main.iml" filepath="$PROJECT_DIR$/.idea/modules/guide.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide.test.iml" filepath="$PROJECT_DIR$/.idea/modules/guide.test.iml" />
     </modules>
   </component>
 </project>
