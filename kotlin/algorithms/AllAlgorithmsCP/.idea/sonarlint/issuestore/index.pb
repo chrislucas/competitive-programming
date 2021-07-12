@@ -57,3 +57,15 @@ K
 hackerearth/settings.gradle,8/1/8189b58b7bdc7c1dbe4035b3d237586b10e3da51
 C
 gcj/settings.gradle,0/e/0e6db831612bd205bff290f5f83fc3adfd9665ee
+]
+-codeforces/src/main/kotlin/com/br/algo/App.kt,e/0/e0866c3c77f1c50981bea863efe5e2e96724380b
+A
+Exts/build.gradle,7/8/78b83bd291a2e86e213ccbf00fe47f5f6dc86490
+H
+hackerearth/build.gradle,6/8/68a2a3c9c1a981f0c5b0d176e5294508d4bf6d2d
+@
+gcj/build.gradle,6/e/6ee0c2c8d7ab35543008a2d5eed8e18754f516a6
+f
+6hackerearth/src/main/kotlin/com/br/studies/dp/Intro.kt,3/2/32ed2df80e3b2440e2522557bd0d05b2394d7ecb
+e
+5hackerearth/src/main/java/com/br/studies/dp/Main.java,0/7/073f36ebaee73341c2dd0f8d6e24a64d5f1749a5

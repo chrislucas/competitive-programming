@@ -11,7 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.main.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.test.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.test.iml" />>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.test.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.test.iml" />
@@ -27,9 +27,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.test.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.test.iml" />
     </modules>
   </component>
 </project>

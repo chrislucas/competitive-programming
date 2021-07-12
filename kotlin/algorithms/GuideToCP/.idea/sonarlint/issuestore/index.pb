@@ -76,5 +76,3 @@ s
 Cclassic-cs-problems/src/main/kotlin/com/br/cp/chp1/CountingCalls.kt,5/2/52223d1c2df8768aab32be6e45ae19ee8ed52086
 c
 3ExtKt/src/main/kotlin/com/br/extkt/AlgorithmsExt.kt,2/5/2577d15fff794b0791345994fb52c64ccc71e8b3
-Z
-*guide/src/main/kotlin/com/br/guide/Main.kt,4/9/493b844948fa1ff3809b7f7cef852947c56d4864
