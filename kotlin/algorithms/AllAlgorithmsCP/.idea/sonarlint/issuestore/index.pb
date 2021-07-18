@@ -5,8 +5,6 @@ D
 +src/com/br/samples/groovy/HelloWorld.groovy,7/1/71fedee39039f8513384f1fce893cd7fd41c08d3
 @
 raw/hamming_code,9/b/9bd2136b44c1235f9127862b374356d23a2d93ab
-8
-raw/refs,7/6/760d099d9ee84d0d1928881e10d9a78dcd335851
 C
 raw/meetInTheMiddle,a/c/acfee6d4ca30984ab6d2b6f84c8d7d0190461f43
 @

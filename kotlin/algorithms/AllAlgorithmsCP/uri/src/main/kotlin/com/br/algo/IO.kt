@@ -9,7 +9,6 @@ private fun Char.toInt() = Character.getNumericValue(this)
 
 private fun <T> Array<T>.show(prefix: String = "") = "$prefix${this.joinToString(" ")}"
 
-
 fun main() {
     readValues { it.toInt() }
 }
