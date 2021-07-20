@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AllAlgorithmsCP.iml" filepath="$PROJECT_DIR$/AllAlgorithmsCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.main.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.test.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cp4book.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cp4book.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fhackercup.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fhackercup.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.test.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uri.test.iml" filepath="$PROJECT_DIR$/.idea/modules/uri.test.iml" />
+    </modules>
+  </component>
+</project>

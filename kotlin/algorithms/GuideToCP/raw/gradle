@@ -2,3 +2,9 @@ https://blog.jetbrains.com/idea/2017/03/webinar-recording-composite-builds-with-
 
 Exemplo de projetos gradle compostos
 https://github.com/gradle/gradle/tree/c7da24ebff119eacc8899ce1c609dd0d426f1243/subprojects/docs/src/samples/compositeBuilds/basic
+
+
+
+https://github.com/gradle/gradle/tree/c7da24ebff119eacc8899ce1c609dd0d426f1243/subprojects/docs/src/samples/compositeBuilds/basic
+https://github.com/gradle/gradle/blob/c7da24ebff119eacc8899ce1c609dd0d426f1243/subprojects/docs/src/samples/compositeBuilds/basic/composite/settings.gradle
+https://github.com/gradle/gradle/tree/c7da24ebff119eacc8899ce1c609dd0d426f1243/subprojects/docs/src/samples/compositeBuilds/basic

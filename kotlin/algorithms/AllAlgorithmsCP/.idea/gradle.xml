@@ -5,9 +5,30 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Exts" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Exts" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/Exts" name="Exts">
+                <projects>
+                  <project path="$PROJECT_DIR$/Exts" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/bookstatcomp" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/Exts" />
             <option value="$PROJECT_DIR$/bookstatcomp" />
           </set>
         </option>
@@ -45,6 +66,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/gcj" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hackerearth" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/hackerearth" />
           </set>
         </option>
       </GradleProjectSettings>

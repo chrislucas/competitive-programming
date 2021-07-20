@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GuideToCP.iml" filepath="$PROJECT_DIR$/GuideToCP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatscomp.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatscomp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/geocomp/geocomp.iml" filepath="$PROJECT_DIR$/geocomp/geocomp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide.iml" filepath="$PROJECT_DIR$/.idea/modules/guide.iml" />
     </modules>
   </component>
 </project>

@@ -4,6 +4,59 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/ExtKt" name="ExtKt">
+                <projects>
+                  <project path="$PROJECT_DIR$/ExtKt" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/classic-cs-problems" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ExtKt" />
+            <option value="$PROJECT_DIR$/classic-cs-problems" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/ExtKt" name="ExtKt">
+                <projects>
+                  <project path="$PROJECT_DIR$/ExtKt" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/geometria-computacional" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ExtKt" />
+            <option value="$PROJECT_DIR$/geometria-computacional" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/ExtKt" name="ExtKt">
+                <projects>
+                  <project path="$PROJECT_DIR$/ExtKt" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/bookstatscomp" />
         <option name="modules">
@@ -17,6 +70,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/guide" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/ExtKt" />
             <option value="$PROJECT_DIR$/guide" />
           </set>
         </option>
