@@ -15,3 +15,10 @@ fun multiply(a: Long, b: Long, m: Long) = (a % m * b % m) % m
 fun sum(a: Int, b: Int, m: Int) = (a % m + b % m) % m
 
 fun sum(a: Long, b: Long, m: Long) = (a % m + b % m) % m
+
+
+/**
+ * https://brilliant.org/wiki/modular-arithmetic/#modular-arithmetic-addition
+ * NOTES
+ *
+ * */

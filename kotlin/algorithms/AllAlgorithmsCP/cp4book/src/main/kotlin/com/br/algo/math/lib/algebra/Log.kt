@@ -2,6 +2,7 @@ package com.br.algo.math.lib.algebra
 
 import kotlin.math.exp
 import kotlin.math.log2
+import kotlin.math.roundToLong
 
 
 /**
@@ -57,19 +58,41 @@ fun Int.digits(base: Int = 10) = log(base * 1.0, this * 1.0) + 1
  *
  * 2 root (10 ^ 10) = 10 ^ (10 / 2)
  *
- * indice root radicando/argumento ^ e (geralmente 1) = raiz
+ * n-esima raiz de x ^ m = x ^ (m/n) ->
  *
- * root = radicando/argumento ^ e / indice = raiz
+ * indice root (argumento) ^ m (geralmente 1) = raiz
+ *
+ * root = (argumento) ^ m / indice = raiz
+ *
+ * exp fractional
+ * https://www.mathsisfun.com/algebra/exponent-fractional.html
  * */
-fun root(argument: Int, e: Int = 1, index: Int): Double = dexp(argument * 1.0, e * 1.0 / index)
+fun ithIntRoot(argument: Int, e: Int = 1, index: Int): Double =
+    exp(log(Math.E, argument * 1.0) * ((e * 1.0) / index))
 
 /**
- * exp function
+ * funcao raiz
  *
+ * n-esima raiz de x ^ m = x ^ (m/n)
  * A biblioteca de matematica de muitas linguagens tem uma funcao chamada exp que calcula
  * a exponencial do numero de Euler na N
  * https://www.geeksforgeeks.org/exp-function-cpp/
  * https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.math/exp.html
+ *
+ * Exponential Identity
+ * https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Exponential_identity
+ * https://pt.wikipedia.org/wiki/Identidade_de_Euler
+ * http://tobybartels.name/MATH-0950/2007SP/monomials/
+ * https://www.mathsisfun.com/numbers/nth-root.html
  * */
 
-fun root(argument: Double, e: Int = 1, index: Int): Double = exp(logE(argument * e / index))
+fun ithDoubleRoot(argument: Double, e: Int = 1, index: Int): Double =
+    exp(log(Math.E, argument) * ((e * 1.0) / index))
+
+/**
+ * e = numero de euler
+ *
+ * n-esima raiz de S ^ m =  e ^ (m/n * ln S)
+ **/
+fun ithDouble2Root(argument: Double, e: Int = 1, index: Int): Double =
+    squaringDouble2Exp(Math.E, log(Math.E, argument) * (e / index))

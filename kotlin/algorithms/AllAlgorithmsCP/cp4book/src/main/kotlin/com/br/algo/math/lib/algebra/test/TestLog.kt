@@ -1,11 +1,7 @@
-package com.br.algo.math.lib.algebra
+package com.br.algo.math.lib.algebra.test
 
-
-
-private fun testRoot() {
-    println(root(100.0, index = 2))
-    println(root(100, index = 2))
-}
+import com.br.algo.math.lib.algebra.log
+import com.br.algo.math.lib.algebra.logE
 
 
 private fun testLog() {
@@ -19,5 +15,6 @@ private fun testLogE() {
 }
 
 fun main() {
-  testRoot()
+    testLog()
+    testLogE()
 }

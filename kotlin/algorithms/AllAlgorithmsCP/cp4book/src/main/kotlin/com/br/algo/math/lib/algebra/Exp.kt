@@ -5,7 +5,7 @@ package com.br.algo.math.lib.algebra
  * https://cp-algorithms.com/algebra/binary-exp.html
  * */
 
-fun iexp(base: Int, expo: Int): Int {
+fun squaringInt2Exp(base: Int, expo: Int): Int {
     var mBase = base
     var mExpo = expo
     return when {
@@ -30,7 +30,7 @@ fun iexp(base: Int, expo: Int): Int {
 }
 
 
-fun miexp(base: Long, expo: Long, mod: Long): Long {
+fun squaringLongExp(base: Long, expo: Long, mod: Long): Long {
 
     fun multiply(a: Long, b: Long, m: Long) = (a % m * b % m) % m
 
@@ -58,7 +58,7 @@ fun miexp(base: Long, expo: Long, mod: Long): Long {
 }
 
 
-fun dexp(base: Double, expo: Long): Double {
+fun squaringDoubleExp(base: Double, expo: Long): Double {
     return when (expo) {
         0L -> {
             1.0
@@ -85,7 +85,7 @@ fun dexp(base: Double, expo: Long): Double {
     }
 }
 
-fun dexp(base: Double, expo: Double): Double {
+fun squaringDouble2Exp(base: Double, expo: Double): Double {
     return when (expo) {
         0.0 -> {
             1.0
@@ -94,16 +94,20 @@ fun dexp(base: Double, expo: Double): Double {
             base
         }
         else -> {
-            var (mExpo, mBase) = if (expo < 0) {
-                -expo to (1.0 / base)
-            } else if (expo < 1) {
-                expo to (1.0 / base)
-            } else {
-                expo to base
+            var (mExpo, mBase) = when {
+                expo < 0 -> {
+                    -expo to (1.0 / base)
+                }
+                expo < 1 -> {
+                    expo to (1.0 / base)
+                }
+                else -> {
+                    expo to base
+                }
             }
             var acc = 1.0
             while (mExpo > 0) {
-                if (mExpo % 2 == 1.0) {
+                if (mExpo % 2.0 == 1.0) {
                     acc *= mBase
                 }
                 mBase *= mBase
