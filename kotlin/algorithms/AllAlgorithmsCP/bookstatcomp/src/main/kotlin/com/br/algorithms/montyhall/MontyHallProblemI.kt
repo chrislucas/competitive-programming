@@ -1,6 +1,9 @@
 package com.br.algorithms.montyhall
 
 import com.br.algorithms.ext.string
+import com.br.algorithms.montyhall.utils.choosingADifferentDoor
+import com.br.algorithms.montyhall.utils.choosingLastDoor
+import com.br.algorithms.montyhall.utils.choosingPrizedDoor
 
 private fun testChoosingNumbers() {
     while (true) {

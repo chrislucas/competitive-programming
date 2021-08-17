@@ -1,6 +1,8 @@
-package com.br.algorithms.montyhall
+package com.br.algorithms.montyhall.simdata
 
 import com.br.algorithms.ext.randomRange
+import com.br.algorithms.montyhall.utils.choosingLastDoor
+import com.br.algorithms.montyhall.utils.fromOneToThree
 
 data class GameResult(
     val numberGame: Int,
@@ -23,13 +25,6 @@ private fun simulationWithPercentageChange(quantityGames: Int, percentageToChang
     val qGamesWonWithChange = gamesHasChange
         .filter { it.hasWon }
         .count()
-/*
-    println(
-        "Mudancas Realizadas: ${gamesHasChange.size}." +
-                " Mudancas que resultaram em vitoria: $qGamesWonWithChange - ${qGamesWonWithChange * 1.0 / gamesHasChange.size}"
-    )
-
- */
 
     val qGamesWonWithoutChange = results
         .filter { !it.hasChange && it.hasWon }
@@ -43,9 +38,9 @@ private fun simulationWithPercentageChange(quantityGames: Int, percentageToChang
 
     println(
         "Jogos perdidos no total $qLostGame\n" +
-                "Porcentagem de perdas: $percentageLost" +
+                "Porcentagem de perdas: $percentageLost\n" +
                 "Games vencidos sem troca: $qGamesWonWithoutChange\n" +
-                "Games vencidos com troca: $qGamesWonWithChange" +
+                "Games vencidos com troca: $qGamesWonWithChange\n" +
                 "Porcentagem de Games vencidos com troca: $percentageGamesWonWithChange\n" +
                 "Porcentagem de Games vencidos sem troca: $percentageGamesWonWithoutChange\n"
     )
@@ -89,33 +84,7 @@ private fun simulationFromTenToNGames(quantityGames: Int) {
     }
 }
 
-private fun List<GameResult>.testGamesItChangedAndWon() {
-    val qGamesWonWithChange = this.filter { it.hasChange }
-        .filter { it.hasWon }
-        .count()
-}
-
-
-private fun List<GameResult>.testGamesItChangedAndLost() {
-    val qGamesLoseWithChange = this.filter { it.hasChange }
-        .filter { !it.hasWon }
-        .count()
-}
-
-private fun List<GameResult>.testGamesItNotChangedAndWon() {
-    val qGamesLoseWithoutChange = this.filter { it.hasChange }
-        .filter { !it.hasChange && it.hasWon }
-        .count()
-}
-
-private fun List<GameResult>.testGamesItNotChangedAndLost() {
-    val qGamesLoseWithoutChange = this.filter { it.hasChange }
-        .filter { !it.hasChange && !it.hasWon }
-        .count()
-}
-
-
-private fun allTestsGames(quantityGames: Int) {
+private fun allTestsGames(quantityGames: Int, fn: (List<GameResult>) -> Unit) {
     var g = 10
     while (g < quantityGames) {
         for (i in 50..100) {
@@ -123,16 +92,42 @@ private fun allTestsGames(quantityGames: Int) {
                 g,
                 i * 1.0
             )
-            result.testGamesItChangedAndLost()
-            result.testGamesItChangedAndWon()
-            result.testGamesItNotChangedAndLost()
-            result.testGamesItNotChangedAndWon()
+
+            fn(result)
         }
         g *= 10
     }
+}
 
+private const val qGames = 1000000
+
+private fun test1() {
+    simulationFromTenToNGames(qGames)
+}
+
+private fun test2() {
+    allTestsGames(qGames) { result ->
+        result.testGamesItChangedAndLost()
+    }
 }
 
 fun main() {
-    simulationFromTenToNGames(1000000)
+
+    // test1()
+
+    test2()
+
+/*
+    allTestsGames(qGames) { result ->
+        result.testGamesItChangedAndWon()
+    }
+
+    allTestsGames(qGames) { result ->
+        result.testGamesItNotChangedAndLost()
+    }
+
+    allTestsGames(qGames) { result ->
+        result.testGamesItNotChangedAndWon()
+    }
+ */
 }

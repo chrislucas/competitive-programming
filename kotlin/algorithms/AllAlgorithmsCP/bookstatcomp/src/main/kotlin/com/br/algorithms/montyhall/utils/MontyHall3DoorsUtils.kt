@@ -1,4 +1,4 @@
-package com.br.algorithms.montyhall
+package com.br.algorithms.montyhall.utils
 
 import kotlin.random.Random
 

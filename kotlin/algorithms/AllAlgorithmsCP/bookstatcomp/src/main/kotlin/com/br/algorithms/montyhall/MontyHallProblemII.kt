@@ -1,6 +1,7 @@
 package com.br.algorithms.montyhall
 
-import com.br.algorithms.ext.randomRange
+import com.br.algorithms.montyhall.utils.choosingLastDoor
+import com.br.algorithms.montyhall.utils.fromOneToThree
 
 
 /**
