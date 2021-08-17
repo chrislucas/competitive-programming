@@ -35,56 +35,6 @@ import com.br.algorithms.ext.randomRange
  * que o participante tenha escolhido a porta errada na primeira vez
  *
  * */
-
-
-data class GameResult(
-    val prizedDoor: Int,
-    val firstChosenDoor: Int,
-    val secondChosenDoor: Int,
-    val hasChange: Boolean
-)
-
-private fun simulationWithChange(quantityGames: Int, percentageToChangeChoose: Double) {
-    val qGamesShouldChangeChoice = (quantityGames * percentageToChangeChoose / 100.0).toInt()
-
-    println("************************************************************************************************")
-    println("Quantidade de simulacoes: $quantityGames - Quantidade de trocas: $qGamesShouldChangeChoice")
-
-    val gameThatShouldChangeChoice = (0..quantityGames).randomRange(qGamesShouldChangeChoice)
-    val results = mutableListOf<GameResult>()
-
-    for (i in 0..quantityGames) {
-        val prizedDoor = fromOneToThree
-        val chosenDoor = fromOneToThree
-        val change = gameThatShouldChangeChoice.contains(i)
-        val newChosenDor = if (change) {
-            choosingLastDoor(prizedDoor, chosenDoor)
-        } else {
-            chosenDoor
-        }
-        results.add(GameResult(prizedDoor, chosenDoor, newChosenDor, change))
-    }
-
-    val gamesHasChange = results.filter { it.hasChange }
-    val qGamesWonWithChange = gamesHasChange.filter { it.prizedDoor == it.secondChosenDoor }.count()
-    println(
-        "Mudancas Realizadas: ${gamesHasChange.size}." +
-                " Mudancas que resultaram em vitoria: $qGamesWonWithChange - ${qGamesWonWithChange * 1.0 / gamesHasChange.size}"
-    )
-
-    val qGamesWonWithoutChange = results.filter { !it.hasChange && it.prizedDoor == it.firstChosenDoor }.count()
-
-    println("Games vencidos sem troca: $qGamesWonWithoutChange\nGames vencidos com troca: $qGamesWonWithChange")
-    println("************************************************************************************************")
-
-}
-
-private fun simulationFrom1To100Percent() {
-    for (i in 1..100) {
-        simulationWithChange(100000, i * 1.0)
-    }
-}
-
 private fun simulationII(quantityGames: Int) {
     var g1 = 0
     var p1 = 0
@@ -116,7 +66,7 @@ private fun simulationII(quantityGames: Int) {
         }
 
         // trocar para a porta 2
-        else if(playerChoice != 2 && presenterChoice != 2) {
+        else if (playerChoice != 2 && presenterChoice != 2) {
             if (prizeWinning == 2)
                 g2 += 1
             else
@@ -141,22 +91,23 @@ private fun simulationII(quantityGames: Int) {
  */
     }
 
-    println("Simulacoes: $quantityGames\n" +
-            "Ganho sem troca: ${g1 * 1.0 / quantityGames}\n" +
-            "Perda sem troca: ${p1 * 1.0 / quantityGames}\n" +
-            "Ganho com troca: ${g2 * 1.0 / quantityGames}\n" +
-            "Perda com troca: ${p2 * 1.0 / quantityGames}\n")
+    println(
+        "Simulacoes: $quantityGames\n" +
+                "Ganho sem troca: ${g1 * 1.0 / quantityGames}\n" +
+                "Perda sem troca: ${p1 * 1.0 / quantityGames}\n" +
+                "Ganho com troca: ${g2 * 1.0 / quantityGames}\n" +
+                "Perda com troca: ${p2 * 1.0 / quantityGames}\n"
+    )
 }
 
-private fun simulationFrom10ToInf() {
+private fun simulationFrom10ToN(n: Int) {
     var x = 10
-    while (x < 1000000000) {
+    while (x < n) {
         simulationII(x)
         x *= 10
     }
 }
 
 fun main() {
-    //simulationFrom1To100Percent()
-    simulationFrom10ToInf()
+    simulationFrom10ToN(1000000000)
 }
