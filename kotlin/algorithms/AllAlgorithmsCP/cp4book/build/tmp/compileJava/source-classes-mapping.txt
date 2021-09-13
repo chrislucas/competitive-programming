@@ -1,2 +1,4 @@
+com/br/algo/BotClean.java
+ com.br.algo.BotClean
 com/br/algo/Main.java
  com.br.algo.Main
