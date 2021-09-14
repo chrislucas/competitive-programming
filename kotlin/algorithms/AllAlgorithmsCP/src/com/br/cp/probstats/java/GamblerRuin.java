@@ -1,4 +1,4 @@
-package com.br.cp.probstats.java;
+package src.com.br.cp.probstats.java;
 
 public class GamblerRuin {
 

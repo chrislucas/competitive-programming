@@ -1,4 +1,4 @@
-package com.br.cp.graph.dijkstra
+package src.com.br.cp.graph.dijkstra
 
 import java.util.*
 
