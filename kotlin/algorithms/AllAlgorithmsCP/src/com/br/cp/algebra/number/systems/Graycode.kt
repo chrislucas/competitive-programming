@@ -10,6 +10,8 @@ import kotlin.math.log2
  *
  * */
 
+fun Int.countDigits(base: Int): Int = (log2(this * 1.0) / log2(base * 1.0)).toInt() + 1
+
 val Int.countBinaryDigits: Int
     get() = log2(this * 1.0).toInt() + 1
 
@@ -26,11 +28,11 @@ val Int.toBinary: String
 
 private val Int.binaryString: String
     get() {
-        var value = this
+        var number = this
         val buffer = StringBuilder()
-        while (value > 0) {
-            buffer.append(value % 2)
-            value = value shr 1
+        while (number > 0) {
+            buffer.append(number % 2)
+            number = number shr 1
         }
 
         fun countBinaryDigits(value: Int) = log2(value * 1.0).toInt() + 1
@@ -61,7 +63,7 @@ private val Int.binaryString: String
 
 private fun test() {
     arrayOf(1, 2, 3, 4, 7, 10, 100, 127, 511, 512, 513).forEach {
-        println("$it -> ${it.binaryString}, counter ${it.countDigits(10)}, counter ${it.countDigits(2)}")
+        println("$it -> ${it.binaryString}, DigitsBase10 ${it.countDigits(10)}, DigitsBase2 ${it.countDigits(2)}")
     }
 }
 
