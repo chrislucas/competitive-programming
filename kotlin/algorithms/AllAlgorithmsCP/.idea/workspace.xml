@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.GraycodeKt">
+  <component name="RunManager" selected="Kotlin.GraycodeKt (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,6 +216,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraycodeKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.algebra.number.systems.GraycodeKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraycodeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.cp.algebra.number.systems.GraycodeKt" />
       <module name="AllAlgorithmsCP" />
@@ -247,9 +255,11 @@
       <item itemvalue="Kotlin.AppKt" />
       <item itemvalue="Kotlin.AppKt (1)" />
       <item itemvalue="Kotlin.GraycodeKt" />
+      <item itemvalue="Kotlin.GraycodeKt (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.GraycodeKt (1)" />
         <item itemvalue="Kotlin.GraycodeKt" />
         <item itemvalue="Kotlin.AppKt (1)" />
         <item itemvalue="Kotlin.AppKt" />
@@ -392,6 +402,16 @@
           <line>67</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt</url>
+          <line>82</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt</url>
+          <line>84</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -399,6 +419,9 @@
         <watch expression="(b / k) " />
         <watch expression="(-a / k)" />
         <watch expression="(b / k) + (-a / k)" />
+        <watch expression="(bin.length - 1) until 0 step 1" />
+        <watch expression="bin.length until 0" />
+        <watch expression=" bin.length .. 1" />
       </configuration>
     </watches-manager>
   </component>
