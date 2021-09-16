@@ -1,8 +1,7 @@
 package src.com.br.cp.algebra.number.systems
 
-import java.lang.Math.pow
+import java.lang.IllegalArgumentException
 import kotlin.math.log2
-import kotlin.math.pow
 
 /**
  * https://youtu.be/LlEeD2WV5j8
@@ -11,6 +10,19 @@ import kotlin.math.pow
  * https://mathworld.wolfram.com/GrayCode.html
  *
  * */
+
+val Int.rangeBits: IntRange
+    get() {
+        return if (this < 31) {
+            if(this < 2) 0 .. 1 else (1 shl this - 1) until (1 shl this)
+        }
+        else if (this == 31) {
+            (1 shl this - 1) until (1 shl this) - 1
+        }
+        else {
+            throw IllegalArgumentException("")
+        }
+    }
 
 fun Int.countDigits(base: Int): Int = (log2(this * 1.0) / log2(base * 1.0)).toInt() + 1
 
@@ -124,13 +136,13 @@ private fun checkGrayEncodeProperty() {
 
 private fun checkGrayEncodeDecode() {
     val qBits = 8
-    var range = 0 .. 1
-    for (i in 1 until qBits) {
+
+    for (i in 1..qBits) {
+        val range = i.rangeBits
         println("Bits: $i, Range: $range")
         range.forEach {
             println("$it(${it.binaryForm}) | GrayEnc: ${it.grayEncode}(${it.grayEncode.binaryForm}) | GrayDec: ${it.grayEncode.grayDecode}")
         }
-        range = range.last + 1 until (1 shl i+1) // 2.0.pow((i + 1) * 1.0).toInt()
         println("")
     }
 }

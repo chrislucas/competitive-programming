@@ -1,17 +1,24 @@
 package com.br.algo.integer.bitwise
 
+import java.lang.IllegalArgumentException
+
 val Int.rangeBits: IntRange
     get() {
-        var range = 0..1
-        for (i in 1 until this) {
-            range = range.last + 1 until (1 shl i + 1)
+        return if (this < 31) {
+            if(this < 2) 0 .. 1 else (1 shl this - 1) until (1 shl this)
         }
-        return range
+        else if (this == 31) {
+            (1 shl this - 1) until (1 shl this) - 1
+        }
+        else {
+            throw IllegalArgumentException("")
+        }
     }
 
 
 fun main() {
-    println(3.rangeBits)
-    println(4.rangeBits)
-    println(10.rangeBits)
+    for (bits in 1 .. 31) {
+        println("Bits: $bits, Range: ${bits.rangeBits}")
+    }
+
 }
