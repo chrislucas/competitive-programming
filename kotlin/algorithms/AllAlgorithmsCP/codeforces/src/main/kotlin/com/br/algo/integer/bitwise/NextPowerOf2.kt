@@ -11,6 +11,18 @@ import kotlin.math.log
  * */
 
 
+val Int.nextPowerOf2V1: Int
+    get() {
+        var value = this
+        value -= 1
+        value = value or (value shr 1)
+        value = value or (value shr 2)
+        value = value or (value shr 4)
+        value = value or (value shr 8)
+        value = value or (value shr 16)
+        return value + 1
+    }
+
 // log A base B = log A base C / log B base C
 // pow(2, ceil(log(x)/log(2)));
 // pow: 2 exp: ceil(log x base 2)

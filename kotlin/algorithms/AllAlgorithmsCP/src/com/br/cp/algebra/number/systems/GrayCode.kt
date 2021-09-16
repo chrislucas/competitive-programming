@@ -1,6 +1,8 @@
 package src.com.br.cp.algebra.number.systems
 
+import java.lang.Math.pow
 import kotlin.math.log2
+import kotlin.math.pow
 
 /**
  * https://youtu.be/LlEeD2WV5j8
@@ -15,7 +17,19 @@ fun Int.countDigits(base: Int): Int = (log2(this * 1.0) / log2(base * 1.0)).toIn
 val Int.countBinaryDigits: Int
     get() = log2(this * 1.0).toInt() + 1
 
- val Int.grayEncode: Int
+val Int.nextPowerOf2: Int
+    get() {
+        var value = this
+        value -= 1
+        value = value or (value shr 1)
+        value = value or (value shr 2)
+        value = value or (value shr 4)
+        value = value or (value shr 8)
+        value = value or (value shr 16)
+        return value + 1
+    }
+
+val Int.grayEncode: Int
     get() = this xor (this shr 1)
 
 val Int.grayDecode: Int
@@ -23,7 +37,7 @@ val Int.grayDecode: Int
         var g = this
         var decoded = 0
         while (g > 0) {
-            decoded = decoded xor  g
+            decoded = decoded xor g
             g = g shr 1
         }
         return decoded
@@ -80,39 +94,6 @@ private val Int.binaryWithTrailingZeros: String
         }
     }
 
-
-
-object GrayCode {
-    fun encode(decInt: Int): String {
-        val bin = decInt.binaryForm
-        val newString = StringBuilder()
-        for (i in (bin.length - 1) downTo 1) {
-            // if d-1 == 1 d = 1 - (d-1)
-            newString.append(if (bin[i - 1] == '1') '0' else '1')
-        }
-        newString.append(bin[0])
-        return newString.toString().reversed()
-    }
-
-    fun decode(bin: String) {
-        println(bin)
-    }
-}
-
-private fun testGrayEncodeDecInt() {
-    arrayOf(
-        (0..7)
-        //, (8..15)
-        //, (16..31)
-    ).forEach { range ->
-        println(range)
-        range.forEach {
-            println("$it -> ${it.binaryForm} -> ${GrayCode.encode(it)}")
-        }
-        println("")
-    }
-}
-
 private fun checkBinaryRepresentation() {
     arrayOf(1, 2, 3, 4, 7, 10, 100, 127, 511, 512, 513).forEach {
         println(
@@ -126,11 +107,34 @@ private fun checkBinaryRepresentation() {
 }
 
 private fun checkGrayEncodeProperty() {
-    (0 .. 7).forEach {
-        println("$it -> ${it.grayEncode} -> ${it.binaryForm} -> ${it.grayEncode.binaryForm} -> ${it.grayEncode.grayDecode}")
+    val data = arrayOf(
+        (0..7),
+        (8..15),
+        (16..31),
+        (32..63),
+    )
+    data.forEach { range ->
+        println(range)
+        range.forEach {
+            println("$it -> ${it.grayEncode} -> ${it.binaryForm} -> ${it.grayEncode.binaryForm} -> ${it.grayEncode.grayDecode}")
+        }
+        println("")
+    }
+}
+
+private fun checkGrayEncodeDecode() {
+    val qBits = 8
+    var range = 0 .. 1
+    for (i in 1 until qBits) {
+        println("Bits: $i, Range: $range")
+        range.forEach {
+            println("$it(${it.binaryForm}) | GrayEnc: ${it.grayEncode}(${it.grayEncode.binaryForm}) | GrayDec: ${it.grayEncode.grayDecode}")
+        }
+        range = range.last + 1 until (1 shl i+1) // 2.0.pow((i + 1) * 1.0).toInt()
+        println("")
     }
 }
 
 fun main() {
-    checkGrayEncodeProperty()
+    checkGrayEncodeDecode()
 }

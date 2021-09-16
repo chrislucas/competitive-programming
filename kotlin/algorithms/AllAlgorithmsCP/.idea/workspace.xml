@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/700690a1ebec6f70e1db3ae403169b98e42f45f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/integer/bitwise/NextPowerOf2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/integer/bitwise/NextPowerOf2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCode.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +118,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.GraycodeKt (1)">
+  <component name="RunManager" selected="Kotlin.GrayCodeKt">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,8 +219,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraycodeKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.algebra.number.systems.GraycodeKt" />
+    <configuration name="GrayCodeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.algebra.number.systems.GrayCodeKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,8 +233,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NextPowerOf2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.integer.bitwise.NextPowerOf2Kt" />
+    <configuration name="IntRangeBitsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.integer.bitwise.IntRangeBitsKt" />
       <module name="codeforces.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,15 +254,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.NextPowerOf2Kt" />
       <item itemvalue="Kotlin.AppKt" />
       <item itemvalue="Kotlin.AppKt (1)" />
       <item itemvalue="Kotlin.GraycodeKt" />
-      <item itemvalue="Kotlin.GraycodeKt (1)" />
+      <item itemvalue="Kotlin.GrayCodeKt" />
+      <item itemvalue="Kotlin.IntRangeBitsKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.GraycodeKt (1)" />
+        <item itemvalue="Kotlin.GrayCodeKt" />
+        <item itemvalue="Kotlin.IntRangeBitsKt" />
         <item itemvalue="Kotlin.GraycodeKt" />
         <item itemvalue="Kotlin.AppKt (1)" />
         <item itemvalue="Kotlin.AppKt" />
@@ -403,25 +407,15 @@
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt</url>
-          <line>82</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/Graycode.kt</url>
-          <line>84</line>
-          <option name="timeStamp" value="53" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCode.kt</url>
+          <line>129</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="(b / k) " />
-        <watch expression="(-a / k)" />
-        <watch expression="(b / k) + (-a / k)" />
-        <watch expression="(bin.length - 1) until 0 step 1" />
-        <watch expression="bin.length until 0" />
-        <watch expression=" bin.length .. 1" />
+        <watch expression="(1 shl i+1) - 1" />
       </configuration>
     </watches-manager>
   </component>
