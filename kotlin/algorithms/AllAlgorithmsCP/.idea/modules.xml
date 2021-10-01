@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Exts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Exts.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookstatcomp.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/codeforces.iml" filepath="$PROJECT_DIR$/.idea/modules/codeforces.iml" />

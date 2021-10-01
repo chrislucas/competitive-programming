@@ -78,7 +78,25 @@ private fun test2() {
     println(msg)
 }
 
+private fun test3() {
+    val matrix1 = arrayOf(arrayOf(1, 2), arrayOf(3, 4))
+    val matrix2 = arrayOf(arrayOf(-1, 3), arrayOf(4, 2))
+
+    println("R: ${(matrix1 multiply matrix2)?.string}\n******************\n")
+
+    val matrix3 = arrayOf(arrayOf(2, 3), arrayOf(0, 1), arrayOf(-1, 4))
+    val matrix4 = arrayOf(arrayOf(1, 2, 3), arrayOf(-2, 0, 4))
+    println("R: ${(matrix3 multiply matrix4)?.string}\n******************\n")
+
+    val matrix5 = arrayOf(arrayOf(-1, 3), arrayOf(4, 2))
+    val matrix6 = arrayOf(arrayOf(1, 2), arrayOf(3, 4))
+    println("R: ${(matrix5 multiply matrix6)?.string}\n******************\n")
+
+
+}
+
 fun main() {
-    test1()
-    test2()
+    //test1()
+    //test2()
+    test3()
 }
