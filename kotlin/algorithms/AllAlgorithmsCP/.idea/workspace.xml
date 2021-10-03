@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../KotlinHeroesPractice/.idea/KotlinHeroesPractice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/integer/algebra/Log.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/integer/algebra/Log.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCodeBigInt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCodeBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +103,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\lib" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\uri\src\main\kotlin\com\br\problems\geom\algorithms\convexhull\gs\princeton" />
@@ -122,7 +117,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ClosedRangeBigIntKt">
+  <component name="RunManager" selected="Kotlin.ClosedRangeBigIntKt (2)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,6 +211,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClosedRangeBigIntKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.bitwise.rangebit.inttype.ClosedRangeBigIntKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClosedRangeBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.bitwise.rangebit.biginttype.ClosedRangeBigIntKt" />
       <module name="AllAlgorithmsCP" />
@@ -226,13 +228,6 @@
     <configuration name="GrayCodeBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.algebra.number.systems.GrayCodeBigIntKt" />
       <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntRangeBitsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.integer.bitwise.IntRangeBitsKt" />
-      <module name="codeforces.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,19 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.IntRangeBitsKt" />
       <item itemvalue="Kotlin.GrayCodeBigIntKt" />
       <item itemvalue="Kotlin.SampleClosedRangeKt" />
       <item itemvalue="Kotlin.ClosedRangeBigIntKt" />
       <item itemvalue="Kotlin.ClosedRangeBigIntKt (1)" />
+      <item itemvalue="Kotlin.ClosedRangeBigIntKt (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ClosedRangeBigIntKt (2)" />
         <item itemvalue="Kotlin.ClosedRangeBigIntKt" />
         <item itemvalue="Kotlin.ClosedRangeBigIntKt (1)" />
         <item itemvalue="Kotlin.SampleClosedRangeKt" />
         <item itemvalue="Kotlin.GrayCodeBigIntKt" />
-        <item itemvalue="Kotlin.IntRangeBitsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +422,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCodeBigInt.kt</url>
-          <line>90</line>
+          <line>86</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>

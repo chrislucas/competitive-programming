@@ -1,4 +1,4 @@
-package src.com.br.cp.bitwise
+package src.com.br.cp.bitwise.rangebit.inttype
 
 import src.com.br.cp.algebra.number.systems.rangeBit
 import src.com.br.cp.algebra.number.systems.until
