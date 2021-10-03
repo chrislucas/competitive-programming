@@ -1,6 +1,7 @@
 package com.br.algo.integer.algebra
 
 
+import kotlin.math.log10
 import kotlin.math.log2
 
 /**
@@ -20,4 +21,8 @@ import kotlin.math.log2
  * */
 
 // log A base B = log A base C / log B base C
+// log X base B + 1 = numero de digitos de X na base B
 fun Int.countDigits(base: Int): Int = (log2(this * 1.0) / log2(base * 1.0)).toInt() + 1
+
+// log A base B = log A base C / log B base C
+infix fun Int.log(base: Int) = log10(this * 1.0) / log10(base * 1.0)

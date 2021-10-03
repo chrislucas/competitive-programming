@@ -136,7 +136,6 @@ private fun checkGrayEncodeProperty() {
 
 private fun checkGrayEncodeDecode() {
     val qBits = 8
-
     for (i in 1..qBits) {
         val range = i.rangeBits
         println("Bits: $i, Range: $range")
