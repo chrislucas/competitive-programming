@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/kotlin/range/SampleClosedRange.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/kotlin/range/SampleClosedRange.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/kotlin/range/TutorialKtRanges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/kotlin/range/TutorialKtRanges.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ClosedRangeBigIntKt (2)">
+  <component name="RunManager" selected="Kotlin.CheckDoubleRangeKt">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,8 +207,8 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="ClosedRangeBigIntKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.bitwise.ClosedRangeBigIntKt" />
+    <configuration name="CheckDoubleRangeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.range.CheckDoubleRangeKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -225,15 +228,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrayCodeBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.algebra.number.systems.GrayCodeBigIntKt" />
+    <configuration name="SampleClosedRangeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.range.SampleClosedRangeKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleClosedRangeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.range.SampleClosedRangeKt" />
+    <configuration name="TutorialKtRangesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.range.TutorialKtRangesKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +256,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.GrayCodeBigIntKt" />
       <item itemvalue="Kotlin.SampleClosedRangeKt" />
       <item itemvalue="Kotlin.ClosedRangeBigIntKt" />
-      <item itemvalue="Kotlin.ClosedRangeBigIntKt (1)" />
       <item itemvalue="Kotlin.ClosedRangeBigIntKt (2)" />
+      <item itemvalue="Kotlin.TutorialKtRangesKt" />
+      <item itemvalue="Kotlin.CheckDoubleRangeKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CheckDoubleRangeKt" />
+        <item itemvalue="Kotlin.TutorialKtRangesKt" />
+        <item itemvalue="Kotlin.SampleClosedRangeKt" />
         <item itemvalue="Kotlin.ClosedRangeBigIntKt (2)" />
         <item itemvalue="Kotlin.ClosedRangeBigIntKt" />
-        <item itemvalue="Kotlin.ClosedRangeBigIntKt (1)" />
-        <item itemvalue="Kotlin.SampleClosedRangeKt" />
-        <item itemvalue="Kotlin.GrayCodeBigIntKt" />
       </list>
     </recent_temporary>
   </component>
@@ -424,6 +427,22 @@
           <url>file://$PROJECT_DIR$/src/com/br/cp/algebra/number/systems/GrayCodeBigInt.kt</url>
           <line>86</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
+          <line>39</line>
+          <properties class="src.com.br.kotlin.range.DoubleProgression.DoubleIterator" method="hasNext">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
+          <line>61</line>
+          <properties class="src.com.br.kotlin.range.DoubleProgression.DoubleIterator" method="next">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
