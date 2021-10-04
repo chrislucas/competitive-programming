@@ -53,8 +53,6 @@ Z
 *cp4book/src/main/kotlin/com/br/algo/App.kt,9\b\9b70e588b0507d60451c7bba3cc9fbbb4ec930f1
 I
 bookstatcomp/build.gradle,5\2\528b7ba01a7b548f1648e62608d5d3ed10d54a1a
-v
-Fcodeforces/src/main/kotlin/com/br/algo/integer/bitwise/NextPowerOf2.kt,7\0\700690a1ebec6f70e1db3ae403169b98e42f45f2
 r
 Bcodeforces/src/main/kotlin/com/br/algo/integer/bitwise/IntToBIn.kt,b\7\b72e3fcaa25d74689bf8f36c6d3b15b31fda13e2
 x

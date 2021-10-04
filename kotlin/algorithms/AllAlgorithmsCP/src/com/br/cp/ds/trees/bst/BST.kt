@@ -1,6 +1,6 @@
-package com.br.cp.ds.trees.bst
+package src.com.br.cp.ds.trees.bst
 
-import java.lang.StringBuilder
+import kotlin.text.StringBuilder
 
 data class Node<T : Comparable<T>>(val value: T) {
     var left: Node<T>? = null
@@ -85,22 +85,54 @@ class Tree<T : Comparable<T>> {
         return delete(root, data)
     }
 
+    // primeiro as folhas a esquerda, depois as raiz/subraiz por ultimo as folhas a direita
+    // a navegacao tras os items em ordem crescente
     fun inOrder(): String {
+        val buffer = StringBuilder()
         fun inOrder(node: Node<T>?, buffer: StringBuilder) {
             if (node != null) {
                 inOrder(node.left, buffer)
-                buffer.append(node.value)
+                if (buffer.isEmpty()) {
+                    buffer.append(node.value)
+                } else {
+                    buffer.append(" ", node.value)
+                }
                 inOrder(node.right, buffer)
             }
         }
-        return ""
+        inOrder(root, buffer)
+        return buffer.toString()
     }
 
+    // a ideia e ter um resultado invertido da navegacao inorder
+    // que essa navegacao traga os elementos na ordem decrescente
+    fun reverserInOrder(): String {
+        val buffer = StringBuilder()
+        fun transversal(node: Node<T>?, buffer: StringBuilder) {
+            if (node != null) {
+                transversal(node.right, buffer)
+                if (buffer.isEmpty()) {
+                    buffer.append(node.value)
+                } else {
+                    buffer.append(" ", node.value)
+                }
+                transversal(node.left, buffer)
+            }
+        }
+        transversal(root, buffer)
+        return buffer.toString()
+    }
+
+    // primeiro a raiz/subraiz, depois as fiolhas a esquerda e por ultimo as folhas da direita
     fun preOrder(): String {
         val buffer = StringBuilder()
         fun preOrder(node: Node<T>?, buffer: StringBuilder) {
             if (node != null) {
-                buffer.append(node.value)
+                if (buffer.isEmpty()) {
+                    buffer.append(node.value)
+                } else {
+                    buffer.append(" ", node.value)
+                }
                 preOrder(node.left, buffer)
                 preOrder(node.right, buffer)
             }
@@ -109,13 +141,18 @@ class Tree<T : Comparable<T>> {
         return buffer.toString()
     }
 
+    // primerio as folhas depois a esquerda/direita e por ultimo a raiz/subraiz
     fun posOrder(): String {
         val buffer = StringBuilder()
         fun posOrder(node: Node<T>?, buffer: StringBuilder) {
             if (node != null) {
                 posOrder(node.left, buffer)
                 posOrder(node.right, buffer)
-                buffer.append(node.value)
+                if (buffer.isEmpty()) {
+                    buffer.append(node.value)
+                } else {
+                    buffer.append(" ", node.value)
+                }
             }
         }
         posOrder(root, buffer)
@@ -139,6 +176,10 @@ private val data = arrayOf(
 )
 
 
+fun String.splitAndJoinTo(del: String = "", appendable: Appendable = StringBuilder(), separator: String = "|"): String {
+    return this.split(del).joinTo(appendable, separator).toString()
+}
+
 private fun checkTransversal() {
     data.forEach { data ->
         val tree = data.toBinarySearchTree()
@@ -148,6 +189,13 @@ private fun checkTransversal() {
     }
 }
 
+private fun <T : Comparable<T>> checkTransversal(tree: Tree<T>) {
+    println(tree.inOrder())
+    println(tree.reverserInOrder())
+    println(tree.preOrder())
+    println(tree.posOrder())
+}
+
 private fun checkOperatorGet() {
     data.forEach {
         val tree = it.toBinarySearchTree()
@@ -155,6 +203,14 @@ private fun checkOperatorGet() {
     }
 }
 
+private fun checkIfHasItem() {
+    data[0].let {
+        val tree = it.toBinarySearchTree()
+        println(tree.hasItem(40))
+    }
+}
+
 fun main() {
-    checkOperatorGet()
+    //checkIfHasItem()
+    checkTransversal(data[1].toBinarySearchTree())
 }

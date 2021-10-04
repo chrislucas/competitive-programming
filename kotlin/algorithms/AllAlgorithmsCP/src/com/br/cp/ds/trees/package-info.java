@@ -34,3 +34,9 @@ package com.br.cp.ds.trees;
  * https://blog.sqreen.com/demystifying-radix-trees/
  * https://qastack.com.br/programming/14708134/what-is-the-difference-between-trie-and-radix-trie-data-structures
  * */
+
+
+/**
+ * transversal tree
+ * https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+ * */
