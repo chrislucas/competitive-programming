@@ -1,1 +1,0 @@
-/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/codeforces/build/classes/java/main/com/br/algo/Main.class:/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/codeforces/build/classes/kotlin/main/com/br/algo/AppKt.class
