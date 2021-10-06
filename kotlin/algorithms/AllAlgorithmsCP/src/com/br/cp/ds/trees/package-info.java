@@ -33,10 +33,22 @@ package com.br.cp.ds.trees;
  * https://medium.com/swlh/ds-algo-problems-tries-and-radix-trees-44df86d8aaf9
  * https://blog.sqreen.com/demystifying-radix-trees/
  * https://qastack.com.br/programming/14708134/what-is-the-difference-between-trie-and-radix-trie-data-structures
+ *
+ * Tipos de arvore
+ * https://www.tutorialride.com/data-structures/types-of-binary-tree.htm
+ *
+ * Remover no de uma BST
+ * https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
  * */
 
 
 /**
  * transversal tree
  * https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+ *
+ * BST
+ * https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html
+ *
+ * Overview of Data Structures | Set 2 (Binary Tree, BST, Heap and Hash)
+ * https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/?ref=leftbar-rightbar
  * */
