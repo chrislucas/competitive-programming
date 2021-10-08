@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/7/0/700690a1ebec6f70e1db3ae403169b98e42f45f2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/bigint/BigIntExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ext/bigint/BigIntExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/inttype/ClosedRangeBigInt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/couting/systems/GrayCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/bitwise/systems/GrayCode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/couting/systems/GrayCodeBigInt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/bitwise/systems/GrayCodeBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/probstats/game/GamblerRuin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/probstats/game/GamblerRuin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
