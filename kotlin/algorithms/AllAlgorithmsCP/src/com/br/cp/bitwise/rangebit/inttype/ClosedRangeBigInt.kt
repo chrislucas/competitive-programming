@@ -1,7 +1,7 @@
 package src.com.br.cp.bitwise.rangebit.inttype
 
-import src.com.br.cp.math.couting.systems.rangeBit
-import src.com.br.cp.math.couting.systems.until
+import src.com.br.cp.bitwise.systems.rangeBit
+import src.com.br.cp.bitwise.systems.until
 import java.math.BigInteger
 
 typealias BigInt = BigInteger
