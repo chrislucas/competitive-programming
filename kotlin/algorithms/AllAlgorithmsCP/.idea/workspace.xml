@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/probstats/game/GamblerRuin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/probstats/game/GamblerRuin.java" afterDir="false" />
-    </list>
+    <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
