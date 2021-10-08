@@ -319,7 +319,7 @@ private fun checkDeleteNode() {
     println("Deleting 40 ${tree5.delete(40).preOrder()}")
 }
 
-private fun checkDeleteNodeInBST() {
+private fun checkDeleteNodesInSameBST() {
     val tree = data[0].toBinarySearchTree()
     println(tree.delete(20).preOrder())
     println(tree.delete(30).preOrder())
@@ -338,7 +338,7 @@ private fun checkDeleteNodeWithCopy() {
     println(tree1.preOrder())
 
     val tree2 = data[0].toBinarySearchTree()
-    val cpTree2 = tree.remove(20)
+    val cpTree2 = tree.remove(50)
     println(cpTree2.preOrder())
     println(tree2.preOrder())
 }
@@ -347,7 +347,7 @@ fun main() {
     //checkTransversalAllData()
     //checkIfHasItem()
     //checkTransversal()
-    //checkDeleteNode()
     checkDeleteNode()
+    checkDeleteNodesInSameBST()
     //checkDeleteNodeWithCopy()
 }

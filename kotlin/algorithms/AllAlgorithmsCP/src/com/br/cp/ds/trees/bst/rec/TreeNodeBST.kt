@@ -54,10 +54,15 @@ fun <T : Comparable<T>> TreeNode<T>.has(value: T): Boolean {
     return has(this, value)
 }
 
-fun <T:Comparable<T>> TreeNode<T>.delete(value: T) {
-    fun delete(root: TreeNode<T>, value: T) {
-
+fun <T:Comparable<T>> TreeNode<T>.delete(value: T): TreeNode<T>? {
+    fun delete(root: TreeNode<T>?, value: T): TreeNode<T>? {
+        if (root == null) {
+            return null
+        } else {
+           return root
+        }
     }
+    return delete(this, value)
 }
 
 
