@@ -1,4 +1,4 @@
-package src.com.br.cp.algebra.number.systems
+package src.com.br.cp.math.couting.systems
 
 import java.math.BigInteger
 import java.math.BigInteger.ONE

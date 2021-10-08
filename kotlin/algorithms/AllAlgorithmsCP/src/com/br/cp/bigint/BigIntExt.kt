@@ -1,6 +1,6 @@
 package src.com.br.cp.bigint
 
-import src.com.br.cp.algebra.number.systems.mod
+import src.com.br.cp.math.couting.systems.mod
 import java.math.BigInteger
 import java.math.BigInteger.ZERO
 
