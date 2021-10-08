@@ -1,4 +1,4 @@
-package src.com.br.cp.algebra.number.systems
+package src.com.br.cp.bitwise.systems
 
 import java.lang.IllegalArgumentException
 import kotlin.math.log2

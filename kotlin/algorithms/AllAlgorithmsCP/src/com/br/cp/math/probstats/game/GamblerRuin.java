@@ -1,4 +1,9 @@
-package src.com.br.cp.probstats.java;
+package src.com.br.cp.math.probstats.game;
+
+/**
+ * Ler
+ * https://github.com/chrislucas/basic-kotlin/tree/master/algorithms/numbers/stats/GamblerRuin
+ * */
 
 public class GamblerRuin {
 
