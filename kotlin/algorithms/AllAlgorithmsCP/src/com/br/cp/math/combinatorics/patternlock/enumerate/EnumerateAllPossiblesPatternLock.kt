@@ -52,6 +52,27 @@ private fun countWays(visited: Array<Boolean>, possibleJumps: Array<Array<Int>>,
     return counter
 }
 
+
+private fun enumerate(
+    visited: Array<Boolean>,
+    possibleJumps: Array<Array<Int>>,
+    set: LinkedHashMap<Int, Set<Int>>,
+    source: Int,
+    q: Int
+) {
+
+}
+
+private fun enumerate(q: Int) {
+    val set: LinkedHashMap<Int, Set<Int>> = linkedMapOf()
+    val visited = Array(DOTS + 1) { false }
+    enumerate(visited, possibleJumps, set, 1, q - 1)
+    enumerate(visited, possibleJumps, set, 2, q - 1)
+    enumerate(visited, possibleJumps, set, 5, q - 1)
+
+    println(set)
+}
+
 private fun calculate(quantity: Int): Int {
     var counter = 0
     val visited = Array(DOTS + 1) { false }
@@ -61,9 +82,19 @@ private fun calculate(quantity: Int): Int {
     return counter
 }
 
+/*
+3: 320
+4: 1624
+5: 7152
+6: 26016
+7: 72912
+8: 140704
+9: 140704
+ */
+
 private fun checkCalculate() {
-    (3 .. 9).forEach {
-        println(calculate(it))
+    (3..9).forEach {
+        println("$it: ${calculate(it)}, ${enumerate(it)}")
     }
 }
 
