@@ -7,8 +7,9 @@
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/intervaltree/IntervalTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/intervaltree/v1/IntervalTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +62,9 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="module-info" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -120,7 +122,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.AllCombinationOfKKt (1)">
+  <component name="RunManager" selected="Kotlin.EnumerateAllPossiblesPatternLockKt">
     <configuration name="AllCombinationOfKKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.bigint.AllCombinationOfKKt" />
       <module name="AllAlgorithmsCP" />
@@ -264,11 +266,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.EnumerateAllPossiblesPatternLockKt" />
         <item itemvalue="Kotlin.AllCombinationOfKKt (1)" />
         <item itemvalue="Kotlin.AllCombinationOfKKt" />
         <item itemvalue="Kotlin.BitwiseOpKt" />
         <item itemvalue="Kotlin.CountWaysPatternLockMobileDeviceKt (1)" />
-        <item itemvalue="Kotlin.EnumerateAllPossiblesPatternLockKt" />
       </list>
     </recent_temporary>
   </component>
@@ -500,11 +502,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt</url>
-          <line>61</line>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt</url>
           <line>15</line>
           <option name="timeStamp" value="99" />
         </line-breakpoint>
@@ -517,6 +514,36 @@
           <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/bigint/AllCombinationOfK.kt</url>
           <line>16</line>
           <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>180</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>119</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>57</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>123</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
+          <line>163</line>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -544,11 +571,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="this and ( 1 shl (nth - 1))" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

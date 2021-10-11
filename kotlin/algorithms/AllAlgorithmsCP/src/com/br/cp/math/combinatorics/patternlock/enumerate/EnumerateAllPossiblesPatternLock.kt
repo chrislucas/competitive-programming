@@ -2,10 +2,22 @@ package src.com.br.cp.math.combinatorics.patternlock.enumerate
 
 import kotlin.collections.LinkedHashMap
 
-// https://github.com/delight-im/AndroidPatternLock
+// baseado em: https://github.com/delight-im/AndroidPatternLock
 
 
 const val DOTS = 9
+
+typealias EnumerateSet<T> = LinkedHashMap<T, MutableList<MutableList<T>>>
+
+
+val <T> EnumerateSet<T>.accumulate: LinkedHashMap<T, Int>
+get() {
+    val map = linkedMapOf<T, Int>()
+    this.forEach { (k, v) ->
+        map[k] = v.count()
+    }
+    return map
+}
 
 val possibleJumps: Array<Array<Int>>
     get() {
@@ -36,15 +48,23 @@ val possibleJumps: Array<Array<Int>>
     }
 
 
-private fun countWays(visited: Array<Boolean>, possibleJumps: Array<Array<Int>>, source: Int, q: Int): Int {
+private fun countWays(
+    visited: Array<Boolean>,
+    possibleJumps: Array<Array<Int>>,
+    source: Int,
+    q: Int
+): Int {
     if (q <= 0) {
         return if (q == 0) 1 else 0
     }
     var counter = 0
     visited[source] = true
     for (i in 1..DOTS) {
-        val p = possibleJumps[i][source]
-        if (!visited[i] && (p == 0 || visited[p])) {
+        val connection = possibleJumps[i][source]
+        // connection == 0 -> existe um caminho direto de k a source
+        // porem se connection != 0 mas visited[connect] = true quer dizer que atraves da DFS que esse
+        // algoritmo faz, foi possivel chegar de i ate source
+        if (!visited[i] && (connection == 0 || visited[connection])) {
             counter += countWays(visited, possibleJumps, i, q - 1)
         }
     }
@@ -53,24 +73,60 @@ private fun countWays(visited: Array<Boolean>, possibleJumps: Array<Array<Int>>,
 }
 
 
+fun <T> MutableList<T>.copy(): MutableList<T> {
+    val copy = mutableListOf<T>()
+    this.forEach {
+        copy.add(it)
+    }
+    return copy
+}
+
 private fun enumerate(
     visited: Array<Boolean>,
     possibleJumps: Array<Array<Int>>,
-    set: LinkedHashMap<Int, Set<Int>>,
+    set: EnumerateSet<Int>,
+    subset: MutableList<Int>,
     source: Int,
     q: Int
 ) {
-
+    if (q == 0) {
+        subset.add(source)
+        set[subset[0]]?.add(subset.copy())
+        return
+    }
+    visited[source] = true
+    subset.add(source)
+    for (k in 1..DOTS) {
+        val connection = possibleJumps[k][source]
+        // connection == 0 -> existe um caminho direto de k a source
+        // connection != 0 porem visited[coonection] = true significa que com a DFS foi possivel
+        // chegar de k a source
+        if (!visited[k] && (connection == 0 || visited[connection])) {
+            enumerate(visited, possibleJumps, set, subset, k, q - 1)
+            subset.remove(k)
+        }
+    }
+    visited[source] = false
 }
 
-private fun enumerate(q: Int) {
-    val set: LinkedHashMap<Int, Set<Int>> = linkedMapOf()
+private fun enumerate(q: Int): EnumerateSet<Int> {
+    val set: EnumerateSet<Int> = linkedMapOf()
     val visited = Array(DOTS + 1) { false }
-    enumerate(visited, possibleJumps, set, 1, q - 1)
-    enumerate(visited, possibleJumps, set, 2, q - 1)
-    enumerate(visited, possibleJumps, set, 5, q - 1)
+    for (source in 1..DOTS) {
+        set[source] = mutableListOf()
+        enumerate(visited, possibleJumps, set, mutableListOf(), source, q - 1)
+    }
+    println("$q\n${set.accumulate}\n${set.accumulate.values.sum()}\n")
+    return set
+}
 
-    println(set)
+private fun enumerate(range: IntRange) {
+    // leia range esta em 4 .. 9, da direita para esquerda
+    if (3 .. 9 in range) {
+        range.forEach {
+            enumerate(it)
+        }
+    }
 }
 
 private fun calculate(quantity: Int): Int {
@@ -94,16 +150,37 @@ private fun calculate(quantity: Int): Int {
 
 private fun checkCalculate() {
     (3..9).forEach {
-        println("$it: ${calculate(it)}, ${enumerate(it)}")
+        println("$it: ${calculate(it)}")
     }
 }
 
-private fun get(quantity: Int): LinkedHashMap<Int, List<Set<Int>>> {
-
-    return linkedMapOf()
+private fun checkEnumerate() {
+    (3..9).forEach {
+        println("$it: ${enumerate(it)}")
+    }
 }
 
 
+operator fun IntRange.contains(other: IntRange): Boolean =
+    first >= other.first && last <= other.last
+
+
+private fun sum(range: IntRange) {
+    var acc = 0
+    // leia range esta em 4 .. 9, da direita para esquerda
+    if (3 .. 9 in range ) {
+        range.forEach {
+            acc += calculate(it)
+        }
+        println(acc)
+    } else {
+        println("Error")
+    }
+}
+
 fun main() {
-    checkCalculate()
+    sum(4 .. 9)
+    //enumerate(4)
+    enumerate(3 .. 9)
+    //println(calculate(4))
 }

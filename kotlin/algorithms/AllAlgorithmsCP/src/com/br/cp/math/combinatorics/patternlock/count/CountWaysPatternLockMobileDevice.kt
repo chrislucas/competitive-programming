@@ -74,7 +74,7 @@ private fun numberOfPatterns(min: Int, max: Int): Int {
          * */
         counter += 4 * countWays(visited, possibleJumps, 1, i - 1)
         counter += 4 * countWays(visited, possibleJumps, 2, i - 1)
-        counter += countWays(visited, possibleJumps, 5, i- 1)
+        counter += countWays(visited, possibleJumps, 5, i - 1)
     }
     return counter
 }
