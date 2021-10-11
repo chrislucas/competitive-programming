@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/count/CountWaysPatternLockMobileDevice.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/dp/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/dp/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -517,7 +515,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
-          <line>180</line>
+          <line>182</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -537,12 +535,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
-          <line>123</line>
+          <line>124</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/enumerate/EnumerateAllPossiblesPatternLock.kt</url>
-          <line>163</line>
+          <line>164</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
