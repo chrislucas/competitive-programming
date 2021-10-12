@@ -12,4 +12,7 @@ https://pt.wikipedia.org/wiki/L%C3%B3gica_bin%C3%A1ria
     bitwise
     https://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit
     https://www.geeksforgeeks.org/set-clear-and-toggle-a-given-bit-of-a-number-in-c/
+
+    sum of all subsets
+    https://codeforces.com/blog/entry/18169
  */

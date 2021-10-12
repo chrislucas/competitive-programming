@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
@@ -67,6 +68,9 @@
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pa/pa.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,14 +183,7 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.UsingBitwiseKt">
-    <configuration name="AllCombinationOfKKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.bigint.AllCombinationOfKKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.PbKt">
     <configuration name="BitMaskKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.BitMaskKt" />
       <module name="org.example.hackerearth.main" />
@@ -194,15 +191,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnumerateAllPossiblesPatternLockKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.patternlock.enumerate.EnumerateAllPossiblesPatternLockKt" />
-      <module name="AllAlgorithmsCP" />
+    <configuration name="Matrix2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.ds.Matrix2DKt" />
+      <module name="org.example.cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PaKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.problems.PaKt" />
+      <module name="org.example.hackerearth.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PbKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.problems.pb.PbKt" />
       <module name="org.example.hackerearth.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,19 +319,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.EnumerateAllPossiblesPatternLockKt" />
-      <item itemvalue="Kotlin.AllCombinationOfKKt (1)" />
       <item itemvalue="Kotlin.BitMaskKt" />
       <item itemvalue="Kotlin.UsingBitwiseKt" />
       <item itemvalue="Kotlin.PaKt" />
+      <item itemvalue="Kotlin.Matrix2DKt" />
+      <item itemvalue="Kotlin.PbKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PbKt" />
+        <item itemvalue="Kotlin.Matrix2DKt" />
         <item itemvalue="Kotlin.UsingBitwiseKt" />
         <item itemvalue="Kotlin.PaKt" />
         <item itemvalue="Kotlin.BitMaskKt" />
-        <item itemvalue="Kotlin.EnumerateAllPossiblesPatternLockKt" />
-        <item itemvalue="Kotlin.AllCombinationOfKKt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -604,12 +608,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt</url>
-          <line>29</line>
+          <line>28</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
