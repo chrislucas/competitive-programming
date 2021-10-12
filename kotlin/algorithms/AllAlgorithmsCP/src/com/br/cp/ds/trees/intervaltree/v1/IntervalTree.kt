@@ -1,4 +1,4 @@
-package com.br.cp.ds.trees.intervaltree
+package src.com.br.cp.ds.trees.intervaltree.v1
 
 import kotlin.math.max
 

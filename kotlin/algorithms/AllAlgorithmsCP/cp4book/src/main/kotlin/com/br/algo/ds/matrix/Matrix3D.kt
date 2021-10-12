@@ -1,4 +1,4 @@
-package com.br.algo.ds
+package com.br.algo.ds.matrix
 
 typealias  Matrix3D<T> = Array<Array<Array<T?>>>
 
