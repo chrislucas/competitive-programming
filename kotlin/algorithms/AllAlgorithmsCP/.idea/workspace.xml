@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4476b9e-adcb-46c4-ae75-5bf72e5602e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/exp/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/exp/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -68,9 +68,10 @@
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pa/pa.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/func/BitMask.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,10 +123,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="module-info" />
-        <option value="package-info" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -140,6 +141,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="k0k9pkxw" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -183,7 +187,14 @@
       <recent name="com.br.cp.site.ds.kotlin.uf" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PbKt">
+  <component name="RunManager" selected="Kotlin.PcKt">
+    <configuration name="BitMaskKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.func.BitMaskKt" />
+      <module name="org.example.hackerearth.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BitMaskKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.BitMaskKt" />
       <module name="org.example.hackerearth.main" />
@@ -191,30 +202,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Matrix2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.ds.Matrix2DKt" />
-      <module name="org.example.cp4book.main" />
+    <configuration name="CountSetBitKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.countbits.CountSetBitKt" />
+      <module name="org.example.hackerearth.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PaKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.problems.PaKt" />
-      <module name="org.example.hackerearth.main" />
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.rounds.div3.r748.pa.PaKt" />
+      <module name="org.example.codeforces.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PbKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.problems.pb.PbKt" />
-      <module name="org.example.hackerearth.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UsingBitwiseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.bitmask.permutation.UsingBitwiseKt" />
-      <module name="org.example.hackerearth.main" />
+    <configuration name="PcKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.rounds.div3.r748.pc.PcKt" />
+      <module name="org.example.codeforces.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -319,19 +323,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Kotlin.CountSetBitKt (1)" />
       <item itemvalue="Kotlin.BitMaskKt" />
-      <item itemvalue="Kotlin.UsingBitwiseKt" />
+      <item itemvalue="Kotlin.BitMaskKt (1)" />
       <item itemvalue="Kotlin.PaKt" />
-      <item itemvalue="Kotlin.Matrix2DKt" />
-      <item itemvalue="Kotlin.PbKt" />
+      <item itemvalue="Kotlin.PcKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.PbKt" />
-        <item itemvalue="Kotlin.Matrix2DKt" />
-        <item itemvalue="Kotlin.UsingBitwiseKt" />
+        <item itemvalue="Kotlin.PcKt" />
         <item itemvalue="Kotlin.PaKt" />
+        <item itemvalue="Kotlin.BitMaskKt (1)" />
         <item itemvalue="Kotlin.BitMaskKt" />
+        <item itemvalue="Kotlin.CountSetBitKt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -607,14 +611,89 @@
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/func/BitMask.kt</url>
+          <line>29</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/BitMask.kt</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/func/BitMask.kt</url>
+          <line>34</line>
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt</url>
+          <line>132</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/pb/pb.kt</url>
+          <line>116</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pa/pa.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>71</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>67</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>64</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>77</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>23</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pa/pa.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pa/pa.kt</url>
+          <line>48</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pa/pa.kt</url>
+          <line>41</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>37</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/div3/r748/pc/pc.kt</url>
+          <line>96</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>

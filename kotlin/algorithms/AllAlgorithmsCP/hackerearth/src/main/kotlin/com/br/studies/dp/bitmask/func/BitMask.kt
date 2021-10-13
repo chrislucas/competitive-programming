@@ -1,6 +1,5 @@
-package com.br.studies.dp.bitmask
+package com.br.studies.dp.bitmask.func
 
-import com.br.studies.dp.bitmask.permutation.allsubsets.isSet
 import java.lang.StringBuilder
 import kotlin.math.log10
 
@@ -85,6 +84,7 @@ private fun checkInv() {
 }
 
 private fun checkIsSet() {
+    println(4 isSet 2)
     arrayOf(10, 15).forEach { n ->
         println("$n, bits: ${n.rangeBits}")
         n.rangeBits.forEach { nth ->
@@ -93,9 +93,13 @@ private fun checkIsSet() {
     }
 }
 
+private fun checkIsSet2() {
+
+}
+
 fun main() {
     //checkUnset()
     //checkInv()
     //checkIsSet()
-    println(table(3))
+    //println(table(3))
 }
