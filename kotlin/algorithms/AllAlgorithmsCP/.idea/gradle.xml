@@ -53,6 +53,15 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cwelementoofkoltin" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/cwelementoofkoltin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/fhackercup" />
         <option name="modules">
           <set>
