@@ -2,6 +2,20 @@ package src.com.br.cp.math.combinatorics;
 
 
 /**
+ *
+ * Combinatoria
+ * https://brilliant.org/wiki/combinatorics/
+ * https://brilliant.org/wiki/combinatorics/
+ * https://brilliant.org/wiki/combinatorial-optimization/
+ * https://brilliant.org/wiki/discrete-mathematics/
+ * https://brilliant.org/wiki/backpack-problem/
+ *
+ * sum rule
+ * https://brilliant.org/wiki/rule-of-sum/
+ *
+ * combinatorics hackerearth
+ * https://www.hackerearth.com/practice/math/combinatorics/basics-of-combinatorics/tutorial/
+ *
  * Basic Principles of Counting
  * https://www.cs.odu.edu/~toida/nerzic/content/counting/basic_principles.html
  *
