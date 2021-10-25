@@ -1,8 +1,8 @@
-package com.br.studies.dp.bitmask.permutation
+package com.br.studies.dp.bitmask.permutation.allsubsets
 
 infix fun Int.isSet(nth: Int) = this and (1 shl nth) > 0
 
-val <T> Array<T>.all: List<List<T>>
+val <T> Array<T>.allsubsets: List<List<T>>
     get() {
         val size = this.size
         val limit = (1 shl size) - 1
@@ -20,5 +20,5 @@ val <T> Array<T>.all: List<List<T>>
     }
 
 fun main() {
-    println(arrayOf(1, 2, 3, 4).all)
+    println(arrayOf(1, 2, 3, 4).allsubsets)
 }

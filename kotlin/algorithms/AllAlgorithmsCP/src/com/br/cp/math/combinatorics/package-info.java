@@ -55,4 +55,7 @@ package src.com.br.cp.math.combinatorics;
  * All combinations of array
  * https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/
  *
+ * Algorithm to return all combinations of k elements from n
+ * https://stackoverflow.com/questions/127704/algorithm-to-return-all-combinations-of-k-elements-from-n
+ *
  * */

@@ -9,4 +9,8 @@ package com.br.algo.math.lib.algebra.exp;
  *
  *A Geometrical Understanding of Matrices
  * http://gregorygundersen.com/blog/2018/10/24/matrices/
+ *
+ * e ^ matrix
+ * How (and why) to raise e to the power of a matrix
+ * https://www.youtube.com/watch?v=O85OWBJ2ayo&t=5s
  * */

@@ -1,11 +1,11 @@
-package com.br.studies.dp.bitmask.problems
+package com.br.studies.dp.bitmask.problems.pa
 
 
 /**
  * Dado um conjunto, conte quantos subconjuntos possuem a soma de seus elementos maior ou igual a um dado valor K
  */
 
-infix fun Int.isSet(nth: Int) = this and (1 shl nth) > 0
+private infix fun Int.isSet(nth: Int) = this and (1 shl nth) > 0
 
 fun howManySubsetSumIsEqualToK(set: Array<Int>, k: Int): Int {
     var result = 0

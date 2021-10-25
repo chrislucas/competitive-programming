@@ -1,6 +1,5 @@
-package com.br.studies.dp.bitmask
+package com.br.studies.dp.bitmask.func
 
-import com.br.studies.dp.bitmask.problems.isSet
 import java.lang.StringBuilder
 import kotlin.math.log10
 
@@ -37,6 +36,23 @@ fun table(k: Int): String {
     return buffer.toString()
 }
 
+val <T> Array<T>.allSubsets: List<List<T>>
+    get() {
+        val size = this.size
+        val limit = (1 shl size) - 1
+        val set = mutableListOf<MutableList<T>>()
+        for (i in 0 .. limit) {
+            val subset = mutableListOf<T>()
+            for (j in 0 until size) {
+                if (i isSet j) {
+                    subset.add(this[j])
+                }
+            }
+            set.add(subset)
+        }
+        return set
+    }
+
 private fun checkSet() {
     println(8 set 1)
     println(8 set 0)
@@ -68,6 +84,7 @@ private fun checkInv() {
 }
 
 private fun checkIsSet() {
+    println(4 isSet 2)
     arrayOf(10, 15).forEach { n ->
         println("$n, bits: ${n.rangeBits}")
         n.rangeBits.forEach { nth ->
@@ -76,9 +93,13 @@ private fun checkIsSet() {
     }
 }
 
+private fun checkIsSet2() {
+
+}
+
 fun main() {
     //checkUnset()
     //checkInv()
     //checkIsSet()
-    println(table(3))
+    //println(table(3))
 }
