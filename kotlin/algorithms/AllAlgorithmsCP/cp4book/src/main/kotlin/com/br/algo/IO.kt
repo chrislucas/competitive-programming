@@ -14,3 +14,7 @@ typealias PQueue<T> = PriorityQueue<T>
 typealias BigInt = BigInteger
 
 typealias BigDec = BigDecimal
+
+fun main() {
+    println(0xff)
+}
