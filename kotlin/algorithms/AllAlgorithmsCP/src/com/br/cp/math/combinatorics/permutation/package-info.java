@@ -13,4 +13,10 @@ https://www.cnblogs.com/grandyang/p/4428207.html
 
 Make all combinations of size k
 https://www.geeksforgeeks.org/make-combinations-size-k/
+
+Steinhaus–Johnson–Trotter algorithm
+https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm
+
+Fisher–Yates shuffle
+https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
  */
