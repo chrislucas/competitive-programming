@@ -4,5 +4,5 @@ package com.br.algo.oj.hackerrank.math.comb
 
 
 fun main() {
-
+    println(0xff)
 }

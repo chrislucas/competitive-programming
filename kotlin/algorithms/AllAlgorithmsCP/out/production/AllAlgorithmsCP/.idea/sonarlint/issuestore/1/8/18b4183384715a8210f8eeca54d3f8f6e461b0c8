@@ -1,0 +1,21 @@
+
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘
+N
+java:S3400"9Remove this method and declare a constant for this value.(¡ð¬
+G
+java:S1172
+"2Remove these unused method parameters "base", "e".(Óƒ€z
+N
+java:S3400"9Remove this method and declare a constant for this value.(¡ð¬
+Q
+java:S1172"6Remove these unused method parameters "pWin", "pLose".(¸å‰Óøÿÿÿÿ
+N
+java:S3400"9Remove this method and declare a constant for this value.(¡ð¬
+=
+java:S1144
+"(Remove this unused private "exp" method.(Óƒ€z
+J
+java:S1144"/Remove this unused private "unfairGame" method.(¸å‰Óøÿÿÿÿ
+H
+java:S1144"-Remove this unused private "fairGame" method.(¨†¨ úÿÿÿÿ
