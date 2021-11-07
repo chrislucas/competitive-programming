@@ -12,8 +12,7 @@ public class BeeHousePerimeter {
     private static final BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 
     private static final PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out));
-
-
+    
     private static int [] readIntValues() throws IOException {
         return readIntValues(" ");
     }
