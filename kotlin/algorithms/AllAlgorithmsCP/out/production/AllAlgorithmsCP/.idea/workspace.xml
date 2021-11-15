@@ -5,229 +5,124 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/hackerearth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1543d9c0a46763619922311cf649484f79e3fca7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c0f89aad23aca5ad1dd4e1a94945bb5d65bf6db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d0831c399826c66d32f9d7b8a21ee5cc455453a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f3a8b0874f45d4ec8279e4a2559f6d67234c3e8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30ee90bdb8b95e9fb3edea9f82f1871d685eead0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41259fa069afe5a817e9d52f575d7320716036ba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5fb7d6c5b1d9195de07fa15bea9f03a12f101930" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6607161fda4e704c1c1bbf4900ad5cd1f3f3f62d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8ce2362167baca968aac0b5e91c29c5d0b3c1baf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af2905cc2aa96b2883f36befc9e21c32551980f2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba322410ae593886daa6250cfa02515c8b7f29bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bcb7a8e554c9924ed17c850e5cb142fb8917e380" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6a11eb6dc175414731515da33ac843c7fdc344e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f831e29c92c8b29d4039a1825284650a084d3c40" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/educational/r1606/pa/A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/educational/r1606/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/rounds/educational/r1606/pb/B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/ExtArray.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/binomialcoefficient/EfficientSpaceBinomialCoefficient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/LexicographicallyNextPermutaion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/backtracking/ByBacktring.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/heap/AllPermutationHeapAlgorithm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/heap/GenHeapAlgorithm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/heap/it/AllPermutationIterativeHeapAlgorithm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/heap/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/java/cp4book/adhoc/math/FractionRep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AllAlgorithmsCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AllAlgorithmsCP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/Exts01jar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/Exts01jar-classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/build/libs/Exts-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/build/libs/Exts-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/IO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/oj/hackerrank/math/comb/VolleyBallMatch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/oj/hackerrank/math/comb/VolleyBallMatch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/kotlin/fhackercup10SNAPSHOTjar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/kotlin/fhackercup10SNAPSHOTjar-classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/build/libs/fhackercup-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/build/libs/fhackercup-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/classes/kotlin/main/META-INF/hackerearth.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/codeforces10SNAPSHOTjar-classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/libs/codeforces-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/IO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/cp4book10SNAPSHOTjar-classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/libs/cp4book-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/assign/AssignmentProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/bitmask/problems/assign/AssignmentProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/csv-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/0/4/041223a553614b023ecf13005f6f4b218d60c17c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/0/b/0b6f15f3004c1788e6f89adf76ef67e630a9eef9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/1/f/1f667ce99de4d54ea2b63b177761bf199bdad30d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/3/c/3cc071cebe3453ec0a940042c6ca506383611bd6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/4/4/44d5bf8b95fa25d10821a5deeb39ca84c1bf5a9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/4/6/46e36c2e58c3c608c0fed11bdd4a6658d5d3ad6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/5/2/528b7ba01a7b548f1648e62608d5d3ed10d54a1a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/5/a/5a099513b8050ff9b088892a903085e51e0c4091" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/6/8/68680ea064b56de03fe362593c69c73572151aa8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/6/9/69ca2684e4ed3bbdde361498ae0b78db6c340a09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/6/b/6b5428f8b9dd9eba834e244082ef932ebf0d6641" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/7/1/71c106af09f9aa94dff4e97f11760eb708086385" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/7/1/71fedee39039f8513384f1fce893cd7fd41c08d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/9/3/930d4523955a9d07199642dc7595346623c74faf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/9/a/9a86d86d9069f7fe38375912b9f6077f0b134b72" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/9/b/9b70e588b0507d60451c7bba3cc9fbbb4ec930f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/9/b/9bd2136b44c1235f9127862b374356d23a2d93ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/9/d/9d227ad1c9cdf9dc4bb9915b964a82cc36e6f76d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/a/c/aca9da6eaf74706b5d9c6dd1c313874f1c0a625b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/a/c/acfee6d4ca30984ab6d2b6f84c8d7d0190461f43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/a/e/aeec26016e82495ea57aff589c106588d3de6295" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/b/7/b72e3fcaa25d74689bf8f36c6d3b15b31fda13e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/c/2/c26d82579228474103554a61b5c1d68eff136772" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/c/3/c3da376d97802bc95698b28aa3133009bfe8e4ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/c/4/c4e1e5bbbd9fe3870cc9f7289682cb642c43366f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/d/4/d4f2187c6e41b7a97c96678b50c0af532c5a1f3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/d/9/d90a9136ba041b2a9eedcbe501e8088b4fa5025c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/e/3/e3f7ab0b4082d1bd90982ce2246e55303e26c872" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/sonarlint/issuestore/f/7/f7bee14e15ede32ee0db1c3e2968868038cbf6ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/AllAlgorithmsCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/AllAlgorithmsCP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/uri10SNAPSHOTjar-classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/uri10SNAPSHOTjar-classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/libs/uri-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/libs/uri-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/groovy-all-2.4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/groovy-all-3.0.7-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/jaxb-api-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-reflect-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-reflect.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-jdk7-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-jdk7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-jdk8-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-jdk8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-js-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-js.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-stdlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-test-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/lib/kotlin-test.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/ICPC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/accurate_libs_cp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/bitwise" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/cp_math" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/discrete_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/divide_conquer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/dp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/ds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/eratostenes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/facebook_hacker_cup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/fft" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/graph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/hamming_code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/hamming_distance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/kotlin_samples" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/linkedhashmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/logarithm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/master_theorem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/meetInTheMiddle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/pattern_matching" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/permutation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/random_walking_prob" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/refs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/raw/typealias" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/binomialcoefficient/BinomialCoefficient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/oj/codeforces/contest1157/PA.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/oj/codeforces/contest1157/PA.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,10 +177,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Kotlin Class" />
-        <option value="Kotlin File" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -329,7 +224,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/competitions" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/bitwise/rangebit/biginttype" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -340,11 +235,11 @@
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\math\combinatorics\binomialcoefficient\modulop" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/leetcode" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\lib" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\uri\src\main\kotlin\com\br\problems\geom\algorithms\convexhull\gs\princeton" />
-      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\uri\src\main\kotlin\com\br\problems\geom\algorithms\convexhull\gs" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
@@ -353,7 +248,7 @@
       <recent name="com.br.algo.oj" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BeeHousePerimeter (1)">
+  <component name="RunManager" selected="Kotlin.CircleDividedByChordsKt">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -440,12 +335,12 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="BeeHousePerimeter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.oj.icpckattis.adhoc.BeeHousePerimeter" />
+    <configuration name="FractionRep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.java.cp4book.adhoc.FractionRep" />
       <module name="AllAlgorithmsCP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.br.oj.icpckattis.adhoc.*" />
+          <option name="PATTERN" value="src.com.br.java.cp4book.adhoc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,12 +348,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.IO" />
-      <module name="cp4book.main" />
+    <configuration name="MemoryReduceBinomialCoefficient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.binomialcoefficient.MemoryReduceBinomialCoefficient" />
+      <module name="AllAlgorithmsCP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.br.algo.*" />
+          <option name="PATTERN" value="src.com.br.cp.math.combinatorics.binomialcoefficient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -466,12 +361,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.Main" />
-      <module name="cp4book.main" />
+    <configuration name="Sequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.java.cp4book.adhoc.math.exec521.Sequency" />
+      <module name="AllAlgorithmsCP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.br.algo.*" />
+          <option name="PATTERN" value="src.com.br.java.cp4book.adhoc.math.exec521.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -479,16 +374,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.IOKt" />
-      <module name="cp4book.main" />
+    <configuration name="CircleDividedByChordsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.java.cp4book.adhoc.math.exec521.CircleDividedByChordsKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolleyBallMatchKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.oj.hackerrank.math.comb.VolleyBallMatchKt" />
-      <module name="cp4book.main" />
+    <configuration name="EfficientSpaceBinomialCoefficientKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.binomialcoefficient.EfficientSpaceBinomialCoefficientKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -507,19 +402,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.IO" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.BeeHousePerimeter (1)" />
-      <item itemvalue="Kotlin.IOKt" />
-      <item itemvalue="Kotlin.VolleyBallMatchKt" />
+      <item itemvalue="Application.FractionRep" />
+      <item itemvalue="Application.Sequency" />
+      <item itemvalue="Application.MemoryReduceBinomialCoefficient" />
+      <item itemvalue="Kotlin.EfficientSpaceBinomialCoefficientKt" />
+      <item itemvalue="Kotlin.CircleDividedByChordsKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BeeHousePerimeter (1)" />
-        <item itemvalue="Kotlin.VolleyBallMatchKt" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.IO" />
-        <item itemvalue="Kotlin.IOKt" />
+        <item itemvalue="Kotlin.CircleDividedByChordsKt" />
+        <item itemvalue="Application.MemoryReduceBinomialCoefficient" />
+        <item itemvalue="Kotlin.EfficientSpaceBinomialCoefficientKt" />
+        <item itemvalue="Application.Sequency" />
+        <item itemvalue="Application.FractionRep" />
       </list>
     </recent_temporary>
   </component>
@@ -883,6 +778,16 @@
           <line>147</line>
           <option name="timeStamp" value="159" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/java/cp4book/adhoc/math/exec521/CircleDividedByChords.kt</url>
+          <line>30</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/java/cp4book/adhoc/math/exec521/CircleDividedByChords.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -909,13 +814,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
-          <line>56</line>
+          <line>58</line>
           <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/java/cp4book/adhoc/math/exec521/Sequency.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
