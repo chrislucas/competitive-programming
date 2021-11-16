@@ -10,7 +10,7 @@ val BigInt.popcount: Int
     }
 
 
-fun checkpopcount() {
+private fun checkpopcount() {
     val p = BigInt("1023")
     println(p.popcount)
 }
