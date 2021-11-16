@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/CheckConeReto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/CheckConeReto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TroncoCone.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +120,11 @@
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\site\geom\basis" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\math\combinatorics\binomialcoefficient\modulop" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock/leetcode" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/patternlock" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\lib" />
-      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\uri\src\main\kotlin\com\br\problems\geom\algorithms\convexhull\gs\princeton" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />

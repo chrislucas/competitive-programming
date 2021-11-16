@@ -99,6 +99,7 @@ object ConeReto {
 
     fun areaTotalComAltura(raioBase: Double, h: Double) = areaBase(raioBase) + areaLateralComAltura(raioBase, h)
 
+    // PI * r^2 +  PI * r * s == PI * r * (r + s)
     fun areaTotalComLado(raioBase: Double, lado: Double) =  PI * raioBase * raioBase + areaLateralComLado(raioBase, lado)
 
     /*
