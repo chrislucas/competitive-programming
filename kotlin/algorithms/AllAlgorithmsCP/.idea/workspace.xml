@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/book/cphandbook/chp10/cbuiltin/bitint/cbuiltin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/book/cphandbook/chp10/cbuiltin/bitint/cbuiltin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoPlana.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/plana/GeoPlana.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/CheckConeReto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/CheckConeReto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TroncoCone.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,7 @@
       <recent name="com.br.algo.oj" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CilinderKt">
+  <component name="RunManager" selected="Kotlin.TruncatedConeKt">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,19 +222,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="MemoryReduceBinomialCoefficient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.combinatorics.binomialcoefficient.MemoryReduceBinomialCoefficient" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.math.combinatorics.binomialcoefficient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CheckConeEqKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.geom.espacial.CheckConeEqKt" />
       <module name="AllAlgorithmsCP" />
@@ -264,6 +250,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TruncatedConeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.geom.espacial.TruncatedConeKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -278,19 +271,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MemoryReduceBinomialCoefficient" />
       <item itemvalue="Kotlin.CircleDividedByChordsKt" />
       <item itemvalue="Kotlin.CheckConeEqKt" />
       <item itemvalue="Kotlin.CheckConeRetoKt" />
       <item itemvalue="Kotlin.CilinderKt" />
+      <item itemvalue="Kotlin.TruncatedConeKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.CilinderKt" />
+        <item itemvalue="Kotlin.TruncatedConeKt" />
         <item itemvalue="Kotlin.CheckConeRetoKt" />
+        <item itemvalue="Kotlin.CilinderKt" />
         <item itemvalue="Kotlin.CheckConeEqKt" />
         <item itemvalue="Kotlin.CircleDividedByChordsKt" />
-        <item itemvalue="Application.MemoryReduceBinomialCoefficient" />
       </list>
     </recent_temporary>
   </component>
@@ -687,6 +680,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt</url>
+          <line>33</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>

@@ -40,7 +40,13 @@ private fun check() {
 fun main() {
     //checkCalculadoraComAltura(24.0, 15.0)
 
-    checkCalculadoraComprimentoLateral(10.0, 12.0)
+    //checkCalculadoraComprimentoLateral(10.0, 12.0)
 
     //checkCalculadoraComprimentoEAltura(15.0, 30.0)
+
+    // questao 1: https://mundoeducacao.uol.com.br/matematica/cone.htm
+    //println(ConeReto.areaTotalComAltura(4.0, 3.0) * 3.0)
+
+    // questao 2: https://mundoeducacao.uol.com.br/matematica/cone.htm
+    println(ConeReto.volumeComAltura(10.0, 15.0))
 }
