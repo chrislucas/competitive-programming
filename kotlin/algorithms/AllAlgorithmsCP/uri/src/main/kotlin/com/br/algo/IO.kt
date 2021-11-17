@@ -2,6 +2,9 @@ package com.br.algo
 
 private fun readInt() = readLine()!!.toInt()
 
+private fun <T> readValue(transform: (String) -> T ) = transform(readLine()!!)
+
+
 private fun <T> readValues(delimiter: String = " ", transform: (String) -> T ) =
     readLine()!!.split(delimiter).map(transform)
 

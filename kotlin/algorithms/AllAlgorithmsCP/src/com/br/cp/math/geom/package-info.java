@@ -11,3 +11,16 @@ package com.br.cp.math.geom;
  * Chan's algorithm
  * https://en.wikipedia.org/wiki/Chan%27s_algorithm
  * */
+
+/*
+    Geo analtitica
+    https://mundoeducacao.uol.com.br/matematica/geometria-analitica.htm
+
+    geometria plana
+    https://www.todamateria.com.br/geometria-plana/
+    https://www.educamaisbrasil.com.br/enem/matematica/geometria-plana
+
+    geometria espacial
+    https://mundoeducacao.uol.com.br/matematica/geometria-espacial.htm
+    https://www.todamateria.com.br/geometria-espacial/
+ */
