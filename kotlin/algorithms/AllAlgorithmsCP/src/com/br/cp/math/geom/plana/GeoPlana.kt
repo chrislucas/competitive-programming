@@ -11,8 +11,19 @@ object Retangulo {
     fun area(base: Long, lado: Long) = base * lado
 }
 
+
 object Triangulo {
     fun area(base: Long, altura: Long) = base * altura / 2
+
+    /*
+        https://mundoeducacao.uol.com.br/matematica/formula-heron.htm
+        https://byjus.com/maths/heron-formula/
+    */
+    fun heronFormula(a: Double, b: Double, c: Double) {
+        fun semiPerimiter(a: Double, b: Double, c: Double) = (a + b + c) / 2.0
+
+        val s = semiPerimiter(a, b, c)
+    }
 }
 
 /*
@@ -73,16 +84,4 @@ object Trapezio {
         return ((baseMenor + baseMedia) * h) / 2.0
     }
 
-}
-
-
-/*
-    https://mundoeducacao.uol.com.br/matematica/formula-heron.htm
- */
-object triangulo {
-
-
-    fun heronFormula() {
-
-    }
 }

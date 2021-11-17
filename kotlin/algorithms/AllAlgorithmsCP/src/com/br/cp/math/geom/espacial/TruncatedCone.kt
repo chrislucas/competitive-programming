@@ -134,6 +134,7 @@ private fun checkFormulaSurfaceAreaAndVolume() {
  */
 
 private fun checkHeight() {
+    // Questao 1 espcex
     println(TruncatedCone.altura(6.0, 11.0, 13.0))
 }
 

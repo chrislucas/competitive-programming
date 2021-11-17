@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/GeoEspacial.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/espacial/TruncatedCone.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/plana/GeoPlana.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/plana/GeoPlana.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/algo/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/algo/IO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/geom/URI1549.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/geom/p1549/URI1549.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
