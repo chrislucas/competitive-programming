@@ -1,10 +1,10 @@
 package com.br.problems.geom.p1549
 
 import kotlin.math.PI
-import kotlin.math.sqrt
 
 /*
     https://www.beecrowd.com.br/judge/es/problems/view/1549
+    https://www.omnicalculator.com/math/cone-volume
  */
 
 fun <T> readValue(transform: (String) -> T ) = transform(readLine()!!)
