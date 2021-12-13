@@ -5,12 +5,17 @@ import java.math.BigInteger
 import java.util.*
 
 
-fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
+inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map { transform(it) }
 
 
-fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
+inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 
+private inline fun testCases(times: Int, exec: (Int) -> Unit) =
+    repeat(times, exec)
+
+
+private inline fun testCases(times: Int, exec: () -> Unit) = (0 until times).forEach { _ -> exec() }
 
 typealias PLL = Pair<Long, Long>
 

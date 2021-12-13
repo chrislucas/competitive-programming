@@ -43,10 +43,10 @@ private fun binomial(n: Long, p: Long): Long {
     return acc
 }
 
-private fun seq(points: Long): String {
+private fun createTheSequence(points: Long): String {
     return buildString {
         for (qPoints in 1 .. points){
-            val r = binomial(qPoints, 4) + binomial(qPoints, 2) + 1
+            val r = countRegionsInCircleByQuantityOfPoints(qPoints)
             if (qPoints > 1) {
                 this.append("\n$qPoints:$r")
             } else {
@@ -56,13 +56,30 @@ private fun seq(points: Long): String {
     }
 }
 
+private fun countRegionsInCircleByQuantityOfPoints(p: Long): Long {
+    val r = if (p < 4) {
+        0L
+    } else {
+        binomial(p, 4)
+    }
+
+    val s = if (p < 2) {
+        0L
+    } else {
+        binomial(p, 2)
+    }
+
+    return r + s + 1L
+}
+
+
 // https://mathworld.wolfram.com/CircleDivisionbyChords.html
 
 private fun formulaCircleByChord(p: Long): Long  {
-    val p2 = p*p
-    val p3 = p2*p
-    val p4 = p3*p
-    return (p4 - (6 * p3) + (23 * p2) - (18 * p - 24)) / 24L
+    val pSquare = p*p
+    val pCube = pSquare*p
+    val p4 = pCube*p
+    return (p4 - (6 * pCube) + (23 * pSquare) - (18 * p - 24)) / 24L
 }
 
 private fun checkFormula() {
@@ -71,8 +88,17 @@ private fun checkFormula() {
     println(result)
 }
 
+private fun compareResults() {
+    val message = (1..100L).joinToString("\n") {
+        "$it => Formula: ${formulaCircleByChord(it)} | Usando Coeficiente Binomial ${countRegionsInCircleByQuantityOfPoints(it)}"
+    }
+
+    println(message)
+}
+
 
 fun main() {
-    //println(seq(100))
-    checkFormula()
+    println(createTheSequence(100))
+    //checkFormula()
+    //compareResults()
 }
