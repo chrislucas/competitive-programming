@@ -10,8 +10,6 @@ package com.br.algorithms.elorating
  */
 
 
-
-
-private fun fastexp(b: Double, e: Double) {
+private fun exp(b: Double, e: Double) {
 
 }

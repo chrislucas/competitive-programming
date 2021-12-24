@@ -71,6 +71,15 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/foundgameengdevmath" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/foundgameengdevmath" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/gcj" />
         <option name="modules">
           <set>
@@ -84,6 +93,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/hackerearth" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ktacademy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ktacademy" />
           </set>
         </option>
       </GradleProjectSettings>

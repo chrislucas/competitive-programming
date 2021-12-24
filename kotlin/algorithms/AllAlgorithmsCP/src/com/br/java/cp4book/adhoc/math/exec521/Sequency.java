@@ -61,6 +61,8 @@ public class Sequency {
         sequencia comeca com 1, 2
         a soma a diferenca de 2 numeros consecutivos
 
+        https://www.quora.com/What-is-the-formula-for-the-nth-term-of-the-series-11-13-17-23-31-41-n
+
      */
 
     private static void seq4(int size) {
