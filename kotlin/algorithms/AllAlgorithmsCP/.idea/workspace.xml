@@ -64,9 +64,9 @@
       <list>
         <option value="module-info" />
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
