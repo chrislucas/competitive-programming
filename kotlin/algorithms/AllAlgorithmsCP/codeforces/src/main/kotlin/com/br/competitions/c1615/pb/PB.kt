@@ -17,9 +17,5 @@ fun main() {
 
         val table = Array(size) { Array(size) { 0 } }
 
-
-
-
-
     }
 }

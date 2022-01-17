@@ -14,11 +14,17 @@ inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
 
+private fun callTestCases() {
+    testCases(readValue(String::toInt)) {
+        val size = readValue(String::toInt)
+        val values = readValues(transform = String::toInt)
+    }
+}
 
-private inline fun testCases(times: Int, exec: () -> Unit) = (0 until times).forEach { _ -> exec() }
+
+private inline fun runTestCases(times: Int, exec: () -> Unit) = (0 until times).forEach { _ -> exec() }
 
 private fun abs(value: Int) = if (value < 0) -value else value
-
 
 typealias PLL = Pair<Long, Long>
 
