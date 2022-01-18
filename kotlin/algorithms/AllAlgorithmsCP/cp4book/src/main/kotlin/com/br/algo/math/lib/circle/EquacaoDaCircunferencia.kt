@@ -29,4 +29,9 @@ package com.br.algo.math.lib.circle
  * 1) x2 + y2  - 10x + 14y + 25 + 49 - 64 = 0 -> x2 + y2  - 10x + 14y + 74 - 64 = 0
  * 2) x2 + y2  - 10x + 14y + 10 = 0
  *
+ *
+ * Equacao Reduzida
+ * https://brasilescola.uol.com.br/matematica/equacao-reduzida-circunferencia.htm
+ * https://www.varsitytutors.com/hotmath/hotmath_help/topics/equation-of-a-circle#
+ *
  */
