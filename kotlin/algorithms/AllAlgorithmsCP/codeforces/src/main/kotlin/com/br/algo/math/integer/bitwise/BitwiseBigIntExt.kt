@@ -1,4 +1,4 @@
-package com.br.algo.integer.bitwise
+package com.br.algo.math.integer.bitwise
 
 import java.math.BigInteger
 

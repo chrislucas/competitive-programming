@@ -1,4 +1,4 @@
-package com.br.algo.integer.algebra
+package com.br.algo.math.integer.algebra
 
 
 import kotlin.math.log10
