@@ -5,6 +5,9 @@ package com.br.algo.math.lib.algebra.polynomial;
     Polinomios
     https://www.todamateria.com.br/polinomios/#
 
+    Operacoes e propriedades
+    https://www.infoescola.com/matematica/adicao-de-polinomios/
+
     Operations on polynomials and series
     https://cp-algorithms.com/algebra/polynomial.html
 
@@ -27,4 +30,13 @@ package com.br.algo.math.lib.algebra.polynomial;
    https://pt.wikipedia.org/wiki/Algoritmo_de_Briot-Ruffini
 
    Polynomial Division using Linked List
+
+
+   Matematica basica - Polinomios
+   https://www.infoescola.com/matematica/divisao-de-polinomios/
+   https://www.infoescola.com/matematica/origem-e-importancia-dos-polinomios/
+   Divisao de polinomios
+   https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-divisao-polinomios.htm
+   https://pt.wikipedia.org/wiki/Divis%C3%A3o_polinomial
+   https://www.todamateria.com.br/polinomios/#:
  */

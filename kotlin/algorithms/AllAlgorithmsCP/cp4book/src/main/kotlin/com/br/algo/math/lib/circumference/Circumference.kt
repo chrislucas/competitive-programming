@@ -98,11 +98,11 @@ private fun findThePointsOfIntersection(ca: Circumference, cb: Circumference) {
 private fun check() {
 
     /**
-    p) (x - a)^2 + (y - b)^2 = R
-    q) (x - c)^2 + (y - d)^2 = S
-    ou
-    p) xx + yy - 2ax - 2by + aa + bb = R
-    q) xx + yy - 2cx - 2dy + cc + dd = S
+        p) (x - a)^2 + (y - b)^2 = R
+        q) (x - c)^2 + (y - d)^2 = S
+        ou
+        p) xx + yy - 2ax - 2by + aa + bb = R
+        q) xx + yy - 2cx - 2dy + cc + dd = S
      */
     val pairs = arrayOf(
 
