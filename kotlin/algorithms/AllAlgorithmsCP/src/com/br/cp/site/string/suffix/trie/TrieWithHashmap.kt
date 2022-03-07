@@ -37,8 +37,19 @@ class TrieHash {
         }
     }
 
-    fun find(word: String) {
-
+    fun find(word: String): Node? {
+        var tree: HashMap<Char, Node>? = root.prefixTree
+        var node: Node? = null
+        for(c in word) {
+            if(tree?.containsKey(c) == true) {
+                node = tree[c]
+                tree = node?.prefixTree
+            }
+            else {
+                return null
+            }
+        }
+        return node
     }
  }
 
@@ -47,8 +58,6 @@ private fun checkTrieHash() {
     val trie = TrieHash()
 }
 
-
-
 fun main() {
-
+    checkTrieHash()
 }

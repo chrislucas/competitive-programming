@@ -6,20 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/ds/matrix/Matrix2D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/ds/matrix/Matrix2D.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/fft/FFT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/fft/FFT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/polynomial/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/polynomial/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/circumference/Circumference.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/circumference/Circumference.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/circumference/equatiion/CircunferenceEquations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/circumference/equatiion/CircunferenceEquations.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/TrieWithHashmap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/TrieWithHashmap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/AnotherTrie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +136,7 @@
       <recent name="com.br.algo.oj" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.InsertAndSearchKt (1)">
+  <component name="RunManager" selected="Kotlin.TrieOpKt">
     <configuration name="CircumferenceKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.circumference.CircumferenceKt" />
       <module name="org.example.cp4book.main" />
@@ -162,13 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertAndSearchKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.string.suffix.trie.b.InsertAndSearchKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InsertAndSearchKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.string.suffix.trie.InsertAndSearchKt" />
       <module name="AllAlgorithmsCP" />
@@ -179,6 +161,13 @@
     <configuration name="Matrix2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.ds.matrix.Matrix2DKt" />
       <module name="org.example.cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrieOpKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.string.suffix.trie.b.TrieOpKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,11 +276,11 @@
       <item itemvalue="Kotlin.CircumferenceKt (1)" />
       <item itemvalue="Kotlin.Matrix2DKt" />
       <item itemvalue="Kotlin.InsertAndSearchKt" />
-      <item itemvalue="Kotlin.InsertAndSearchKt (1)" />
+      <item itemvalue="Kotlin.TrieOpKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.InsertAndSearchKt (1)" />
+        <item itemvalue="Kotlin.TrieOpKt" />
         <item itemvalue="Kotlin.InsertAndSearchKt" />
         <item itemvalue="Kotlin.Matrix2DKt" />
         <item itemvalue="Kotlin.CircumferenceKt (1)" />
@@ -715,29 +704,54 @@
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt</url>
           <line>46</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt</url>
           <line>35</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt</url>
           <line>55</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt</url>
           <line>29</line>
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/InsertAndSearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/b/TrieOp.kt</url>
           <line>41</line>
           <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt</url>
+          <line>23</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt</url>
+          <line>26</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie/a/TrieOPII.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>

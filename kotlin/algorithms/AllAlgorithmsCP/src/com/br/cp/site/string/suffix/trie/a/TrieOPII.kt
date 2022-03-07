@@ -11,10 +11,7 @@ class Trie {
 
     inner class Node(val char: Char = ' ', var isTheEnd: Boolean = false) {
         private val children = Array(ALPHA.length) { Node() }
-        operator fun set(p: Int, c: Node) {
-            children[p] = c
-        }
-
+        operator fun set(p: Int, c: Node) { children[p] = c }
         operator fun get(p: Int) = children[p]
     }
 
