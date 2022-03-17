@@ -10,7 +10,7 @@ class Trie {
     private val MAP_ALPHA = ALPHA.associate { c -> c to c - 'A' }
 
     inner class Node(val char: Char = ' ', var isTheEnd: Boolean = false) {
-        private val children = Array(ALPHA.length) { Node() }
+        private val children = mutableListOf<Node>()
         operator fun set(p: Int, c: Node) { children[p] = c }
         operator fun get(p: Int) = children[p]
     }
@@ -41,6 +41,19 @@ class Trie {
         }
         return true
     }
+
+
+    fun remove(word: String): Node? =  remove(root, word, 0)
+
+    fun remove(node: Node?, word: String, index: Int): Node? {
+        if (node == null)
+            return null
+
+        if (index == word.length) {
+
+        }
+        return node
+    }
 }
 
 
@@ -68,6 +81,11 @@ private fun checkTrie() {
             println("$word Not found")
         }
     }
+}
+
+
+private fun checkTrieOPDelete() {
+
 }
 
 

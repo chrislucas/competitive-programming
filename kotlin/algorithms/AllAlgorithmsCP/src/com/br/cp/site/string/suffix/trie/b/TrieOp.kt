@@ -12,21 +12,17 @@ package src.com.br.cp.site.string.suffix.trie.b
 class Trie {
 
     private val ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    private val MAP_ALPHA = ALPHA.associate { c -> c to c - 'A' }
+    private val MAP_ALPHA = ALPHA.mapIndexed { i, c -> c to i }.associate { p -> p.first to p.second }
 
     inner class TrieNode(private val char: Char = ' ', var isEnd: Boolean = false) {
         private val children = Array<TrieNode?>(ALPHA.length) { null }
-
         operator fun set(p: Int, c: TrieNode?) {
             children[p] = c
         }
 
         operator fun get(p: Int) = children[p]
-
-        override fun toString(): String = "$char"
-
-
-        fun isEmpty(): Boolean = children.all { it == null }
+        override fun toString(): String = "value: $char"
+        fun isPrefix(): Boolean = children.all { it == null }
     }
 
     private val root = TrieNode()
@@ -54,9 +50,10 @@ class Trie {
         return leaf?.isEnd ?: false
     }
 
-    fun remove(word: String) {
-        remove(root, word, 0)
-    }
+    /**
+     * https://www.geeksforgeeks.org/trie-delete/
+     */
+    fun remove(word: String): TrieNode? = remove(root, word, 0)
 
     private fun remove(node: TrieNode?, word: String, depth: Int): TrieNode? {
         if (node == null) {
@@ -69,15 +66,20 @@ class Trie {
                 node.isEnd = false
             }
             // Ao remover esse no esse ramo da arvore passa a ser vazio ? se sim retorne null
-            // senao retorne o proprio no
-            return if (node.isEmpty()) null else node
+            // senao retorne o proprio no. Basicamente a pergunta é, a palavra que estou
+            // querendo remover está na arvore TRIE como um prefixo de outra palavra ?
+            return if (node.isPrefix()) null else node
         }
 
         val idx = MAP_ALPHA[word[depth]]!!
         // se nao eh o ultimo caracter, percorra a string de forma recursiva
-        node[idx] = remove(node[idx], word, depth + 1)
+        val removed = remove(node[idx], word, depth + 1)
+        node[idx] = removed
 
-        if (node.isEmpty() && !node.isEnd)
+        // se o NO nao tiver mais NOS filhos porem nao for fim do ramo da arvore
+        // a palavra apagada era um sufixo de uma outra palavra.
+        // Exemplo: O Ramo tem a palavra andarilho e o que foi solicitado para apagar foi a palavra anda
+        if (node.isPrefix() && !node.isEnd)
             return null
 
         return node
@@ -98,11 +100,17 @@ private fun checkTrie() {
 }
 
 private fun checkTrieDelete() {
-    val keys = arrayOf("the", "a", "there", "an", "answer", "any", "by", "bye", "their", "hero", "heroplane")
+    val keys = arrayOf(
+        "the", "a", "there", "an", "answer", "any", "by", "bye", "their", "hero", "heroplane", "andarilho"
+    )
     val trie = Trie()
     keys.forEach { key -> trie.insert(key) }
-
+    println("************************************************************")
+    println(trie.remove("their"))
+    println("************************************************************")
     println(trie.remove("about"))
+    println("************************************************************")
+    println(trie.remove("anda"))
     println("************************************************************")
     println(trie.remove("heroplane"))
     println(trie.search("hero"))
@@ -112,8 +120,7 @@ private fun checkTrieDelete() {
     println(trie.search("any"))
     println(trie.search("a"))
     println("************************************************************")
-    trie.remove("ani") // error
-
+    println(println(trie.remove("ani")))
 }
 
 
