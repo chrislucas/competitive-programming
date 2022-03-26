@@ -105,4 +105,8 @@ package src.com.br.cp.site.algebra.kotlin.gcd.extended;
  *      = 10 * 57 - 7 * 81
  *  u = 10, v = -7
  *  10 * 57 - 7 * 81 = gcd(81, 57)
+ *
+ *
+ *  Problemas para resolver
+ *   https://codeforces.com/gym/100963
  */

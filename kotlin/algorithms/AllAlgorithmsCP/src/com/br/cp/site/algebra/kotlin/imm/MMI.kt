@@ -1,4 +1,4 @@
-package src.com.br.cp.site.algebra.kotlin
+package src.com.br.cp.site.algebra.kotlin.imm
 
 /**
  *  https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/

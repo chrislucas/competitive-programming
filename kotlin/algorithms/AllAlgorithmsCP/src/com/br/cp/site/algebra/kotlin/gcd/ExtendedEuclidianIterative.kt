@@ -77,5 +77,7 @@ private fun checkExtendedItV2() {
 }
 
 fun main() {
+    checkExtended()
+    println("*************************************************")
     checkExtendedItV2()
 }
