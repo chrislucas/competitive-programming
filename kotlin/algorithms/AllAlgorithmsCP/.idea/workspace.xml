@@ -7,12 +7,12 @@
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/MMI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/MMI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/ExtendedIt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/ExtendedEuclidianIterative.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/extended/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/extended/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/uva10104.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/rsa/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/rsa/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/java/ExtendedGCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/java/ExtendedGCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/diophatine/DiophatineLinearEquation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/diophatine/DiophatineLinearEquation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/extended/ExtendedEuclidianAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/extended/ExtendedEuclidianAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/InversoMultiplicativoModular.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/InversoMultiplicativoModular.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/MMI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/MMI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +75,8 @@
         <option value="module-info" />
         <option value="Kotlin Class" />
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -143,7 +143,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExtendedGCD">
+  <component name="RunManager" selected="Kotlin.ExtendedEuclidianAlgorithmKt (1)">
     <configuration name="ExtendedGCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.java.ExtendedGCD" />
       <module name="AllAlgorithmsCP" />
@@ -299,10 +299,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
         <item itemvalue="Application.ExtendedGCD" />
         <item itemvalue="Kotlin.ExtendedEuclidianIterativeKt" />
         <item itemvalue="Application.Uva10104" />
-        <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
         <item itemvalue="Kotlin.ExtendedGCDRecKt" />
       </list>
     </recent_temporary>

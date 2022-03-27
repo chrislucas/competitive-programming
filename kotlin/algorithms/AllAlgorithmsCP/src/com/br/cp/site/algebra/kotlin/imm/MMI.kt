@@ -11,3 +11,8 @@ package src.com.br.cp.site.algebra.kotlin.imm
  *  MMI calculator
  *  https://planetcalc.com/3311/
  */
+
+
+fun main() {
+
+}

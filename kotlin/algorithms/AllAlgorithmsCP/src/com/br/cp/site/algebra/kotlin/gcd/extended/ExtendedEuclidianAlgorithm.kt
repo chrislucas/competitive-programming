@@ -61,7 +61,7 @@ class GCD(val a: Long, val b: Long) {
             ca = cb
             cb = rem
         }
-        return Equation(ax, by, a, b, cb)
+        return Equation(ax, by, a, b, ca)
     }
 
     fun extendedRe(): Equation {
@@ -93,9 +93,10 @@ private fun check() {
         102L to 38L,
         42823L to 6409L
     ).forEach { (a, b) ->
+        println("$a, $b")
         val gcd = GCD(a, b)
-        println(gcd.gcd())
-        println(gcd.rec())
+        println("GCD($a, $b) = ${gcd.gcd()}")
+        println("GCD($a, $b) = ${gcd.rec()}")
         println(gcd.extendedRe())
         println(gcd.extendedIt())
         println("*************************")

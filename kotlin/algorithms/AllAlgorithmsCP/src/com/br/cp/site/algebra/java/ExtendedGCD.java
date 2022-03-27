@@ -25,7 +25,9 @@ public class ExtendedGCD {
     }
 
     static Coefficient extended(long a, long b) {
-        if (a % b == 0) {
+        if (b == 0) {
+            return new Coefficient(a, b, 0, 1, b);
+        } else if (a % b == 0) {
             return new Coefficient(a, b, 0, 1, b);
         }
         Coefficient coefficient = extended(b, a % b);
@@ -64,6 +66,9 @@ public class ExtendedGCD {
         System.out.println("*************************************************");
         System.out.println(extended(120, 23));
         System.out.println(it(120, 23));
+        System.out.println("*************************************************");
+        System.out.println(extended(0, 0));
+        System.out.println(it(0, 0));
         System.out.println("*************************************************");
     }
 }
