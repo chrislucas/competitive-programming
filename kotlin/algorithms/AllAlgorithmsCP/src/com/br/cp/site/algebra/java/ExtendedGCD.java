@@ -1,5 +1,10 @@
 package src.com.br.cp.site.algebra.java;
 
+/**
+ * Link interessante com o passo a passo do algoritmo e as equacoes que sao geradas
+ * no gcd extendido
+ * https://pt.planetcalc.com/3298/
+ */
 public class ExtendedGCD {
 
     static class Coefficient {
@@ -26,7 +31,7 @@ public class ExtendedGCD {
 
     static Coefficient extended(long a, long b) {
         if (b == 0) {
-            return new Coefficient(a, b, 0, 1, b);
+            return new Coefficient(a, b, 0, 0, Long.MIN_VALUE);
         } else if (a % b == 0) {
             return new Coefficient(a, b, 0, 1, b);
         }
@@ -67,8 +72,8 @@ public class ExtendedGCD {
         System.out.println(extended(120, 23));
         System.out.println(it(120, 23));
         System.out.println("*************************************************");
-        System.out.println(extended(0, 0));
-        System.out.println(it(0, 0));
-        System.out.println("*************************************************");
+        // System.out.println(extended(0, 0));
+        // System.out.println(it(0, 0));
+        // System.out.println("*************************************************");
     }
 }
