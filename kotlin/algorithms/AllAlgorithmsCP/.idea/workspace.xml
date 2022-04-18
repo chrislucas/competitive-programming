@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LCMKt">
+  <component name="RunManager" selected="Kotlin.PrimeFactorizationKt">
     <configuration name="CRTIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.chineseremainder.CRTIKt" />
       <module name="AllAlgorithmsCP" />
@@ -281,8 +282,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.LCMKt" />
         <item itemvalue="Kotlin.PrimeFactorizationKt" />
+        <item itemvalue="Kotlin.LCMKt" />
         <item itemvalue="Kotlin.DivisibilityKt" />
         <item itemvalue="Kotlin.CRTIKt" />
         <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
@@ -817,17 +818,7 @@
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
           <line>39</line>
-          <option name="timeStamp" value="248" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
-          <line>20</line>
-          <option name="timeStamp" value="249" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
-          <line>32</line>
-          <option name="timeStamp" value="250" />
+          <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>

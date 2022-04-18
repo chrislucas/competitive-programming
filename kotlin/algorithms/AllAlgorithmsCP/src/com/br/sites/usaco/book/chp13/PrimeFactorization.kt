@@ -44,15 +44,42 @@ fun Int.mapPrimeFactors(): MutableMap<Int, Int> {
     return factors
 }
 
-
 private fun checkMapPrimeFactors() {
     (1..100000).forEach {
         println("$it: ${it.mapPrimeFactors()}")
     }
 }
 
+/**
+ * fonte: https://usaco.guide/gold/divisibility?lang=java#prime-factorization
+ *
+ */
+fun Int.anotherMapPrimeFactors(): MutableMap<Int, Int> {
+    val factors = mutableMapOf<Int, Int>()
+    var cpy = this
+    var acc = 2
+    while (acc * acc <= cpy) {
+        while (cpy % acc == 0) {
+            factors[acc] = (factors[acc]?.plus(1)) ?: 1
+            cpy /= acc
+        }
+        acc += 1
+    }
+    if (cpy > 1)
+        factors[cpy] = (factors[cpy]?.plus(1)) ?: 1
+    return factors
+}
+
+
+private fun checkAnotherMapPrimeFactors() {
+    (1..100).forEach {
+        println("$it: ${it.anotherMapPrimeFactors()}")
+    }
+}
+
 
 fun main() {
     //checkIntPrimerFactors()
-    checkMapPrimeFactors()
+    //checkMapPrimeFactors()
+    checkAnotherMapPrimeFactors()
 }

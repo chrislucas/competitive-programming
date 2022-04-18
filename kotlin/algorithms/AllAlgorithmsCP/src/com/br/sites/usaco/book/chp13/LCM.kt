@@ -1,5 +1,12 @@
 package src.com.br.sites.usaco.book.chp13
 
+
+/**
+ * Calculadora online
+ * https://www.calculatorsoup.com/calculators/math/lcm.php
+ *
+ */
+
 fun lcm(a: Int, b: Int): Int {
     fun gcd(a: Int, b: Int): Int {
         return if (a % b == 0) {
