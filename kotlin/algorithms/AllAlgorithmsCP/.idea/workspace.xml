@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +69,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="package-info" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -108,7 +110,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/geom" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/sites/usaco" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../kotlin-coursera-course/assignment/Kotlin for Java Developers. Week 4" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
@@ -137,7 +139,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.DivisibilityKt">
+  <component name="RunManager" selected="Kotlin.PrimeFactorizationKt">
     <configuration name="ExtendedGCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.java.ExtendedGCD" />
       <module name="AllAlgorithmsCP" />
@@ -172,8 +174,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedEuclidianIterativeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.gcd.ExtendedEuclidianIterativeKt" />
+    <configuration name="PrimeFactorizationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.PrimeFactorizationKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,17 +283,17 @@
     <list>
       <item itemvalue="Application.ExtendedGCD" />
       <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
-      <item itemvalue="Kotlin.ExtendedEuclidianIterativeKt" />
       <item itemvalue="Kotlin.CRTIKt" />
       <item itemvalue="Kotlin.DivisibilityKt" />
+      <item itemvalue="Kotlin.PrimeFactorizationKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PrimeFactorizationKt" />
         <item itemvalue="Kotlin.DivisibilityKt" />
         <item itemvalue="Kotlin.CRTIKt" />
         <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
         <item itemvalue="Application.ExtendedGCD" />
-        <item itemvalue="Kotlin.ExtendedEuclidianIterativeKt" />
       </list>
     </recent_temporary>
   </component>
@@ -805,6 +807,21 @@
           <line>62</line>
           <option name="timeStamp" value="241" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt</url>
+          <line>54</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt</url>
+          <line>39</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -888,6 +905,13 @@
         <PinnedItemInfo parentTag="src.com.br.cp.site.string.suffix.trie.b.Trie$TrieNode" memberName="isEmpty" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="((value / 10) - (value % 10) * 2)" />
+        <watch expression="(value / 10)" />
+        <watch expression="(value % 10) * 2" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
