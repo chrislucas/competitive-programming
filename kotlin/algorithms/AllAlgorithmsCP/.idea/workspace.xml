@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/java/ExtendedGCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/java/ExtendedGCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CRTIKt">
+  <component name="RunManager" selected="Kotlin.DivisibilityKt">
     <configuration name="ExtendedGCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.java.ExtendedGCD" />
       <module name="AllAlgorithmsCP" />
@@ -153,21 +151,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Uva10104" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.gcd.problems.uva.Uva10104" />
+    <configuration name="CRTIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.chineseremainder.CRTIKt" />
       <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.site.algebra.kotlin.gcd.problems.uva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CRTIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.chineseremainder.CRTIKt" />
+    <configuration name="DivisibilityKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.DivisibilityKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -287,19 +279,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
-      <item itemvalue="Application.Uva10104" />
       <item itemvalue="Application.ExtendedGCD" />
+      <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
       <item itemvalue="Kotlin.ExtendedEuclidianIterativeKt" />
       <item itemvalue="Kotlin.CRTIKt" />
+      <item itemvalue="Kotlin.DivisibilityKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.DivisibilityKt" />
         <item itemvalue="Kotlin.CRTIKt" />
         <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
         <item itemvalue="Application.ExtendedGCD" />
         <item itemvalue="Kotlin.ExtendedEuclidianIterativeKt" />
-        <item itemvalue="Application.Uva10104" />
       </list>
     </recent_temporary>
   </component>
