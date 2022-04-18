@@ -7,8 +7,6 @@
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/numtheory/Divisibility.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,20 +137,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PrimeFactorizationKt">
-    <configuration name="ExtendedGCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.java.ExtendedGCD" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.site.algebra.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.LCMKt">
     <configuration name="CRTIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.chineseremainder.CRTIKt" />
       <module name="AllAlgorithmsCP" />
@@ -169,6 +154,13 @@
     </configuration>
     <configuration name="ExtendedEuclidianAlgorithmKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.gcd.extended.ExtendedEuclidianAlgorithmKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LCMKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.LCMKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,19 +273,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ExtendedGCD" />
       <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
       <item itemvalue="Kotlin.CRTIKt" />
       <item itemvalue="Kotlin.DivisibilityKt" />
       <item itemvalue="Kotlin.PrimeFactorizationKt" />
+      <item itemvalue="Kotlin.LCMKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LCMKt" />
         <item itemvalue="Kotlin.PrimeFactorizationKt" />
         <item itemvalue="Kotlin.DivisibilityKt" />
         <item itemvalue="Kotlin.CRTIKt" />
         <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
-        <item itemvalue="Application.ExtendedGCD" />
       </list>
     </recent_temporary>
   </component>
@@ -814,13 +806,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt</url>
-          <line>31</line>
+          <line>35</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt</url>
-          <line>39</line>
+          <line>43</line>
           <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
+          <line>39</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
+          <line>20</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -910,6 +917,7 @@
         <watch expression="((value / 10) - (value % 10) * 2)" />
         <watch expression="(value / 10)" />
         <watch expression="(value % 10) * 2" />
+        <watch expression="gcd(p, q)" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
