@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/LCM.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/competitions/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/competitions/IO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/problems/codeforces/PF.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/problems/codeforces/PF.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp14/TwoSumProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp14/TwoSumProblem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +73,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
+        <option value="Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -110,7 +115,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/sites/usaco" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../kotlin-coursera-course/assignment/Kotlin for Java Developers. Week 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/io" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -119,6 +124,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -138,24 +144,42 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PrimeFactorizationKt">
-    <configuration name="CRTIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.chineseremainder.CRTIKt" />
+  <component name="RunManager" selected="Application.SqrtPrimeFactorization">
+    <configuration name="CountingDivisors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.problems.cses.CountingDivisors" />
       <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.problems.cses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DivisibilityKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.numtheory.DivisibilityKt" />
+    <configuration name="FractionRep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.java.cp4book.adhoc.math.FractionRep" />
       <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.java.cp4book.adhoc.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedEuclidianAlgorithmKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.algebra.kotlin.gcd.extended.ExtendedEuclidianAlgorithmKt" />
+    <configuration name="SqrtPrimeFactorization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.SqrtPrimeFactorization" />
       <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -274,19 +298,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
-      <item itemvalue="Kotlin.CRTIKt" />
-      <item itemvalue="Kotlin.DivisibilityKt" />
+      <item itemvalue="Application.FractionRep" />
       <item itemvalue="Kotlin.PrimeFactorizationKt" />
       <item itemvalue="Kotlin.LCMKt" />
+      <item itemvalue="Application.CountingDivisors" />
+      <item itemvalue="Application.SqrtPrimeFactorization" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SqrtPrimeFactorization" />
         <item itemvalue="Kotlin.PrimeFactorizationKt" />
+        <item itemvalue="Application.CountingDivisors" />
+        <item itemvalue="Application.FractionRep" />
         <item itemvalue="Kotlin.LCMKt" />
-        <item itemvalue="Kotlin.DivisibilityKt" />
-        <item itemvalue="Kotlin.CRTIKt" />
-        <item itemvalue="Kotlin.ExtendedEuclidianAlgorithmKt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -887,6 +911,16 @@
           <url>file://$PROJECT_DIR$/src/com/br/java/cp4book/adhoc/math/exec521/Sequency.java</url>
           <line>83</line>
           <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="261" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/Uva10104.java</url>

@@ -57,13 +57,13 @@ private fun checkMapPrimeFactors() {
 fun Int.anotherMapPrimeFactors(): MutableMap<Int, Int> {
     val factors = mutableMapOf<Int, Int>()
     var cpy = this
-    var acc = 2
-    while (acc * acc <= cpy) {
-        while (cpy % acc == 0) {
-            factors[acc] = (factors[acc]?.plus(1)) ?: 1
-            cpy /= acc
+    var div = 2
+    while (div * div <= cpy) {
+        while (cpy % div == 0) {
+            factors[div] = (factors[div]?.plus(1)) ?: 1
+            cpy /= div
         }
-        acc += 1
+        div += 1
     }
     if (cpy > 1)
         factors[cpy] = (factors[cpy]?.plus(1)) ?: 1
@@ -72,7 +72,7 @@ fun Int.anotherMapPrimeFactors(): MutableMap<Int, Int> {
 
 
 private fun checkAnotherMapPrimeFactors() {
-    (1..100).forEach {
+    (18..200).forEach {
         println("$it: ${it.anotherMapPrimeFactors()}")
     }
 }
@@ -80,6 +80,6 @@ private fun checkAnotherMapPrimeFactors() {
 
 fun main() {
     //checkIntPrimerFactors()
-    //checkMapPrimeFactors()
-    checkAnotherMapPrimeFactors()
+    checkMapPrimeFactors()
+    //checkAnotherMapPrimeFactors()
 }

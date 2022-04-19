@@ -1,4 +1,4 @@
-package com.br.competitions
+package src.com.br.cp.io
 
 import java.math.BigDecimal
 import java.math.BigInteger
@@ -7,7 +7,6 @@ import java.util.*
 
 inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map { transform(it) }
-
 
 inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 
