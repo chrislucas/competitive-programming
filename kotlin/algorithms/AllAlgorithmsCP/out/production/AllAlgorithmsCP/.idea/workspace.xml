@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/competitions/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/competitions/IO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/PrimeFactorization.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/problems/codeforces/PF.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/problems/codeforces/PF.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp14/TwoSumProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp14/TwoSumProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +72,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="package-info" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,6 +93,9 @@
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="k0k9pkxw" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -144,26 +146,13 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SqrtPrimeFactorization">
-    <configuration name="CountingDivisors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.problems.cses.CountingDivisors" />
+  <component name="RunManager" selected="Application.OptimizedCountDivII">
+    <configuration name="OptimizedCountDivII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.OptimizedCountDivII" />
       <module name="AllAlgorithmsCP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.problems.cses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FractionRep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.java.cp4book.adhoc.math.FractionRep" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.java.cp4book.adhoc.math.*" />
+          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.divisors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,15 +173,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LCMKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.LCMKt" />
+    <configuration name="ForLoopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.sequences.ForLoopKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeFactorizationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.PrimeFactorizationKt" />
+    <configuration name="NaiveCountDivKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.NaiveCountDivKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SieveKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.erathostenes.sieve.SieveKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -298,19 +294,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.FractionRep" />
-      <item itemvalue="Kotlin.PrimeFactorizationKt" />
-      <item itemvalue="Kotlin.LCMKt" />
-      <item itemvalue="Application.CountingDivisors" />
       <item itemvalue="Application.SqrtPrimeFactorization" />
+      <item itemvalue="Kotlin.SieveKt" />
+      <item itemvalue="Kotlin.ForLoopKt" />
+      <item itemvalue="Kotlin.NaiveCountDivKt" />
+      <item itemvalue="Application.OptimizedCountDivII" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OptimizedCountDivII" />
         <item itemvalue="Application.SqrtPrimeFactorization" />
-        <item itemvalue="Kotlin.PrimeFactorizationKt" />
-        <item itemvalue="Application.CountingDivisors" />
-        <item itemvalue="Application.FractionRep" />
-        <item itemvalue="Kotlin.LCMKt" />
+        <item itemvalue="Kotlin.NaiveCountDivKt" />
+        <item itemvalue="Kotlin.ForLoopKt" />
+        <item itemvalue="Kotlin.SieveKt" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +330,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -844,6 +839,11 @@
           <line>39</line>
           <option name="timeStamp" value="253" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/erathostenes/sieve/Sieve.kt</url>
+          <line>70</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -913,19 +913,19 @@
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/problems/cses/CountingDivisors.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="254" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java</url>
-          <line>17</line>
+          <line>25</line>
           <option name="timeStamp" value="260" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java</url>
-          <line>23</line>
+          <line>30</line>
           <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivI.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="262" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/Uva10104.java</url>
@@ -952,7 +952,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

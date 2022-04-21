@@ -1,5 +1,7 @@
 package src.com.br.sites.usaco.book.chp13.erathostenes.sieve
 
+import kotlin.system.measureTimeMillis
+
 
 /******************************************************************************
  *  Compilation:  javac PrimeSieve.java
@@ -72,16 +74,37 @@ fun sieve(n: Int): List<Int> {
 }
 
 private fun checkSieve() {
-
     infix fun IntRange.step(next: (Int) -> Int) =
         generateSequence(first, next).takeWhile { if (first < last) it <= last else it >= last }
-
     for (i in 1..1000000 step { it * 10 }) {
         println("$i, ${sieve(i).size}")
     }
+}
 
+private fun checkBenchmark() {
+    var s = measureTimeMillis {
+        println(sieve(1000000).size)
+    }
+    println(s * 1.8 / 1000.0 )
+
+    s = measureTimeMillis {
+        println(sieve(10000000).size)
+    }
+    println(s * 1.8 / 1000.0 )
+
+    s = measureTimeMillis {
+        println(sieve(100000000).size)
+    }
+    println(s * 1.8 / 1000.0 )
+/*
+    s = measureTimeMillis {
+        println(sieve(1000000000).size) // Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    }
+    println(s * 1.8 / 1000.0 )
+
+ */
 }
 
 fun main() {
-    checkSieve()
+    checkBenchmark()
 }

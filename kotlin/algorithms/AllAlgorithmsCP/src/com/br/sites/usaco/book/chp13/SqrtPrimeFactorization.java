@@ -10,6 +10,9 @@ import static java.lang.Math.sqrt;
 /**
  * https://www.geeksforgeeks.org/prime-factor/?ref=lbp
  * https://www.calculatorsoup.com/calculators/math/prime-factors.php
+ *
+ * Calculadora
+ * https://www.dcode.fr/prime-factors-decomposition
  */
 
 public class SqrtPrimeFactorization {
@@ -106,7 +109,8 @@ public class SqrtPrimeFactorization {
     }
 
     private static void checkResults() {
-        int value = 315; //new Random().nextInt(50000);
+        int [] values = new int[] {1234567890, 315, 312};
+        int value = values[2]; //new Random().nextInt(50000);
         System.out.printf("Número %d\n", value);
         System.out.printf("Quantidade de fatores primos: %d\n", countPrimeFactors(value));
         System.out.println("Fatores primos f1");

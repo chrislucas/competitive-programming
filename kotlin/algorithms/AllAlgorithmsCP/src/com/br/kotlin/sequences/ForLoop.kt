@@ -14,6 +14,36 @@ infix fun IntRange.step(next: (Int) -> Int) =
 infix fun IntProgression.step(next: (Int) -> Int) = (first..last).step(next)
 
 
-fun main() {
+private fun checkStepForward() {
+    /*
+    for (i in 1 until 1000 step {it * 10}) {
+        println(i)
+    }
+     */
 
+    (1..1000 step { it * 10 })
+        .joinToString(" ")
+        .let {
+            println(it)
+        }
+}
+
+private fun checkStepDown() {
+    /*
+    for (i in 1000 downTo 1 step { it / 10 }) {
+        println(i)
+    }
+     */
+
+    (1000 downTo 1 step { it / 10 })
+        .joinToString(" ")
+        .let {
+            println(it)
+        }
+}
+
+
+fun main() {
+    checkStepForward()
+    checkStepDown()
 }

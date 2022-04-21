@@ -7,19 +7,9 @@ public class OptimizedCountDivI {
 
     /**
      * https://www.geeksforgeeks.org/count-divisors-n-on13/
+     * Calculadora online
+     * https://www.dcode.fr/divisors-list-number
      */
-
-
-    static class CountDivisors {
-        final int number, count;
-        final List<Integer> divisors;
-
-        public CountDivisors(int number, int count, List<Integer> divisors) {
-            this.number = number;
-            this.count = count;
-            this.divisors = divisors;
-        }
-    }
 
     private static List<Integer> sieveOfEratosthenes(int n, boolean[] isPrime, boolean[] isSquareOfPrime) {
         for (int i = 2; i <= n; i++) {
@@ -78,7 +68,7 @@ public class OptimizedCountDivI {
     }
 
     private static void checkNumberOfDivisors() {
-        for (int i = 1; i <= 100 ; i++) {
+        for (int i = 100000; i <= 100000 ; i++) {
             System.out.printf("%d, %d\n", i, counterDivisors(i));
         }
     }
