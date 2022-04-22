@@ -20,7 +20,7 @@ fun iterativeModularExponential(b: Long, e: Long, m: Long): Long {
         }
         else -> {
             var acc = 1L
-            var cb = b
+            var cb = b % m
             var ce = e
             while (ce > 0L) {
                 if (ce and 1 == 1L) {
@@ -57,19 +57,16 @@ private fun checkModExponential() {
     fun show(a: Long?, b: Long?) =
         println(String.format("%d, %d", a, b))
 
-    // Resultados diferentes
     show(
         iterativeModularExponential(3, 24, 26),
         recursiveModularExponential(3, 24, 26)
     )
 
-    // Resultados diferentes
     show(
         iterativeModularExponential(11, 24, 26),
         recursiveModularExponential(11, 24, 26)
     )
 
-    // Resultados diferentes
     show(
         iterativeModularExponential(11, 11, 13),
         recursiveModularExponential(11, 11, 13)

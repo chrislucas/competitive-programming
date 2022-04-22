@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
@@ -16,14 +15,8 @@
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/erathostenes/sieve/Sieve.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/erathostenes/sieve/Sieve.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/ModularBinaryExponentiation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/ModularBinaryExponentiation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,15 +152,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.ModularBinaryExponentiationKt">
-    <configuration name="OptimizedCountDivII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.OptimizedCountDivII" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.divisors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="BinaryExponentiantionIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.BinaryExponentiantionIIKt" />
+      <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,16 +166,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModularMultiplicativeInverseWithFermatLittleTheoremKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.ModularMultiplicativeInverseWithFermatLittleTheoremKt" />
+    <configuration name="ModularBinaryExponentiation__Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.ModularBinaryExponentiation__Kt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NaiveCountDivKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.NaiveCountDivKt" />
-      <module name="AllAlgorithmsCP" />
+    <configuration name="ModularMultiplicativeInverseWithFermatLittleTheoremKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.ModularMultiplicativeInverseWithFermatLittleTheoremKt" />
+      <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -300,19 +287,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.OptimizedCountDivII" />
-      <item itemvalue="Kotlin.NaiveCountDivKt" />
       <item itemvalue="Kotlin.SieveKt" />
       <item itemvalue="Kotlin.ModularMultiplicativeInverseWithFermatLittleTheoremKt" />
       <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
+      <item itemvalue="Kotlin.BinaryExponentiantionIIKt" />
+      <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
+        <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
+        <item itemvalue="Kotlin.BinaryExponentiantionIIKt" />
         <item itemvalue="Kotlin.ModularMultiplicativeInverseWithFermatLittleTheoremKt" />
         <item itemvalue="Kotlin.SieveKt" />
-        <item itemvalue="Kotlin.NaiveCountDivKt" />
-        <item itemvalue="Application.OptimizedCountDivII" />
       </list>
     </recent_temporary>
   </component>
@@ -849,6 +836,26 @@
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/erathostenes/sieve/Sieve.kt</url>
           <line>72</line>
           <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt</url>
+          <line>118</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt</url>
+          <line>126</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt</url>
+          <line>19</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/BinaryExponentiantionII.kt</url>
+          <line>127</line>
+          <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
