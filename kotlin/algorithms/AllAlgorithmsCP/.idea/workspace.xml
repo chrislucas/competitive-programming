@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciModularBinaryExponentiantion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/FastDoublingFibonacci.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/FastDoublingFibonacci.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/FibonacciMatrixExponentiantion.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/FibonacciModularBinaryExponentiantion.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/MultiplicativeInverseRanget.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat/MultiplicativeInverseRange.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,9 +151,9 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiantionKt">
-    <configuration name="BinaryExponentiantionIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.BinaryExponentiantionIIKt" />
+  <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiantionIIKt">
+    <configuration name="FibonacciMatrixExponentiantionIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiantionIIKt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,18 +288,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
-      <item itemvalue="Kotlin.BinaryExponentiantionIIKt" />
       <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
       <item itemvalue="Kotlin.FibonacciModularBinaryExponentiantionKt" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
+      <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
         <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
         <item itemvalue="Kotlin.FibonacciModularBinaryExponentiantionKt" />
         <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
         <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
-        <item itemvalue="Kotlin.BinaryExponentiantionIIKt" />
       </list>
     </recent_temporary>
   </component>
