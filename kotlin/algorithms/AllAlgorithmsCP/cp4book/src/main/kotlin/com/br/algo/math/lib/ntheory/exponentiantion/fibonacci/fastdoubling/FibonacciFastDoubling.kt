@@ -1,30 +1,38 @@
-package com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci
+package com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling
 
 import kotlin.system.measureTimeMillis
 
 /**
  * https://cp-algorithms.com/algebra/binary-exp.html
  * https://cp-algorithms.com/algebra/fibonacci-numbers.html
+ * https://www.geeksforgeeks.org/fast-doubling-method-to-find-the-nth-fibonacci-number/
  */
-
 
 fun fastdoubling(n: Int): Array<Int> {
     /**
      * representacao matricial
      */
-    val matrix = arrayOf(0, 1)
-    var cn = n
-    while (cn > 0) {
-        val a = matrix[0] * (2 * matrix[1] - matrix[0])
-        val b = matrix[0] * matrix[0] + matrix[1] * matrix[1]
-        if (cn and 1 == 1) {
-            matrix[0] = b
-            matrix[1] = a + b
-        } else {
-            matrix[0] = a
-            matrix[1] = b
+    val matrix = arrayOf(0, 1)  // [f(n), f(n+1)]
+    fun Int.toBinaryString(): String {
+        val res = StringBuilder()
+        var cpy = this
+        while (cpy > 0) {
+            res.append(if (cpy and 1 == 1) "1" else "0")
+            cpy = cpy shr 1
         }
-        cn = cn shr 1
+        return res.reverse().toString()
+    }
+
+    for (c in n.toBinaryString()) {
+        val a = matrix[0] * (2 * matrix[1] - matrix[0])             // f(2n)
+        val b = matrix[0] * matrix[0] + matrix[1] * matrix[1]       // f(2n+1)
+        if (c == '1') {
+            matrix[0] = b       // f(2n + 1)
+            matrix[1] = a + b   // f(2n + 2)
+        } else {
+            matrix[0] = a   // f(2n)
+            matrix[1] = b   // f(2n+1)
+        }
     }
     return matrix
 }
@@ -44,13 +52,18 @@ fun recursiveFastDoubling(n: Int): Array<Int> {
     }
 }
 
-private fun checkFastdoubling() {
+private fun checkRecursiveAndInterativeSolution() {
     (1..20).forEach {
         val (a, b) = fastdoubling(it)
         val (c, d) = recursiveFastDoubling(it)
         println(
             "FastDoubling(%d) = [%d, %d] - RecFastDoubling(%d)[%d, %d] %s|%s"
-                .format(it, a, b, it, c, d, a == c, b == d)
+                .format(
+                    it, a, b,
+                    it, c, d,
+                    a == c,
+                    b == d
+                )
         )
     }
 }
@@ -79,7 +92,6 @@ private fun checkBenchmarkRecursiveFastDoubling() {
     }
 }
 
-
 fun main() {
-    checkFastdoubling()
+    checkRecursiveAndInterativeSolution()
 }

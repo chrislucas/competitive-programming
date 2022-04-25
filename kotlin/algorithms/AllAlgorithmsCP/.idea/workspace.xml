@@ -15,7 +15,9 @@
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciModularBinaryExponentiantion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +80,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -151,7 +153,28 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiantionIIKt">
+  <component name="RunManager" selected="Kotlin.FibonacciFastDoublingKt (1)">
+    <configuration name="FastDoublingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FastDoublingKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciFastDoublingKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciFastDoublingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciFastDoublingKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FibonacciMatrixExponentiantionIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiantionIIKt" />
       <module name="cp4book.main" />
@@ -161,27 +184,6 @@
     </configuration>
     <configuration name="FibonacciMatrixExponentiantionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.FibonacciMatrixExponentiantionKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FibonacciModularBinaryExponentiantionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.FibonacciModularBinaryExponentiantionKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModularBinaryExponentiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.ModularBinaryExponentiationKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModularBinaryExponentiation__Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.ModularBinaryExponentiation__Kt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -287,19 +289,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
-      <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
-      <item itemvalue="Kotlin.FibonacciModularBinaryExponentiantionKt" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
+      <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
+      <item itemvalue="Kotlin.FastDoublingKt" />
+      <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
+        <item itemvalue="Kotlin.FastDoublingKt" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
         <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
         <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
-        <item itemvalue="Kotlin.FibonacciModularBinaryExponentiantionKt" />
-        <item itemvalue="Kotlin.ModularBinaryExponentiationKt" />
-        <item itemvalue="Kotlin.ModularBinaryExponentiation__Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -858,14 +860,9 @@
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciModularBinaryExponentiantion.kt</url>
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt</url>
           <line>36</line>
           <option name="timeStamp" value="281" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciModularBinaryExponentiantion.kt</url>
-          <line>33</line>
-          <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt</url>
@@ -876,6 +873,26 @@
           <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt</url>
           <line>42</line>
           <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt</url>
+          <line>42</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>

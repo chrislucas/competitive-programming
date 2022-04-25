@@ -36,16 +36,17 @@ fun nthBigInt(n: Long): BigIntMatrix {
         }
         return res
     }
-    val matrix = arrayOf(
-        arrayOf(BigInt.ONE, BigInt.ONE),
-        arrayOf(BigInt.ONE, BigInt.ZERO)
+
+    val s = arrayOf(
+        arrayOf(arrayOf(BigInt.ONE, BigInt.ONE), arrayOf(BigInt.ONE, BigInt.ZERO)),
+        arrayOf(arrayOf(BigInt.ZERO, BigInt.ZERO), arrayOf(BigInt.ZERO, BigInt.ONE))
     )
-    return nth(matrix, n)
+    return nth(s[0], n)
 }
 
 private fun checkNthBigInt() {
     operator fun <T> Array<Array<T>>.get(a: Int, b: Int) = this[a][b]
-    (999L..1000L).forEach {
+    (1L..100L).forEach {
         val arr = nthBigInt(it)
         println(
             String.format(
@@ -55,7 +56,6 @@ private fun checkNthBigInt() {
         )
     }
 }
-
 
 fun main() {
     checkNthBigInt()

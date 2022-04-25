@@ -1,4 +1,4 @@
-package com.br.algo.math.lib.ntheory.modular.fermat
+package com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci
 
 /**
  * https://www.nayuki.io/page/fast-fibonacci-algorithms
