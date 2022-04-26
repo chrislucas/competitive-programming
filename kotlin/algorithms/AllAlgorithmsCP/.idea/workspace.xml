@@ -6,18 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantion.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiantionII.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciModularBinaryExponentiantion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoublingBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +72,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -123,7 +115,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/sites/usaco" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -132,6 +124,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
@@ -153,9 +146,9 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FibonacciFastDoublingKt (1)">
-    <configuration name="FastDoublingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FastDoublingKt" />
+  <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiationIVKt">
+    <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,15 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibonacciMatrixExponentiantionIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiantionIIKt" />
+    <configuration name="FibonacciMatrixExponentiationIVKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiationIVKt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibonacciMatrixExponentiantionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.modular.fermat.FibonacciMatrixExponentiantionKt" />
+    <configuration name="MatrixNaiveMultiplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.algebra.matrix.MatrixNaiveMultiplicationKt" />
       <module name="cp4book.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,19 +282,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
-      <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
       <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
-      <item itemvalue="Kotlin.FastDoublingKt" />
       <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
+      <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
+      <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
+      <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
+        <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
-        <item itemvalue="Kotlin.FastDoublingKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
-        <item itemvalue="Kotlin.FibonacciMatrixExponentiantionIIKt" />
-        <item itemvalue="Kotlin.FibonacciMatrixExponentiantionKt" />
       </list>
     </recent_temporary>
   </component>
@@ -880,19 +873,24 @@
           <option name="timeStamp" value="286" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoublingBigInt.kt</url>
+          <line>27</line>
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoublingBigInt.kt</url>
+          <line>41</line>
           <option name="timeStamp" value="288" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoubling.kt</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/algebra/matrix/MatrixNaiveMultiplication.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="290" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1004,10 +1002,10 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="((value / 10) - (value % 10) * 2)" />
-        <watch expression="(value / 10)" />
-        <watch expression="(value % 10) * 2" />
-        <watch expression="gcd(p, q)" language="kotlin" />
+        <watch expression="this[i, k]" />
+        <watch expression="that[k, j]" />
+        <watch expression="this[0].size" />
+        <watch expression="that.size" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

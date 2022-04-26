@@ -13,7 +13,7 @@ typealias BigInt = BigInteger
 typealias BigIntMatrix = Array<Array<BigInt>>
 
 
-fun bigIntfastDoubling(e: BigInt) : Array<BigInt> {
+fun bigIntfastDoubling(e: BigInt): Array<BigInt> {
     val one = BigInt.ONE
     val two = BigInt("2")
     val zero = BigInt.ZERO
@@ -43,7 +43,7 @@ fun bigIntfastDoubling(e: BigInt) : Array<BigInt> {
 }
 
 private fun checkFastDoubling() {
-    (1L .. 100L).forEach {
+    (1L..100L).forEach {
         val (a, b) = bigIntfastDoubling(BigInt.valueOf(it))
         println("fib(%d) [%d, %d]".format(it, a, b))
     }
@@ -92,10 +92,20 @@ private fun checkProve(e: BigInt) {
         arrayOf(BigInt.ONE, BigInt.ZERO)
     )
     val res = exp(matrix, e)
+    /*
     println(
         String.format(
-            "fb(%d): %d, %d, %d, %d", e,
+            "fb(%d): %d\n%d\n%d\n%d\n", e,
             res[0, 0], res[0, 1], res[1, 0], res[1, 1]
+        )
+    )
+     */
+
+    println(
+        String.format(
+            "fb(%d): %d\nSize: %d", e,
+            res[1, 1],
+            res[1, 1].toString().length
         )
     )
 }
@@ -103,5 +113,9 @@ private fun checkProve(e: BigInt) {
 
 fun main() {
     //checkProve(BigInt("100"))
-    checkFastDoubling()
+    //checkProve(BigInt("3981072"))
+    checkProve(BigInt("3"))
+    checkProve(BigInt("10"))
+    //checkProve(BigInt("9000000"))
+    //checkFastDoubling()
 }
