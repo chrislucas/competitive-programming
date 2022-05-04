@@ -26,4 +26,13 @@ package src.com.br.cp.graph.maxflow;
  * https://pt.wikipedia.org/wiki/Teorema_do_fluxo_m%C3%A1ximo_e_corte_m%C3%ADnimo
  * https://github.com/yancouto/competitive-programming/blob/master/reference/maxflow.cpp
  * https://www.cs.princeton.edu/courses/archive/fall13/cos521/lecnotes/lec2final.pdf
+ *
+ *
+ * Monografia sobre algorimots de fluxo em rede
+ * https://bcc.ime.usp.br/tccs/2017/mamk/files/monografia.pdf
+ * https://bcc.ime.usp.br/tccs/2017/mamk/
+ * https://bcc.ime.usp.br/tccs/2017/mamk/files/2016k.pdf
+ * https://bcc.ime.usp.br/tccs/2017/mamk/files/2015b.pdf
+ * https://bcc.ime.usp.br/tccs/2017/mamk/files/2013a.pdf
+ * https://bcc.ime.usp.br/tccs/2017/mamk/files/2009h.pdf
  * */

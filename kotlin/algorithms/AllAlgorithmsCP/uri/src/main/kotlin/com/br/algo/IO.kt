@@ -8,9 +8,13 @@ private fun readInt() = readLine()!!.toInt()
 
 private inline fun <T> readValue(transform: (String) -> T) = transform(readLine()!!)
 
-
 private inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map(transform)
+
+private fun readInts() = readValues(transform = String::toInt)
+
+private fun readStrings(delimiter: String = " ") = readLine()!!.split(delimiter)
+
 
 private fun Char.toInt() = Character.getNumericValue(this)
 
