@@ -14,6 +14,9 @@ inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
 
+
+private fun <P, Q> makePair(p: P, q: Q) = Pair(p, q)
+
 private fun callTestCases() {
     testCases(readValue(String::toInt)) {
         val size = readValue(String::toInt)

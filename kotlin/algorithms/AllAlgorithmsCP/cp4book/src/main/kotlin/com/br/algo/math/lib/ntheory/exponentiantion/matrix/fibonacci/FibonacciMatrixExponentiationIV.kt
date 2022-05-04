@@ -1,15 +1,15 @@
 package com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci
 
-/**
- * https://itnext.io/blazing-fast-fibonacci-with-kotlin-and-arrow-library-33c1d7eca0bb
- * Tinha visto que existe uma outra forma matricial de representar a recorrencia
- */
 
+/**
+ * Esse algoritmo tem uma operacao a mais. Só foi escrito a titulo de curioidade
+ * Com uma representacao matricial da recorrencia diferente e com uma multiplicacao a mais.
+ */
 import java.math.BigInteger
 
 typealias MatrixBigInt = Array<Array<BigInteger>>
 
-fun exp(nth: BigInteger) {
+fun exp(nth: BigInteger): MatrixBigInt {
 
     operator fun MatrixBigInt.get(i: Int, j: Int) = this[i][j]
 
@@ -18,7 +18,6 @@ fun exp(nth: BigInteger) {
     }
 
     infix operator fun MatrixBigInt.times(that: MatrixBigInt): MatrixBigInt {
-
         if (this[0].size != that.size)
             throw Exception("Impossible compute")
 
@@ -66,16 +65,15 @@ fun exp(nth: BigInteger) {
     )
 
     val vet = arrayOf(arrayOf(BigInteger.ZERO), arrayOf(BigInteger.ONE))
-
-    val res = exp(mat, nth - BigInteger.ONE) * vet // res = [ [f(n)], [f(n+1)] ]
-
-    res.forEach { vetor ->
-        println(vetor.joinToString(", "))
-    }
+    return exp(mat, nth - BigInteger.ONE) * vet // res = [ [f(n)], [f(n+1)] ]
 }
 
 fun main() {
-    exp(BigInteger("3"))
-    exp(BigInteger("10"))
-
+    (1..1000).forEach {
+        val res = exp(BigInteger("$it"))
+        res.forEach { vetor ->
+            println(vetor.joinToString(", "))
+        }
+        println("******************************************")
+    }
 }
