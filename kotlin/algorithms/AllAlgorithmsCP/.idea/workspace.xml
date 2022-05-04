@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="" />
+    <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllAlgorithmsCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AllAlgorithmsCP.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,8 +66,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -79,10 +82,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../../../../../Users/PICHAU/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.10/6c9adfb286ecb30b4530913c4962383211d97295/kotlin-stdlib-1.5.10-sources.jar!/kotlin/ProgressionIterators.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../../../../../Users/PICHAU/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.10/86ff32fa15b7f66f3b5ced4164c2311c0530adde/kotlin-stdlib-common-1.5.10-sources.jar!/generated/_Ranges.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="k0k9pkxw" />
