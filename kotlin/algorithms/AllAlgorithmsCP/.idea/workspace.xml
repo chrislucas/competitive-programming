@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstatcomp/raw/elo_rating" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/elorating/EloRatingAlgorithm.kt" afterDir="false" />
@@ -863,6 +864,13 @@
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/algo/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/algo/IO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/adhoc/lvl2/p1652.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/adhoc/lvl2/p1652.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/adhoc/lvl2/p2304.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/adhoc/lvl2/p2304.kt" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoublingBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" afterDir="false" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -999,7 +1007,59 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Kotlin.P2304Kt">
+=======
+  <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiationIVKt">
+    <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciFastDoublingKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciFastDoublingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciFastDoublingKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciMatrixExponentiationIVKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiationIVKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixNaiveMultiplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.algebra.matrix.MatrixNaiveMultiplicationKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cp4book2_old" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1086,6 +1146,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
       <module name="cp4book.main" />
@@ -1148,6 +1209,22 @@
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
         <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
+=======
+    <list>
+      <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
+      <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
+      <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
+      <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
+      <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
+        <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       </list>
     </recent_temporary>
   </component>
@@ -1171,7 +1248,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1746,11 +1822,14 @@
           <line>21</line>
           <option name="timeStamp" value="290" />
         </line-breakpoint>
+<<<<<<< HEAD
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/adhoc/lvl2/p1652.kt</url>
           <line>32</line>
           <option name="timeStamp" value="291" />
         </line-breakpoint>
+=======
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
