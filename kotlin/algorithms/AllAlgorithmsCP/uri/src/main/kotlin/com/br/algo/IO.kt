@@ -2,6 +2,8 @@ package com.br.algo
 
 import java.math.BigDecimal
 import java.math.BigInteger
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
 import java.util.*
 
 private fun readInt() = readLine()!!.toInt()
@@ -43,6 +45,11 @@ typealias PQueue<T> = PriorityQueue<T>
 typealias BigInt = BigInteger
 
 typealias BigDec = BigDecimal
+
+val decimalFormat = DecimalFormat("#########.##").apply {
+    decimalFormatSymbols = DecimalFormatSymbols.getInstance(Locale.ENGLISH)
+}
+
 
 fun main() {
     readValues { it.toInt() }
