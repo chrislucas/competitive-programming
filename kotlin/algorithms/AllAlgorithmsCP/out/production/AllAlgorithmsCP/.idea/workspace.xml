@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllAlgorithmsCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AllAlgorithmsCP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiationIV.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiationIV.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FastDoubling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/FibonacciFastDoublingBigInt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/fibonacci/fastdoubling/package-info.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/kotlin/sequences/ForLoop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/SqrtPrimeFactorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivII.java" afterDir="false" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +83,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -114,7 +126,11 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/sites/usaco" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/io" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -123,17 +139,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
+=======
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\bitwise\rangebit\biginttype" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
+=======
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/bezout" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/diophantine/eq" />
+<<<<<<< HEAD
+=======
+      <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/circumference/equatiion" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
@@ -145,38 +171,81 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiationIVKt">
     <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
       <module name="cp4book.main" />
+=======
+  <component name="RunManager" selected="Application.OptimizedCountDivII">
+    <configuration name="OptimizedCountDivII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.OptimizedCountDivII" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.divisors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="FibonacciFastDoublingKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingKt" />
       <module name="cp4book.main" />
+=======
+    <configuration name="SqrtPrimeFactorization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.SqrtPrimeFactorization" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.sites.usaco.book.chp13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="FibonacciFastDoublingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciFastDoublingKt" />
       <module name="cp4book.main" />
+=======
+    <configuration name="ForLoopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.sequences.ForLoopKt" />
+      <module name="AllAlgorithmsCP" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="FibonacciMatrixExponentiationIVKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiationIVKt" />
       <module name="cp4book.main" />
+=======
+    <configuration name="NaiveCountDivKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.divisors.NaiveCountDivKt" />
+      <module name="AllAlgorithmsCP" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="MatrixNaiveMultiplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.algebra.matrix.MatrixNaiveMultiplicationKt" />
       <module name="cp4book.main" />
+=======
+    <configuration name="SieveKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.usaco.book.chp13.erathostenes.sieve.SieveKt" />
+      <module name="AllAlgorithmsCP" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,6 +350,7 @@
       <method v="2" />
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
       <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
       <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
@@ -290,10 +360,25 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
-        <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
         <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
+        <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
+=======
+      <item itemvalue="Application.SqrtPrimeFactorization" />
+      <item itemvalue="Kotlin.SieveKt" />
+      <item itemvalue="Kotlin.ForLoopKt" />
+      <item itemvalue="Kotlin.NaiveCountDivKt" />
+      <item itemvalue="Application.OptimizedCountDivII" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OptimizedCountDivII" />
+        <item itemvalue="Application.SqrtPrimeFactorization" />
+        <item itemvalue="Kotlin.NaiveCountDivKt" />
+        <item itemvalue="Kotlin.ForLoopKt" />
+        <item itemvalue="Kotlin.SieveKt" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       </list>
     </recent_temporary>
   </component>
@@ -828,6 +913,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/erathostenes/sieve/Sieve.kt</url>
+<<<<<<< HEAD
           <line>72</line>
           <option name="timeStamp" value="263" />
         </line-breakpoint>
@@ -891,6 +977,11 @@
           <line>21</line>
           <option name="timeStamp" value="290" />
         </line-breakpoint>
+=======
+          <line>70</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -971,6 +1062,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/sites/usaco/book/chp13/divisors/OptimizedCountDivI.java</url>
+<<<<<<< HEAD
           <line>46</line>
           <option name="timeStamp" value="262" />
         </line-breakpoint>
@@ -984,6 +1076,11 @@
           <line>119</line>
           <option name="timeStamp" value="274" />
         </line-breakpoint>
+=======
+          <line>56</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/Uva10104.java</url>
           <line>45</line>
@@ -1001,10 +1098,17 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
+<<<<<<< HEAD
         <watch expression="this[i, k]" />
         <watch expression="that[k, j]" />
         <watch expression="this[0].size" />
         <watch expression="that.size" language="kotlin" />
+=======
+        <watch expression="((value / 10) - (value % 10) * 2)" />
+        <watch expression="(value / 10)" />
+        <watch expression="(value % 10) * 2" />
+        <watch expression="gcd(p, q)" language="kotlin" />
+>>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       </configuration>
     </watches-manager>
   </component>
