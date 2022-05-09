@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstatcomp/raw/elo_rating" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/elorating/EloRatingAlgorithm.kt" afterDir="false" />
@@ -1007,9 +1006,6 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Kotlin.P2304Kt">
-=======
   <component name="RunManager" selected="Kotlin.FibonacciMatrixExponentiationIVKt">
     <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
@@ -1209,7 +1205,7 @@
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
         <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
-=======
+      </list>
     <list>
       <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
       <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
@@ -1217,6 +1213,7 @@
       <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
     </list>
+    </recent_temporary>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
@@ -1224,7 +1221,6 @@
         <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt (1)" />
         <item itemvalue="Kotlin.FibonacciFastDoublingKt" />
->>>>>>> 5b36657264824c6a0f341e0c669ff0c9eaea0917
       </list>
     </recent_temporary>
   </component>
