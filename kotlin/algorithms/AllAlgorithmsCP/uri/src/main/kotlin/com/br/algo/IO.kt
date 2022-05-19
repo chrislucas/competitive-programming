@@ -30,10 +30,11 @@ private inline fun testCases(times: Int, exec: () -> Unit) = (0 until times).for
 
 
 // para casos de teste ate EOF
-private inline fun runUntilIf(fn: () -> Boolean) {
+private inline fun runWhiteTruth(fn: () -> Boolean) {
     while (true) {
-        if (!fn())
+        if (!fn()) {
             break
+        }
     }
 }
 
@@ -50,7 +51,25 @@ val decimalFormat = DecimalFormat("#########.##").apply {
     decimalFormatSymbols = DecimalFormatSymbols.getInstance(Locale.ENGLISH)
 }
 
+val Char.intValue: Int
+    get() = Character.getNumericValue(this)
+
+
+private fun checkCharIntValue() {
+    val romanNumeral = '\u216b'
+    println("$romanNumeral, ${romanNumeral.intValue}")
+    println(romanNumeral.digitToIntOrNull())
+    //println(romanNumeral.digitToInt()) // Exception Char Ⅻ is not a decimal digit
+    println(romanNumeral.toInt())
+    println("***************")
+    val c = '3'
+    println(c.intValue)
+    println(c.digitToInt())
+    //println(c.digitToInt(28))
+    println(c.toInt())
+
+}
 
 fun main() {
-    readValues { it.toInt() }
+    checkCharIntValue()
 }
