@@ -13,7 +13,7 @@ typealias BigInt = BigInteger
 typealias BigIntMatrix = Array<Array<BigInt>>
 
 
-fun bigIntfastDoubling(e: BigInt): Array<BigInt> {
+fun bigIntFastDoubling(e: BigInt): Array<BigInt> {
     val one = BigInt.ONE
     val two = BigInt("2")
     val zero = BigInt.ZERO
@@ -44,7 +44,7 @@ fun bigIntfastDoubling(e: BigInt): Array<BigInt> {
 
 private fun checkFastDoubling() {
     (1L..100L).forEach {
-        val (a, b) = bigIntfastDoubling(BigInt.valueOf(it))
+        val (a, b) = bigIntFastDoubling(BigInt.valueOf(it))
         println("fib(%d) [%d, %d]".format(it, a, b))
     }
 }

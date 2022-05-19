@@ -1,5 +1,7 @@
 package com.br.algo.math.lib.algebra
 
+import java.math.BigInteger
+
 /**
  * Application
  * https://cp-algorithms.com/algebra/binary-exp.html
@@ -116,4 +118,64 @@ fun squaringDouble2Exp(base: Double, expo: Double): Double {
             acc
         }
     }
+}
+
+typealias BigInt = BigInteger
+
+fun bigIntExp(b: BigInt, e: BigInt): BigInt {
+    return when (e) {
+        BigInt.ZERO -> {
+            BigInt.ONE
+        }
+        BigInt.ONE -> {
+            b
+        }
+        else -> {
+            var ce = e
+            var cb = b
+            var acc = BigInt.ONE
+            while (ce > BigInt.ZERO) {
+                if (ce and BigInt.ONE == BigInt.ONE) {
+                    acc *= cb
+                }
+                cb *= cb
+                ce = ce shr 1
+            }
+            acc
+        }
+    }
+}
+
+fun modularBigIntExp(b: BigInt, e: BigInt, m: BigInt): BigInt {
+    return when (e) {
+        BigInt.ZERO -> {
+            BigInt.ONE
+        }
+        BigInt.ONE -> {
+            b
+        }
+        else -> {
+            var ce = e
+            var cb = b
+            var acc = BigInt.ONE
+            while (ce > BigInt.ZERO) {
+                if (ce and BigInt.ONE == BigInt.ONE) {
+                    acc = (acc % m * cb % m) % m
+                }
+                cb = (cb % m * cb % m) % m
+                ce = ce shr 1
+            }
+            acc
+        }
+    }
+}
+
+private fun checkBigIntExp() {
+    println(bigIntExp(BigInt("3"), BigInt("3")))
+    println(bigIntExp(BigInt("3"), BigInt("4")))
+}
+
+
+fun main() {
+
 }
