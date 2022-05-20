@@ -62,18 +62,30 @@ fun testRecursiveCountSolutions(targetValue: Int, set: Array<Int>, idx: Int): In
     }
 }
 
+val cases = arrayOf(
+    /*
+    Pair(arrayOf(), 0),
+    Pair(arrayOf(), 4),
+    Pair(arrayOf(1), 4),
+    Pair(arrayOf(2), 4),
+     */
+    Pair(arrayOf(2, 3), 4),
+    Pair(arrayOf(1, 2, 3), 5),
+    Pair(arrayOf(1, 2, 3), 4),
+    Pair(arrayOf(3, 5, 10), 20),
+    Pair(arrayOf(3, 5, 10), 13),
+    Pair(arrayOf(3, 5, 10), 35),
+    Pair(arrayOf(3, 5, 10, 15, 20), 35)
+)
+
 private fun checkRecursiveCountSolutions() {
-    arrayOf(
-        Pair(arrayOf(1, 2, 3), 5),
-        Pair(arrayOf(3, 5, 10), 20),
-        Pair(arrayOf(3, 5, 10), 13),
-        Pair(arrayOf(3, 5, 10), 35),
-        Pair(arrayOf(3, 5, 10, 15, 20), 35),
-    ).forEach { (values, target) ->
-        val s = recursiveCountSolutions(target, values, values.size - 1)
-        val r = testRecursiveCountSolutions(target, values, 0)
+    cases.forEach { (values, target) ->
+        val r = recursiveCountSolutions(target, values, values.size - 1)
+        val s = testRecursiveCountSolutions(target, values, 0)
         val t = topDown(target, values, values.size - 1)
-        println("$s, $r, $t")
+        val u = bottoUp(target, values)
+        val v = optBottomUp(target, values)
+        println("$s, $r, $t $u, $v")
     }
 }
 
@@ -101,22 +113,56 @@ fun topDown(targetValue: Int, set: Array<Int>, idx: Int): Int {
     return topDown(targetValue, set, buffer, idx)
 }
 
-fun bottoUp(targetValue: Int, set: Array<Int>) {
-    val memory = Array(targetValue + 1) { Array(set.size) { 0 } }
-    for (currentTarget in 1..targetValue) {
-        for (idx in set.indices) {
-
-
-            if (set[idx] <= currentTarget) {
-                memory[currentTarget][idx] += 1
+fun bottoUp(targetValue: Int, set: Array<Int>): Int {
+    val m = targetValue + 1
+    val n = set.size
+    val states = Array(m) { Array(n) { 0 } }
+    for (i in 0 until n) {
+        states[0][i] = 1
+    }
+    for (currentState in 1..targetValue) {
+        for (idx in 0 until n) {
+            // usando o i-esimo valor caso ele seja menor ou igual
+            val value = currentState - set[idx]
+            val x = if (value >= 0) {
+                states[value][idx]
             } else {
-                memory[currentTarget][idx] = 1
+                0
             }
+            // sem a i-esimo valor de set
+            val y = if (idx > 0) {
+                states[currentState][idx - 1]
+            } else {
+                0
+            }
+            states[currentState][idx] = x + y
         }
     }
+
+    return states[targetValue][n - 1]
+}
+
+fun optBottomUp(targetValue: Int, set: Array<Int>): Int {
+    val state = Array(targetValue + 1) { 0 }
+    state[0] = 1
+    for (value in set) {
+        for (j in value..targetValue) {
+            state[j] += state[j - value]
+        }
+    }
+    return state[targetValue]
 }
 
 
+fun checkBottomUpSolution() {
+    cases.forEach { (values, target) ->
+        val u = bottoUp(target, values)
+        val v = optBottomUp(target, values)
+        println("$u, $v")
+    }
+}
+
 fun main() {
-    checkRecursiveCountSolutions()
+    // checkRecursiveCountSolutions()
+    checkBottomUpSolution()
 }
