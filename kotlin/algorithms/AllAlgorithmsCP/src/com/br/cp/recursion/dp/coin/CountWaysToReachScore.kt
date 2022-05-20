@@ -1,4 +1,4 @@
-package src.com.br.cp.recursion.dp
+package src.com.br.cp.recursion.dp.coin
 
 /**
  * https://medium.com/cs-dojo/an-introduction-to-dynamic-programming-89fdd3549d54
@@ -48,7 +48,7 @@ fun recursiveCountSolutions(targetValue: Int, set: Array<Int>, idx: Int): Int {
     }
 }
 
-fun test(targetValue: Int, set: Array<Int>, idx: Int): Int {
+fun testRecursiveCountSolutions(targetValue: Int, set: Array<Int>, idx: Int): Int {
     return if (targetValue == 0) {
         1
     } else if (targetValue < 0 || idx > set.size - 1) {
@@ -71,7 +71,7 @@ private fun checkRecursiveCountSolutions() {
         Pair(arrayOf(3, 5, 10, 15, 20), 35),
     ).forEach { (values, target) ->
         val s = recursiveCountSolutions(target, values, values.size - 1)
-        val r = test(target, values, 0)
+        val r = testRecursiveCountSolutions(target, values, 0)
         val t = topDown(target, values, values.size - 1)
         println("$s, $r, $t")
     }
@@ -105,6 +105,8 @@ fun bottoUp(targetValue: Int, set: Array<Int>) {
     val memory = Array(targetValue + 1) { Array(set.size) { 0 } }
     for (currentTarget in 1..targetValue) {
         for (idx in set.indices) {
+
+
             if (set[idx] <= currentTarget) {
                 memory[currentTarget][idx] += 1
             } else {
