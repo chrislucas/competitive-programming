@@ -92,9 +92,8 @@ private fun pollardRho(n: BigInt): BigInt {
         var x = BigInt(n.bitCount(), Random(System.currentTimeMillis())) % (n - two) + two
         var y = x
         val c = BigInt(n.bitCount(), Random(System.currentTimeMillis())) % (n - one) + one
-        var canditate = one
-
-        while (canditate == one) {
+        var candidate = one
+        while (candidate == one) {
             // f(x)
             x = (modularBigIntExp(x, two, n) + c + n) % n
 
@@ -102,16 +101,16 @@ private fun pollardRho(n: BigInt): BigInt {
             y = (modularBigIntExp(y, two, n) + c + n) % n
             y = (modularBigIntExp(y, two, n) + c + n) % n
 
-            canditate = if (x - y < BigInt.ZERO) {
+            candidate = if (x - y < BigInt.ZERO) {
                 (-(x - y)).gcd(n)
             } else {
                 ((x - y)).gcd(n)
             }
 
-            if (canditate == n)
-                return pollardRho(canditate)
+            if (candidate == n)
+                return pollardRho(candidate)
         }
-        canditate
+        candidate
     }
 }
 

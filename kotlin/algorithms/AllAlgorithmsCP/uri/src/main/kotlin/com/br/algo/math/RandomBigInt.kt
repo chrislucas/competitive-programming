@@ -7,8 +7,6 @@ import java.util.*
 
 typealias BigInt = BigInteger
 
-
-
 fun ClosedRange<BigInt>.randomBigInt() {
 
 }
