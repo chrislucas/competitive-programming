@@ -10,8 +10,7 @@ fun <C : Comparable<C>> nearest(value: C, values: List<C>): C {
         if (np == value) {
             p = np
             break
-        }
-        else if (p.compareTo(value) < np.compareTo(value)) {
+        } else if (p.compareTo(value) < np.compareTo(value)) {
             ri = mi - 1 // Testar esse algoritmo para
         } else {
             le = mi + 1
@@ -27,7 +26,8 @@ fun main() {
         listOf(1, 2, 4, 5, 6, 6, 8, 9)
     )
 
-    println(nearest(5, values[1]))
-    println(nearest(11, values[1]))
-    println(nearest(14, values[1]))
+    val idx = 1
+    println(nearest(5, values[idx]))
+    println(nearest(11, values[idx]))
+    println(nearest(14, values[idx]))
 }
