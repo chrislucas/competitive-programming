@@ -10,4 +10,8 @@ package com.br.algo.math;
  * graficos
  * https://www.geeksforgeeks.org/computer-graphics-antialiasing/
  *
+ *
+ * Fermat number
+ * https://en.wikipedia.org/wiki/Fermat_number
+ *
  * */
