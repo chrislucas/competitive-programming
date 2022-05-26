@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOneII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsack.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingArray.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Exts">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/anotherepl">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/bookstatcomp">
@@ -71,9 +78,9 @@
       <list>
         <option value="module-info" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
         <option value="package-info" />
         <option value="Class" />
-        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -147,7 +154,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.KnapsackZeroOneKt">
+  <component name="RunManager" selected="Kotlin.OptmizedKnapsackUsingMatrixKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -188,20 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibonacciFastDoublingBigIntKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.fibonacci.fastdoubling.FibonacciFastDoublingBigIntKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FibonacciMatrixExponentiationIVKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiationIVKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KnapsackZeroOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.KnapsackZeroOneKt" />
       <module name="AllAlgorithmsCP" />
@@ -209,16 +202,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixNaiveMultiplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.algebra.matrix.MatrixNaiveMultiplicationKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P2304Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.problems.adhoc.lvl2.P2304Kt" />
-      <module name="uri.main" />
+    <configuration name="OptmizedKnapsackUsingMatrixKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.OptmizedKnapsackUsingMatrixKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -324,21 +310,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.p11259" />
-      <item itemvalue="Kotlin.FibonacciFastDoublingBigIntKt" />
-      <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
-      <item itemvalue="Kotlin.MatrixNaiveMultiplicationKt" />
-      <item itemvalue="Kotlin.P2304Kt" />
       <item itemvalue="Kotlin.CoinChangeIKt" />
       <item itemvalue="Kotlin.CountWaysToReachScoreKt" />
       <item itemvalue="Kotlin.KnapsackZeroOneKt" />
+      <item itemvalue="Kotlin.OptmizedKnapsackUsingMatrixKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.OptmizedKnapsackUsingMatrixKt" />
         <item itemvalue="Kotlin.KnapsackZeroOneKt" />
         <item itemvalue="Application.p11259" />
         <item itemvalue="Kotlin.CoinChangeIKt" />
         <item itemvalue="Kotlin.CountWaysToReachScoreKt" />
-        <item itemvalue="Kotlin.P2304Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -963,28 +946,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
-          <line>78</line>
-          <option name="timeStamp" value="320" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
-          <line>81</line>
+          <line>41</line>
           <option name="timeStamp" value="323" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
-          <line>58</line>
-          <option name="timeStamp" value="324" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
-          <line>63</line>
-          <option name="timeStamp" value="325" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
-          <line>83</line>
+          <line>43</line>
           <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/TryingAnotherWay.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/TryingAnotherWay.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt</url>
+          <line>65</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/TryingAnotherWay.kt</url>
+          <line>33</line>
+          <option name="timeStamp" value="332" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt</url>
+          <line>17</line>
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt</url>
+          <line>25</line>
+          <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1116,8 +1124,9 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="w - weights[i - 1]" />
-        <watch expression="weights[i - 1]" />
+        <watch expression="wi - 1" />
+        <watch expression="ci - weights[wi - 1]" />
+        <watch expression="weights[wi - 1]" />
       </configuration>
     </watches-manager>
   </component>
