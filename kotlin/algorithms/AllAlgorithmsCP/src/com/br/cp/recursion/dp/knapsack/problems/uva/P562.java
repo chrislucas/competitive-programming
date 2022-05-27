@@ -1,18 +1,16 @@
 package src.com.br.cp.recursion.dp.knapsack.problems.uva;
 
-
-import src.com.br.cp.io.JIO;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
  * https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1071
  */
-public class P10130 {
+public class P562 {
 
     private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -45,15 +43,25 @@ public class P10130 {
         }
     }
 
+    private static void solver() throws IOException {
+        testCases(readValue(Integer::parseInt), () -> {
+            try {
+                int coins = readValue(Integer::parseInt);
+                if (coins > 0) {
+                    Integer[] values = new Integer[coins];
+                    readValues(" ", Integer::parseInt).toArray(values);
 
-    private static <T> void runWhileIsNotNull(Converter<T> converter) throws IOException {
-        String enter;
-        while ((enter = reader.readLine()) != null) {
-            converter.convert(enter);
-        }
+                } else {
+                    System.out.println(0);
+                }
+
+            } catch (IOException e) {
+                // NOTHING
+            }
+        });
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        solver();
     }
 }

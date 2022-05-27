@@ -26,13 +26,20 @@ private fun test(weights: Array<Int>, values: Array<Int>, capacity: Int): Int {
     return state[capacity][weights.size - 1]
 }
 
+
+/**
+ * Nao resolve o problema
+ * 1) somente aumentar progressivamente o tamanho da capacidade da mochila sem combinar
+ * os possiveis valores dos arrays nao resolve o problema
+ */
 private fun solver(weights: Array<Int>, values: Array<Int>, capacity: Int): Int {
     // [capacity][weight]
     val state = Array(capacity + 1) { Array(weights.size + 1) { 0 } }
     for (ci in 1..capacity) {
         for (wi in 1..weights.size) {
-            state[ci][wi] = if (weights[wi - 1] <= ci) {
-                val include = state[ci][wi - weights[wi - 1]] + values[wi - 1]
+            val w = weights[wi - 1]
+            state[ci][wi] = if (w <= ci) {
+                val include = state[ci][wi - w] + values[wi - 1]
                 val exclude = state[ci][wi - 1]
                 max(include, exclude)
             } else {

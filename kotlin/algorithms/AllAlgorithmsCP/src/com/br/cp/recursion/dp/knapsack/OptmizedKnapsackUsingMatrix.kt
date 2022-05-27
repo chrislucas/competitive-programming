@@ -14,10 +14,11 @@ private fun solver(weights: Array<Int>, values: Array<Int>, capacity: Int): Int 
     for (wi in 1..weights.size) {
         val w = (wi - 1) % 2
         for (ci in 1..capacity) {
-            dp[wi % 2][ci] = if (weights[wi - 1] > ci) {
+            val curW = weights[wi - 1]
+            dp[wi % 2][ci] = if (curW > ci) {
                 dp[w][ci]
             } else {
-                val i = dp[w][ci - weights[wi - 1]] + values[wi - 1]
+                val i = dp[w][ci - curW] + values[wi - 1]
                 val e = dp[w][ci]
                 max(i, e)
             }
