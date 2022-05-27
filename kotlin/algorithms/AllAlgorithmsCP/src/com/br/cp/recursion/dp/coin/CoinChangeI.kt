@@ -60,11 +60,10 @@ fun bottomUp(set: Array<Int>, targetValue: Int): Int {
                 0
             }
             val q = if (k > 0) {
-                states[state][k-1]
+                states[state][k - 1]
             } else {
                 0
             }
-
             states[state][k] = p + q
         }
     }

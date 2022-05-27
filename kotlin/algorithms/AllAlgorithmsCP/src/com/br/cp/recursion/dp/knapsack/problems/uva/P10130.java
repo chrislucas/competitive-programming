@@ -1,13 +1,20 @@
-package src.com.br.cp.io;
+package src.com.br.cp.recursion.dp.knapsack.problems.uva;
 
-import java.io.*;
+
+import src.com.br.cp.io.JIO;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JIO {
-    // INICIO BASICO IO
+/**
+ * https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1071
+ */
+public class P10130 {
+
     private static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static final PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out), true);
 
     private interface Converter<T> {
         T convert(String data);
@@ -45,39 +52,8 @@ public class JIO {
             converter.convert(enter);
         }
     }
-    // FIM BASICO IO
 
-    private static int readInt() throws IOException {
-        return readValue(Integer::parseInt);
-    }
+    public static void main(String[] args) {
 
-    private static List<Integer> readInts(String del) throws IOException {
-        return readValues(del, Integer::parseInt);
-    }
-
-
-    private static List<Long> readLongs(String del) throws IOException {
-        return readValues(del, new ToLong());
-    }
-
-    static class ToLong implements Converter<Long> {
-        @Override
-        public Long convert(String data) {
-            return Long.parseLong(data);
-        }
-    }
-
-    static class ToInt implements Converter<Integer> {
-        @Override
-        public Integer convert(String data) {
-            return Integer.parseInt(data);
-        }
-    }
-
-    static class ToDouble implements Converter<Double> {
-        @Override
-        public Double convert(String data) {
-            return Double.parseDouble(data);
-        }
     }
 }

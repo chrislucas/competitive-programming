@@ -16,7 +16,7 @@ import java.lang.Integer.max
 
 
 private fun topDownKnapsack(weights: Array<Int>, values: Array<Int>, target: Int, idx: Int): Int {
-    return if (target == 0 || idx == 0) {
+    return if (target == 0 || idx < 0) {
         0
     } else if (weights[idx] > target) {
         topDownKnapsack(weights, values, target, idx - 1)
@@ -28,31 +28,85 @@ private fun topDownKnapsack(weights: Array<Int>, values: Array<Int>, target: Int
     }
 }
 
-private fun bottomUpKnapack(weights: Array<Int>, values: Array<Int>, target: Int): Int {
-    val state = Array(weights.size + 1) { Array(values.size) { 0 } }
-
-    for (i in values.indices) {
-        state[0][i] = 1
+/**
+ * https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/?ref=lbp
+ */
+private fun bottomUp(weights: Array<Int>, values: Array<Int>, capacity: Int): Int {
+    // [weights][capacities]
+    val state = Array(weights.size + 1) { Array(capacity + 1) { 0 } }
+    for (wi in 1..weights.size) {
+        for (ci in 1..capacity) {
+            state[wi][ci] = if (weights[wi - 1] <= ci) {
+                val include = state[wi - 1][ci - weights[wi - 1]] + values[wi - 1]
+                val exclude = state[wi - 1][ci]
+                max(include, exclude)
+            } else {
+                state[wi - 1][ci]
+            }
+        }
     }
+    return state[weights.size][capacity]
+}
 
-    return state[weights.size][target - 1]
+private fun markParent(
+    weights: Array<Int>,
+    values: Array<Int>,
+    capacity: Int
+): Array<Array<Pair<Pair<Int, Int>, Int>>> {
+    val state = Array(weights.size + 1) { Array(capacity + 1) { Pair(0 to 0, 0) } }
+    for (wi in 1..weights.size) {
+        for (ci in 1..capacity) {
+            state[wi][ci] = if (ci < weights[wi - 1]) {
+                state[wi - 1][ci]
+            } else {
+                val (p, q) = wi - 1 to ci - weights[wi - 1]
+                val (r, s) = wi - 1 to ci
+                val i = state[p][q].second + values[wi]
+                val e = state[r][s].second
+                if (i > e) {
+                    Pair(p to q, i)
+                } else {
+                    Pair(r to s, e)
+                }
+            }
+        }
+    }
+    return state
 }
 
 
 private val testCases = arrayOf(
-    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 50
+    // weights, values, capacity
+    arrayOf(1, 2, 3) to arrayOf(10, 15, 40) to 6, // 65
+    arrayOf(2, 1, 3) to arrayOf(10, 15, 40) to 6, // 65
+    arrayOf(3, 1, 2) to arrayOf(10, 15, 40) to 6, // 65
+    arrayOf(1, 1, 1) to arrayOf(10, 20, 30) to 2, // 50
+    arrayOf(1, 2, 3) to arrayOf(10, 15, 40) to 7, // 65
+    arrayOf(10, 20, 30) to arrayOf(10, 15, 40) to 30, // 40
+    arrayOf(10, 20, 30) to arrayOf(10, 15, 40) to 60, // 65
+    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 50, // 220
+    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 20, // 100
+    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 30, // 160
+    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 40 // 180
 )
 
-private fun testTopDownKnapsack() {
-    testCases.forEach { (p, k) ->
+private fun testSolverKnapsack() {
+    testCases.forEach { (p, capacity) ->
         val (w, v) = p
-        val s = topDownKnapsack(w, v, k, v.size - 1)
-        val r = bottomUpKnapack(w, v, k)
-        println("$s, $r")
+        val r = topDownKnapsack(w, v, capacity, v.size - 1)
+        val u = bottomUp(w, v, capacity)
+        println("$r, $u")
     }
 }
 
+private fun checkMarkParent() {
+    testCases.forEach { (p, capacity) ->
+        val (w, v) = p
+        val m = markParent(w,v, capacity)
+        println(m)
+    }
+}
 
 fun main() {
-    testTopDownKnapsack()
+    testSolverKnapsack()
 }
