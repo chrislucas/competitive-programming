@@ -1,1 +1,1 @@
-/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/fhackercup/build/classes/kotlin/main/com/br/algo/Main.class
+D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\fhackercup\build\classes\kotlin\main\com\br\algo\Main.class
