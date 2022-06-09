@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/io/JIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/KnapsackZeroOne.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsack.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingArray.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,6 +337,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
