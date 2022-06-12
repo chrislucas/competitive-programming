@@ -1,5 +1,7 @@
 package src.com.br.cp.recursion.dp.knapsack
 
+import java.lang.Integer.max
+
 /**
  *  com vetor: metodo 4
  *  https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/?ref=lbp
@@ -7,12 +9,22 @@ package src.com.br.cp.recursion.dp.knapsack
 
 private fun solver(weights: Array<Int>, values: Array<Int>, capacity: Int): Int {
     val dp = Array(capacity + 1) { 0 }
-
+    for (wi in 1..weights.size) {
+        for (c in capacity downTo 0) {
+            val w = weights[wi - 1]
+            if (w <= c) {
+                val i = dp[c - w] + values[wi - 1] // incluindo valor[i]
+                val e = dp[c]
+                dp[c] = max(i, e)
+            }
+        }
+    }
     return dp[capacity]
 }
 
 private val testCases = arrayOf(
     // weights, values, capacity
+    arrayOf(10, 20, 30) to arrayOf(60, 100, 120) to 50, // 220
     arrayOf(1, 2, 3) to arrayOf(10, 15, 40) to 6, // 65
     arrayOf(2, 1, 3) to arrayOf(10, 15, 40) to 6, // 65
     arrayOf(3, 1, 2) to arrayOf(10, 15, 40) to 6, // 65

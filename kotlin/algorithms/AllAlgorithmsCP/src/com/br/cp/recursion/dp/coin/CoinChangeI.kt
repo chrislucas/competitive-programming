@@ -77,6 +77,8 @@ val testCases = arrayOf(
     Pair(arrayOf(), 4),
     Pair(arrayOf(1), 100),
      */
+    Pair(arrayOf(1, 5, 6), 7),
+    /*
     Pair(arrayOf(2, 3), 4),
     Pair(arrayOf(1, 2, 3), 4),
     Pair(arrayOf(1, 2, 3), 5),
@@ -84,6 +86,8 @@ val testCases = arrayOf(
     Pair(arrayOf(3, 5, 10), 13),
     Pair(arrayOf(3, 5, 10), 35),
     Pair(arrayOf(3, 5, 10, 15, 20), 35)
+
+     */
 )
 
 
