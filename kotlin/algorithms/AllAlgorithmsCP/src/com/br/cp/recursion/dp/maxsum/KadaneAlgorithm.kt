@@ -5,7 +5,7 @@ package src.com.br.cp.recursion.dp.maxsum
  */
 
 
-val testCases = arrayOf(
+private val testCases = arrayOf(
     arrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4),
     arrayOf(4, -1, 2, 1),
     arrayOf(-2, 1, -3),

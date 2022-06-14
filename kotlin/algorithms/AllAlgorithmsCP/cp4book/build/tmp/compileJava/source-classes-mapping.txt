@@ -2,5 +2,15 @@ com/br/algo/BotClean.java
  com.br.algo.BotClean
 com/br/algo/Main.java
  com.br.algo.Main
+com/br/algo/dp/bitwise/package-info.java
+ com.br.algo.dp.bitwise.package-info
 com/br/algo/IO.java
  com.br.algo.IO
+ com.br.algo.IO$Converter
+ com.br.algo.IO$TestCase
+com/br/algo/cp/book1/kattis/package-info.java
+ com.br.algo.cp.book1.kattis.package-info
+com/br/algo/cp/book1/uva/package-info.java
+ com.br.algo.cp.book1.uva.package-info
+com/br/algo/cp/book1/uva/dp/Uva10911.java
+ com.br.algo.cp.book1.uva.dp.Uva10911

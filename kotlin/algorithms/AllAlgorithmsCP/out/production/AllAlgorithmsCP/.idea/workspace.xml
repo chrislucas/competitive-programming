@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/classes/kotlin/main/META-INF/hackerearth.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/classes/kotlin/main/META-INF/hackerearth.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
@@ -23,11 +24,13 @@
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
@@ -70,13 +73,12 @@
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/CountWaysSetSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/CountWaysSetSum.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/KadaneAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/KadaneAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/coin/CoinChangeI.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,8 +144,8 @@
         <option value="module-info" />
         <option value="Kotlin Class" />
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -217,61 +219,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.KadaneAlgorithmKt">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P562" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.P562" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoinChangeIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.coin.CoinChangeIKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountWaysSetSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.introduction.CountWaysSetSumKt" />
-      <module name="org.example.hackerearth.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactorialKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.introduction.FactorialKt" />
-      <module name="org.example.hackerearth.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KadaneAlgorithmKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.KadaneAlgorithmKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.LargestSumContiguousSubarrayKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -371,20 +319,80 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.Main" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P562" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.P562" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinChangeIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.coin.CoinChangeIKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountWaysSetSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.introduction.CountWaysSetSumKt" />
+      <module name="org.example.hackerearth.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestSumContiguousSubarrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.LargestSumContiguousSubarrayKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.P562" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Kotlin.CountWaysSetSumKt" />
       <item itemvalue="Kotlin.CoinChangeIKt" />
-      <item itemvalue="Kotlin.FactorialKt" />
-      <item itemvalue="Kotlin.KadaneAlgorithmKt" />
+      <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.KadaneAlgorithmKt" />
-        <item itemvalue="Kotlin.FactorialKt" />
+        <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
         <item itemvalue="Kotlin.CountWaysSetSumKt" />
         <item itemvalue="Kotlin.CoinChangeIKt" />
         <item itemvalue="Application.P562" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -1059,43 +1067,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/CountWaysSetSum.kt</url>
-          <line>79</line>
+          <line>74</line>
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/CountWaysSetSum.kt</url>
-          <line>77</line>
+          <line>72</line>
           <option name="timeStamp" value="357" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>25</line>
-          <option name="timeStamp" value="358" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>52</line>
-          <option name="timeStamp" value="359" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>27</line>
-          <option name="timeStamp" value="360" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>55</line>
-          <option name="timeStamp" value="361" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>46</line>
-          <option name="timeStamp" value="362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/studies/dp/introduction/Factorial.kt</url>
-          <line>36</line>
-          <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
