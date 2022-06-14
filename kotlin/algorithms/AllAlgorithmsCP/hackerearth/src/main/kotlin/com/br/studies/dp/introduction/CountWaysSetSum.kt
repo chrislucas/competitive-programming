@@ -1,7 +1,8 @@
 package com.br.studies.dp.introduction
 
 /*
-https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
+    https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
+    https://www.geeksforgeeks.org/count-ofdifferent-ways-express-n-sum-1-3-4/
     Let us say that you are given a number N,
     you've to find the number of different ways to write it as the sum of 1, 3 and 4.
 
@@ -24,7 +25,7 @@ val testCases = arrayOf(
     Pair(7, arrayOf(1, 5, 6)),
     Pair(6, arrayOf(1, 2)),
 )
-
+// COIN CHANGE IMPL
 fun topDownTest(target: Int, set: Array<Int>, idx: Int): Int {
     return if (target == 0) {
         1
@@ -67,7 +68,10 @@ fun memoization(buffer: Array<Int>, target: Int, set: Array<Int>, idx: Int): Int
         buffer[target]
     }
 }
+// FIM COIN CHANGE IMPL
 
+
+// Essa implementacao resolve o problema
 fun bottomUp(target: Int, set: Array<Int>): Int {
     val buffer = Array(target + 1) { 0 }
     buffer[0] = 1
