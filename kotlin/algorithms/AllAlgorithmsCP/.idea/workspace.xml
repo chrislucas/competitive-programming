@@ -15,10 +15,8 @@
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/branchandbound/package-info.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/extended/ExtendedKnapsack.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/fractional/FractionalKnapsack.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/KadaneAlgorithm.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/LargestSumContiguousSubarray.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/brillant/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
@@ -94,6 +92,8 @@
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/OptmizedKnapsackUsingMatrix.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/TryingAnotherWay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/TryingAnotherWay.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/problems/uva/P10130.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack/problems/uva/P562.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/KadaneAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/KadaneAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +159,8 @@
         <option value="module-info" />
         <option value="Kotlin Class" />
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -234,7 +234,55 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LargestSumContiguousSubarrayKt">
+  <component name="RunManager" selected="Kotlin.ReplaceEndOfStringKt">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountWaysSetSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.introduction.CountWaysSetSumKt" />
+      <module name="org.example.hackerearth.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KadaneAlgorithmKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.KadaneAlgorithmKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestSumContiguousSubarrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.LargestSumContiguousSubarrayKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplaceEndOfStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.regex.ReplaceEndOfStringKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubsetSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.SubsetSumKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -334,80 +382,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.Main" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P562" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.P562" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.recursion.dp.knapsack.problems.uva.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoinChangeIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.coin.CoinChangeIKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountWaysSetSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.studies.dp.introduction.CountWaysSetSumKt" />
-      <module name="org.example.hackerearth.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestSumContiguousSubarrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.LargestSumContiguousSubarrayKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.P562" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Kotlin.CountWaysSetSumKt" />
-      <item itemvalue="Kotlin.CoinChangeIKt" />
       <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
+      <item itemvalue="Kotlin.KadaneAlgorithmKt" />
+      <item itemvalue="Kotlin.SubsetSumKt" />
+      <item itemvalue="Kotlin.ReplaceEndOfStringKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ReplaceEndOfStringKt" />
+        <item itemvalue="Kotlin.SubsetSumKt" />
+        <item itemvalue="Kotlin.KadaneAlgorithmKt" />
         <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
         <item itemvalue="Kotlin.CountWaysSetSumKt" />
-        <item itemvalue="Kotlin.CoinChangeIKt" />
-        <item itemvalue="Application.P562" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +419,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

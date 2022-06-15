@@ -9,6 +9,8 @@ private val testCases = arrayOf(
     arrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4),
     arrayOf(4, -1, 2, 1),
     arrayOf(-2, 1, -3),
+    arrayOf(-2, -3, -4, -1),
+    arrayOf(-1, -3, -4, -2)
 )
 
 
@@ -41,19 +43,20 @@ private fun naive(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
     return Pair(global, p to q)
 }
 
-private fun kadane(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
-    var global = 0
+private fun kadaneForNegativeValues(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
+    var global = values[0]
     var local = 0
     var p = 0
     var q = 0
+    var s = 0
     for (i in values.indices) {
         local += values[i]
         if (local > global) {
             global = local
-            q += 1
-        } else if(local < 0) {
+            p = s
             q = i
-            p = i
+        } else if(local < 0) {
+            s = i + 1
             local = 0
         }
     }
@@ -63,7 +66,7 @@ private fun kadane(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
 private fun checkSolutions() {
     testCases.forEach { values ->
         val a = naive(values)
-        val b = kadane(values)
+        val b = kadaneForNegativeValues(values)
         println("$a, $b")
     }
 }
