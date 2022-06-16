@@ -3,6 +3,9 @@ package src.com.br.cp.recursion.dp.subsetsum
 /**
  * https://discuss.codechef.com/t/uva-562-dividing-coins/7584
  * https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
+ * https://www.techiedelight.com/subset-sum-problem/
+ * https://codeforces.com/blog/entry/60619
+ * https://en.wikipedia.org/wiki/Subset_sum_problem
  */
 
 
@@ -27,25 +30,30 @@ private fun hasSubsetSum(values: Array<Int>, target: Int, idx: Int): Boolean {
     }
 }
 
-private fun bottomUp(values: Array<Int>, target: Int): Boolean {
-    val dp = Array(values.size + 1) { Array(target + 1) { false } }
+private fun bottomUp(set: Array<Int>, target: Int): Boolean {
+
+    // values X target
+    val dp = Array(set.size + 1) { Array(target + 1) { false } }
 
     // para o valor 0 a resposta e TRUE que é o conjunto vazio
-    for (i in 0..target) {
-        dp[0][i] = true
+    for (i in set.indices) {
+        dp[i][0] = true
     }
 
-    for (i in 0..values.size) {
-        for (j in 0..target) {
-            dp[i][j] = if (values[i] > j) {
+    // i = inclui o i-esimo valor do conjunto S na solucao do problema
+    for (i in 1..set.size) {
+        // com o i-esimo valor do conjunto S na solucao do problema verifique se ele cabe na solucao
+        for (j in 1..target) {
+            dp[i][j] = if (set[i - 1] > j) {
                 dp[i - 1][j]
             } else {
-                dp[i - 1][j] || dp[i - 1][j - values[i]]
+                // valor anterior em values
+                dp[i - 1][j] || dp[i - 1][j - set[i - 1]]
             }
         }
     }
 
-    return dp[values.size][target]
+    return dp[set.size][target]
 }
 
 private fun checkAlgorithms() {
