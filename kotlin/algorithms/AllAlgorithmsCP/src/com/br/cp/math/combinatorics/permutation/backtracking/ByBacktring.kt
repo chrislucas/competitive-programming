@@ -12,7 +12,7 @@ val data = arrayOf(
     (3..12).toList().toTypedArray(),
 )
 
-val <T> Array<T>.string: String
+private val <T> Array<T>.string: String
     get() = this.joinToString("|")
 
 private fun backtrackingSolution(elements: Int, set: Array<Int>, allPermutations: LinkedHashSet<String>) {

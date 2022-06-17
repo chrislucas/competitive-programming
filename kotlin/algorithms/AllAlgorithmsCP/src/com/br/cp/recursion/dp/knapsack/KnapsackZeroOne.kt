@@ -14,6 +14,7 @@ import java.lang.Integer.max
  * https://www.geeksforgeeks.org/0-1-knap`sack-problem-dp-10/?ref=lbp
  */
 
+private typealias Matrix<T> = Array<Array<T>>
 
 private fun topDownKnapsack(weights: Array<Int>, values: Array<Int>, target: Int, idx: Int): Int {
     return if (target == 0 || idx < 0) {
@@ -52,7 +53,7 @@ private fun markParent(
     weights: Array<Int>,
     values: Array<Int>,
     capacity: Int
-): Array<Array<Pair<Pair<Int, Int>, Int>>> {
+): Matrix<Pair<Pair<Int, Int>, Int>> {
     val state = Array(weights.size + 1) { Array(capacity + 1) { Pair(0 to 0, 0) } }
     for (wi in 1..weights.size) {
         for (ci in 1..capacity) {
