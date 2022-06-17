@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/LargestSumContiguousSubarray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/maxsum/LargestSumContiguousSubarray.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -995,7 +992,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt</url>
-          <line>16</line>
+          <line>19</line>
           <option name="timeStamp" value="371" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
@@ -1066,7 +1063,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/SubsetSum.kt</url>
-          <line>64</line>
+          <line>67</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
