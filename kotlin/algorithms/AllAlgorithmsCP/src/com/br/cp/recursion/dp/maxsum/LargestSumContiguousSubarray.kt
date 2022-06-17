@@ -56,9 +56,7 @@ private fun kadaneForAllNegative(values: Array<Int>): Pair<Int, Pair<Int, Int>> 
             s = i + 1
         }
     }
-
     return Pair(global, p to q)
-
 }
 
 
