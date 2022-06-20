@@ -157,7 +157,10 @@ private fun checkConvertArrayToBST() {
 
 private fun checkDeleteValue() {
     val tree = data[0].toBST()
+    // deletando um no folha
     tree?.deleteValue(40)?.inOrder().let { println(it) }
+    // deletando um no que possui 2 nos filos
+    tree?.deleteValue(70)?.inOrder().let { println(it) }
 }
 
 

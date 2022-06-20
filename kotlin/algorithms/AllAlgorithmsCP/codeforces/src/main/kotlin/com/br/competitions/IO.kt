@@ -5,11 +5,11 @@ import java.math.BigInteger
 import java.util.*
 
 
-inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
+private inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map { transform(it) }
 
 
-inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
+private inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 
 private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
