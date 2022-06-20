@@ -1,8 +1,6 @@
 package src.com.br.cp.recursion.dp.subsetsum
 
 
-import kotlin.collections.HashSet
-
 /*
     https://www.geeksforgeeks.org/print-sums-subsets-given-set/
  */
@@ -27,7 +25,7 @@ private fun allSubsets(set: Array<Int>): HashSet<MutableSet<Int>> {
 
          */
 
-        for (j in set.size -1 downTo 0) {
+        for (j in set.size - 1 downTo 0) {
             if (i and (1 shl j) > 0) {
                 print("1")
                 subset += set[j]

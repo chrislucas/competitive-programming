@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/PartitionInTwoSubsets.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff/PartitionMinimumSumDiff.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff/problems/leetcode/p2035.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/problems/leetcode/p416.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSubsetsWithAGivenSum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSumsOfSubset.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/problems/uri/p1690.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/CompBST.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/backtracking/ByBacktring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/combinatorics/permutation/backtracking/ByBacktring.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/DeleteBinarySearchTree.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSubsetsWithAGivenSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSubsetsWithAGivenSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSumsOfSubset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSumsOfSubset.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/problems/uri/p1690.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/problems/uri/p1690.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +81,8 @@
       <list>
         <option value="module-info" />
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -123,7 +125,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/regex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -132,11 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bst" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/regex" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
@@ -155,7 +157,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.AllSumsOfSubsetKt">
+  <component name="RunManager" selected="Kotlin.DeleteBinarySearchTreeKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -255,6 +257,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="AllSubsetsWithAGivenSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.AllSubsetsWithAGivenSumKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AllSumsOfSubsetKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.AllSumsOfSubsetKt" />
       <module name="AllAlgorithmsCP" />
@@ -262,22 +271,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnapsackZeroOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.knapsack.KnapsackZeroOneKt" />
+    <configuration name="DeleteBinarySearchTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.deletetree.DeleteBinarySearchTreeKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReplaceEndOfStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.regex.ReplaceEndOfStringKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReplaceMiddleOfStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.regex.ReplaceMiddleOfStringKt" />
+    <configuration name="P1690Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.problems.uri.P1690Kt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -305,18 +307,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.SubsetSumKt" />
-      <item itemvalue="Kotlin.ReplaceEndOfStringKt" />
-      <item itemvalue="Kotlin.ReplaceMiddleOfStringKt" />
-      <item itemvalue="Kotlin.KnapsackZeroOneKt" />
       <item itemvalue="Kotlin.AllSumsOfSubsetKt" />
+      <item itemvalue="Kotlin.AllSubsetsWithAGivenSumKt" />
+      <item itemvalue="Kotlin.P1690Kt" />
+      <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
+        <item itemvalue="Kotlin.P1690Kt" />
+        <item itemvalue="Kotlin.AllSubsetsWithAGivenSumKt" />
         <item itemvalue="Kotlin.AllSumsOfSubsetKt" />
         <item itemvalue="Kotlin.SubsetSumKt" />
-        <item itemvalue="Kotlin.KnapsackZeroOneKt" />
-        <item itemvalue="Kotlin.ReplaceMiddleOfStringKt" />
-        <item itemvalue="Kotlin.ReplaceEndOfStringKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,6 +1043,36 @@
           <line>42</line>
           <option name="timeStamp" value="387" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/problems/uri/p1690.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="390" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>133</line>
+          <option name="timeStamp" value="393" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>39</line>
+          <option name="timeStamp" value="395" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>43</line>
+          <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>50</line>
+          <option name="timeStamp" value="399" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1115,6 +1147,22 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/recursion/dp/subsetsum/AllSubsetsWithAGivenSum.kt</url>
+          <line>44</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="388" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
+          <line>81</line>
+          <properties class="src.com.br.cp.ds.trees.bst.iterative.Tree" method="posOrder">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>

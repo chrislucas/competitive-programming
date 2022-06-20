@@ -7,4 +7,8 @@ package src.com.br.cp.ds.trees.bst;
  *
  * Iterative posorder transversal
  * https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
+ *
+ * Binary Tree
+ * https://www.geeksforgeeks.org/binary-tree-set-2-properties/?ref=leftbar-rightbar
+ * https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/?ref=leftbar-rightbar
  */

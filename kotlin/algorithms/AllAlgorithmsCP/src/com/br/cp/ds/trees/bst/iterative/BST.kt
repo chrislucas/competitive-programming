@@ -12,7 +12,7 @@ val <T : Comparable<T>> Node<T>.isLeaf: Boolean
 
 class Tree<T : Comparable<T>> {
 
-    var root: Node<T>? = null
+    private var root: Node<T>? = null
 
     fun insert(data: T) {
         val node = Node(data)
