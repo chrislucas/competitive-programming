@@ -89,8 +89,8 @@ public class p11259 {
                     quantities[i] = another.get(i);
                 }
 
-                solver(coins, quantities, value);
-                System.out.println("**");
+                ;
+                System.out.println(solver(coins, quantities, value));
                 q -= 1;
             }
         });

@@ -55,7 +55,7 @@ private fun kadaneForNegativeValues(values: Array<Int>): Pair<Int, Pair<Int, Int
             global = local
             p = s
             q = i
-        } else if(local < 0) {
+        } else if (local < 0) {
             s = i + 1
             local = 0
         }

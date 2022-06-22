@@ -14,6 +14,7 @@ private inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(tr
 private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
 
+
 fun main(args: Array<String>) {
 
 }
