@@ -49,6 +49,27 @@ private fun fastsolution() {
         println(answer)
     }
 }
+/*
+    TODO, tentar implementar essa solucao lebta para
+    explorar subsets usando bitwise
+ */
+private fun naiveSolution(set: Array<Long>): Long {
+    var le = 1L
+    var ri = Int.MAX_VALUE * 1L
+    val len = 1 shl set.size
+    val table = HashSet<Long>()
+    for (i in 1 until len) {
+        var acc = 0L
+        for (j in set.size - 1 downTo 0) {
+            if (i and (1 shl j) > 0)
+                acc += set[j]
+        }
+        if (acc == le && !table.contains(acc))
+            le += 1
+        table += acc
+    }
+    return le
+}
 
 fun main(args: Array<String>) {
     fastsolution()

@@ -66,12 +66,16 @@ fun <T:Comparable<T>> TreeNode<T>.delete(value: T): TreeNode<T>? {
 }
 
 
-fun <T : Comparable<T>> Array<T>.toBinarySearchTree(): TreeNode<T> {
-    val tree = TreeNode(this[0])
-    for (i in 1 until this.size) {
-        tree.insert(this[i])
+private fun <T : Comparable<T>> Array<T>.toBinarySearchTree(): TreeNode<T>? {
+    return if (this.isNotEmpty()) {
+        val tree = TreeNode(this[0])
+        for (i in 1 until this.size) {
+            tree.insert(this[i])
+        }
+        tree
+    } else {
+        null
     }
-    return tree
 }
 
 private fun checkInsert() {
@@ -87,9 +91,9 @@ private fun checkInsert() {
     println(root.has(10))
 
     val tree = arrayOf(50, 30, 70, 20, 40, 60, 80).toBinarySearchTree()
-    println(tree.preOrder())
-    println(tree.has(30))
-    println(tree.has(10))
+    println(tree?.preOrder())
+    println(tree?.has(30))
+    println(tree?.has(10))
 }
 
 

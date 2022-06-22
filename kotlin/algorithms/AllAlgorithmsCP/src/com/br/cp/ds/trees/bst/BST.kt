@@ -2,14 +2,14 @@ package src.com.br.cp.ds.trees.bst
 
 import kotlin.text.StringBuilder
 
-data class Node<T : Comparable<T>>(var value: T, var left: Node<T>? = null, var right: Node<T>? = null)
-
-val <T : Comparable<T>> Node<T>.isLeaf: Boolean
-    get() = this.left == null && this.right == null
-
-
 class Tree<T : Comparable<T>> {
-    var root: Node<T>? = null
+
+    data class Node<T : Comparable<T>>(var value: T, var left: Node<T>? = null, var right: Node<T>? = null)
+
+    private var root: Node<T>? = null
+
+    private val <T : Comparable<T>> Node<T>.isLeaf: Boolean
+        get() = this.left == null && this.right == null
 
     fun insert(data: T) {
         fun insert(node: Node<T>?, data: T): Node<T> {
@@ -104,8 +104,8 @@ class Tree<T : Comparable<T>> {
 
                 if (newNode != null) {
                     newNode.right?.let {
-                        newNode.value = minValue(it)
-                        newNode.right = delete(newNode.right, newNode.value)
+                        it.value = minValue(it)
+                        it.right = delete(it.right, it.value)
                     }
                 }
                 newNode
@@ -128,14 +128,14 @@ class Tree<T : Comparable<T>> {
             return min
         }
 
-        fun delete(node: Node<T>?, data: T): Node<T>? {
+        fun removeValue(node: Node<T>?, data: T): Node<T>? {
             return if (node == null) {
                 null
             } else if (node.value < data) {
-                node.right = delete(node.right, data)
+                node.right = removeValue(node.right, data)
                 node
             } else if (node.value > data) {
-                node.left = delete(node.left, data)
+                node.left = removeValue(node.left, data)
                 node
             } else {
                 val newNode = if (node.isLeaf) {
@@ -150,14 +150,14 @@ class Tree<T : Comparable<T>> {
                 if (newNode != null) {
                     newNode.right?.let {
                         newNode.value = minValue(it)
-                        newNode.right = delete(newNode.right, newNode.value)
+                        newNode.right = removeValue(newNode.right, newNode.value)
                     }
                 }
                 newNode
             }
         }
 
-        delete(cTree.root, data)
+        removeValue(cTree.root, data)
         return cTree
     }
 
@@ -256,7 +256,6 @@ private val data = arrayOf(
     arrayOf(25, 15, 10, 4, 12, 22, 18, 24, 50, 35, 31, 44, 70, 66, 90),
 )
 
-
 private fun String.splitAndJoinTo(
     del: String = "",
     appendable: Appendable = StringBuilder(),
@@ -303,8 +302,12 @@ private fun checkTransversal() {
 }
 
 private fun checkDeleteNode() {
-    val tree = data[0].toBinarySearchTree()
-    println("Deleting 20: ${tree.delete(20).preOrder()}")
+
+    val tree0 = data[0].toBinarySearchTree()
+    println("Deleting 40: ${tree0.delete(40).preOrder()}")
+
+    val tree1 = data[0].toBinarySearchTree()
+    println("Deleting 20: ${tree1.delete(20).preOrder()}")
 
     val tree2 = data[0].toBinarySearchTree()
     println("Deleting 30: ${tree2.delete(30).preOrder()}")
