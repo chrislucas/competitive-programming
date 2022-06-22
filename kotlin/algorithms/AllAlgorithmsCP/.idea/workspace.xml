@@ -1088,13 +1088,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
-          <line>64</line>
-          <option name="timeStamp" value="388" />
+          <line>58</line>
+          <option name="timeStamp" value="389" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
-          <line>58</line>
-          <option name="timeStamp" value="389" />
+          <line>60</line>
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
