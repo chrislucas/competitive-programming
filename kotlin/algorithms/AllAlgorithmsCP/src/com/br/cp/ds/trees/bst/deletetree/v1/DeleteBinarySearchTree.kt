@@ -29,12 +29,12 @@ class Tree<T : Comparable<T>>(value: T) {
         return this
     }
 
-    fun inOrder(): List<Node<T>> {
-        val buffer = mutableListOf<Node<T>>()
-        fun inOrder(node: Node<T>?, buffer: MutableList<Node<T>>) {
+    fun inOrder(): List<String> {
+        val buffer = mutableListOf<String>()
+        fun inOrder(node: Node<T>?, buffer: MutableList<String>) {
             if (node != null) {
                 inOrder(node.le, buffer)
-                buffer.add(node)
+                buffer.add("${node.value}")
                 inOrder(node.ri, buffer)
             }
         }
@@ -63,8 +63,8 @@ class Tree<T : Comparable<T>>(value: T) {
      */
     fun deleteValue(value: T): Tree<T> {
         fun minNode(node: Node<T>): T {
-            var cNode: Node<T>? = node
             var minValue = node.value
+            var cNode: Node<T>? = node.le
             while (cNode?.le != null) {
                 if (cNode.value < minValue) {
                     minValue = cNode.value
@@ -92,7 +92,7 @@ class Tree<T : Comparable<T>>(value: T) {
                 node.ri = deleteValue(node.ri, value)
                 node
             } else {
-               return if (node.le == null) {
+                if (node.le == null) {
                     node.ri
                 } else if (node.ri == null) {
                     node.le
