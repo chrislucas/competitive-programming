@@ -4,13 +4,19 @@ import java.lang.Integer.max
 
 /**
  * https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
- * Kadabe
+ * Kadane
  */
 
 private val testCases = arrayOf(
     arrayOf(-2, -3, 4, -1, -2, 1, 5, -3),
     arrayOf(-2, -3, -4, -1),
-    arrayOf(-1, -3, -4, -2)
+    arrayOf(-1, -3, -4, -2),
+    arrayOf(-10, -3, -4, -2),
+    arrayOf(-10, -2, -4, -3),
+    arrayOf(-10, -2, -4, -1, -3),
+    arrayOf(10, -10, -2, -4, -1, -3),
+    arrayOf(-10, -2, 1, -4, -1, -3),
+    arrayOf(-10, -2, -4, -1, -3, 1),
 )
 
 
@@ -26,8 +32,7 @@ private fun kadaneAlgorithm(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
             global = local
             p = s
             q = i
-        }
-        if (local < 0) {
+        } else if (local < 0) {
             local = 0
             s = i + 1
         }
@@ -42,7 +47,6 @@ private fun kadaneForAllNegative(values: Array<Int>): Pair<Int, Pair<Int, Int>> 
     var p = 0
     var q = 0
     var s = 0
-
     for (i in 1 until values.size) {
         local = max(values[i], local + values[i])
         global = if (local > global) {

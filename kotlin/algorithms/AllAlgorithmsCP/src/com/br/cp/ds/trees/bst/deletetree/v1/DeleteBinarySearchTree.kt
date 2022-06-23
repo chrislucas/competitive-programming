@@ -1,5 +1,6 @@
 package src.com.br.cp.ds.trees.bst.deletetree.v1
 
+
 // uamos a navegacao posorder para deletar uma arvore
 // https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/
 
@@ -40,6 +41,59 @@ class Tree<T : Comparable<T>>(value: T) {
         }
         inOrder(root, buffer)
         return buffer
+    }
+
+    fun transversal(type: String = "in"): String {
+        val buffer = StringBuilder()
+        fun preOrder(root: Node<T>?, buffer: StringBuilder) {
+            if (root != null) {
+                if (buffer.isEmpty()) {
+                    buffer.append("${root.value}")
+                } else {
+                    buffer.append(", ${root.value}")
+                }
+                preOrder(root.le, buffer)
+                preOrder(root.ri, buffer)
+            }
+        }
+
+        fun inOrder(root: Node<T>?, buffer: StringBuilder) {
+            if (root != null) {
+                preOrder(root.le, buffer)
+                if (buffer.isEmpty()) {
+                    buffer.append("${root.value}")
+                } else {
+                    buffer.append(", ${root.value}")
+                }
+                preOrder(root.ri, buffer)
+            }
+        }
+
+        fun posOrder(root: Node<T>?, buffer: StringBuilder) {
+            if (root != null) {
+                preOrder(root.le, buffer)
+                preOrder(root.ri, buffer)
+                if (buffer.isEmpty()) {
+                    buffer.append("${root.value}")
+                } else {
+                    buffer.append(", ${root.value}")
+                }
+            }
+        }
+
+        when (type) {
+            "in" -> {
+                inOrder(root, buffer)
+            }
+            "pre" -> {
+                preOrder(root, buffer)
+            }
+            else -> {
+                posOrder(root, buffer)
+            }
+        }
+
+        return buffer.toString()
     }
 
     fun deleteTree() {
@@ -146,6 +200,7 @@ private fun createAndCheckDelete() {
         .insert(12)
         .insert(15)
         .deleteTree()
+    println(tree)
 }
 
 private fun checkConvertArrayToBST() {
@@ -163,10 +218,19 @@ private fun checkDeleteValue() {
     tree?.deleteValue(70)?.inOrder().let { println(it) }
 }
 
+private fun checkTransversal() {
+    data.forEach {
+        val tree = it.toBST()
+        val inOrder = tree?.transversal()
+        println(inOrder)
+    }
+}
+
 
 fun main() {
     //createAndCheckDelete()
-    checkDeleteValue()
+    //checkDeleteValue()
+    checkTransversal()
 }
 
 

@@ -31,6 +31,9 @@ fun <T : Comparable<T>> TreeNode<T>.insert(value: T): TreeNode<T> {
     return insert(this, value)
 }
 
+val <T : Comparable<T>> TreeNode<T>.isLeaf: Boolean
+    get() = left == null && right == null
+
 fun <T : Comparable<T>> TreeNode<T>.transversal(type: String): String {
     val buffer = StringBuilder()
     fun preOrder(root: TreeNode<T>?, buffer: StringBuilder) {
@@ -143,8 +146,21 @@ fun <T : Comparable<T>> TreeNode<T>.deleteValue(value: T): TreeNode<T>? {
     return this
 }
 
+// https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/
 fun <T : Comparable<T>> TreeNode<T>.deleteAll() {
-
+    fun postOrderDelete(node: TreeNode<T>?): TreeNode<T>? {
+        return if (node != null) {
+            if (node.isLeaf) {
+                return null
+            }
+            node.left = postOrderDelete(node.left)
+            node.right = postOrderDelete(node.right)
+            return null
+        } else {
+            null
+        }
+    }
+    postOrderDelete(this)
 }
 
 
@@ -196,9 +212,16 @@ private fun checkTransversal() {
     }
 }
 
+private fun checkDeleteAll() {
+    val tree = data[0].toBinarySearchTree()
+    tree?.deleteAll()
+    println(tree)
+}
+
 
 fun main() {
     //checkInsert()
-    checkDeleteValue()
+    //checkDeleteValue()
     //checkTransversal()
+    checkDeleteAll()
 }
