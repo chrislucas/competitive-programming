@@ -52,3 +52,9 @@ package com.br.cp.ds.trees;
  * Overview of Data Structures | Set 2 (Binary Tree, BST, Heap and Hash)
  * https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/?ref=leftbar-rightbar
  * */
+
+/*
+    HashTable VS Treeset e outras estruturas java
+    https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077
+
+ */

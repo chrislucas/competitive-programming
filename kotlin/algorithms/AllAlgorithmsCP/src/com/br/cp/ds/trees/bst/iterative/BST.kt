@@ -12,7 +12,7 @@ val <T : Comparable<T>> Node<T>.isLeaf: Boolean
 
 class Tree<T : Comparable<T>> {
 
-    private var root: Node<T>? = null
+    var root: Node<T>? = null
 
     fun insert(data: T) {
         val node = Node(data)
@@ -79,6 +79,9 @@ class Tree<T : Comparable<T>> {
         return buffer.toString()
     }
 
+    /*
+        TODO revisar esse metodo
+     */
     fun posOrder(): String {
         val stack = Stack<Node<T>>()
         var leaf: Node<T>? = root
@@ -128,10 +131,11 @@ private fun <T : Comparable<T>> checkInsert(tree: Tree<T>) {
 private fun checkInsertAndNavigation() {
     data.forEach {
         val tree = it.toBinarySearchTree()
-        println(tree.inOrder())
-        println(tree.preOrder())
-        println(tree.posOrder())
-        println("")
+        val a = tree.inOrder()
+        val b = tree.preOrder()
+        val c = tree.posOrder()
+        println("In: $a\nPre: $b\nPos: $c")
+        println("******************************************************************")
     }
 }
 

@@ -59,20 +59,20 @@ class Tree<T : Comparable<T>>(value: T) {
 
         fun inOrder(root: Node<T>?, buffer: StringBuilder) {
             if (root != null) {
-                preOrder(root.le, buffer)
+                inOrder(root.le, buffer)
                 if (buffer.isEmpty()) {
                     buffer.append("${root.value}")
                 } else {
                     buffer.append(", ${root.value}")
                 }
-                preOrder(root.ri, buffer)
+                inOrder(root.ri, buffer)
             }
         }
 
         fun posOrder(root: Node<T>?, buffer: StringBuilder) {
             if (root != null) {
-                preOrder(root.le, buffer)
-                preOrder(root.ri, buffer)
+                posOrder(root.le, buffer)
+                posOrder(root.ri, buffer)
                 if (buffer.isEmpty()) {
                     buffer.append("${root.value}")
                 } else {
@@ -219,10 +219,23 @@ private fun checkDeleteValue() {
 }
 
 private fun checkTransversal() {
+
+    data[0].let {
+        val tree = it.toBST()
+        val a = tree?.transversal("in")
+        val b = tree?.transversal("pre")
+        val c = tree?.transversal("pos")
+        println("In: $a\nPre: $b\nPos: $c")
+    }
+    println("******************************************************************")
+
     data.forEach {
         val tree = it.toBST()
-        val inOrder = tree?.transversal()
-        println(inOrder)
+        val a = tree?.transversal("in")
+        val b = tree?.transversal("pre")
+        val c = tree?.transversal("pos")
+        println("In: $a\nPre: $b\nPos: $c")
+        println("******************************************************************")
     }
 }
 
