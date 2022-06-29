@@ -304,10 +304,10 @@ val data = arrayOf(
 private fun checkLevelOrder() {
     data[0].toBST()?.let {
         val a = it.recLevelOrder()
-        val b = it.recLevelOrder()
+        val b = it.mapRecLevelOrder()
         val c = it.itLevelOrder()
         val d = it.itLevelOrderII()
-        println("$a\n$b\n$c")
+        println("$a\n$b\n$c\n$d")
     }
 }
 
