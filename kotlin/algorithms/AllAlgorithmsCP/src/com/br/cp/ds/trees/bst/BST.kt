@@ -1,6 +1,5 @@
 package src.com.br.cp.ds.trees.bst
 
-import kotlin.text.StringBuilder
 
 class Tree<T : Comparable<T>> {
 
@@ -237,6 +236,22 @@ class Tree<T : Comparable<T>> {
         }
         posOrder(root, buffer)
         return buffer.toString()
+    }
+
+    /*
+         https://stackoverflow.com/questions/2597637/finding-height-in-binary-search-tree
+     */
+    fun height(): Int {
+        fun height(node: Node<T>?): Int {
+            return if (node == null) {
+                0
+            } else {
+                val l = height(node.left)
+                val r = height(node.right)
+                Integer.max(l, r) + 1
+            }
+        }
+        return height(root)
     }
 }
 
