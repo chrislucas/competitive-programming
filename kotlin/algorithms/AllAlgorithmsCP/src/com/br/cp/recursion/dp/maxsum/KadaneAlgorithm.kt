@@ -10,11 +10,17 @@ private val testCases = arrayOf(
     arrayOf(4, -1, 2, 1),
     arrayOf(-2, 1, -3),
     arrayOf(-2, -3, -4, -1),
-    arrayOf(-1, -3, -4, -2)
+    arrayOf(-1, -3, -4, -2),
+    arrayOf(-2, -3, -1, -4),
 )
 
 
-// n ^ 2
+/*
+    n ^ 2
+    a solucao ingenua que gera todos os subsets e ainda nao resolve para arrays que contenham somente
+    itemns negativos
+
+ */
 private fun naive(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
     /**
      * Todo calcular todas as somas de todos os subarrays possiveis
@@ -55,9 +61,32 @@ private fun kadaneForNegativeValues(values: Array<Int>): Pair<Int, Pair<Int, Int
             global = local
             p = s
             q = i
-        } else if (local < 0) {
+        }
+        if (local < 0) {
             s = i + 1
             local = 0
+        }
+    }
+    return Pair(global, p to q)
+}
+
+private fun kadaneForAllNegative(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
+    var global = values[0]
+    var local = global
+    var p = 0
+    var q = 0
+    var s = 0
+    for (i in 1 until values.size) {
+        local = Integer.max(values[i], local + values[i])
+        global = if (local > global) {
+            p = s
+            q = i
+            local
+        } else {
+            global
+        }
+        if (local < 0) {
+            s = i + 1
         }
     }
     return Pair(global, p to q)
@@ -67,7 +96,8 @@ private fun checkSolutions() {
     testCases.forEach { values ->
         val a = naive(values)
         val b = kadaneForNegativeValues(values)
-        println("$a, $b")
+        val c = kadaneForAllNegative(values)
+        println("$a, $b, $c")
     }
 }
 
