@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/height/HeightOfBTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/height/HeightOfBTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/InOrderSucessorBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/InOrderSucessorBST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/heap/Heap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/heap/Heap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +75,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Kotlin Class" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,11 +136,11 @@
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bst\predecessor" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/bezout" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie" />
-      <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/diophantine/eq" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
@@ -156,7 +152,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TreeNodeBSTKt">
+  <component name="RunManager" selected="Kotlin.LevelOrderTransvervalKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -277,8 +273,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestSumContiguousSubarrayKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.maxsum.LargestSumContiguousSubarrayKt" />
+    <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -305,19 +301,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
       <item itemvalue="Kotlin.Kadane2DKt" />
       <item itemvalue="Kotlin.TreeNodeBSTKt" />
       <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
       <item itemvalue="Kotlin.BSTKt" />
+      <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
+        <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
         <item itemvalue="Kotlin.TreeNodeBSTKt" />
         <item itemvalue="Kotlin.BSTKt" />
-        <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
         <item itemvalue="Kotlin.Kadane2DKt" />
-        <item itemvalue="Kotlin.LargestSumContiguousSubarrayKt" />
       </list>
     </recent_temporary>
   </component>
@@ -489,12 +485,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>160</line>
+          <line>159</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>114</line>
+          <line>113</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -519,32 +515,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>76</line>
+          <line>75</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>130</line>
+          <line>129</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>104</line>
+          <line>103</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>119</line>
+          <line>118</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>94</line>
+          <line>93</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>84</line>
+          <line>83</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -1054,28 +1050,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt</url>
-          <line>332</line>
+          <line>331</line>
           <option name="timeStamp" value="434" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
-          <line>202</line>
+          <line>219</line>
           <option name="timeStamp" value="436" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="438" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="439" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
+          <line>261</line>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
+          <line>200</line>
+          <option name="timeStamp" value="442" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1154,7 +1160,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt</url>
-          <line>346</line>
+          <line>349</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1162,7 +1168,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
-          <line>242</line>
+          <line>259</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
           </properties>

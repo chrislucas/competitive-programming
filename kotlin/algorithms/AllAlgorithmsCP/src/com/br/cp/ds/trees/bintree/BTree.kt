@@ -10,7 +10,6 @@ class TreeNode<T : Comparable<T>>(val value: T, var le: TreeNode<T>? = null, var
         fun insert(root: TreeNode<T>, value: T) {
 
         }
-
         insert(this, value)
     }
 }

@@ -111,7 +111,7 @@ private fun <T : Comparable<T>> TreeNode<T>.has(value: T): Boolean {
 }
 
 
-private fun <T : Comparable<T>> TreeNode<T>.deleteValue(value: T): TreeNode<T>? {
+private fun <T : Comparable<T>> TreeNode<T>.deleteValue(value: T): TreeNode<T> {
     fun inOrderSuccessor(root: TreeNode<T>): T {
         var minValue = root.value
         var cpy: TreeNode<T>? = root.left

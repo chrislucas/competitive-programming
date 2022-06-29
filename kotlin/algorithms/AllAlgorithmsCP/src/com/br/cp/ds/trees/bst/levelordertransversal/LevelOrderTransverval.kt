@@ -1,9 +1,13 @@
-package src.com.br.cp.ds.trees.bst.deletetree.v1
+package src.com.br.cp.ds.trees.bst.levelordertransversal
+
+import java.util.*
 
 
+/*
+    https://www.geeksforgeeks.org/level-order-tree-traversal/\
 
-// uamos a navegacao posorder para deletar uma arvore
-// https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/
+    Level order transversal de uma Tree é uma "busca em largura"  numa arvore
+ */
 
 class BSTree<T : Comparable<T>>(value: T) {
 
@@ -128,6 +132,7 @@ class BSTree<T : Comparable<T>>(value: T) {
             }
             return minValue
         }
+
         /*
             https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
             1 - se o No a ser deletado nao tem filhos, delete-o
@@ -167,10 +172,7 @@ class BSTree<T : Comparable<T>>(value: T) {
         return this
     }
 
-    /*
-         https://stackoverflow.com/questions/2597637/finding-height-in-binary-search-tree
-     */
-    fun height(): Int {
+    private fun height(): Int {
         fun height(node: Node<T>?): Int {
             return if (node == null) {
                 0
@@ -182,21 +184,68 @@ class BSTree<T : Comparable<T>>(value: T) {
         }
         return height(root)
     }
+
+    fun recLevelOrder(): MutableList<T> {
+        fun currentLevelOrder(node: Node<T>?, order: MutableList<T>, level: Int) {
+            if (node != null) {
+                if (level == 1) {
+                    order.add(node.value)
+                } else if (level > 1) {
+                    currentLevelOrder(node.le, order, level - 1)
+                    currentLevelOrder(node.ri, order, level - 1)
+                }
+            }
+        }
+        val h = height()
+        val levelOrder = mutableListOf<T>()
+        for (i in 1..h) {
+            currentLevelOrder(root, levelOrder, i)
+        }
+        return levelOrder
+    }
+
+    fun itLevelOrder() : MutableList<T>  {
+        val queue = LinkedList<Node<T>?>()
+        val levelOrder = mutableListOf<T>()
+        queue.add(root)
+        while (queue.isNotEmpty()) {
+            val temp = queue.poll()
+            temp?.run {
+                levelOrder.add(value)
+                le?.let { queue.add(it) }
+                ri?.let { queue.add(it) }
+            }
+        }
+        return levelOrder
+    }
+
+    fun itLevelOrder2() : MutableList<T>  {
+        val queue = LinkedList<Node<T>?>()
+        val levelOrder = mutableListOf<T>()
+        var temp = root
+        while (temp != null) {
+            levelOrder.add(temp.value)
+            temp.le?.let { queue.add(it) }
+            temp.ri?.let { queue.add(it) }
+            temp = queue.poll()
+        }
+        return levelOrder
+    }
 }
 
 private fun <T : Comparable<T>> Array<T>.toBST(): BSTree<T>? {
     return if (this.isNotEmpty()) {
-        val BSTree = BSTree(this[0])
+        val tree = BSTree(this[0])
         for (i in 1 until this.size) {
-            BSTree.insert(this[i])
+            tree.insert(this[i])
         }
-        BSTree
+        tree
     } else {
         null
     }
 }
 
-private val data = arrayOf(
+val data = arrayOf(
     arrayOf(50, 30, 70, 20, 40, 60, 80),
     arrayOf(50, 30, 70, 20, 40, 60, 80, 10, 25),            // teste remover o 20
     arrayOf(50, 30, 70, 20, 40, 60, 80, 10, 25, 35, 41),    // teste remover o 40
@@ -208,59 +257,16 @@ private val data = arrayOf(
     arrayOf(25, 15, 10, 4, 12, 22, 18, 24, 50, 35, 31, 44, 70, 66, 90),
 )
 
-private fun createAndCheckDelete() {
-    val BSTree = BSTree(10)
-    BSTree.insert(8)
-        .insert(9)
-        .insert(7)
-        .insert(14)
-        .insert(12)
-        .insert(15)
-        .deleteTree()
-    println(BSTree)
-}
-
-private fun checkConvertArrayToBST() {
-    data.forEach {
-        val tree = it.toBST()
-        println(tree?.inOrder())
-    }
-}
-
-private fun checkDeleteValue() {
-    val tree = data[0].toBST()
-    // deletando um no folha
-    tree?.deleteValue(40)?.inOrder().let { println(it) }
-    // deletando um no que possui 2 nos filos
-    tree?.deleteValue(70)?.inOrder().let { println(it) }
-}
-
-private fun checkTransversal() {
-
-    data[0].let {
-        val tree = it.toBST()
-        val a = tree?.transversal("in")
-        val b = tree?.transversal("pre")
-        val c = tree?.transversal("pos")
-        println("In: $a\nPre: $b\nPos: $c")
-    }
-    println("******************************************************************")
-
-    data.forEach {
-        val tree = it.toBST()
-        val a = tree?.transversal("in")
-        val b = tree?.transversal("pre")
-        val c = tree?.transversal("pos")
-        println("In: $a\nPre: $b\nPos: $c")
-        println("******************************************************************")
+private fun checkLevelOrder() {
+    data[0].toBST()?.let {
+        val a = it.recLevelOrder()
+        val b = it.itLevelOrder()
+        val c = it.itLevelOrder2()
+        println("$a\n$b\n$c")
     }
 }
 
 
 fun main() {
-    //createAndCheckDelete()
-    //checkDeleteValue()
-    checkTransversal()
+    checkLevelOrder()
 }
-
-
