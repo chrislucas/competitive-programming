@@ -262,15 +262,22 @@ class BSTree<T : Comparable<T>>(value: T) {
         val levelOrder = mutableMapOf<Int, MutableList<T>>()
         var level = 1
         queue.add(root)
+        levelOrder[level] = mutableListOf()
         while (queue.isNotEmpty()) {
             val temp = queue.poll()
             temp?.run {
-                levelOrder[level] = mutableListOf()
                 levelOrder[level]?.add(value)
                 le?.let { queue.add(it) }
                 ri?.let { queue.add(it) }
-                if (le != null || ri != null)
-                    level += 1
+
+            }
+            /*
+                Se o tamanho da fila for 1 ou multiplo de 2 podemos adicionar mais
+                um nivel na arvore
+             */
+            if (queue.size == 1 && queue.size % 2 == 0) {
+                level += 1
+                levelOrder[level] = mutableListOf()
             }
         }
         return levelOrder
@@ -307,7 +314,21 @@ private fun checkLevelOrder() {
         val b = it.mapRecLevelOrder()
         val c = it.itLevelOrder()
         val d = it.itLevelOrderII()
-        println("$a\n$b\n$c\n$d")
+        val e = it.mapItLevelIOrder()
+        println("$a\n$b\n$c\n$d\n$e")
+    }
+
+    println("*********************************************************")
+
+
+    data.forEach {
+        val tree = it.toBST()
+        val a = tree.recLevelOrder()
+        val b = tree.mapRecLevelOrder()
+        val c = tree.itLevelOrder()
+        val d = tree.itLevelOrderII()
+        val e = tree.mapItLevelIOrder()
+        println("$a\n$b\n$c\n$d\n$e")
     }
 }
 
