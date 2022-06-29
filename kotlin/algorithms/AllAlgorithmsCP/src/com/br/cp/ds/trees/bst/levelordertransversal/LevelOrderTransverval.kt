@@ -323,11 +323,11 @@ private fun checkLevelOrder() {
 
     data.forEach {
         val tree = it.toBST()
-        val a = tree.recLevelOrder()
-        val b = tree.mapRecLevelOrder()
-        val c = tree.itLevelOrder()
-        val d = tree.itLevelOrderII()
-        val e = tree.mapItLevelIOrder()
+        val a = tree?.recLevelOrder()
+        val b = tree?.mapRecLevelOrder()
+        val c = tree?.itLevelOrder()
+        val d = tree?.itLevelOrderII()
+        val e = tree?.mapItLevelIOrder()
         println("$a\n$b\n$c\n$d\n$e")
     }
 }
