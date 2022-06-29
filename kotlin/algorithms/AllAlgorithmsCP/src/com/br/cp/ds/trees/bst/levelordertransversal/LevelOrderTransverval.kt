@@ -204,6 +204,28 @@ class BSTree<T : Comparable<T>>(value: T) {
         return levelOrder
     }
 
+    fun mapRecLevelOrder(): Map<Int, List<T>> {
+
+        fun mapLevelOrder(node: Node<T>?, map: MutableMap<Int, MutableList<T>>, level: Int, currentLevel: Int) {
+            if (node != null) {
+                if (currentLevel == 1) {
+                    map[level]?.add(node.value)
+                } else if(currentLevel > 1) {
+                    mapLevelOrder(node.le, map, level, currentLevel - 1)
+                    mapLevelOrder(node.ri, map, level, currentLevel - 1)
+                }
+            }
+        }
+
+        val map = mutableMapOf<Int, MutableList<T>>()
+        val h = height()
+        for(i in 1 .. h) {
+            map[i] = mutableListOf()
+            mapLevelOrder(root, map, i, i)
+        }
+        return map
+    }
+
     fun itLevelOrder() : MutableList<T>  {
         val queue = LinkedList<Node<T>?>()
         val levelOrder = mutableListOf<T>()
@@ -219,7 +241,7 @@ class BSTree<T : Comparable<T>>(value: T) {
         return levelOrder
     }
 
-    fun itLevelOrder2() : MutableList<T>  {
+    fun itLevelOrderII() : MutableList<T>  {
         val queue = LinkedList<Node<T>?>()
         val levelOrder = mutableListOf<T>()
         var temp = root
@@ -228,6 +250,28 @@ class BSTree<T : Comparable<T>>(value: T) {
             temp.le?.let { queue.add(it) }
             temp.ri?.let { queue.add(it) }
             temp = queue.poll()
+        }
+        return levelOrder
+    }
+    /*
+        TODO pensar em como incrementar a variavel level nesse algoritmo iterativeo
+     */
+
+    fun mapItLevelIOrder() : Map<Int, List<T>> {
+        val queue = LinkedList<Node<T>?>()
+        val levelOrder = mutableMapOf<Int, MutableList<T>>()
+        var level = 1
+        queue.add(root)
+        while (queue.isNotEmpty()) {
+            val temp = queue.poll()
+            temp?.run {
+                levelOrder[level] = mutableListOf()
+                levelOrder[level]?.add(value)
+                le?.let { queue.add(it) }
+                ri?.let { queue.add(it) }
+                if (le != null || ri != null)
+                    level += 1
+            }
         }
         return levelOrder
     }
@@ -260,8 +304,9 @@ val data = arrayOf(
 private fun checkLevelOrder() {
     data[0].toBST()?.let {
         val a = it.recLevelOrder()
-        val b = it.itLevelOrder()
-        val c = it.itLevelOrder2()
+        val b = it.recLevelOrder()
+        val c = it.itLevelOrder()
+        val d = it.itLevelOrderII()
         println("$a\n$b\n$c")
     }
 }

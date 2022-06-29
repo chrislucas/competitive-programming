@@ -8,10 +8,13 @@
       <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/btree/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

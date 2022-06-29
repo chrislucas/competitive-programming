@@ -5,50 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/dp/p1310.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/dp/p1310.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/btree/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +78,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
         <option value="package-info" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -173,11 +139,11 @@
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bst\predecessor" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/bezout" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie" />
-      <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/diophantine/eq" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
@@ -189,61 +155,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.p11259">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="p11259" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.oj.uva.dp.p11259" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.oj.uva.dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllSumsOfSubsetKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.AllSumsOfSubsetKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P1166Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.problems.dp.P1166Kt" />
-      <module name="uri.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P1310Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.problems.dp.P1310Kt" />
-      <module name="uri.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P1690Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.recursion.dp.subsetsum.problems.uri.P1690Kt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.LevelOrderTransvervalKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -343,20 +255,68 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="BSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.iterative.BSTKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteBinarySearchTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.deletetree.v1.DeleteBinarySearchTreeKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kadane2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.oj.uva.dp.maximumsum.Kadane2DKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeNodeBSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.rec.TreeNodeBSTKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.AllSumsOfSubsetKt" />
-      <item itemvalue="Kotlin.P1690Kt" />
-      <item itemvalue="Kotlin.P1166Kt" />
-      <item itemvalue="Kotlin.P1310Kt" />
-      <item itemvalue="Application.p11259" />
+      <item itemvalue="Kotlin.Kadane2DKt" />
+      <item itemvalue="Kotlin.TreeNodeBSTKt" />
+      <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
+      <item itemvalue="Kotlin.BSTKt" />
+      <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.p11259" />
-        <item itemvalue="Kotlin.P1310Kt" />
-        <item itemvalue="Kotlin.P1166Kt" />
-        <item itemvalue="Kotlin.P1690Kt" />
-        <item itemvalue="Kotlin.AllSumsOfSubsetKt" />
+        <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
+        <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
+        <item itemvalue="Kotlin.TreeNodeBSTKt" />
+        <item itemvalue="Kotlin.BSTKt" />
+        <item itemvalue="Kotlin.Kadane2DKt" />
       </list>
     </recent_temporary>
   </component>
@@ -391,6 +351,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,18 +488,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>160</line>
+          <line>159</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>114</line>
+          <line>113</line>
           <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
-          <line>130</line>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
@@ -547,47 +503,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
-          <line>85</line>
+          <line>88</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
-          <line>101</line>
+          <line>104</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/iterative/BST.kt</url>
-          <line>91</line>
+          <line>94</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>76</line>
+          <line>75</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>130</line>
+          <line>129</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>104</line>
+          <line>103</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>119</line>
+          <line>118</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>94</line>
+          <line>93</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt</url>
-          <line>84</line>
+          <line>83</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -1080,6 +1036,56 @@
           <line>42</line>
           <option name="timeStamp" value="387" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
+          <line>58</line>
+          <option name="timeStamp" value="389" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
+          <line>60</line>
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/oj/uva/dp/maximumsum/Kadane2D.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="392" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt</url>
+          <line>331</line>
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>219</line>
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="439" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>73</line>
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
+          <line>261</line>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
+          <line>200</line>
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1154,6 +1160,22 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt</url>
+          <line>349</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
+          <line>259</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="437" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
@@ -1240,11 +1262,6 @@
         <PinnedItemInfo parentTag="src.com.br.cp.site.string.suffix.trie.b.Trie$TrieNode" memberName="isEmpty" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="pegs[i] + acc" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
