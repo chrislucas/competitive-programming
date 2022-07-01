@@ -73,7 +73,6 @@ class Tree<T : Comparable<T>> {
     }
 
     fun delete(data: T): Tree<T> {
-
         fun minValue(node: Node<T>): T {
             var min = node.value
             var copy: Node<T>? = node.left

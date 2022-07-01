@@ -242,7 +242,7 @@ class BSTree<T : Comparable<T>>(value: T) {
     }
 
     fun itLevelOrderII(): MutableList<T> {
-        val queue = LinkedList<Node<T>?>()
+        val queue: Queue<Node<T>?> = LinkedList<Node<T>?>()
         val levelOrder = mutableListOf<T>()
         var temp = root
         while (temp != null) {
@@ -258,7 +258,7 @@ class BSTree<T : Comparable<T>>(value: T) {
      */
 
     fun mapItLevelIOrder(): Map<Int, List<T>> {
-        val queue = LinkedList<Node<T>?>()
+        val queue: Queue<Node<T>?> = LinkedList<Node<T>?>()
         val levelOrder = mutableMapOf<Int, MutableList<T>>()
         var level = 1
         queue.add(root)

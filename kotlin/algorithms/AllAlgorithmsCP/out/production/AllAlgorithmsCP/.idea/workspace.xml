@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/lca/LCA_BST.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/TreeNodeBST.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/btree/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/KBTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/KBTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pre-commit-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +72,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="package-info" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="package-info" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -139,11 +133,11 @@
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bintree" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bst\predecessor" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/bezout" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/site/string/suffix/trie" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
@@ -155,7 +149,61 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LevelOrderTransvervalKt">
+  <component name="RunManager" selected="Kotlin.IsAdmissibleOverpaymentKt">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem1466" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteBinarySearchTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.deletetree.v1.DeleteBinarySearchTreeKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsAdmissibleOverpaymentKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.codesignal.IsAdmissibleOverpaymentKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P1466Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.P1466Kt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -255,74 +303,27 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="BSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.iterative.BSTKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteBinarySearchTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.deletetree.v1.DeleteBinarySearchTreeKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Kadane2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.oj.uva.dp.maximumsum.Kadane2DKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeNodeBSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.rec.TreeNodeBSTKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Kotlin.Kadane2DKt" />
-      <item itemvalue="Kotlin.TreeNodeBSTKt" />
+      <item itemvalue="Application.Problem1466" />
       <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
-      <item itemvalue="Kotlin.BSTKt" />
       <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
+      <item itemvalue="Kotlin.P1466Kt" />
+      <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
+        <item itemvalue="Application.Problem1466" />
+        <item itemvalue="Kotlin.P1466Kt" />
         <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
         <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
-        <item itemvalue="Kotlin.TreeNodeBSTKt" />
-        <item itemvalue="Kotlin.BSTKt" />
-        <item itemvalue="Kotlin.Kadane2DKt" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" />
       <created>1616896321211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -351,7 +352,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1078,13 +1078,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
-          <line>261</line>
-          <option name="timeStamp" value="441" />
+          <line>329</line>
+          <option name="timeStamp" value="459" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
-          <line>200</line>
-          <option name="timeStamp" value="442" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/problems/uri/p1466.kt</url>
+          <line>114</line>
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/problems/uri/p1466.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/problems/uri/p1466.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="462" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1247,6 +1257,11 @@
           <line>54</line>
           <option name="timeStamp" value="342" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/problems/uri/Problem1466.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/Uva10104.java</url>
           <line>45</line>
@@ -1259,6 +1274,7 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466$BSTree" memberName="root" />
         <PinnedItemInfo parentTag="src.com.br.cp.site.string.suffix.trie.b.Trie$TrieNode" memberName="isEmpty" />
       </pinned-members>
     </pin-to-top-manager>
