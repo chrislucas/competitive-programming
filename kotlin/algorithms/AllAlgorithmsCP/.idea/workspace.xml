@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FronInOrPreOrderToPostOrder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/BTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/KBTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bintree/KBTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/BST.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/predecessor/InOrderPredecessorI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/predecessor/InOrderPredecessorI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/CompBST.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/rec/CompetitiveTreeNodeSearch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/p1194.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/p1194.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../pre-commit-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pre-commit-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/AboutTransversal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/AboutTransversal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/FromPostAndInorder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FromPostAndInorder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/FromPreOrderToPostOrder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FromPreOrderToPostOrder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/FronInOrPreOrderToPostOrder.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +135,11 @@
       <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal" />
+      <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bintree" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bst\predecessor" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/imm" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/bezout" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.br.cp.site.ds.kotlin.uf" />
