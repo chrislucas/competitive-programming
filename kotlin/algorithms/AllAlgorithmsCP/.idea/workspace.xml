@@ -7,6 +7,9 @@
     <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
       <change afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FronInOrPreOrderToPostOrder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/AdjacencyListBFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/AdjacencyListBFS.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/WeightedAdjList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/WeightedAdjList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/AboutTransversal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/AboutTransversal.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/FromPostAndInorder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FromPostAndInorder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/FromPreOrderToPostOrder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/ds/lvl3/bintree/tutorials/fromtransversal/FromPreOrderToPostOrder.kt" afterDir="false" />
@@ -76,8 +79,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -151,61 +154,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.KBTreeKt">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem1466" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IsAdmissibleOverpaymentKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.codesignal.IsAdmissibleOverpaymentKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KBTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bintree.KBTreeKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="P1466Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.P1466Kt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.AdjacencyListBFSKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -305,20 +254,74 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Problem1466" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466" />
+      <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdjacencyListBFSKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.AdjacencyListBFSKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsAdmissibleOverpaymentKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.codesignal.IsAdmissibleOverpaymentKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KBTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bintree.KBTreeKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeightedAdjListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.WeightedAdjListKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Problem1466" />
-      <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
-      <item itemvalue="Kotlin.P1466Kt" />
       <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
       <item itemvalue="Kotlin.KBTreeKt" />
+      <item itemvalue="Kotlin.AdjacencyListBFSKt" />
+      <item itemvalue="Kotlin.WeightedAdjListKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AdjacencyListBFSKt" />
+        <item itemvalue="Kotlin.WeightedAdjListKt" />
         <item itemvalue="Kotlin.KBTreeKt" />
         <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
         <item itemvalue="Application.Problem1466" />
-        <item itemvalue="Kotlin.P1466Kt" />
-        <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
       </list>
     </recent_temporary>
   </component>
@@ -354,6 +357,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1133,6 +1137,16 @@
           <line>339</line>
           <option name="timeStamp" value="485" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/bfs/AdjacencyListBFS.kt</url>
+          <line>57</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/bfs/AdjacencyListBFS.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1318,8 +1332,7 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="price * 100.0 / (100.0 - percent)" />
-        <watch expression="price * 100.0 / (100.0 + percent)" />
+        <watch expression="this.size" />
       </configuration>
     </watches-manager>
   </component>

@@ -12,13 +12,16 @@ import java.util.*
 typealias Adj = ArrayList<ArrayList<Pair<Int, Int>>>
 
 
-private fun graph(vertices: Int): Adj =
-    with(Adj(vertices)) {
-        for (i in 0 until vertices) {
+private fun graph(vertices: Int): Adj {
+    // assim posso trabaljar com vertcies a partir do 0 ou 1
+    val size = vertices + 1
+    return with(Adj(size)) {
+        for (i in 0 until size) {
             this += arrayListOf<Pair<Int, Int>>()
         }
         this
     }
+}
 
 
 private operator fun Adj.plusAssign(pair: Pair<Int, Pair<Int, Int>>) {
