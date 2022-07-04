@@ -3,12 +3,16 @@ package src.com.br.cp.ds.trees.bst
 
 class Tree<T : Comparable<T>> {
 
-    data class Node<T : Comparable<T>>(var value: T, var left: Node<T>? = null, var right: Node<T>? = null)
+    data class Node<T : Comparable<T>>(
+        var value: T,
+        var left: Node<T>? = null,
+        var right: Node<T>? = null
+    ) {
+        val isLeaf: Boolean
+            get() = this.left == null && this.right == null
+    }
 
     private var root: Node<T>? = null
-
-    private val <T : Comparable<T>> Node<T>.isLeaf: Boolean
-        get() = this.left == null && this.right == null
 
     fun insert(data: T) {
         fun insert(node: Node<T>?, data: T): Node<T> {
@@ -69,7 +73,6 @@ class Tree<T : Comparable<T>> {
     }
 
     fun delete(data: T): Tree<T> {
-
         fun minValue(node: Node<T>): T {
             var min = node.value
             var copy: Node<T>? = node.left

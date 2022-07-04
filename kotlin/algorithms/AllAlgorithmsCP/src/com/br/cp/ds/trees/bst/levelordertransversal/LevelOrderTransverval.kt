@@ -196,6 +196,7 @@ class BSTree<T : Comparable<T>>(value: T) {
                 }
             }
         }
+
         val h = height()
         val levelOrder = mutableListOf<T>()
         for (i in 1..h) {
@@ -205,12 +206,11 @@ class BSTree<T : Comparable<T>>(value: T) {
     }
 
     fun mapRecLevelOrder(): Map<Int, List<T>> {
-
         fun mapLevelOrder(node: Node<T>?, map: MutableMap<Int, MutableList<T>>, level: Int, currentLevel: Int) {
             if (node != null) {
                 if (currentLevel == 1) {
                     map[level]?.add(node.value)
-                } else if(currentLevel > 1) {
+                } else if (currentLevel > 1) {
                     mapLevelOrder(node.le, map, level, currentLevel - 1)
                     mapLevelOrder(node.ri, map, level, currentLevel - 1)
                 }
@@ -219,14 +219,14 @@ class BSTree<T : Comparable<T>>(value: T) {
 
         val map = mutableMapOf<Int, MutableList<T>>()
         val h = height()
-        for(i in 1 .. h) {
+        for (i in 1..h) {
             map[i] = mutableListOf()
             mapLevelOrder(root, map, i, i)
         }
         return map
     }
 
-    fun itLevelOrder() : MutableList<T>  {
+    fun itLevelOrder(): MutableList<T> {
         val queue = LinkedList<Node<T>?>()
         val levelOrder = mutableListOf<T>()
         queue.add(root)
@@ -241,8 +241,8 @@ class BSTree<T : Comparable<T>>(value: T) {
         return levelOrder
     }
 
-    fun itLevelOrderII() : MutableList<T>  {
-        val queue = LinkedList<Node<T>?>()
+    fun itLevelOrderII(): MutableList<T> {
+        val queue: Queue<Node<T>?> = LinkedList<Node<T>?>()
         val levelOrder = mutableListOf<T>()
         var temp = root
         while (temp != null) {
@@ -257,27 +257,31 @@ class BSTree<T : Comparable<T>>(value: T) {
         TODO pensar em como incrementar a variavel level nesse algoritmo iterativeo
      */
 
-    fun mapItLevelIOrder() : Map<Int, List<T>> {
-        val queue = LinkedList<Node<T>?>()
+    fun mapItLevelIOrder(): Map<Int, List<T>> {
+        val queue: Queue<Node<T>?> = LinkedList<Node<T>?>()
         val levelOrder = mutableMapOf<Int, MutableList<T>>()
         var level = 1
         queue.add(root)
         levelOrder[level] = mutableListOf()
+        var list = mutableListOf<T>()
+        var acc = 1
         while (queue.isNotEmpty()) {
             val temp = queue.poll()
             temp?.run {
-                levelOrder[level]?.add(value)
+                list += value
                 le?.let { queue.add(it) }
                 ri?.let { queue.add(it) }
             }
-            /*
-                Se o tamanho da fila for 1 ou multiplo de 2 podemos adicionar mais
-                um nivel na arvore
-             */
-            if (queue.size == 1 || queue.size % 2 == 0) {
+            if (list.size == acc) {
+                levelOrder[level] = list
+                acc *= 2
+                list = mutableListOf()
                 level += 1
-                levelOrder[level] = mutableListOf()
             }
+        }
+        if (list.isNotEmpty()) {
+            level += 1
+            levelOrder[level] = list
         }
         return levelOrder
     }
@@ -296,6 +300,7 @@ private fun <T : Comparable<T>> Array<T>.toBST(): BSTree<T>? {
 }
 
 val data = arrayOf(
+    arrayOf(100, 90, 85, 91, 80, 86, 78, 84, 74, 76, 72, 70, 71, 65, 69),
     arrayOf(50, 30, 70, 20, 40, 60, 80),
     arrayOf(50, 30, 70, 20, 40, 60, 80, 10, 25),            // teste remover o 20
     arrayOf(50, 30, 70, 20, 40, 60, 80, 10, 25, 35, 41),    // teste remover o 40
@@ -308,7 +313,8 @@ val data = arrayOf(
 )
 
 private fun checkLevelOrder() {
-    data[0].toBST()?.let {
+    data[1].toBST()?.let {
+        println("PreOrder - ${it.transversal("pre")}")
         val a = it.recLevelOrder()
         val b = it.mapRecLevelOrder()
         val c = it.itLevelOrder()
@@ -321,6 +327,7 @@ private fun checkLevelOrder() {
 
     data.forEach {
         val tree = it.toBST()
+        println("PreOrder - ${tree?.transversal("pre")}")
         val a = tree?.recLevelOrder()
         val b = tree?.mapRecLevelOrder()
         val c = tree?.itLevelOrder()

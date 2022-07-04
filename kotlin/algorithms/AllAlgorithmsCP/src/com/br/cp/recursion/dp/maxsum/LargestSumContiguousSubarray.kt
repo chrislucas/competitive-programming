@@ -8,6 +8,7 @@ import java.lang.Integer.max
  */
 
 private val testCases = arrayOf(
+    arrayOf(-22, -4, 25, -3),
     arrayOf(-2, -3, 4, -1, -2, 1, 5, -3),
     arrayOf(-2, -3, -4, -1),
     arrayOf(-1, -3, -4, -2),
@@ -19,7 +20,9 @@ private val testCases = arrayOf(
     arrayOf(-10, -2, -4, -1, -3, 1),
 )
 
-
+/*
+    Solucao que atende ate arrays que contenham somente valores negativos
+ */
 private fun kadaneAlgorithm(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
     var global = values[0]
     var local = 0
@@ -32,7 +35,8 @@ private fun kadaneAlgorithm(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
             global = local
             p = s
             q = i
-        } else if (local < 0) {
+        }
+        if (local < 0) {
             local = 0
             s = i + 1
         }

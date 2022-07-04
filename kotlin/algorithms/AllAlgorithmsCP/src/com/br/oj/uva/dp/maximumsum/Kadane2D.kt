@@ -32,19 +32,75 @@ private data class Kadane2D(val max: Int, val left: Int, val top: Int, val right
 private fun s1(mat: Array<Array<Int>>): Kadane2D {
 
     fun kadane(array: Array<Int>): Pair<Int, Pair<Int, Int>> {
-        var global = array[0]
-        var local = 0
+        var g = array[0]
+        var l = 0
         var p = 0
         var q = 0
         var s = 0
         for (i in array.indices) {
-            local += array[i]
-            if (local > global) {
-                global = local
+            l += array[i]
+            if (l > g) {
+                g = l
                 p = s
                 q = i
-            } else if (local < 0) {
-                local = 0
+            }
+            if (l < 0) {
+                l = 0
+                s = i + 1
+            }
+        }
+        return Pair(g, p to q)
+    }
+
+    val lin = mat.size
+    val col = mat[0].size
+    var (left, right, top, bottom) = arrayOf(-1, -1, -1, -1)
+    var global = Int.MIN_VALUE
+
+    for (i in 0 until col) {
+        val subset = Array(lin) { 0 }
+        for (j in i until col) {
+            for (k in 0 until lin) {
+                subset[k] += mat[k][j]
+            }
+            /*
+                1: armazenar um somatorio das colunas 0 ate k num array (esq ... dir)
+                2: aplicar o algoritmo max subset sum, assim obtemos o maior valor na coluna
+             */
+            val (local, pair) = kadane(subset)
+            val (p, q) = pair
+            if (local > global) {
+                global = local
+                left = i
+                right = j
+                top = p
+                bottom = q
+            }
+        }
+    }
+    return Kadane2D(global, left, top, right, bottom)
+}
+
+/*
+    Solucao similar com uma segunda implementacao de kadane1d
+ */
+private fun s2(mat: Array<Array<Int>>): Kadane2D {
+    fun kadaneForNegativeValues(values: Array<Int>): Pair<Int, Pair<Int, Int>> {
+        var global = values[0]
+        var local = global
+        var p = 0
+        var q = 0
+        var s = 0
+        for (i in 1 until values.size) {
+            local = Integer.max(values[i], local + values[i])
+            global = if (local > global) {
+                p = s
+                q = i
+                local
+            } else {
+                global
+            }
+            if (local < 0) {
                 s = i + 1
             }
         }
@@ -62,7 +118,11 @@ private fun s1(mat: Array<Array<Int>>): Kadane2D {
             for (k in 0 until lin) {
                 subset[k] += mat[k][j]
             }
-            val (local, pair) = kadane(subset)
+            /*
+                1 - armazenar um somatorio das colunas 0 ate k num array  (esq -> dir)
+                2 - aplicar o algoritmo max subset sum, assim obtemos o maior valor na coluna
+             */
+            val (local, pair) = kadaneForNegativeValues(subset)
             val (p, q) = pair
             if (local > global) {
                 global = local
@@ -73,7 +133,6 @@ private fun s1(mat: Array<Array<Int>>): Kadane2D {
             }
         }
     }
-
     return Kadane2D(global, left, top, right, bottom)
 }
 
@@ -81,7 +140,8 @@ private fun s1(mat: Array<Array<Int>>): Kadane2D {
 private fun checkSolution() {
     testCases.forEach { case ->
         val a = s1(case)
-        println(a)
+        val b = s2(case)
+        println("$a | $b")
     }
 }
 
