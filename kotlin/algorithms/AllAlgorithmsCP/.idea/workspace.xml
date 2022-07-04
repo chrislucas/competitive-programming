@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6fba35-74b5-4b74-842a-7aed1e20df05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/AdjacencyListBFS.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/BFS.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +73,9 @@
       <list>
         <option value="module-info" />
         <option value="package-info" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -115,7 +117,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/regex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/graph/bfs" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -124,11 +126,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\graph\bfs" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/regex" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/recursion/dp/knapsack" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/modular/fermat" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/io" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\src\com\br\cp\ds\trees\bintree" />
@@ -147,7 +149,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LevelOrderTransvervalKt">
+  <component name="RunManager" selected="Kotlin.WeightedAdjListKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -247,8 +249,15 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="BSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.iterative.BSTKt" />
+    <configuration name="AdjacencyKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.AdjacencyKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdjacencyListBFSKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.AdjacencyListBFSKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,13 +270,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kadane2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.oj.uva.dp.maximumsum.Kadane2DKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LevelOrderTransvervalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.LevelOrderTransvervalKt" />
       <module name="AllAlgorithmsCP" />
@@ -275,8 +277,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeNodeBSTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.rec.TreeNodeBSTKt" />
+    <configuration name="WeightedAdjListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.WeightedAdjListKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,19 +298,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.Kadane2DKt" />
-      <item itemvalue="Kotlin.TreeNodeBSTKt" />
       <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
-      <item itemvalue="Kotlin.BSTKt" />
       <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
+      <item itemvalue="Kotlin.AdjacencyKt" />
+      <item itemvalue="Kotlin.AdjacencyListBFSKt" />
+      <item itemvalue="Kotlin.WeightedAdjListKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.WeightedAdjListKt" />
+        <item itemvalue="Kotlin.AdjacencyListBFSKt" />
+        <item itemvalue="Kotlin.AdjacencyKt" />
         <item itemvalue="Kotlin.LevelOrderTransvervalKt" />
         <item itemvalue="Kotlin.DeleteBinarySearchTreeKt" />
-        <item itemvalue="Kotlin.TreeNodeBSTKt" />
-        <item itemvalue="Kotlin.BSTKt" />
-        <item itemvalue="Kotlin.Kadane2DKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1075,13 +1077,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
-          <line>276</line>
-          <option name="timeStamp" value="454" />
+          <line>265</line>
+          <option name="timeStamp" value="456" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/levelordertransversal/LevelOrderTransverval.kt</url>
-          <line>275</line>
-          <option name="timeStamp" value="455" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/Adjacency.kt</url>
+          <line>16</line>
+          <option name="timeStamp" value="458" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
