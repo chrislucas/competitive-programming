@@ -1,12 +1,13 @@
-package src.com.br.cp.graph.dfs
+package src.com.br.cp.graph.dfs.map
 
-import java.util.*
-import kotlin.collections.HashMap
+import java.util.ArrayList
 
 /*
-    https://en.wikipedia.org/wiki/Graph_coloring
-    https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
-    https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
+    https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/?ref=lbp
+
+    Applications
+    https://www.geeksforgeeks.org/applications-of-depth-first-search/?ref=rp
+
  */
 
 class Edge(val p: Int, val q: Int, val w: Int = 0)
@@ -26,7 +27,7 @@ private fun create(vertices: Int): GraphMap {
     }
 }
 
-private fun GraphMap.dfs(start: Int): List<Int> {
+private fun GraphMap.dfs(start: Int): MutableList<Int> {
 
     fun dfs(start: Int, graphMap: GraphMap, visited: HashMap<Int, Boolean>, transversal: MutableList<Int>) {
         transversal += start
@@ -40,26 +41,9 @@ private fun GraphMap.dfs(start: Int): List<Int> {
         }
     }
 
-    // Para um conjunto disjunto
-    fun disconnected(start: Int): List<Int> {
-        val transversal = mutableListOf<Int>()
-        val visited = hashMapOf<Int, Boolean>()
-        val vertices = this.size - 1
-        for (i in 0 ..  vertices) {
-            if (!visited.contains(i)) {
-                dfs(i, this, visited, transversal)
-            }
-        }
-        return transversal
-    }
-
-    fun simpleTransversal(start: Int): List<Int> {
-        val transversal = mutableListOf<Int>()
-        dfs(start, this, hashMapOf(), transversal)
-        return transversal
-    }
-
-    return disconnected(start)
+    val transversal = mutableListOf<Int>()
+    dfs(start, this, hashMapOf(), transversal)
+    return transversal
 }
 
 
@@ -79,7 +63,6 @@ private fun checkDfs() {
         println(graph.dfs(0))
     }
 }
-
 
 fun main() {
     checkDfs()

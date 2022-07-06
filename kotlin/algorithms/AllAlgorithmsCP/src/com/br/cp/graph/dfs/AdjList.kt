@@ -28,10 +28,10 @@ operator fun Adj.plusAssign(pair: Pair<Int, Int>) {
 
 private fun Adj.dfs(start: Int): MutableList<Int> {
     fun dfs(start: Int, graph: Adj, transversal: MutableList<Int>, visited: Array<Boolean>) {
+        transversal += start
         visited[start] = true
         for (v in graph[start]) {
             if (!visited[v]) {
-                transversal += v
                 dfs(v, graph, transversal, visited)
             }
         }
@@ -50,21 +50,16 @@ private val testCases = arrayOf(
 )
 
 private fun checkDfs() {
-
     testCases.forEach { (vertices, edges) ->
         val adj = graph(vertices)
-
         edges.forEach { edge ->
             adj += edge
         }
-
         println(adj.dfs(0))
     }
-
-
 }
 
 
 fun main() {
-
+    checkDfs()
 }

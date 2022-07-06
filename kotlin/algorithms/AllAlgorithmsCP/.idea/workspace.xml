@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/AdjList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/AdjList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/MapListDFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/map/MapListDFS.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +151,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.AdjacencyListBFSKt">
+  <component name="RunManager" selected="Kotlin.MapListBFSKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -247,15 +251,9 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Problem1466" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466" />
+    <configuration name="AdjListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.dfs.AdjListKt" />
       <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -267,22 +265,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsAdmissibleOverpaymentKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.codesignal.IsAdmissibleOverpaymentKt" />
+    <configuration name="GraphColoringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.dfs.GraphColoringKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KBTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.trees.bintree.KBTreeKt" />
+    <configuration name="MapListBFSKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.MapListBFSKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeightedAdjListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.bfs.WeightedAdjListKt" />
+    <configuration name="MapListDFSKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.dfs.map.MapListDFSKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -302,19 +300,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Problem1466" />
-      <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
-      <item itemvalue="Kotlin.KBTreeKt" />
       <item itemvalue="Kotlin.AdjacencyListBFSKt" />
-      <item itemvalue="Kotlin.WeightedAdjListKt" />
+      <item itemvalue="Kotlin.AdjListKt" />
+      <item itemvalue="Kotlin.GraphColoringKt" />
+      <item itemvalue="Kotlin.MapListDFSKt" />
+      <item itemvalue="Kotlin.MapListBFSKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MapListBFSKt" />
+        <item itemvalue="Kotlin.MapListDFSKt" />
+        <item itemvalue="Kotlin.GraphColoringKt" />
+        <item itemvalue="Kotlin.AdjListKt" />
         <item itemvalue="Kotlin.AdjacencyListBFSKt" />
-        <item itemvalue="Kotlin.WeightedAdjListKt" />
-        <item itemvalue="Kotlin.KBTreeKt" />
-        <item itemvalue="Kotlin.IsAdmissibleOverpaymentKt" />
-        <item itemvalue="Application.Problem1466" />
       </list>
     </recent_temporary>
   </component>
@@ -1140,6 +1138,16 @@
           <line>63</line>
           <option name="timeStamp" value="488" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1230,6 +1238,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt</url>
+          <line>64</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="491" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
