@@ -4,32 +4,38 @@ import java.util.*
 
 // https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/
 
-typealias PQueue = PriorityQueue<Vertice>
+typealias PQueue = PriorityQueue<Vertex>
 
-typealias Graph = MutableList<MutableList<Vertice>>
+typealias Graph = ArrayList<ArrayList<Vertex>>
 
-data class Vertice(val q: Int, val weight: Int)
+data class Vertex(val q: Int, val weight: Int)
 
-val comparator = Comparator<Vertice> { p, q -> p.weight - q.weight }
-
+val comparator = Comparator<Vertex> { p, q -> p.weight - q.weight }
 
 private fun Graph.add(p: Int, q: Int, w: Int) {
-    this[p].add(Vertice(q, w))
-    this[q].add(Vertice(p, w))
+    this[p].add(Vertex(q, w))
+    this[q].add(Vertex(p, w))
 }
 
-private fun instance() {
-    val graph = MutableList<MutableList<Vertice>>(9) { mutableListOf() }
+private fun create(vertex: Int): Graph {
+    val size = vertex + 1
+    return with(ArrayList<ArrayList<Vertex>>(size)) {
+        for (i in 0 until size) {
+            this += arrayListOf<Vertex>()
+        }
+        this
+    }
+}
+
+private fun dijkstra() {
+    val graph = create(9)
     graph.add(0, 1, 4)
     graph.add(0, 8, 7)
     graph.add(1, 2, 8)
     graph.add(1, 7, 11)
-}
-
-private fun shortestpath() {
     val pQueue = PQueue(comparator)
 }
 
 fun main() {
-    instance()
+    dijkstra()
 }
