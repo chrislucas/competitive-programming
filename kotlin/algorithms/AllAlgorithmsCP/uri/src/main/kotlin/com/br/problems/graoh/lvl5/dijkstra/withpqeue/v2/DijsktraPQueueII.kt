@@ -1,4 +1,4 @@
-package com.br.problems.graoh.lvl5.dijkstra.withpqeue
+package com.br.problems.graoh.lvl5.dijkstra.withpqeue.v2
 
 import java.util.*
 import kotlin.system.measureTimeMillis
@@ -8,7 +8,7 @@ import kotlin.system.measureTimeMillis
  * https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/
  */
 
-private data class Edge(val u: Int, val v: Int = 0, val w: Int = 0) : Comparable<Edge> {
+private data class Edge(val v: Int = 0, val w: Int = 0) : Comparable<Edge> {
     override fun compareTo(other: Edge) = w - other.w
 }
 
@@ -26,25 +26,27 @@ private fun graph(v: Int): Adj {
     }
 }
 
-private operator fun Adj.plusAssign(edge: Edge) {
-    val (u, v, w) = edge
-    this[u]?.plusAssign(edge)
-    this[v]?.plusAssign(Edge(v, u, w))
+private fun Adj.add(p: Int, edge: Edge) {
+    val (v, w) = edge
+    this[p]?.plusAssign(edge)
+    this[v]?.plusAssign(Edge(p, w))
 }
+
 
 private fun Adj.dijkstra(source: Int): Array<Int> {
     val inf = Int.MAX_VALUE
     val distance = Array(this.size) { inf }
     val pq = PQ()
-    pq += Edge(source, source, 0)
+    pq += Edge(source, 0)
     distance[0] = 0
     while (pq.isNotEmpty()) {
         val edge = pq.poll()
-        this[edge.u]?.forEach { (u, v, w) ->
+        val u = edge.v
+        this[u]?.forEach { (v, w) ->
             val uv = distance[u] + w
             if (distance[v] > uv) {
                 distance[v] = uv
-                pq += Edge(v, u, distance[v])
+                pq += Edge(v, distance[v])
             }
         }
     }
@@ -57,22 +59,22 @@ private fun <T> Array<T>.string(separator: String = "|"): String =
 private fun checkDijkstra() {
     val graph = graph(9)
     arrayOf(
-        Edge(0, 1, 4),
-        Edge(0, 7, 8),
-        Edge(1, 2, 8),
-        Edge(1, 7, 11),
-        Edge(2, 3, 7),
-        Edge(2, 5, 4),
-        Edge(2, 8, 2),
-        Edge(3, 4, 9),
-        Edge(3, 5, 14),
-        Edge(4, 5, 10),
-        Edge(5, 6, 2),
-        Edge(6, 7, 1),
-        Edge(6, 8, 6),
-        Edge(7, 8, 7)
-    ).forEach { edge ->
-        graph += edge
+        0 to Edge(1, 4),
+        0 to Edge(7, 8),
+        1 to Edge(2, 8),
+        1 to Edge(7, 11),
+        2 to Edge(3, 7),
+        2 to Edge(5, 4),
+        2 to Edge(8, 2),
+        3 to Edge(4, 9),
+        3 to Edge(5, 14),
+        4 to Edge(5, 10),
+        5 to Edge(6, 2),
+        6 to Edge(7, 1),
+        6 to Edge(8, 6),
+        7 to Edge(8, 7)
+    ).forEach { (origin, edge) ->
+        graph.add(origin, edge)
     }
     measureTimeMillis {
         println(graph.dijkstra(0).string())

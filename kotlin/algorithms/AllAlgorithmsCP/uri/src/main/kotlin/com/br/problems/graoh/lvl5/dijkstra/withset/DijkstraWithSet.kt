@@ -15,9 +15,8 @@ private typealias Adj = HashMap<Int, ArrayList<Edge>>
 
 private fun graph(v: Int): Adj {
     // assim posso trabaljar com vertcies a partir do 0 ou 1
-    val size = v
     return with(hashMapOf<Int, ArrayList<Edge>>()) {
-        for (i in 0 until size) {
+        for (i in 0 until v) {
             this[i] = arrayListOf()
         }
         this
@@ -47,21 +46,27 @@ private fun Adj.dijkstra(source: Int): Array<Int> {
         // recuperar as areas que sao alcancaveis a pair do vertice p
         this[edge.p]?.forEach { (p, q, w) ->
             /*
-                 Se o caminho de P a Q atual for mais custoso que um novo caminho
-                 cujo peso for w, substitua esse gasto no vetor de distancia
+                 Se o caminho de p a q atual (distance[q]) for mais custoso que um novo caminho
+                 representado por distance[p] + w, substitua esse gasto no vetor de distance
              */
-            val pqDistance = distance[p] + w
-            if (distance[q] > pqDistance) {
+            val newDistance = distance[p] + w
+            if (distance[q] > newDistance) {
                 /*
                     Se a distancia != inf quer dizer que ja adicionamos essa aresta
                     no conjunto de caminhos.
-                 */
-                if (distance[q] != inf) {
-                    val e = Edge(p, q, distance[q])
-                    set.find { it == e }?.let { set.remove(it) }
-                }
+                    TODO entender o que esta ocorrendo nesse if
+
+                    if (distance[q] != inf) {
+                        val e = Edge(p, q, distance[q])
+                        set.find { it == e }?.let {
+                            set.remove(it)
+                        }
+                    }
+                */
+
                 // atualizando o novo gasto de p a q
-                distance[q] = pqDistance
+                distance[q] = newDistance
+                // adiciona a nova aresta ao SET
                 set += Edge(q, p, distance[q])
             }
         }
@@ -86,7 +91,6 @@ private fun checkDijkstra() {
     graph += Edge(6, 7, 1)
     graph += Edge(6, 8, 6)
     graph += Edge(7, 8, 7)
-
     println(graph.dijkstra(0).string())
 }
 
