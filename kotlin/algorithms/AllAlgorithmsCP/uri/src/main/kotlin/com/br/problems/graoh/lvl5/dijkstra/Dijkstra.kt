@@ -6,8 +6,6 @@ package com.br.problems.graoh.lvl5.dijkstra
 
 
 
-
-
 fun main() {
 
 }
