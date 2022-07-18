@@ -6,7 +6,24 @@ import kotlin.collections.HashMap
 /*
     https://en.wikipedia.org/wiki/Graph_coloring
     https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
-    https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
+
+    O problema se trata de adicionar cores a certos elementos do grafo estando sujeito a
+    certas restricoes
+
+    - Vertex Coloring e o problema de coloracao de um grafo mais comum.
+        - Dado M cores encontre uma forma de colorir os vertices de um grafo
+        tal que 2 vertices adjacentes nao sejam coloridos com a mesma cor
+
+    - Edge coloring
+        - Um outro problema de coloracao. nenhum vertice tem duas arestas com a mesma cor
+        que incidem dele.
+
+     - Face coloring/Geographical Map Coloring/Coloracao de um mapa geografico
+        - Problema que pode ser transformado no vertex coloring
+
+      - Chromatic Number:
+        - O menor numero de cores necessarias para colorir um grafo G eh chamado de chromatic number
+
  */
 
 class Edge(val p: Int, val q: Int, val w: Int = 0)
@@ -62,7 +79,6 @@ private fun GraphMap.dfs(start: Int): List<Int> {
     return disconnected(start)
 }
 
-
 private fun Pair<Int, Int>.toEdge() = Edge(first, second)
 
 private val testCases = arrayOf(
@@ -79,6 +95,30 @@ private fun checkDfs() {
         println(graph.dfs(0))
     }
 }
+
+/*
+    Aplicacoes
+    https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
+
+    - agendamento de tarefas
+        - Supondo que queremos agendar testes para alunos numa universidade. Temos um conjunto
+        de disciplinas e um conjunto de alunos matriculados nelas, conjunto de alunos que pode
+        se repetir em outras disciplinas.
+
+        1) Assim, como podemos fazer para marcar os exames de tal
+        forma que nao haja  2 exames de 2 disciplinas com os mesmos alunos ao mesmo tempo
+
+        2) Qual o valor minimo de tempo que sera necessario para agendar todos os exames ?
+
+        Esse problema pode se representado como um grafo onde cada vertice
+
+     ------------------------------------------------------------------------------------------------
+      2 - Distribuicao de frequencia de radio movel - Mobile radio frequency Assignment
+     ------------------------------------------------------------------------------------------------
+
+    Greedy algorithm
+    https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
+ */
 
 
 fun main() {

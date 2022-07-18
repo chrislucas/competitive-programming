@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/AdjList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/AdjList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/MapListDFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/map/MapListDFS.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1140,12 +1137,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
-          <line>35</line>
+          <line>52</line>
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
-          <line>47</line>
+          <line>64</line>
           <option name="timeStamp" value="490" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
