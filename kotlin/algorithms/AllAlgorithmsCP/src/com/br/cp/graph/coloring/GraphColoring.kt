@@ -1,4 +1,4 @@
-package src.com.br.cp.graph.dfs
+package src.com.br.cp.graph.coloring
 
 /*
     https://en.wikipedia.org/wiki/Graph_coloring
