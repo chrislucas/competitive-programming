@@ -15,32 +15,33 @@ class BSTree<T : Comparable<T>>(value: T) {
 
     private var root: Node<T>? = Node(value)
 
-    fun insert(value: T) {
-        if (root == null) {
-            root = Node(value)
-        } else {
-            var parent: Node<T>? = null
-            var temp = root
-            while (temp != null) {
-                parent = temp
-                temp = if (parent.value > value) {
-                    temp.le
-                } else {
-                    temp.ri
-                }
-            }
-            parent?.run {
-                if (this.value > value) {
-                    this.le = Node(value)
-                } else {
-                    this.ri = Node(value)
-                }
+    private fun leaf(node: Node<T>, value: T) : Node<T> {
+        var temp: Node<T>? = node
+        var parent: Node<T> = node
+        while (temp != null) {
+            parent = temp
+            temp = if (parent.value > value) {
+                temp.le
+            } else {
+                temp.ri
             }
         }
+        return parent
     }
 
-
-
+    fun insert(value: T) {
+        if (root != null)  {
+            val leaf = leaf(root!!, value)
+            if (leaf.value > value) {
+                leaf.le = Node(value)
+            } else {
+                leaf.ri = Node(value)
+            }
+        }
+        else  {
+            root = Node(value)
+        }
+    }
 }
 
 fun main() {
