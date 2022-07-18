@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06bcc9c6-10a7-41d7-9d79-db8b1fe6eb3f" name="Changes" comment="Merge branch 'master' of github.com:chrislucas/competitive-programming&#10;&#10;# Conflicts:&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/.idea/workspace.xml&#10;#&#9;kotlin/algorithms/AllAlgorithmsCP/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/PrintPathII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathII.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/Dijkstra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/Dijkstra.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/PrintPathI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +72,8 @@
         <option value="module-info" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -1145,12 +1135,12 @@
           <option name="timeStamp" value="488" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/coloring/GraphColoring.kt</url>
           <line>34</line>
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/dfs/GraphColoring.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/graph/coloring/GraphColoring.kt</url>
           <line>46</line>
           <option name="timeStamp" value="490" />
         </line-breakpoint>
