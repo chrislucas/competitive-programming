@@ -1,5 +1,9 @@
 package src.com.br.cp.graph.coloring
 
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
+
 /*
     https://en.wikipedia.org/wiki/Graph_coloring
     https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
@@ -139,6 +143,8 @@ private fun checkDfs() {
 
     Greedy algorithm
     https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
+
+    No pior caso a complexidade eh O(v^2 + E)
  */
 
 
@@ -154,57 +160,83 @@ private fun GraphMap.greedyColoring(): Array<Int> {
         esta designada para um vertice adjacente logo a cor i
         nao esta "disponivel"
      */
-    var available = Array(size) { true }
+    val availableColors = Array(size) { true }
 
-    /*
-        adicionar cores aos vertices restantes
-     */
+    // adicionar cores aos vertices restantes
     for (u in 1 until size) {
-
         /*
             passar pelos vertices adjacentes ao vertice u
+            para os vertices 'v' adjacentes a 'u' que ja tiverem suas cores definidas
+            marque tais cores como indisponiveis
          */
         this[u]?.forEach { (_, v, _) ->
-            // se a cor nao for estiver definida marque-as como unavailable
-            if (vertexColors[v] == -1) {
-                available[vertexColors[v]] = false
+            if (vertexColors[v] != -1) {
+                availableColors[vertexColors[v]] = false
             }
         }
 
         // encontrar a primeira cor disponivel
         var color = 0
         for (i in 0 until size) {
-            if(available[i]) {
+            if(availableColors[i]) {
                 color = i
                 break
             }
         }
         vertexColors[u] = color
-        available = Array(size) { true }
+        // marcar todas as cores como disponiveis para a proxima iteracao
+        Arrays.fill(availableColors, true)
     }
-
     return vertexColors
 }
 
 private fun checkGreedyColoring() {
     val cases = arrayOf(
-        5 to arrayOf(
-            0 to 1,
-            0 to 1
-        ),
+
+        /*
+              v 0 - cor 0
+              v 1 - cor 1
+              v 2 - cor 2
+              v 3 - cor 0
+              v 4 - cor 1
+         */
 
         5 to arrayOf(
             0 to 1,
-            0 to 1
+            0 to 2,
+            1 to 2,
+            1 to 3,
+            2 to 3,
+            3 to 4
+        ),
+
+
+        /*
+              v 0 - cor 0
+              v 1 - cor 1
+              v 2 - cor 2
+              v 3 - cor 0
+              v 4 - cor 3
+         */
+
+        5 to arrayOf(
+            0 to 1,
+            0 to 2,
+            1 to 2,
+            1 to 4,
+            2 to 4,
+            4 to 3
         ),
     )
 
-    cases.forEach { case ->
-
+    cases.forEach { (vertex, case) ->
+        val graph = create(vertex)
+        println(graph.greedyColoring())
     }
 }
 
 
 fun main() {
-    checkDfs()
+    //checkDfs()
+    checkGreedyColoring()
 }
