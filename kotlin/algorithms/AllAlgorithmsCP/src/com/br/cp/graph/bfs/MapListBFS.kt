@@ -1,22 +1,33 @@
 package src.com.br.cp.graph.bfs
 
 import java.util.*
+import kotlin.collections.HashMap
 
 /*
     https://www.geeksforgeeks.org/applications-of-depth-first-search/
     https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/?ref=lbp
  */
 
-class Edge(val p: Int, val q: Int, val w: Int = 0)
+data class Edge(val p: Int, val q: Int, val w: Int = 0)
 
-typealias GraphMap = MutableMap<Int, ArrayList<Edge>>
+typealias GraphMap = HashMap<Int, ArrayList<Edge>>
 
 operator fun GraphMap.plusAssign(edge: Edge) {
-    this[edge.p]?.plusAssign(edge)
+    val(p, q , w) = edge
+    this[p]?.plusAssign(edge)
+    // se a aresta nao for de ida e volta comente a linha abaixo
+    // this[q]?.plusAssign(Edge(q, p, w))
+}
+
+operator fun GraphMap.plusAssign(edge: Pair<Int, Int>) {
+    val(p, q) = edge
+    this[p]?.plusAssign(Edge(p, q))
+    // se a aresta nao for de ida e volta comente a linha abaixo
+    // this[q]?.plusAssign(Edge(q, p))
 }
 
 private fun create(vertices: Int): GraphMap {
-    return with(mutableMapOf<Int, ArrayList<Edge>>()) {
+    return with(hashMapOf<Int, ArrayList<Edge>>()) {
         for (i in 0 until vertices) {
             this[i] = arrayListOf()
         }
