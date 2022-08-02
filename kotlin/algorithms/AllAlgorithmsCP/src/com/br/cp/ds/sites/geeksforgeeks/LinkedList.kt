@@ -44,18 +44,30 @@ private fun checkCustomLinkedList() {
     val list = CusomtLinkedList<Int>()
     list.insert(1).insert(2).insert(3)
 
-   while (list.hasNext()) {
-       println(list.next())
-   }
+    while (list.hasNext()) {
+        println(list.next())
+    }
 }
 
-class SortedLinkedList<T : Comparable<T>> {
+class SortedLinkedList<T : Comparable<T>> : Iterator<T> {
     private var head: Node<T>? = null
+    private var current: Node<T>? = null
 
     class Node<T>(val data: T, var next: Node<T>? = null)
 
     fun insert(): SortedLinkedList<T> {
         return this
+    }
+
+    override fun hasNext(): Boolean = current != null
+
+    override fun next(): T {
+        if (!hasNext()) {
+            throw NoSuchElementException()
+        }
+        val data = current?.data
+        current = current?.next
+        return data ?: throw NoSuchElementException()
     }
 }
 

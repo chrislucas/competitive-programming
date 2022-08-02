@@ -6,52 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="35fd2953-de7d-44ae-98aa-cdbfd45ac8c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/bfs/MapListBFS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/GraphColoring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/GraphColoring.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/bipartite/BipartiteGraphI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/bipartite/BipartiteGraphI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/sudoku/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/coloring/sudoku/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/map/MapListDFS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dfs/map/MapListDFS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dijkstra/DijkstraPQ.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dijkstra/list/DijkstraPQ.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/graph/dijkstra/map/DijskstraPQII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/graph/dijkstra/map/DijskstraPQII.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/interviewbit/graph/coloring/GraphColoringBacktracking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/interviewbit/graph/coloring/GraphColoringBacktracking.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,9 +72,9 @@
       <list>
         <option value="module-info" />
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -160,7 +116,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/cp/graph/coloring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.23684211" />
     <property name="project.structure.side.proportion" value="0.1878287" />
@@ -169,11 +125,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/graph/coloring" />
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path" />
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/withpqeue/v2" />
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/withset" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/regex" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/br/cp/graph/dfs/applications" />
@@ -192,7 +148,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LinkedListKt">
+  <component name="RunManager" selected="Kotlin.TransformationIIKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -208,13 +164,6 @@
     </configuration>
     <configuration name="DistinctArrayOfGDCEqualsOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.algebra.coprimes.DistinctArrayOfGDCEqualsOneKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphColoringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.graph.coloring.GraphColoringKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,6 +185,13 @@
     </configuration>
     <configuration name="StackAsQueueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.stack.StackAsQueueKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransformationIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.collection.transformation.TransformationIIKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -341,19 +297,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.GraphColoringKt" />
       <item itemvalue="Kotlin.StackAsQueueKt" />
       <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
       <item itemvalue="Kotlin.LinkedListKt" />
       <item itemvalue="Kotlin.SampleIteratorKt" />
+      <item itemvalue="Kotlin.TransformationIIKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TransformationIIKt" />
         <item itemvalue="Kotlin.LinkedListKt" />
         <item itemvalue="Kotlin.SampleIteratorKt" />
         <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
         <item itemvalue="Kotlin.StackAsQueueKt" />
-        <item itemvalue="Kotlin.GraphColoringKt" />
       </list>
     </recent_temporary>
   </component>
