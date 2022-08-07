@@ -8,3 +8,8 @@ package src.com.br.cp.graph.coloring.bipartite
     -----------------------------------------------------------------
     https://www.geeksforgeeks.org/bipartite-graph/
  */
+
+
+fun main() {
+
+}
