@@ -1,5 +1,9 @@
 package src.com.br.cp.graph.coloring
 
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
+
 /*
     https://en.wikipedia.org/wiki/Graph_coloring
     https://www.geeksforgeeks.org/graph-coloring-applications/?ref=rp
@@ -29,8 +33,16 @@ typealias GraphMap = HashMap<Int, ArrayList<Edge>>
 
 operator fun GraphMap.plusAssign(edge: Edge) {
     val (p, q, w) = edge
-    this[p]?.plus(edge)
-    this[q]?.plus(Edge(q, p, w))
+    this[p]?.plusAssign(edge)
+    // Se o grafo  for bidirecional nao remova o comentario abaixo
+    // this[q]?.plusAssign(Edge(q, p, w))
+}
+
+operator fun GraphMap.plusAssign(edge: Pair<Int, Int>) {
+    val (p, q) = edge
+    this[p]?.plusAssign(Edge(p, q))
+    // Se o grafo  for bidirecional nao remova o comentario abaixo
+    this[q]?.plusAssign(Edge(q, p))
 }
 
 private fun create(vertices: Int): GraphMap {
@@ -44,26 +56,35 @@ private fun create(vertices: Int): GraphMap {
 
 private fun GraphMap.dfs(start: Int): List<Int> {
 
-    fun dfs(start: Int, graphMap: GraphMap, visited: HashMap<Int, Boolean>, transversal: MutableList<Int>) {
+    fun depthFirstSearch(
+        start: Int,
+        graphMap: GraphMap,
+        visited: HashMap<Int, Boolean>,
+        transversal: MutableList<Int>
+    ) {
         transversal += start
         visited[start] = true
         graphMap[start]?.forEach { vertice ->
             val q = vertice.v
             if (!visited.contains(q)) {
                 visited[q] = true
-                dfs(q, graphMap, visited, transversal)
+                depthFirstSearch(q, graphMap, visited, transversal)
             }
         }
     }
 
+    /*
+        TODO revisar esse algoritmo que procura conjuntos disjuntos com dfs
+        https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+     */
     // Para um conjunto disjunto
     fun disconnected(start: Int): List<Int> {
         val transversal = mutableListOf<Int>()
         val visited = hashMapOf<Int, Boolean>()
         val vertices = this.size - 1
-        for (i in 0..vertices) {
+        for (i in start..vertices) {
             if (!visited.contains(i)) {
-                dfs(i, this, visited, transversal)
+                depthFirstSearch(i, this, visited, transversal)
             }
         }
         return transversal
@@ -71,7 +92,7 @@ private fun GraphMap.dfs(start: Int): List<Int> {
 
     fun simpleTransversal(start: Int): List<Int> {
         val transversal = mutableListOf<Int>()
-        dfs(start, this, hashMapOf(), transversal)
+        depthFirstSearch(start, this, hashMapOf(), transversal)
         return transversal
     }
 
@@ -139,14 +160,17 @@ private fun checkDfs() {
 
     Greedy algorithm
     https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
+
+    No pior caso a complexidade eh O(v^2 + E)
  */
 
 
 private fun GraphMap.greedyColoring(): Array<Int> {
     // iniciando os vertices sem cor
     val vertexColors = Array(size) { -1 }
+    val sourceVertex = 0
     // vertice 0 com a cor 0
-    vertexColors[0] = 0
+    vertexColors[sourceVertex] = 0
     /*
         val available = Array(size) { false }
         estrutura que armazena as cores disponiveis. Se
@@ -154,57 +178,81 @@ private fun GraphMap.greedyColoring(): Array<Int> {
         esta designada para um vertice adjacente logo a cor i
         nao esta "disponivel"
      */
-    var available = Array(size) { true }
+    val availableColors = Array(size) { true }
+    // caso o grafo seja  direcionado, a linha abaixo pode ser util para
+    // marcar que o vertice de origem ja foi colorido
+    //availableColors[sourceVertex] = false
 
-    /*
-        adicionar cores aos vertices restantes
-     */
+    // adicionar cores aos vertices restantes
     for (u in 1 until size) {
-
         /*
-            passar pelos vertices adjacentes ao vertice u
+            todos os vertices v adjacentes a u que tiverem cores definidas devem
+            ser usados para marcar quais cores nao estao mais disponiveis
          */
         this[u]?.forEach { (_, v, _) ->
-            // se a cor nao for estiver definida marque-as como unavailable
-            if (vertexColors[v] == -1) {
-                available[vertexColors[v]] = false
+            if (vertexColors[v] != -1) {
+                availableColors[vertexColors[v]] = false
             }
         }
 
         // encontrar a primeira cor disponivel
-        var color = 0
         for (i in 0 until size) {
-            if(available[i]) {
-                color = i
+            if (availableColors[i]) {
+                vertexColors[u] = i
                 break
             }
         }
-        vertexColors[u] = color
-        available = Array(size) { true }
+        // marcar todas as cores como disponiveis para a proxima iteracao
+        Arrays.fill(availableColors, true)
     }
-
     return vertexColors
 }
 
 private fun checkGreedyColoring() {
     val cases = arrayOf(
+        /*
+              v 0 - cor 0
+              v 1 - cor 1
+              v 2 - cor 2
+              v 3 - cor 0
+              v 4 - cor 1
+         */
         5 to arrayOf(
             0 to 1,
-            0 to 1
+            0 to 2,
+            1 to 2,
+            1 to 3,
+            2 to 3,
+            3 to 4
         ),
-
+        /*
+              v 0 - cor 0
+              v 1 - cor 1
+              v 2 - cor 2
+              v 3 - cor 0
+              v 4 - cor 3
+         */
         5 to arrayOf(
             0 to 1,
-            0 to 1
+            0 to 2,
+            1 to 2,
+            1 to 4,
+            2 to 4,
+            4 to 3
         ),
     )
 
-    cases.forEach { case ->
-
+    cases.forEach { (vertex, case) ->
+        val graph = create(vertex)
+        case.forEach { pair ->
+            graph += pair
+        }
+        println(graph.greedyColoring().joinToString(", ", prefix = "[", postfix = "]"))
     }
 }
 
 
 fun main() {
-    checkDfs()
+    //checkDfs()
+    checkGreedyColoring()
 }

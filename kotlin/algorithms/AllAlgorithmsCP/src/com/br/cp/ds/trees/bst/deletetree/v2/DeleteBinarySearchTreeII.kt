@@ -1,4 +1,4 @@
-package src.com.br.cp.ds.trees.bst.deletetree
+package src.com.br.cp.ds.trees.bst.deletetree.v2
 
 /*
     https://www.techiedelight.com/deletion-from-bst/
@@ -13,7 +13,7 @@ class Tree<T : Comparable<T>>(value: T) {
     private val <T : Comparable<T>> Node<T>.isLeaf: Boolean
         get() = this.le == null && this.ri == null
 
-    fun deleteValue(value: T) : Tree<T>  {
+    fun deleteValue(value: T) : Tree<T> {
         return this
     }
 }
