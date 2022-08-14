@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="35fd2953-de7d-44ae-98aa-cdbfd45ac8c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/build/classes/java/main/META-INF/KotlinDSLBookStudies.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/KotlinDSLBookStudies/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/math/geom/line/LinearInterpolationMehtond.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/math/geom/line/LinearInterpolationMehtond.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathII.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,55 +158,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TransformationIIKt">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DistinctArrayOfGDCEqualsOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.algebra.coprimes.DistinctArrayOfGDCEqualsOneKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.sites.geeksforgeeks.LinkedListKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleIteratorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.sites.geeksforgeeks.SampleIteratorKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackAsQueueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.stack.StackAsQueueKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransformationIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.collection.transformation.TransformationIIKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.LinearInterpolationMehtondKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -295,20 +258,68 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="DistinctArrayOfGDCEqualsOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.algebra.coprimes.DistinctArrayOfGDCEqualsOneKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearInterpolationMehtondKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.geom.line.LinearInterpolationMehtondKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.sites.geeksforgeeks.LinkedListKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleIteratorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.sites.geeksforgeeks.SampleIteratorKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransformationIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.collection.transformation.TransformationIIKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AllAlgorithmsCP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.StackAsQueueKt" />
       <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
       <item itemvalue="Kotlin.LinkedListKt" />
       <item itemvalue="Kotlin.SampleIteratorKt" />
       <item itemvalue="Kotlin.TransformationIIKt" />
+      <item itemvalue="Kotlin.LinearInterpolationMehtondKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LinearInterpolationMehtondKt" />
         <item itemvalue="Kotlin.TransformationIIKt" />
         <item itemvalue="Kotlin.LinkedListKt" />
         <item itemvalue="Kotlin.SampleIteratorKt" />
         <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
-        <item itemvalue="Kotlin.StackAsQueueKt" />
       </list>
     </recent_temporary>
   </component>
@@ -344,6 +355,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1358,7 +1370,7 @@
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/trees/bst/deletetree/v1/DeleteBinarySearchTree.kt</url>
           <line>259</line>
-          <properties method="main">
+          <properties>
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="437" />
