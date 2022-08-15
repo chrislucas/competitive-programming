@@ -6,7 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="35fd2953-de7d-44ae-98aa-cdbfd45ac8c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path/PrintPathII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcj/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcj/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +178,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TransformationIIKt">
+  <component name="RunManager" selected="Kotlin.ShortestPalindromeKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -161,8 +192,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistinctArrayOfGDCEqualsOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.math.algebra.coprimes.DistinctArrayOfGDCEqualsOneKt" />
+    <configuration name="HighCapacotyVehicleCycleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.geeksforgeeks.algorithmsinterview.uber.graph.HighCapacotyVehicleCycleKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,8 +213,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackAsQueueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.stack.StackAsQueueKt" />
+    <configuration name="ShortestPalindromeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.geeksforgeeks.algorithmsinterview.uber.string.ShortestPalindromeKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,19 +327,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.StackAsQueueKt" />
-      <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
       <item itemvalue="Kotlin.LinkedListKt" />
       <item itemvalue="Kotlin.SampleIteratorKt" />
       <item itemvalue="Kotlin.TransformationIIKt" />
+      <item itemvalue="Kotlin.ShortestPalindromeKt" />
+      <item itemvalue="Kotlin.HighCapacotyVehicleCycleKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.TransformationIIKt" />
+        <item itemvalue="Kotlin.ShortestPalindromeKt" />
+        <item itemvalue="Kotlin.HighCapacotyVehicleCycleKt" />
         <item itemvalue="Kotlin.LinkedListKt" />
+        <item itemvalue="Kotlin.TransformationIIKt" />
         <item itemvalue="Kotlin.SampleIteratorKt" />
-        <item itemvalue="Kotlin.DistinctArrayOfGDCEqualsOneKt" />
-        <item itemvalue="Kotlin.StackAsQueueKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1272,6 +1303,31 @@
           <line>10</line>
           <option name="timeStamp" value="567" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt</url>
+          <line>85</line>
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt</url>
+          <line>116</line>
+          <option name="timeStamp" value="570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt</url>
+          <line>114</line>
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt</url>
+          <line>140</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/geeksforgeeks/algorithmsinterview/uber/graph/HighCapacotyVehicleCycle.kt</url>
+          <line>56</line>
+          <option name="timeStamp" value="575" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1362,6 +1418,15 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/sites/geeksforgeeks/LinkedList.kt</url>
+          <line>69</line>
+          <properties class="src.com.br.cp.ds.sites.geeksforgeeks.SortedLinkedList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="573" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
@@ -1454,6 +1519,7 @@
         <PinnedItemInfo parentTag="src.com.br.cp.ds.trees.bst.levelordertransversal.problems.uri.Problem1466$BSTree" memberName="root" />
         <PinnedItemInfo parentTag="src.com.br.cp.ds.trees.bintree.KBTree$Node" memberName="le" />
         <PinnedItemInfo parentTag="src.com.br.cp.site.string.suffix.trie.b.Trie$TrieNode" memberName="isEmpty" />
+        <PinnedItemInfo parentTag="src.com.br.cp.ds.sites.geeksforgeeks.SortedLinkedList$Node" memberName="next" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>
