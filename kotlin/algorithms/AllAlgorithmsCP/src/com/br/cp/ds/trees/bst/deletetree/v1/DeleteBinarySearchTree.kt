@@ -4,6 +4,7 @@ package src.com.br.cp.ds.trees.bst.deletetree.v1
 
 // uamos a navegacao posorder para deletar uma arvore
 // https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/
+//  Modelo para usar em competicoes
 
 class BSTree<T : Comparable<T>>(value: T) {
 

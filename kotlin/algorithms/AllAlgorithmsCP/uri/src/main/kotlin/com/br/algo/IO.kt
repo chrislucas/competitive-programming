@@ -38,6 +38,24 @@ private inline fun runWhiteTruth(fn: () -> Boolean) {
     }
 }
 
+private fun runUntilEndOfFile(fn: (String) -> Unit) {
+
+    fun runWhiteTruth(fn: () -> Boolean) {
+        while (true) {
+            if (!fn()) {
+                break
+            }
+        }
+    }
+
+    runWhiteTruth {
+        readLine()?.let {
+            fn(it)
+            true
+
+        } ?: false
+    }
+}
 
 typealias PLL = Pair<Long, Long>
 

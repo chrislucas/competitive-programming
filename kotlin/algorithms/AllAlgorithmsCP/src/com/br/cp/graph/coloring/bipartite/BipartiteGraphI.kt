@@ -108,5 +108,5 @@ fun Graph.isBigraph() {
 
 
 fun main() {
-
+    println(0xff)
 }
