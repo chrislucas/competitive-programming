@@ -5,7 +5,7 @@ package com.br.competitions.circuit.aug.studies
     https://tutorialspoint.dev/data-structure/arrays/range-lcm-queries
  */
 
-
+g
 private fun lcm(a: Long, b: Long): Long {
     fun gcd(a: Long, b: Long): Long =
         if(b % a == 0L) {
