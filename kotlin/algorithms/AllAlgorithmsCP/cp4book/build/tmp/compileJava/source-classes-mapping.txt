@@ -1,7 +1,10 @@
-com/br/algo/BotClean.java
- com.br.algo.BotClean
-com/br/algo/Main.java
- com.br.algo.Main
+com/br/algo/cp/book1/chp1/java/math/Logarithm.java
+ com.br.algo.cp.book1.chp1.java.math.Logarithm
+com/br/algo/cp/book1/package-info.java
+ com.br.algo.cp.book1.package-info
+com/br/algo/cp/book1/chp2/java/bitmanipulation/UnsetBitRange.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.UnsetBitRange
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.UnsetBitRange$Test
 com/br/algo/dp/bitwise/package-info.java
  com.br.algo.dp.bitwise.package-info
 com/br/algo/IO.java
@@ -12,17 +15,42 @@ com/br/algo/cp/book1/kattis/package-info.java
  com.br.algo.cp.book1.kattis.package-info
 com/br/algo/cp/book1/uva/package-info.java
  com.br.algo.cp.book1.uva.package-info
+com/br/algo/cp/book1/chp2/java/bitmanipulation/BitFenwick.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick$FenwickTree
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick$PrefixSum
+com/br/algo/cp/book1/chp2/java/bitmanipulation/StuffindAndDestuffing.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.StuffindAndDestuffing
+com/br/algo/cp/book1/chp2/CheckFindRootBitwise.java
+ com.br.algo.cp.book1.chp2.CheckFindRootBitwise
+com/br/algo/cp/book1/chp2/java/heap/ArrayHeap.java
+ com.br.algo.cp.book1.chp2.java.heap.ArrayHeap
+com/br/algo/BotClean.java
+ com.br.algo.BotClean
+com/br/algo/Main.java
+ com.br.algo.Main
+com/br/algo/cp/book1/chp2/java/bitmanipulation/IntBitManipulation.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.IntBitManipulation
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.IntBitManipulation$BitManipulationTest
+com/br/algo/cp/book1/chp2/java/bitmanipulation/BitFenwickII.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwickII
 com/br/algo/cp/book1/uva/dp/Uva10911.java
  com.br.algo.cp.book1.uva.dp.Uva10911
-com/br/algo/tutorials/package-info.java
- com.br.algo.tutorials.package-info
-com/br/algo/cp/book1/package-info.java
- com.br.algo.cp.book1.package-info
-com/br/algo/cp/book1/chp2/java/bitmanipulation/BitManipulation.java
- com.br.algo.cp.book1.chp2.java.bitmanipulation.BitManipulation
- com.br.algo.cp.book1.chp2.java.bitmanipulation.BitManipulation$BitManipulationTest
+com/br/algo/cp/book1/chp2/java/bitmanipulation/CountUnsetBits.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.CountUnsetBits
 com/br/algo/cp/book1/chp2/java/binaryindextree/BinaryIndexTreeFenwickTree.java
  com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree
  com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree$Tree
-com/br/algo/cp/book1/chp2/CheckFindRootBitwise.java
- com.br.algo.cp.book1.chp2.CheckFindRootBitwise
+com/br/algo/tutorials/package-info.java
+ com.br.algo.tutorials.package-info
+com/br/algo/cp/book1/chp2/java/bitmanipulation/NegativeBinaryRepresentation.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.NegativeBinaryRepresentation
+com/br/algo/cp/book1/chp2/java/bitmanipulation/InvertBit.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.InvertBit
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.InvertBit$Test
+com/br/algo/cp/book1/chp2/java/bitmanipulation/MSB.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.MSB
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.MSB$Test
+com/br/algo/cp/book1/chp2/java/bitmanipulation/LSB.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.LSB
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.LSB$Test
