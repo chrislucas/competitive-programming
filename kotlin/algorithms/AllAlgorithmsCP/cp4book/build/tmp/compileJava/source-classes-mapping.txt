@@ -14,3 +14,15 @@ com/br/algo/cp/book1/uva/package-info.java
  com.br.algo.cp.book1.uva.package-info
 com/br/algo/cp/book1/uva/dp/Uva10911.java
  com.br.algo.cp.book1.uva.dp.Uva10911
+com/br/algo/tutorials/package-info.java
+ com.br.algo.tutorials.package-info
+com/br/algo/cp/book1/package-info.java
+ com.br.algo.cp.book1.package-info
+com/br/algo/cp/book1/chp2/java/bitmanipulation/BitManipulation.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitManipulation
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitManipulation$BitManipulationTest
+com/br/algo/cp/book1/chp2/java/binaryindextree/BinaryIndexTreeFenwickTree.java
+ com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree
+ com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree$Tree
+com/br/algo/cp/book1/chp2/CheckFindRootBitwise.java
+ com.br.algo.cp.book1.chp2.CheckFindRootBitwise
