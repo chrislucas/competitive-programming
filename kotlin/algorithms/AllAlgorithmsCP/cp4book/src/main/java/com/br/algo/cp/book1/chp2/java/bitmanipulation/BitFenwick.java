@@ -15,7 +15,7 @@ public class BitFenwick {
 
   static class PrefixSum {
 
-    private int[] prefixSum;
+    private final int[] prefixSum;
 
     PrefixSum(int[] init) {
       prefixSum = new int[init.length + 1];
