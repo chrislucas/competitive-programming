@@ -7,6 +7,8 @@ package com.br.algo.cp.book1.chp2.kotlin.fenwick
     arrau de inteiros de tamanho N
 
     Fenwick Tree é uma estrutura de dados que
+        - dado uma funcao f(l, r), iso eh f[al, al+1, ... ar], ela calcula a funcao f em O(logn)
+        - Atualiza qualquer elemento do Array A leva O(logn)
  */
 
 
@@ -18,23 +20,25 @@ class FenwickTree(private val values: Array<Int>) {
     }
 
     fun update(index: Int, value: Int) {
+        fun add(value: Int): Int {
+            var acc = 0
+            var cValue = value
+            while (cValue > 0) {
+                acc += tree[cValue]
+                cValue = rsb(cValue) - 1
+            }
+            return acc
+        }
 
+        val delta = value - tree[index]
+        add(delta)
+        tree[index] = value
     }
 
     fun rangeSum(start: Int, end: Int): Int {
         return 0
     }
 
-    private fun sum(value: Int): Int {
-        var acc = 0
-        var cValue = value
-        while (cValue > 0) {
-            acc += tree[cValue]
-            cValue = rsb(cValue) - 1
-        }
-
-        return acc
-    }
 
     private fun rsb(value: Int) = value and (-value)
 }
