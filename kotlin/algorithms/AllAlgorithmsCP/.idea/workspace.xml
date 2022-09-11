@@ -6,7 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="35fd2953-de7d-44ae-98aa-cdbfd45ac8c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/FenwickTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/FenwickTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/elorating/EloRatingAlgorithm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/elorating/EloRatingAlgorithm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/tutorials/estatistica/amostragem/SampleSize.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/tutorials/estatistica/amostragem/SampleSize.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/tutorials/estatistica/amostragem/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/tutorials/estatistica/amostragem/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,8 +158,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -218,7 +241,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.cp4book [clean]">
+  <component name="RunManager" selected="Kotlin.MargemDeErroKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -228,19 +251,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.tutorials.StreamIO" />
-      <module name="cp4book.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.br.algo.tutorials.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,27 +267,6 @@
         <option name="taskNames">
           <list>
             <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="cp4book [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cp4book" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -308,8 +297,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FilterIsInstanceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.filter.FilterIsInstanceKt" />
+    <configuration name="EloRatingAlgorithmKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algorithms.elorating.EloRatingAlgorithmKt" />
+      <module name="bookstatcomp.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastExponentiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algorithms.FastExponentiationKt" />
+      <module name="bookstatcomp.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MargemDeErroKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.tutorials.estatistica.amostragem.MargemDeErroKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -415,19 +418,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.StreamIO" />
-      <item itemvalue="Gradle.cp4book [check]" />
       <item itemvalue="Gradle.cp4book [build]" />
       <item itemvalue="Gradle.cp4book [clean]" />
-      <item itemvalue="Kotlin.FilterIsInstanceKt" />
+      <item itemvalue="Kotlin.EloRatingAlgorithmKt" />
+      <item itemvalue="Kotlin.FastExponentiationKt" />
+      <item itemvalue="Kotlin.MargemDeErroKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MargemDeErroKt" />
+        <item itemvalue="Kotlin.FastExponentiationKt" />
+        <item itemvalue="Kotlin.EloRatingAlgorithmKt" />
         <item itemvalue="Gradle.cp4book [clean]" />
         <item itemvalue="Gradle.cp4book [build]" />
-        <item itemvalue="Gradle.cp4book [check]" />
-        <item itemvalue="Kotlin.FilterIsInstanceKt" />
-        <item itemvalue="Application.StreamIO" />
       </list>
     </recent_temporary>
   </component>
@@ -1395,6 +1398,21 @@
           <line>134</line>
           <option name="timeStamp" value="571" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/FastExponentiation.kt</url>
+          <line>64</line>
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/FastExponentiation.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="586" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/bookstatcomp/src/main/kotlin/com/br/algorithms/FastExponentiation.kt</url>
+          <line>57</line>
+          <option name="timeStamp" value="588" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1622,6 +1640,7 @@
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="this[u]" />
+        <watch expression="BigDec.ONE.divide(base)" />
       </configuration>
       <configuration name="GradleRunConfiguration">
         <watch expression="((~value) &amp; 1)" />

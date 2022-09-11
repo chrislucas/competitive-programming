@@ -1,6 +1,9 @@
 package com.br.algo.cp.book1.chp2.kotlin.fenwick
 
 /*
+    Uma epxlicacao visual
+    https://medium.com/carpanese/a-visual-introduction-to-fenwick-tree-89b82cac5b3c
+
     https://cp-algorithms.com/data_structures/fenwick.html
 
     Seja F um grupo de operacoes (funcoes binaias sobre um conjunto de elementos) e A um
