@@ -29,11 +29,11 @@ com/br/algo/cp/book1/chp2/java/bitmanipulation/TwoComplement.java
 com/br/algo/cp/book1/chp2/java/bitmanipulation/MSB.java
  com.br.algo.cp.book1.chp2.java.bitmanipulation.MSB
  com.br.algo.cp.book1.chp2.java.bitmanipulation.MSB$Test
-com/br/algo/cp/book1/chp2/java/bitmanipulation/RSB.java
- com.br.algo.cp.book1.chp2.java.bitmanipulation.RSB
 com/br/algo/cp/book1/chp2/java/binaryindextree/BinaryIndexTreeFenwickTree.java
  com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree
  com.br.algo.cp.book1.chp2.java.binaryindextree.BinaryIndexTreeFenwickTree$Tree
+com/br/algo/cp/book1/chp2/java/bitmanipulation/RSB.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.RSB
 com/br/algo/tutorials/package-info.java
  com.br.algo.tutorials.package-info
 com/br/algo/cp/book1/uva/dp/Uva10911.java
