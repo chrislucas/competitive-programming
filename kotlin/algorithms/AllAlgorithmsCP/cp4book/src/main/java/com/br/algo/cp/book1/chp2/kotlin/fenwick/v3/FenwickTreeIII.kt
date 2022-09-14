@@ -37,6 +37,11 @@ class FenwickTreeIII(val values: Array<Int>) {
         get() = tree.size
 
     init {
+        /*
+            construindo a arvore: NAO CONFUNDA COM UM ARRAY DE PREFIXO
+            lembrar que a arvore eh montada usando o bit menos significativo
+            de cada indice do array
+         */
         for (i in 1 until size) {
             add(i, values[i - 1])
         }
@@ -46,15 +51,25 @@ class FenwickTreeIII(val values: Array<Int>) {
 
     fun showValues() = println("Values = ${values.toList()}")
 
-    // least significant bit
-    private fun lsb(value: Int) = value and -value
+    /*
+        least significant bit
+        ponto importante
+        -lsb(i) eu encontro o no ancestral de um nó (folha ou nao)
+        +lsb(i) eu encontro o no descendente de um nó
+     */
+
+    //private fun lsb(value: Int) = value and -value
+
+    private fun parent(value: Int) = value - (value and -value)
+
+    private fun descendent(value: Int) = value + (value and -value)
 
     private fun query(i: Int): Int {
         var res = 0
         var ci = i
         while (ci > 0) {
             res += tree[ci]
-            ci -= lsb(ci)
+            ci  = parent(ci)
         }
         return res
     }
@@ -73,7 +88,7 @@ class FenwickTreeIII(val values: Array<Int>) {
         var i = idx
         while (i < size) {
             tree[i] += delta
-            i += lsb(i)
+            i = descendent(i)
         }
     }
 
@@ -115,7 +130,7 @@ private class TestCase(
 
 private fun checkCases() {
     val cases = arrayOf(
-        /*
+
         TestCase(
             FenwickTreeIII(arrayOf(1, 2, 3, 4)), listOf(
                 TestCase.Range(0, 3),
@@ -125,8 +140,6 @@ private fun checkCases() {
                 TestCase.Range(0, 3)
             )
         ),
-
-         */
 
         TestCase(
             FenwickTreeIII(arrayOf(-5, 7, 0, 1, 3, 2, -1, 0, 2)),

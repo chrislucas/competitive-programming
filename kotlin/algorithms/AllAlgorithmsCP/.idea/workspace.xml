@@ -14,32 +14,58 @@
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/classes/kotlin/main/META-INF/cp4book.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/classes/kotlin/main/META-INF/cp4book.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
@@ -47,11 +73,19 @@
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/FenwickTreeII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v2/FenwickTreeII.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,10 +212,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -263,7 +297,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FenwickTreeIIIKt (1)">
+  <component name="RunManager" selected="Kotlin.BITKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -420,10 +454,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BITKt" />
         <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
         <item itemvalue="Kotlin.LeastSignificantBitKt" />
         <item itemvalue="Kotlin.FenwickTreeIIIKt" />
-        <item itemvalue="Kotlin.BITKt" />
         <item itemvalue="Kotlin.FenwickTreeKt" />
       </list>
     </recent_temporary>
@@ -431,7 +465,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="35fd2953-de7d-44ae-98aa-cdbfd45ac8c9" name="Changes" comment="" />
+      <changelist id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="" />
       <created>1616896321211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1394,28 +1428,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>81</line>
+          <line>95</line>
           <option name="timeStamp" value="584" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>74</line>
-          <option name="timeStamp" value="585" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>65</line>
+          <line>79</line>
           <option name="timeStamp" value="587" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>55</line>
+          <line>69</line>
           <option name="timeStamp" value="588" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>39</line>
-          <option name="timeStamp" value="589" />
+          <line>113</line>
+          <option name="timeStamp" value="590" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
+          <line>92</line>
+          <option name="timeStamp" value="592" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
+          <line>27</line>
+          <option name="timeStamp" value="593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
