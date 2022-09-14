@@ -1,9 +1,6 @@
-package com.br.algo.cp.book1.chp2.kotlin.fenwick
+package com.br.algo.cp.book1.chp2.kotlin.fenwick.v1
 
 /*
-    Uma epxlicacao visual
-    https://medium.com/carpanese/a-visual-introduction-to-fenwick-tree-89b82cac5b3c
-
     https://cp-algorithms.com/data_structures/fenwick.html
 
     Seja F um grupo de operacoes (funcoes binaias sobre um conjunto de elementos) e A um
@@ -18,8 +15,13 @@ package com.br.algo.cp.book1.chp2.kotlin.fenwick
 class FenwickTree(private val values: Array<Int>) {
     private val tree: Array<Int> = Array(values.size + 1) { 0 }
 
+    private val size: Int
+        get() = tree.size
+
     init {
-        System.arraycopy(values, 0, tree, 1, values.size)
+        for (i in 1 until size) {
+            tree[i] = tree[i - 1] + values[i - 1]
+        }
     }
 
     fun update(index: Int, value: Int) {
@@ -46,20 +48,20 @@ class FenwickTree(private val values: Array<Int>) {
     private fun rsb(value: Int) = value and (-value)
 }
 
-class TestCase(val values: Array<Int>) {
+private class TestCase(private val fenwickTree: FenwickTree, private val operations: List<Operation>) {
     sealed class Operation
     data class Range(val start: Int, val end: Int) : Operation()
     data class Update(val index: Int, val value: Int) : Operation()
-
-
-    fun run(fenwickTree: FenwickTree, operations: List<Operation>) {
+    fun run() {
         for (op in operations) {
             when (op) {
                 is Range -> {
-                    fenwickTree.rangeSum(op.start, op.end)
+                    val s = fenwickTree.rangeSum(op.start, op.end)
+                    println("RangeSum(${op.start}, ${op.end}) = $s")
                 }
                 is Update -> {
                     fenwickTree.update(op.index, op.value)
+                    println("Update(${op.index}, ${op.value})")
                 }
             }
         }

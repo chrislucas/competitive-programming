@@ -57,3 +57,22 @@ operator fun <T> Cube<T>.get(i: Int, j: Int, k: Int) = this[i][j][k]
 
 private inline fun <reified T> createCube(i: Int, j: Int, k: Int, init: () -> T?):
         Cube<T?> = Array(i) { Array(j) { Array(k) { init() } } }
+
+
+private fun runUntilEndOfFile(fn: (String) -> Unit) {
+
+    fun runWhiteTruth(fn: () -> Boolean) {
+        while (true) {
+            if (!fn()) {
+                break
+            }
+        }
+    }
+
+    runWhiteTruth {
+        readLine()?.let {
+            fn(it)
+            true
+        } ?: false
+    }
+}
