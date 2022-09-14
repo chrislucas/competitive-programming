@@ -20,8 +20,12 @@ class FenwickTree(private val values: Array<Int>) {
 
     init {
         for (i in 1 until size) {
-            tree[i] = tree[i - 1] + values[i - 1]
+            add(i, values[i - 1])
         }
+    }
+
+    private fun add(idx: Int, delta: Int) {
+
     }
 
     fun update(index: Int, value: Int) {
@@ -44,7 +48,6 @@ class FenwickTree(private val values: Array<Int>) {
         return 0
     }
 
-
     private fun rsb(value: Int) = value and (-value)
 }
 
@@ -52,6 +55,9 @@ private class TestCase(private val fenwickTree: FenwickTree, private val operati
     sealed class Operation
     data class Range(val start: Int, val end: Int) : Operation()
     data class Update(val index: Int, val value: Int) : Operation()
+
+    fun hasTestCase() = operations.isNotEmpty()
+
     fun run() {
         for (op in operations) {
             when (op) {
@@ -68,6 +74,17 @@ private class TestCase(private val fenwickTree: FenwickTree, private val operati
     }
 }
 
-fun main() {
+private fun checkTestCase() {
+    arrayOf(
+        TestCase(FenwickTree(arrayOf(1,2,3,4)), listOf())
+    ).forEach {
+        if (it.hasTestCase()) {
+            it.run()
+            println("****************************************************************")
+        }
+    }
+}
 
+fun main() {
+    checkTestCase()
 }
