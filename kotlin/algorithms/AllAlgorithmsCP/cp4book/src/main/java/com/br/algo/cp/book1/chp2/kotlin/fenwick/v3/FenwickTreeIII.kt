@@ -130,7 +130,7 @@ private class TestCase(
 
 private fun checkCases() {
     val cases = arrayOf(
-
+/*
         TestCase(
             FenwickTreeIII(arrayOf(1, 2, 3, 4)), listOf(
                 TestCase.Range(0, 3),
@@ -150,16 +150,24 @@ private fun checkCases() {
             )
         ),
 
+ */
         TestCase(
             FenwickTreeIII(arrayOf(4, 8, 5, 2, 6, 1, 0, 8, 1, 5, 4, 9, 1, 0, 6, 6)),
-            listOf()
+            listOf(
+                TestCase.Range(0, 1),
+                TestCase.Range(0, 15),
+                TestCase.Range(1, 1),
+                TestCase.Range(7, 8),
+                TestCase.Range(0, 0),
+                TestCase.Range(15, 15),
+            )
         )
     )
 
     cases.forEach {
         if (it.hasCases()) {
             it.run()
-            println("****************************************************************")
+            println("***************************** FIM ***********************************")
         }
     }
 }

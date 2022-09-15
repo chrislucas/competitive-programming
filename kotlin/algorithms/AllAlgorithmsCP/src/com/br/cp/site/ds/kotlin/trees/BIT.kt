@@ -24,7 +24,7 @@ class BIT(private val values: Array<Int>) {
     // soma de 0 a i
     fun sum(idx: Int): Int {
         var sum = 0
-        var i = idx
+        var i = idx + 1
         while (i > 0) {
             sum += tree[i]
             i = parent(i)
@@ -35,10 +35,19 @@ class BIT(private val values: Array<Int>) {
     fun rangeSum(le: Int, ri: Int): Int {
         val cl = le + 1
         val cr = ri + 1
+        fun query(idx: Int): Int {
+            var sum = 0
+            var i = idx
+            while (i > 0) {
+                sum += tree[i]
+                i = parent(i)
+            }
+            return sum
+        }
         return if (cl == 1) {
-            sum(cr)
+            query(cr)
         } else {
-            sum(cr) - sum(cl - 1)
+            query(cr) - query(cl - 1)
         }
     }
 
@@ -101,7 +110,7 @@ private class TestCase(private val tree: BIT, private val operations: List<Opera
 
 private fun checkTestCase() {
     arrayOf(
-
+        /*
         TestCase(
             BIT(
                 arrayOf(
@@ -113,9 +122,10 @@ private fun checkTestCase() {
                 TestCase.Sum(5),
                 TestCase.Update(3, 6),
                 TestCase.Sum(5),
+                TestCase.Sum(0),
+                TestCase.Range(0, 0)
             )
         ),
-        /*
         TestCase(
             BIT(arrayOf(1, 2, 3, 4)), listOf(
                 TestCase.Sum(3),
@@ -123,24 +133,33 @@ private fun checkTestCase() {
                 TestCase.Range(2, 3),
                 TestCase.Range(1, 3),
                 TestCase.Update(3, 10),
-                TestCase.Range(0, 3)
+                TestCase.Range(0, 3),
+                TestCase.Sum(0),
+                TestCase.Range(0, 0),
+                TestCase.Range(1, 1),
+                TestCase.Range(2, 2),
+                TestCase.Range(3, 3),
             )
         ),
-          */
-        /*
+        */
         TestCase(
-            BIT(arrayOf(-5, 7, 0, 1, 3, 2, -1, 0, 2)),
+            BIT(
+                arrayOf(-5, 7, 0, 1, 3, 2, -1, 0, 2)
+            ),
             listOf(
-                TestCase.Range(1, 4),
-                TestCase.Update(3, 5),
-                TestCase.Range(1, 4)
+                //TestCase.Range(0, 3),
+                //TestCase.Range(1, 4),
+                TestCase.Range(1, 8),   // exemplo interessante
+                //TestCase.Update(3, 5),
+                //TestCase.Range(1, 4),
+                //TestCase.Range(1, 8)
             )
         )
-        */
 
     ).forEach { case ->
-        if(case.hasCases()) {
+        if (case.hasCases()) {
             case.run()
+            println("========================= FIM =========================")
         }
     }
 }
