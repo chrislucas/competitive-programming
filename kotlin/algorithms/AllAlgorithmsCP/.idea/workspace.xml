@@ -66,6 +66,7 @@
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
@@ -298,7 +299,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.BITKt">
+  <component name="RunManager" selected="Kotlin.FenwickTreeIIIKt (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -455,8 +456,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.BITKt" />
         <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
+        <item itemvalue="Kotlin.BITKt" />
         <item itemvalue="Kotlin.LeastSignificantBitKt" />
         <item itemvalue="Kotlin.FenwickTreeIIIKt" />
         <item itemvalue="Kotlin.FenwickTreeKt" />
