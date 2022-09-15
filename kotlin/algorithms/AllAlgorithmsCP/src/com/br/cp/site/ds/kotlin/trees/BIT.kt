@@ -24,7 +24,7 @@ class BIT(private val values: Array<Int>) {
     // soma de 0 a i
     fun sum(idx: Int): Int {
         var sum = 0
-        var i = idx + 1
+        var i = idx
         while (i > 0) {
             sum += tree[i]
             i = parent(i)
@@ -101,22 +101,24 @@ private class TestCase(private val tree: BIT, private val operations: List<Opera
 
 private fun checkTestCase() {
     arrayOf(
-        /*
+
         TestCase(
             BIT(
                 arrayOf(
                     2, 1, 1, 3, 2, 3, 4, 5, 6, 7, 8, 9
                 )
             ), listOf(
+                TestCase.Range(0, 11),
+                TestCase.Sum(11),
                 TestCase.Sum(5),
                 TestCase.Update(3, 6),
                 TestCase.Sum(5),
             )
         ),
-
-         */
+        /*
         TestCase(
             BIT(arrayOf(1, 2, 3, 4)), listOf(
+                TestCase.Sum(3),
                 TestCase.Range(0, 3),
                 TestCase.Range(2, 3),
                 TestCase.Range(1, 3),
@@ -124,6 +126,7 @@ private fun checkTestCase() {
                 TestCase.Range(0, 3)
             )
         ),
+          */
         /*
         TestCase(
             BIT(arrayOf(-5, 7, 0, 1, 3, 2, -1, 0, 2)),
@@ -136,7 +139,9 @@ private fun checkTestCase() {
         */
 
     ).forEach { case ->
-        case.run()
+        if(case.hasCases()) {
+            case.run()
+        }
     }
 }
 
