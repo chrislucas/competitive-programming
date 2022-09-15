@@ -1,7 +1,5 @@
 package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth
 
-import src.com.br.cp.site.ds.kotlin.trees.BIT
-
 /*
     https://www.hackerearth.com/practice/notes/binary-indexed-tree-or-fenwick-tree/
  */

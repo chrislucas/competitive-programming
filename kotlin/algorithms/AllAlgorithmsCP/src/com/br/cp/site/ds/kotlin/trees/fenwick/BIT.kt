@@ -1,4 +1,4 @@
-package src.com.br.cp.site.ds.kotlin.trees
+package src.com.br.cp.site.ds.kotlin.trees.fenwick
 
 /**
  * https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/?ref=leftbar-rightbar
