@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/geeksforgeeks/BinaryIndexedTree2D.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/SegmentTreeRangeSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/SegmentTreeRangeSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/geeksforgeeks/BIT2D.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/FenwickTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/FenwickTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/segtree/v1/SegmentTreeEfficient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/segtree/v1/SegmentTreeEfficient.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,9 +141,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -194,6 +201,7 @@
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/segtree/v1" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin" />
       <recent name="D:\g\repositories\github\competitive-programming\kotlin\algorithms\AllAlgorithmsCP\hackerearth\src\main\kotlin\com\br\competitions\circuit\aug\studies" />
@@ -218,7 +226,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FenwickTreeIIIKt (1)">
+  <component name="RunManager" selected="Kotlin.FenwickTreeKt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -246,13 +254,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FenwickTreeIIIKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.cp.book1.chp2.kotlin.fenwick.FenwickTreeIIIKt" />
-      <module name="cp4book.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FenwickTreeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.FenwickTreeKt" />
       <module name="AllAlgorithmsCP" />
@@ -263,6 +264,13 @@
     <configuration name="LeastSignificantBitKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.br.algo.cp.book1.chp2.kotlin.fenwick.LeastSignificantBitKt" />
       <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RangeFenwickKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.RangeFenwickKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -368,18 +376,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.BITKt" />
-      <item itemvalue="Kotlin.FenwickTreeIIIKt" />
-      <item itemvalue="Kotlin.FenwickTreeKt" />
       <item itemvalue="Kotlin.LeastSignificantBitKt" />
       <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
+      <item itemvalue="Kotlin.RangeFenwickKt" />
+      <item itemvalue="Kotlin.FenwickTreeKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FenwickTreeKt" />
+        <item itemvalue="Kotlin.RangeFenwickKt" />
         <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
         <item itemvalue="Kotlin.BITKt" />
         <item itemvalue="Kotlin.LeastSignificantBitKt" />
-        <item itemvalue="Kotlin.FenwickTreeIIIKt" />
-        <item itemvalue="Kotlin.FenwickTreeKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1349,47 +1357,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="584" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="587" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="588" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick/v3/FenwickTreeIII.kt</url>
-          <line>113</line>
+          <line>114</line>
           <option name="timeStamp" value="590" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt</url>
+          <line>25</line>
           <option name="timeStamp" value="593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt</url>
+          <line>44</line>
           <option name="timeStamp" value="594" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt</url>
+          <line>60</line>
           <option name="timeStamp" value="595" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt</url>
+          <line>29</line>
           <option name="timeStamp" value="597" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/BIT.kt</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/fenwick/BIT.kt</url>
+          <line>42</line>
           <option name="timeStamp" value="598" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">

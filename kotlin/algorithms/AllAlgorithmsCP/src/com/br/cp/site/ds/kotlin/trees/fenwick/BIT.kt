@@ -8,9 +8,8 @@ package src.com.br.cp.site.ds.kotlin.trees.fenwick
  *
  */
 
-
 class BIT(private val values: Array<Int>) {
-
+    // @COMP
     private val tree: Array<Int> = Array(values.size + 1) { 0 }
 
     private val size = tree.size

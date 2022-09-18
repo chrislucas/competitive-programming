@@ -29,8 +29,9 @@ package com.br.algo.cp.book1.chp2.kotlin.fenwick.v3
     Padrao binario da estrutura da arvore.
  */
 
-class FenwickTreeIII(val values: Array<Int>) {
 
+class FenwickTreeIII(val values: Array<Int>) {
+    // @COMP
     private val tree: Array<Int> = Array(values.size + 1) { 0 }
 
     private val size: Int
