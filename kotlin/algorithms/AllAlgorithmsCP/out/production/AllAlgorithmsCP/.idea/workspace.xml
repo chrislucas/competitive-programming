@@ -193,6 +193,7 @@
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/graoh/lvl5/dijkstra/path" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/pie" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/segtree/v1" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin" />
@@ -218,7 +219,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PrefixRangeSumKt">
+  <component name="RunManager" selected="Kotlin.BIT2DKt (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -232,16 +233,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BITKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.trees.BITKt" />
+    <configuration name="BIT2DKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.bit2d.v1.BIT2DKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FenwickTreeIIIKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.algo.cp.book1.chp2.kotlin.fenwick.v3.FenwickTreeIIIKt" />
-      <module name="cp4book.main" />
+    <configuration name="BIT2DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.codeforces.problems.BIT2DKt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -367,19 +368,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.BITKt" />
-      <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
       <item itemvalue="Kotlin.RangeFenwickKt" />
       <item itemvalue="Kotlin.FenwickTreeKt" />
       <item itemvalue="Kotlin.PrefixRangeSumKt" />
+      <item itemvalue="Kotlin.BIT2DKt" />
+      <item itemvalue="Kotlin.BIT2DKt (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BIT2DKt (1)" />
+        <item itemvalue="Kotlin.BIT2DKt" />
         <item itemvalue="Kotlin.PrefixRangeSumKt" />
         <item itemvalue="Kotlin.FenwickTreeKt" />
         <item itemvalue="Kotlin.RangeFenwickKt" />
-        <item itemvalue="Kotlin.FenwickTreeIIIKt (1)" />
-        <item itemvalue="Kotlin.BITKt" />
       </list>
     </recent_temporary>
   </component>

@@ -26,7 +26,7 @@ class BIT(private val values: Array<Int>) {
         var i = idx + 1
         while (i > 0) {
             sum += tree[i]
-            i = parent(i)
+            i = desc(i)
         }
         return sum
     }
@@ -39,7 +39,7 @@ class BIT(private val values: Array<Int>) {
             var i = idx
             while (i > 0) {
                 sum += tree[i]
-                i = parent(i)
+                i = desc(i)
             }
             return sum
         }
@@ -54,7 +54,7 @@ class BIT(private val values: Array<Int>) {
         var i = idx + 1
         while (i < size) {
             tree[i] += delta
-            i = descendent(i)
+            i = parent(i)
         }
     }
 
@@ -68,9 +68,9 @@ class BIT(private val values: Array<Int>) {
     fun showValues() = println("Values = ${values.toList()}")
 
     // removendo o bit menos significativo
-    private fun parent(value: Int) = value - (value and (-value))
+    private fun desc(value: Int) = value - (value and (-value))
 
-    private fun descendent(value: Int) = value + (value and (-value))
+    private fun parent(value: Int) = value + (value and (-value))
 
 }
 
@@ -109,7 +109,21 @@ private class TestCase(private val tree: BIT, private val operations: List<Opera
 
 private fun checkTestCase() {
     arrayOf(
-        /*
+        TestCase(
+            BIT(arrayOf(1, 2, 3, 4, 5, 6, 7)), listOf(
+                TestCase.Sum(3),
+                TestCase.Range(0, 3),
+                TestCase.Range(2, 3),
+                TestCase.Range(1, 3),
+                TestCase.Update(3, 10),
+                TestCase.Range(0, 3),
+                TestCase.Sum(0),
+                TestCase.Range(0, 0),
+                TestCase.Range(1, 1),
+                TestCase.Range(2, 2),
+                TestCase.Range(3, 3),
+            )
+        ),
         TestCase(
             BIT(
                 arrayOf(
@@ -140,7 +154,7 @@ private fun checkTestCase() {
                 TestCase.Range(3, 3),
             )
         ),
-        */
+
         TestCase(
             BIT(
                 arrayOf(-5, 7, 0, 1, 3, 2, -1, 0, 2)

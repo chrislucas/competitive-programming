@@ -39,8 +39,8 @@ private class BIT2D(private val values: Array<Array<Int>>) {
 
     init {
         for (i in 0 until dim.first) {
-            for(j in 0 until dim.second) {
-                update(PII(i + 1, j + 1), values[i][j])
+            for (j in 0 until dim.second) {
+                update(PII(i + 1, j + 1), values[i, j])
             }
         }
     }
@@ -50,79 +50,76 @@ private class BIT2D(private val values: Array<Array<Int>>) {
     fun showTree() = println(bit.string)
 
     fun update(p: PII, value: Int) {
-        var i = p.first
-        val j = p.second
+        val (i, j) = p
         val (m, n) = dim
-        while (i <= m) {
+        var ci = i
+        while (ci <= m) {
             var cj = j
             while (cj <= n) {
-                bit[i, cj] += value
-                cj = descendent(cj)
+                bit[ci, cj] += value
+                cj = parent(cj)
             }
-            i = descendent(i)
+            ci = parent(ci)
         }
-        values[i, j] = value
+        values[i - 1, j - 1] = value
     }
 
     fun query(p: PII, q: PII): Int {
-
-        fun query(p: Int, q : Int): Int {
+        val (x2, y2) = q
+        val (x1, y1) = p
+        fun query(i: Int, j: Int): Int {
             var acc = 0
-            var i = p
-            val j = p
-            while (i > 0) {
-                var cj = j
+            var ci = i
+            var cj = j
+            while (ci > 0) {
+                cj = j
                 while (cj > 0) {
-                    acc += bit[i][cj]
-                    cj = parent(cj)
+                    acc += bit[ci, cj]
+                    cj = desc(cj)
                 }
-                i = parent(i)
+                ci = desc(ci)
             }
             return acc
         }
 
-        val a = query(q.first, q.second)
-        val b = query(p.first - 1, q.second)
-        val c = query(q.first, p.second - 1)
-        val d = query(p.first - 1, p.second - 1)
-
+        val a = query(x2, y2)
+        val b = query(x1- 1, y2)
+        val c = query(x2, y1 - 1)
+        val d = query(x1 - 1, y1 - 1)
         return a - b - c + d
     }
 
-    private fun parent(value: Int) = value - (value and (-value))
+    private fun desc(value: Int) = value - (value and (-value))
 
-    private fun descendent(value: Int) = value + (value and (-value))
+    private fun parent(value: Int) = value + (value and (-value))
 }
 
 
-private class TestCase (private val bit2D: BIT2D, private val operations: List<Operation>) {
+private class TestCase(
+    private val bit2D: BIT2D,
+    private val operations: List<Operation>
+) {
 
     sealed class Operation
-    class Query(val query: Pair<PII, PII>): Operation()
-    data class Update(val pair: PII, val value: Int): Operation()
+    class Query(val query: Pair<PII, PII>) : Operation()
+    data class Update(val pair: PII, val value: Int) : Operation()
 
     fun run() {
         for (operation in operations) {
+            bit2D.showValues()
             when (operation) {
                 is Query -> {
-                    with(bit2D) {
-                        showValues()
-                    }
                     val (p, q) = operation.query
-                    println(bit2D.query(p, q))
+                    println("Query($p, $q) = ${bit2D.query(p, q)}")
                 }
 
                 is Update -> {
                     val (pair, value) = operation
                     bit2D.update(pair, value)
+                    println("Update($pair) -> $value")
+                    bit2D.showTree()
                 }
-
-                else -> {
-
-                }
-            }
-            with(bit2D) {
-                showTree()
+                else -> {}
             }
         }
     }
@@ -130,19 +127,19 @@ private class TestCase (private val bit2D: BIT2D, private val operations: List<O
 
 
 private fun checkOneCase() {
-    val matrix = arrayOf(
-        arrayOf(1, 1, 2, 2),
-        arrayOf(3, 3, 4, 4),
-        arrayOf(5, 5, 6, 6),
-        arrayOf(7, 7, 8, 8),
-    )
-
 
     val testCase = TestCase(
-        BIT2D(matrix),
-        listOf(TestCase.Query(Pair(PII(2, 2), PII(4, 4))))
+        BIT2D(arrayOf(
+            arrayOf(1, 1, 2, 2),
+            arrayOf(3, 3, 4, 4),
+            arrayOf(5, 5, 6, 6),
+            arrayOf(7, 7, 8, 8),
+        )),
+        listOf(
+            TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
+            TestCase.Query(Pair(PII(2, 2), PII(4, 4)))
+        )
     )
-
 
     testCase.run()
 }

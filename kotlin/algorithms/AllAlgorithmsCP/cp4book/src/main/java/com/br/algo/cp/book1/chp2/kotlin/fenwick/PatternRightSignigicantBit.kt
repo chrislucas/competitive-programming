@@ -27,7 +27,6 @@ private fun lookTheRsbPattern() {
 
 }
 
-
 fun main() {
-    lookTheRsbPattern()
+   // lookTheRsbPattern()
 }
