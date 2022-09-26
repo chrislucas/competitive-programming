@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/bit2d/v1/BIT2D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/bit2d/v1/BIT2D.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1393,11 +1392,6 @@
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/bit2d/v1/BIT2D.kt</url>
           <line>147</line>
           <option name="timeStamp" value="606" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/bit2d/v1/BIT2D.kt</url>
-          <line>152</line>
-          <option name="timeStamp" value="607" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/bit2d/v1/BIT2D.kt</url>
