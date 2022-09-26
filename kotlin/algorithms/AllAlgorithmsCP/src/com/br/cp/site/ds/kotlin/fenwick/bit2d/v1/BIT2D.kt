@@ -31,6 +31,37 @@ val <T> Array<Array<T>>.string: String
         return sb.toString()
     }
 
+/*
+        Exemplo de uma matriz 2x2 transformada numa binary indexed tree
+            ____
+            -
+            1 2
+        ||1 1 2
+        | 2 3 4
+            ___
+            -
+            1 2
+       || 1 1 3
+       |  2 4 10
+
+       -------------------------------------------------------------------------------------------
+          __________
+          ___
+          _   _
+          1 2 3 4
+     ||1  1 2 3 4
+     | 2  5 6 7 8
+      |3  9 10 11 12
+
+
+          ________
+          ___
+          _   _
+          1 2 3 4
+      ||1 1 1 0 1
+      | 2 1 1 0 1
+       |3
+ */
 
 private class BIT2D(private val values: Array<Array<Int>>) {
     private val dim = Pair(values.size, values[0].size)
@@ -40,7 +71,7 @@ private class BIT2D(private val values: Array<Array<Int>>) {
     init {
         for (i in 0 until dim.first) {
             for (j in 0 until dim.second) {
-                update(PII(i + 1, j + 1), values[i, j])
+                build(PII(i + 1, j + 1), values[i, j])
             }
         }
     }
@@ -49,7 +80,7 @@ private class BIT2D(private val values: Array<Array<Int>>) {
 
     fun showTree() = println(bit.string)
 
-    fun update(p: PII, value: Int) {
+    private fun build(p: PII, value: Int) {
         val (i, j) = p
         val (m, n) = dim
         var ci = i
@@ -61,7 +92,11 @@ private class BIT2D(private val values: Array<Array<Int>>) {
             }
             ci = parent(ci)
         }
-        values[i - 1, j - 1] = value
+    }
+
+    fun update(p: PII, value: Int) {
+        build(p, value)
+        values[p.first - 1, p.second - 1] = value
     }
 
     fun query(p: PII, q: PII): Int {
@@ -83,7 +118,7 @@ private class BIT2D(private val values: Array<Array<Int>>) {
         }
 
         val a = query(x2, y2)
-        val b = query(x1- 1, y2)
+        val b = query(x1 - 1, y2)
         val c = query(x2, y1 - 1)
         val d = query(x1 - 1, y1 - 1)
         return a - b - c + d
@@ -128,20 +163,67 @@ private class TestCase(
 
 private fun checkOneCase() {
 
-    val testCase = TestCase(
-        BIT2D(arrayOf(
-            arrayOf(1, 1, 2, 2),
-            arrayOf(3, 3, 4, 4),
-            arrayOf(5, 5, 6, 6),
-            arrayOf(7, 7, 8, 8),
-        )),
-        listOf(
-            TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
-            TestCase.Query(Pair(PII(2, 2), PII(4, 4)))
+    arrayOf(
+        TestCase(
+            BIT2D(
+                arrayOf(
+                    arrayOf(1, 2, 3, 4),
+                    arrayOf(5, 6, 7, 8),
+                    arrayOf(9, 10, 11, 12),
+                )
+            ),
+            listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
+                TestCase.Query(Pair(PII(1, 1), PII(3, 3))),
+                TestCase.Query(Pair(PII(1, 1), PII(1, 3))),
+                TestCase.Query(Pair(PII(1, 1), PII(4, 4))),
+            )
+        ),
+        TestCase(
+            BIT2D(
+                arrayOf(
+                    arrayOf(1, 2),
+                    arrayOf(3, 4),
+                )
+            ),
+            listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(1, 2))),
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2)))
+            )
+        ),
+        TestCase(
+            BIT2D(
+                arrayOf(
+                    arrayOf(1, 2, 3),
+                    arrayOf(4, 5, 6),
+                    arrayOf(7, 8, 9),
+                )
+            ),
+            listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
+                TestCase.Query(Pair(PII(1, 1), PII(3, 3))),
+                TestCase.Query(Pair(PII(1, 1), PII(1, 3)))
+            )
+        ),
+        TestCase(
+            BIT2D(
+                arrayOf(
+                    arrayOf(1, 1, 2, 2),
+                    arrayOf(3, 3, 4, 4),
+                    arrayOf(5, 5, 6, 6),
+                    arrayOf(7, 7, 8, 8),
+                )
+            ),
+            listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
+                TestCase.Query(Pair(PII(2, 2), PII(4, 4)))
+            )
         )
-    )
+    ).forEach { case ->
+        case.run()
+    }
 
-    testCase.run()
+
 }
 
 fun main() {
