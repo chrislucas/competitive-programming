@@ -38,15 +38,36 @@ class BIT2D(private val values: Array<Array<Int>>) {
     init {
         for(i in 1 .. di) {
             for(j in 1 .. dj) {
-                update(i, j, values[i-1, j-1])
+                build(i, j, values[i-1, j-1])
             }
         }
     }
 
 
-    private fun update(i: Int, j: Int, delta: Int) {
+    private fun build(i: Int, j: Int, delta: Int) {
 
     }
+
+    fun update(i: Int, j: Int, value: Int) {
+        build(i, j, value)
+        values[i - 1][j - 1] = value
+    }
+
+    private fun sum(x1: Int, y1: Int, x2: Int, y2: Int): Int {
+
+        fun query(i: Int, j: Int): Int {
+            return 0
+        }
+
+        val a = query(x2, y2)
+
+
+        return a
+    }
+
+    private fun desc(value: Int) = value - (value and (-value))
+
+    private fun parent(value: Int) = value + (value and (-value))
 }
 
 

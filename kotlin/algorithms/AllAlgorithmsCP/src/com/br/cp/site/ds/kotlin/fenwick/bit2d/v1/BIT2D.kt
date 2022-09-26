@@ -131,8 +131,7 @@ private class BIT2D(private val values: Array<Array<Int>>) {
 
 
 private class TestCase(
-    private val bit2D: BIT2D,
-    private val operations: List<Operation>
+    private val bit2D: BIT2D, private val operations: List<Operation>
 ) {
 
     sealed class Operation
@@ -172,42 +171,41 @@ private fun checkOneCase() {
                     arrayOf(5, 6, 7, 8),                        // {6, 14, 10, 36}
                     arrayOf(9, 10, 11, 12),                     // {9, 19, 11, 42}
                 )
-            ),
-            listOf(
+            ), listOf(
                 TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(2, 3))),
                 TestCase.Query(Pair(PII(1, 1), PII(2, 4))),
                 TestCase.Query(Pair(PII(1, 1), PII(3, 1))),
                 TestCase.Query(Pair(PII(1, 1), PII(3, 3))),
+                TestCase.Query(Pair(PII(1, 1), PII(3, 4))),
                 TestCase.Query(Pair(PII(1, 3), PII(2, 3))),
                 TestCase.Query(Pair(PII(1, 3), PII(3, 3))),
                 TestCase.Query(Pair(PII(1, 1), PII(1, 3))),
                 TestCase.Query(Pair(PII(2, 2), PII(3, 3))),
+                TestCase.Update(Pair(1, 1), 10),
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
+                TestCase.Query(Pair(PII(1, 1), PII(3, 4))),
             )
-        ),
-        TestCase(
+        ), TestCase(
             BIT2D(
                 arrayOf(
                     arrayOf(1, 2),      //{ {1, 3}, {6, 14}}
                     arrayOf(5, 6),
                 )
-            ),
-            listOf(
+            ), listOf(
                 TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(1, 1))),
                 TestCase.Query(Pair(PII(2, 2), PII(2, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(1, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(2, 1))),
             )
-        ),
-        TestCase(
+        ), TestCase(
             BIT2D(
                 arrayOf(
                     arrayOf(1, 2, 3, 4),                        // {1, 3, 3, 10}
                     arrayOf(5, 6, 7, 8),                        // {6, 14, 10, 36}
                 )
-            ),
-            listOf(
+            ), listOf(
                 TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(1, 1))),
                 TestCase.Query(Pair(PII(1, 2), PII(1, 4))),
@@ -222,27 +220,22 @@ private fun checkOneCase() {
                     arrayOf(1, 2),
                     arrayOf(3, 4),
                 )
-            ),
-            listOf(
-                TestCase.Query(Pair(PII(1, 1), PII(1, 2))),
-                TestCase.Query(Pair(PII(1, 1), PII(2, 2)))
+            ), listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(1, 2))), TestCase.Query(Pair(PII(1, 1), PII(2, 2)))
             )
-        ),
-        TestCase(
+        ), TestCase(
             BIT2D(
                 arrayOf(
                     arrayOf(1, 2, 3),
                     arrayOf(4, 5, 6),
                     arrayOf(7, 8, 9),
                 )
-            ),
-            listOf(
+            ), listOf(
                 TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
                 TestCase.Query(Pair(PII(1, 1), PII(3, 3))),
                 TestCase.Query(Pair(PII(1, 1), PII(1, 3)))
             )
-        ),
-        TestCase(
+        ), TestCase(
             BIT2D(
                 arrayOf(
                     arrayOf(1, 1, 2, 2),
@@ -250,10 +243,8 @@ private fun checkOneCase() {
                     arrayOf(5, 5, 6, 6),
                     arrayOf(7, 7, 8, 8),
                 )
-            ),
-            listOf(
-                TestCase.Query(Pair(PII(1, 1), PII(2, 2))),
-                TestCase.Query(Pair(PII(2, 2), PII(4, 4)))
+            ), listOf(
+                TestCase.Query(Pair(PII(1, 1), PII(2, 2))), TestCase.Query(Pair(PII(2, 2), PII(4, 4)))
             )
         )
     ).forEach { case ->
