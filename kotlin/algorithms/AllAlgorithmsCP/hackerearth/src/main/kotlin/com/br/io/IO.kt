@@ -5,6 +5,9 @@ private inline fun <T> readValues(delimiter: String = " ", transform: (String) -
 
 private inline fun <T> readValue(transform: (String) -> T) = readLine()!!.run(transform)
 
+private fun readString(delimiter: String = " ") = readLine()!!.split(delimiter)
+
+
 private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
 
@@ -16,6 +19,8 @@ private fun callTestCases() {
 }
 
 private inline fun runTestCases(times: Int, exec: () -> Unit) = (0 until times).forEach { _ -> exec() }
+
+private inline fun solver(times: Int, exec: () -> Unit) = repeat(times) { exec() }
 
 private inline fun runWhiteTruth(fn: () -> Boolean) {
     while (true) {

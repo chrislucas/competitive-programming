@@ -1,7 +1,5 @@
 package src.com.br.cp.site.ds.kotlin.fenwick.bit2d.v1.nav
 
-import src.com.br.cp.site.ds.kotlin.fenwick.bit2d.v1.get
-import src.com.br.cp.site.ds.kotlin.fenwick.bit2d.v1.set
 
 
 operator fun Array<Array<Int>>.set(x: Int, y: Int, value: Int) {

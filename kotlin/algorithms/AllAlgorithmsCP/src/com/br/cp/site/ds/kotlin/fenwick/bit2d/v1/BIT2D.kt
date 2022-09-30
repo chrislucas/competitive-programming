@@ -8,29 +8,6 @@ import java.lang.StringBuilder
     https://acervolima.com/arvore-indexada-binaria-bidimensional-ou-arvore-de-fenwick-1/
  */
 
-typealias PII = Pair<Int, Int>
-
-operator fun Array<Array<Int>>.set(x: Int, y: Int, value: Int) {
-    this[x][y] = value
-}
-
-operator fun Array<Array<Int>>.get(x: Int, y: Int) = this[x][y]
-
-val <T> Array<Array<T>>.string: String
-    get() {
-        val sb = StringBuilder()
-        sb.append("[")
-        for (i in 0 until this.size) {
-            sb.append(if (i > 0) "\n[" else "[")
-            for (j in 0 until this[i].size) {
-                sb.append(if (j == 0) "${this[i][j]}" else ", ${this[i][j]}")
-            }
-            sb.append(if (i < this.size - 1) "]," else "]")
-        }
-        sb.append("]")
-        return sb.toString()
-    }
-
 /*
         Exemplo de uma matriz 2x2 transformada numa binary indexed tree
             ____
@@ -63,7 +40,32 @@ val <T> Array<Array<T>>.string: String
        |3 9 19 11 42
  */
 
+typealias PII = Pair<Int, Int>
+
 private class BIT2D(private val values: Array<Array<Int>>) {
+
+    operator fun Array<Array<Int>>.set(x: Int, y: Int, value: Int) {
+        this[x][y] = value
+    }
+
+    operator fun Array<Array<Int>>.get(x: Int, y: Int) = this[x][y]
+
+    val <T> Array<Array<T>>.string: String
+        get() {
+            val sb = StringBuilder()
+            sb.append("[")
+            for (i in 0 until this.size) {
+                sb.append(if (i > 0) "\n[" else "[")
+                for (j in 0 until this[i].size) {
+                    sb.append(if (j == 0) "${this[i][j]}" else ", ${this[i][j]}")
+                }
+                sb.append(if (i < this.size - 1) "]," else "]")
+            }
+            sb.append("]")
+            return sb.toString()
+        }
+
+    // @COMP
     private val dim = Pair(values.size, values[0].size)
 
     private val bit = Array(dim.first + 1) { Array(dim.second + 1) { 0 } }
@@ -251,8 +253,6 @@ private fun checkOneCase() {
         case.run()
         println("####################################### case #######################################")
     }
-
-
 }
 
 fun main() {

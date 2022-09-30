@@ -76,3 +76,5 @@ private fun runUntilEndOfFile(fn: (String) -> Unit) {
         } ?: false
     }
 }
+
+private fun Array<Int>.maxOr(default: Int = Int.MIN_VALUE) = maxOrNull() ?: default

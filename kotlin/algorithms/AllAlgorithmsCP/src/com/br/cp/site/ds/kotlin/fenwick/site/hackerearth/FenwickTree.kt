@@ -36,6 +36,7 @@ class BinaryIndexTree(private val values: Array<Int>) {
             }
             return acc
         }
+
         val cl = l + 1
         val cr = r + 1
         return if (l == 1) {
@@ -75,7 +76,7 @@ private class TestCase(private val tree: BinaryIndexTree, private val operations
     sealed class Operation
     data class Range(val start: Int, val end: Int) : Operation()
     data class Update(val index: Int, val value: Int) : Operation()
-    data class Sum(val index: Int): Operation()
+    data class Sum(val index: Int) : Operation()
 
     fun hasCases() = operations.isNotEmpty()
 
@@ -142,7 +143,7 @@ private fun checkTestCase() {
         )
          */
     ).forEach {
-        if(it.hasCases()) {
+        if (it.hasCases()) {
             it.run()
             println("================================== FIM ==================================")
         }

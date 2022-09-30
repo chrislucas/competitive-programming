@@ -18,4 +18,10 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site;
    Problems
    https://leetcode.com/problems/range-sum-query-2d-immutable/
    https://www.enjoyalgorithms.com/blog/binary-indexed-tree
+
+   Range Sum Problems
+    https://usaco.guide/gold/PURS?lang=cpp
+
+    Binary Indexed Tree : Range Updates and Point Queries
+    https://www.geeksforgeeks.org/binary-indexed-tree-range-updates-point-queries/
 */
