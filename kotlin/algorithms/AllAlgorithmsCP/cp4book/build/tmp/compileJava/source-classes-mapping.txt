@@ -6,8 +6,14 @@ com/br/algo/cp/book1/chp2/kotlin/fenwick/problems/codeforces/package-info.java
  com.br.algo.cp.book1.chp2.kotlin.fenwick.problems.codeforces.package-info
 com/br/algo/cp/book1/uva/package-info.java
  com.br.algo.cp.book1.uva.package-info
+com/br/algo/cp/book2/chp5/java/exp/IntFastExponentiation.java
+ com.br.algo.cp.book2.chp5.java.exp.IntFastExponentiation
 com/br/algo/cp/book1/chp2/kotlin/fenwick/problems/uri/package-info.java
  com.br.algo.cp.book1.chp2.kotlin.fenwick.problems.uri.package-info
+com/br/algo/cp/book2/chp5/java/primes/PrimeFectors.java
+ com.br.algo.cp.book2.chp5.java.primes.PrimeFectors
+com/br/algo/cp/book2/chp5/java/sieve/package-info.java
+ com.br.algo.cp.book2.chp5.java.sieve.package-info
 com/br/algo/cp/book1/chp2/java/bitmanipulation/StuffindAndDestuffing.java
  com.br.algo.cp.book1.chp2.java.bitmanipulation.StuffindAndDestuffing
 com/br/algo/cp/book1/chp2/java/bitmanipulation/package-info.java
@@ -38,9 +44,16 @@ com/br/algo/tutorials/package-info.java
  com.br.algo.tutorials.package-info
 com/br/algo/cp/book1/uva/dp/Uva10911.java
  com.br.algo.cp.book1.uva.dp.Uva10911
+com/br/algo/cp/book2/chp5/java/sieve/EratosthenesSieve.java
+ com.br.algo.cp.book2.chp5.java.sieve.EratosthenesSieve
+ com.br.algo.cp.book2.chp5.java.sieve.EratosthenesSieve$Sieve
+com/br/algo/cp/book1/chp2/java/bitmanipulation/BitFenwickII.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwickII
 com/br/algo/cp/book1/chp2/java/bitmanipulation/UnsetBitRange.java
  com.br.algo.cp.book1.chp2.java.bitmanipulation.UnsetBitRange
  com.br.algo.cp.book1.chp2.java.bitmanipulation.UnsetBitRange$Test
+com/br/algo/cp/book1/chp2/java/bitmanipulation/CountUnsetBits.java
+ com.br.algo.cp.book1.chp2.java.bitmanipulation.CountUnsetBits
 com/br/algo/dp/bitwise/package-info.java
  com.br.algo.dp.bitwise.package-info
 com/br/algo/IO.java
@@ -56,6 +69,8 @@ com/br/algo/tutorials/StreamIO.java
 com/br/algo/cp/book1/chp2/java/bitmanipulation/InvertBit.java
  com.br.algo.cp.book1.chp2.java.bitmanipulation.InvertBit
  com.br.algo.cp.book1.chp2.java.bitmanipulation.InvertBit$Test
+com/br/algo/cp/book1/chp2/kotlin/fenwick2d/package-info.java
+ com.br.algo.cp.book1.chp2.kotlin.fenwick2d.package-info
 com/br/algo/BotClean.java
  com.br.algo.BotClean
 com/br/algo/Main.java
@@ -68,9 +83,9 @@ com/br/algo/cp/book1/chp2/java/bitmanipulation/BitFenwick.java
  com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick$TestCaseFenwick$Operation
  com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick$TestCaseFenwick$RangeSum
  com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwick$TestCaseFenwick$Update
-com/br/algo/cp/book1/chp2/java/bitmanipulation/CountUnsetBits.java
- com.br.algo.cp.book1.chp2.java.bitmanipulation.CountUnsetBits
-com/br/algo/cp/book1/chp2/java/bitmanipulation/BitFenwickII.java
- com.br.algo.cp.book1.chp2.java.bitmanipulation.BitFenwickII
-com/br/algo/cp/book1/chp2/kotlin/fenwick2d/package-info.java
- com.br.algo.cp.book1.chp2.kotlin.fenwick2d.package-info
+com/br/algo/tutorials/ext/java/ExtBigInteger.java
+ com.br.algo.tutorials.ext.java.ExtBigInteger
+com/br/algo/cp/book2/chp5/java/modinverse/package-info.java
+ com.br.algo.cp.book2.chp5.java.modinverse.package-info
+com/br/algo/cp/book2/chp5/java/exp/BigIntFastExponentiation.java
+ com.br.algo.cp.book2.chp5.java.exp.BigIntFastExponentiation
