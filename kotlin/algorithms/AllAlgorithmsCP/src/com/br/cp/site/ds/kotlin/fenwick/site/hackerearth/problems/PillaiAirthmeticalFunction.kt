@@ -11,10 +11,32 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems
     F(n) = somatoria de d|n  de d * phi(m/d)
 
     https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/practice-problems/algorithm/akash-and-gcd-1-15/editorial/
+    https://www.codingninjas.com/codestudio/problem-details/gcd-sum_1472653
  */
 
+
+private fun pillaiFunction(n: Int) {
+
+}
 private fun phi(n: Int): Int {
-    return 0
+    var result = n
+    var cn = n
+    var p = 2
+    while (p * p <= cn) {
+        if (cn % p == 0) {
+            while (cn % p == 0) {
+                cn /= p
+            }
+            result -= result / p
+        }
+        p += 1
+    }
+
+    if (cn > 1) {
+        result -= result / cn
+    }
+
+    return result
 }
 
 

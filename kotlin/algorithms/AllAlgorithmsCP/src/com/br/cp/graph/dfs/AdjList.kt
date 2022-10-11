@@ -5,7 +5,7 @@ package src.com.br.cp.graph.dfs
 
     Applications
     https://www.geeksforgeeks.org/applications-of-depth-first-search/?ref=rp
-
+   TODO estudar aplicacoes para dfs
  */
 
 typealias Adj = ArrayList<ArrayList<Int>>

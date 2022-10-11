@@ -2,7 +2,7 @@ package com.br.algo.cp.book2.chp5.java.sieve;
 
 /*
    https://introcs.cs.princeton.edu/java/14array/PrimeSieve.java.html
-    *                  n     Primes <= n
+*                  n     Primes <= n
 *  ---------------------------------
 *                 10               4
 *                100              25
@@ -21,7 +21,7 @@ import java.util.List;
 
 public class EratosthenesSieve {
 
-  static class Sieve {
+  private static class Sieve {
     private final ArrayList<Integer> primes;
     private final boolean[] isPrime;
 
@@ -71,7 +71,6 @@ public class EratosthenesSieve {
   }
 
   public static void main(String[] args) {
-
     for (int i = 1; i <= 100000; i++) {
       Sieve sieve = getSieve(i);
       System.out.println(sieve.getSize());
