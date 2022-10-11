@@ -96,7 +96,6 @@ private fun phi(n: Int): Pair<Int, Int> {
     if (cn > 1) {
         result -= result / cn
     }
-
     return n to result
 }
 
@@ -133,7 +132,19 @@ private fun checkTimeSpent() {
  *  isso eh usado no algorimto de RSA
  *  https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
  *
- * 3)
+ * 3) seja p um numero primo -> phi(p ^ k) = p ^ k - p ^ (k - 1)
+ *     phi(2^5) = 2^5 - 2^4
+ *     phi(5^3) = 5^3 - 5^2
+ *
+ * 4) Para 2 numeros a e b
+ *      phi(a * b) =
+ *      phi(a) * phi(b) *  gcd(a,b) / phi(gcd(a,b))
+ *      Caso especial gcd(a,b) = 1
+ *      phi(a * b) = phi(a) * phi(b) * 1 / phi(1) = phi(a) * phi(b)
+ *
+ * 5) a soma dos valores de funcao phi de todos os divisores de n é igual n
+ *      Exemplo: n = 6 - fatores {1, 2, 3, 6}
+ *      phi(1) + phi(2) + phi(3) + phi(6) = 6
  */
 
 fun main() {
