@@ -1,11 +1,13 @@
-package com.br.algo.math.lib.ntheory.modular
+package com.br.algo.math.lib.ntheory.phi
 
 /**
+ *
+ * Pillai's arithmetical function
+ * https://en.wikipedia.org/wiki/Pillai%27s_arithmetical_function
+ *
+ *
  * https://cp-algorithms.com/algebra/phi-function.html
- */
-
-
-/**
+ *
  * Propriedades da funcao phi de euler
  * 1) para um p primo phi(p) = p - 1
  *
@@ -27,6 +29,8 @@ package com.br.algo.math.lib.ntheory.modular
  * 5) a soma dos valores de funcao phi de todos os divisores de n é igual n
  *      Exemplo: n = 6 - fatores {1, 2, 3, 6}
  *      phi(1) + phi(2) + phi(3) + phi(6) = 6
+ *
+ *
  */
 
 
@@ -59,10 +63,10 @@ private fun eulerFunctionRange1ToN(n: Int): List<Int> {
      */
     val phi = Array(n + 1) { 0 }
     phi[1] = 1
-    for (i in 2 .. n) {
+    for (i in 2..n) {
         phi[i] = i - 1
     }
-    for(i in 2 .. n) {
+    for (i in 2..n) {
         var j = 2 * i
         while (j <= n) {
             phi[j] -= phi[i]
@@ -81,8 +85,10 @@ private fun eulerFunctionRange1ToN(n: Int): List<Int> {
 
 
 private fun checkEulerFUnctionFrom1ToN() {
-    println(eulerFunctionFrom1ToN(10))
-    println(eulerFunctionRange1ToN(10))
+    (2..12).forEach {
+        println(eulerFunctionFrom1ToN(it))
+        println(eulerFunctionRange1ToN(it))
+    }
 }
 
 fun main() {

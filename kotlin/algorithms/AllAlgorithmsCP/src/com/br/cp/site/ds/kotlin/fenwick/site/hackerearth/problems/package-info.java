@@ -37,4 +37,28 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems;
    https://math.stackexchange.com/questions/1170217/connection-between-gcd-and-totient-function
 
 
+    Stand-alone C++ implementation of Phi inverse
+    https://www.johndcook.com/blog/cpp_phi_inverse/
+
+    Stand-alone C# code for Phi inverse
+    https://www.johndcook.com/blog/csharp_phi_inverse/
+
+    Stand-alone code for numerical computing
+    https://www.johndcook.com/blog/stand_alone_code/
+
+
+    Inverse phi
+    https://www.quora.com/What-is-the-inverse-of-Phi
+
+
+
+    Inverse Gaussian distribution
+    https://www.statisticshowto.com/inverse-gaussian/
+    https://en.wikipedia.org/wiki/Inverse_Gaussian_distribution
+
+
+    Problemas
+    https://www.spoj.com/problems/GCDEX/
+    https://lightoj.com/problem/extreme-gcd
+    https://www.eolymp.com/en/problems/1147
 */

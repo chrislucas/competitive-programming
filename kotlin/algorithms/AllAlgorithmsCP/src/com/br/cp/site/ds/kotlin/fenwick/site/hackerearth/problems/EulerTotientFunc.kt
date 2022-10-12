@@ -1,6 +1,5 @@
 package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems
 
-import kotlin.system.measureNanoTime
 import kotlin.system.measureTimeMillis
 
 /*
