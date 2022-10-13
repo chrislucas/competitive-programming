@@ -9,7 +9,7 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems.tutorial.
  */
 
 
-private class GcdSum(private val values: Array<Int>) {
+private class GCDSum(private val values: Array<Int>) {
     private val tree = Array(values.size + 1) { 0 }
     private val mod = 1000000007
     private val mapFunctionResult = mutableMapOf<Int, Int>()
@@ -97,6 +97,7 @@ private class GcdSum(private val values: Array<Int>) {
     private fun descendent(value: Int) = value + (value and (-value))
 }
 
+
 private inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map { transform(it) }
 
@@ -108,18 +109,29 @@ private inline fun testCases(times: Int, exec: (Int) -> Unit) =
     repeat(times, exec)
 
 private fun solver() {
-    val size = readValue(String::toInt)
-    val bit = GcdSum(readValues(transform = String::toInt).toTypedArray())
-    testCases(readValue(String::toInt)) {
-        val (type, i, j) = readString()
-        val ci = i.toInt()
-        val cj = j.toInt()
-        if (type == "C") {
-            println(bit.query(ci, cj))
-        } else {
-            bit.update(ci, cj)
+
+    // TLE
+    fun s1() {
+        val size = readValue(String::toInt)
+        val bit = GCDSum(readValues(transform = String::toInt).toTypedArray())
+        testCases(readValue(String::toInt)) {
+            val (type, i, j) = readString()
+            val ci = i.toInt()
+            val cj = j.toInt()
+            if (type == "C") {
+                println(bit.query(ci, cj))
+            } else {
+                bit.update(ci, cj)
+            }
         }
     }
+
+    fun s2() {
+        val size = readValue(String::toInt)
+    }
+
+    s1()
+
 }
 
 fun main() {

@@ -88,6 +88,14 @@ private fun checkCharIntValue() {
 
 }
 
+private fun <T> computeTimeInMillis(block: () -> T): Pair<T, Long> {
+    val start = System.currentTimeMillis()
+    val result = block()
+    return Pair(result, System.currentTimeMillis() - start)
+}
+
 fun main() {
-    checkCharIntValue()
+    computeTimeInMillis {
+        println(0xff)
+    }
 }

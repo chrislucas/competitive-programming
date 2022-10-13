@@ -52,6 +52,13 @@ operator fun <T> Cube<T>.get(i: Int, j: Int, k: Int) = this[i][j][k]
 private inline fun <reified T> createCube(i: Int, j: Int, k: Int, init: () -> T?):
         Cube<T?> = Array(i) { Array(j) { Array(k) { init() } } }
 
+
+private fun <T> computeTimeInMillis(block: () -> T): Pair<T, Long> {
+    val start = System.currentTimeMillis()
+    val result = block()
+    return Pair(result, System.currentTimeMillis() - start)
+}
+
 fun main() {
     println(0xff)
 }

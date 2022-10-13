@@ -7,7 +7,18 @@ package src.com.br.cp.site.ds.kotlin.fenwick.countinversion.v2
 
 private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
 
-    private val max = values.maxOr()
+
+    private val max: Int = max()
+
+    private fun max(): Int {
+        var max = values[0]
+        for (i in 1 until values.size) {
+            if (values[i] > max) {
+                max = values[i]
+            }
+        }
+        return max
+    }
 
     private val tree = Array(max + 1) { 0 }
     private val size = tree.size
@@ -22,22 +33,21 @@ private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
         return acc
     }
 
-    private fun update(idx: Int) {
-        var i = idx
-        while (i < size) {
-            tree[i] += 1
-            i = parent(i)
+    private fun update(i: Int) {
+        var ci = i
+        while (ci < size) {
+            tree[ci] += i
+            ci = parent(ci)
         }
     }
 
-    private fun Array<Int>.maxOr(default: Int = 0) = maxOrNull() ?: default
 
     fun countInversions() {
         var acc = 0
-        for (i in values.size - 1 downTo 0) {
-            val value = values[i] - 1
-            acc += sum(value)
+
+        for (i in values.indices) {
             update(values[i])
+            acc += sum(max)
         }
     }
 

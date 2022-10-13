@@ -34,6 +34,16 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems
      S = gcd(1, 4) + gcd(2, 4) + gcd(3, 4) + gcd(4, 4)
        = 1 + 2 + 1 + 4
        = 8
+
+    n = 3; d {1, 3}
+    f(3) = 1 * phi(3) + 3 * phi(1)
+         = 2 + 3
+         = 5
+
+    n = 2; d {1, 2}
+    f(2) = 1 * phi(2) + 2 * phi(1)
+         = 1 + 2
+         = 3
     https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/practice-problems/algorithm/akash-and-gcd-1-15/editorial/
     https://www.codingninjas.com/codestudio/problem-details/gcd-sum_1472653
  */
@@ -42,18 +52,18 @@ package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.problems
 private fun computeEulerFunctionRange(n: Int): List<Int> {
 
     fun eulerTotientRange(n: Int): Array<Int> {
-        val table = Array(n + 1) { it }
+        val phi = Array(n + 1) { it }
         for (i in 2..n) {
-            if (table[i] == i) {
-                table[i] = i - 1
+            if (phi[i] == i) {
+                phi[i] = i - 1  // quantidadades de coprimos de um numero i é no máximo i-1
                 var j = 2 * i
                 while (j <= n) {
-                    table[j] -= table[j] / i
+                    phi[j] -= phi[j] / i
                     j += i
                 }
             }
         }
-        return table
+        return phi
     }
 
     fun eulerFunctionRange(n: Int): Array<Int> {
@@ -79,17 +89,44 @@ private fun computeEulerFunctionRange(n: Int): List<Int> {
         d|n  = 'd' sao os divisores de n
      */
     val summation = Array(n + 1) { 0 }
-    for (i in 1..n) {
-        var j = i
-        var k = 1
+    for (divisor in 1..n) {
+        var i = 1
+        var j = divisor     // j-esimo divisor
         while (j <= n) {
-            summation[j] += i * phi[k]
-            j += i
-            k += 1
+            /*
+                como j cresce com a soma de div entao esse loop
+                vai executar n/div vezes e assim i só pode ir ate n/div
+                Assim conseguimos calcular:
+                S = d * phi(i) + ... d * phi(i+1)
+             */
+            summation[j] += divisor * phi[i]
+            j += divisor
+            i += 1
         }
     }
 
     return summation.toList()
+}
+
+private fun checkWithRange() {
+    (10..100).forEach {
+        computeEulerFunctionRange(it)
+    }
+}
+
+private fun checkWithLargeEntry() {
+    val computed = computeTimeInMillis {
+        computeEulerFunctionRange(10)
+    }
+    val (r, s) = computed
+    println("$r, ${s / 1000.0}")
+}
+
+
+private fun <T> computeTimeInMillis(block: () -> T): Pair<T, Long> {
+    val start = System.currentTimeMillis()
+    val result = block()
+    return Pair(result, System.currentTimeMillis() - start)
 }
 
 
@@ -98,7 +135,5 @@ private fun computeEulerFunctionRange(n: Int): List<Int> {
      https://oeis.org/A000010
  */
 fun main() {
-    (10..100).forEach {
-        computeEulerFunctionRange(it)
-    }
+    checkWithLargeEntry()
 }

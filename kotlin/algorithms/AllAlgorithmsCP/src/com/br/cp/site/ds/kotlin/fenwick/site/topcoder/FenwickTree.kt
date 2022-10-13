@@ -14,6 +14,16 @@ class FenwickTree(private val values: Array<Int>) {
     private val size = tree.size
 
 
+    private fun build() {
+
+    }
+
+    private fun query(i: Int): Int {
+        var acc = 0
+
+        return acc
+    }
+
     fun query(i: Int, j: Int): Int {
         return 0
     }
@@ -25,6 +35,13 @@ class FenwickTree(private val values: Array<Int>) {
     private fun child(value: Int) = value - (value and (-value))
 
     private fun parent(value: Int) = value + (value and (-value))
+}
+
+/*
+    https://www.topcoder.com/thrive/articles/Binary%20Indexed%20Trees#read
+ */
+private fun FenwickTree.read(int: Int) {
+
 }
 
 
