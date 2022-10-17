@@ -59,6 +59,7 @@ private fun <T> computeTimeInMillis(block: () -> T): Pair<T, Long> {
     return Pair(result, System.currentTimeMillis() - start)
 }
 
+
 fun main() {
-    println(0xff)
+
 }

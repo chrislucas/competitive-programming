@@ -1,5 +1,7 @@
 package src.com.br.cp.site.ds.kotlin.fenwick.countinversion.v2
 
+import java.util.*
+
 
 /*
     https://tutorialspoint.dev/data-structure/advanced-data-structures/count-inversions-array-set-3-using-bit
@@ -7,21 +9,38 @@ package src.com.br.cp.site.ds.kotlin.fenwick.countinversion.v2
 
 private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
 
+    // COMP
 
-    private val max: Int = max()
-
-    private fun max(): Int {
-        var max = values[0]
-        for (i in 1 until values.size) {
-            if (values[i] > max) {
-                max = values[i]
-            }
-        }
-        return max
-    }
-
-    private val tree = Array(max + 1) { 0 }
+    private val tree = Array(values.size + 1) { 0 }
     private val size = tree.size
+
+    private fun getArrayPosition(): Array<Int> {
+        // similar a funcao lowerbound em cpp ou python
+        fun nextLessThan(values: Array<Int>, left: Int, right: Int, e: Int): Int {
+            var le = left
+            var ri = right
+            while (le < ri) {
+                val mid = (ri - le) / 2 + le
+                if (e > values[mid])
+                    le += 1
+                else
+                    ri = mid
+            }
+            return le
+        }
+
+        val temp = Array(values.size) { 0 }
+        val result = Array(values.size) { 0 }
+
+        System.arraycopy(values, 0, temp, 0, temp.size)
+        Arrays.sort(temp)
+
+        for (i in values.indices) {
+            result[i] = nextLessThan(temp, 0, values.size, values[i]) + 1
+        }
+
+        return result
+    }
 
     fun sum(idx: Int): Int {
         var acc = 0
@@ -33,22 +52,24 @@ private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
         return acc
     }
 
-    private fun update(i: Int) {
+    private fun update(i: Int, value: Int) {
         var ci = i
         while (ci < size) {
-            tree[ci] += i
+            tree[ci] += value
             ci = parent(ci)
         }
     }
 
-
-    fun countInversions() {
+    fun countInversions(): Int {
         var acc = 0
-
-        for (i in values.indices) {
-            update(values[i])
-            acc += sum(max)
+        val positions = getArrayPosition()
+        var n = values.size - 1
+        while (n >= 0) {
+            acc += sum(positions[n] - 1)
+            update(positions[n], 1)
+            n -= 1
         }
+        return acc
     }
 
     private fun child(value: Int) = value - (value and (-value))
@@ -59,6 +80,8 @@ private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
 
 private fun checkCases() {
     arrayOf(
+        CountingInvertionBinIndexedTree(arrayOf(7, -90, 100, 1)),
+        CountingInvertionBinIndexedTree(arrayOf(8, 4, 2, 1)),
         CountingInvertionBinIndexedTree(arrayOf(5, 1, 3, 2)),
         CountingInvertionBinIndexedTree(arrayOf(1, -9, 5, 4, 3)),
         CountingInvertionBinIndexedTree(arrayOf(5, 4, 3, 1, -9)),
