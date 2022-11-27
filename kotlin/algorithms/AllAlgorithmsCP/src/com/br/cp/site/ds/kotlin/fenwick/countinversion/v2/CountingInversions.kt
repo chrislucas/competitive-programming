@@ -9,37 +9,34 @@ import java.util.*
 
 private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
 
-    // COMP
-
+    // TODO teste para competicao
     private val tree = Array(values.size + 1) { 0 }
     private val size = tree.size
 
-    private fun getArrayPosition(): Array<Int> {
-        // similar a funcao lowerbound em cpp ou python
-        fun nextLessThan(values: Array<Int>, left: Int, right: Int, e: Int): Int {
+    private fun getOrderedPosition(): Array<Int> {
+        // funcao lower bound
+        fun lessThanOrEqual(values: Array<Int>, left: Int, right: Int, target: Int): Int {
             var le = left
             var ri = right
             while (le < ri) {
                 val mid = (ri - le) / 2 + le
-                if (e > values[mid])
+                if (target > values[mid]) {
                     le += 1
-                else
+                } else {
                     ri = mid
+                }
             }
             return le
         }
 
         val temp = Array(values.size) { 0 }
-        val result = Array(values.size) { 0 }
-
+        val position = Array(values.size) { 0 }
         System.arraycopy(values, 0, temp, 0, temp.size)
         Arrays.sort(temp)
-
         for (i in values.indices) {
-            result[i] = nextLessThan(temp, 0, values.size, values[i]) + 1
+            position[i] = lessThanOrEqual(temp, 0, values.size, values[i]) + 1
         }
-
-        return result
+        return position
     }
 
     fun sum(idx: Int): Int {
@@ -52,21 +49,21 @@ private class CountingInvertionBinIndexedTree(private val values: Array<Int>) {
         return acc
     }
 
-    private fun update(i: Int, value: Int) {
+    private fun update(i: Int) {
         var ci = i
         while (ci < size) {
-            tree[ci] += value
+            tree[ci] += 1
             ci = parent(ci)
         }
     }
 
     fun countInversions(): Int {
         var acc = 0
-        val positions = getArrayPosition()
+        val positions = getOrderedPosition()
         var n = values.size - 1
         while (n >= 0) {
             acc += sum(positions[n] - 1)
-            update(positions[n], 1)
+            update(positions[n])
             n -= 1
         }
         return acc
