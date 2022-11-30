@@ -35,4 +35,10 @@ package src.com.br.cp.site.geeksforgeeks.top10.graph;
    https://rd.uffs.edu.br/bitstream/prefix/5758/1/DALLAGNOL.pdf
 
 
+    articulation point leetcode
+    https://leetcode.com/problems/critical-connections-in-a-network/discuss/383474/articulation-point
+    https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/discuss/1293931/Simplest-explanation-(with-diagram).-Articulation-Point-Tarjan-Algo.-Faster-than-100/1041405/
+    https://leetcode.com/problems/critical-connections-in-a-network/discuss/612004/articulation-points-and-bridges-in-this-question
+    https://leetcode.com/problems/minimize-malware-spread-ii/discuss/199059/real-on2-solution-base-on-tarjans-algorithm
+    https://leetcode.com/problems/redundant-connection/discuss/732312/using-bridges-and-articulation-points-explained
 */

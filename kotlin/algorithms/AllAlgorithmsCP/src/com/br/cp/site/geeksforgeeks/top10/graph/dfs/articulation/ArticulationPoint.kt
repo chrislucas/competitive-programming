@@ -15,16 +15,20 @@ import java.lang.Integer.min
     - Para um grafo desconexo nao direcionado, um ponto de articulacao e um vertice que se removido que
     aumenta o numero de componentes conexos
 
-    Algoritmo
-    -
+    CONDICOES PARA ENCONTRAR PONTOS DE ARTICULACAO
+    Um vertice u e um ponto de articulacao se um dos 2 casos for verdadeiro
+
+    1 - u e um vertice raiz de uma DFS tree e tem ao menos 2 vertices filhos
+    2 - u nao e um vertice raiz de uma DFS tree e tem um vertice filho v que nenhum vertice de uma subarvore
+    cujo vertice raiz e o proprio v tem uma ARESTA DE VOLTA para um vertice ancestral na arvore formada
+    pela DFS a partir de u
+
  */
 private typealias SimpleAdjList = ArrayList<ArrayList<Int>>
 
 private class ArticulationPointGraph(private val size: Int) {
 
     val graph = SimpleAdjList()
-
-    val isArticulationPoint = Array(size) { false }
 
     init {
         for (i in 0..size) {
@@ -44,95 +48,8 @@ private class ArticulationPointGraph(private val size: Int) {
         }
     }
 
-
-    fun tarjan(root: Int = 0) {
-        fun dfs(
-            u: Int,
-            visited: Array<Boolean>,
-            parents: Array<Int>,
-            childrens: Array<Int>,
-            discovery: Array<Int>,
-            low: Array<Int>,
-            parent: Int,
-            time: Int
-        ) {
-            /*
-                Passos
-                - Fazer a dfs no grafo
-                    - na dfs guardar o vertice pai de um em parent[u]
-                    caso 1
-                    - para checar se u e um vertice raiz de uma dfs tree e se
-                    tem ao menos 2 filhos, para cada vertices contar a quantidade de villhos
-                    usando o vetor children
-                        - Se o vertice atual u for raiz (parent[u] = -1) e tiver mas de 2 filhos
-                        esse vertice u eh um ponto de articulacao
-
-                   caso 2
-                   - quando vertice u nao e raiz da dfs tree e ALCANCA um vertice v
-                   que de modo que nenhum vertice na subarvore formada da DFS com raiz
-                   em v (filho de v) tenha uma aresta de volta para um vertice raiz na arvore
-                   formada da DFS a partir de u.
-                        - Para isso precisamos manter um array discovery onde discovery[u]
-                        diz quando o vertice u foi alcançado
-                  - Para cada vertice u, descobrir qual o vertice alcançado em menor tempo
-                  que pode ser alcancado a na subarvore cuja raiz e u.
-                    - Para isso temos um array low
-                        low[u] = min(disc[u]. disc[ancestor]) onde 'ancestor' e o vertice ancestral
-                        de u e tem um areata de u de volta para w
-
-             */
-            visited[u] = true
-            discovery[u] = time
-            low[u] = time
-            var children = 1
-            for (v in graph[u]) {
-                /*
-                    Se v nao foi visitado entao seguimos com a busca em profundidade
-                    construindo a dfs tree onde v eh filho de u (u <- v)
-                 */
-                if (!visited[v]) {
-                    children += 1
-                    dfs(
-                        v,
-                        visited,
-                        parents,
-                        childrens,
-                        discovery,
-                        low,
-                        parent,
-                        time + 1
-                    )
-
-                    /*
-                        Checa se a subarvore com a raiz em v tem conexao com algum vertice
-                        antecessor a u
-                     */
-                    low[u] = min(low[u], low[v])
-
-                    /*
-                         Se u nao for raiz (parent != -1) e o menor vertice (identificador) ancestral low[v]
-                         e maior que a quantidade de vertices que foi necessario alcançar para chever em u
-                         entao u eh um ponto de articulacao
-                     */
-                    if (parent != -1 && low[v] >= discovery[u]) {
-                        isArticulationPoint[u] = true
-                    }
-                } else if (v != parent) {
-                    // atualizar o antecessor de u para o menor valor
-                    low[u] = min(low[u], discovery[v])
-                }
-            }
-
-            /*
-                Caso 1
-                Se u for vertice raiz da subarvore e tiver mais de 2 vertices filhos
-                u eh um ponto de articulacao
-             */
-            if (parent == -1 && children > 1) {
-                isArticulationPoint[u] = true
-            }
-        }
-
+    // tarjan
+    fun articulationPoint(): Array<Boolean> {
         /*
             Usamos uma dfs para veriricar os pontos de articulacao no grafo. Numa
             dfs formamos uma Arvore de vertices chamada de
@@ -148,30 +65,131 @@ private class ArticulationPointGraph(private val size: Int) {
             um dos vertices ancestrais na DFS tree formada a partir do vertice u
          */
 
-        val parent = Array(size) { -1 }
-        val childs = Array(size) { 0 }
-        val discovery = Array(size) { 0 }
+        val discoveryTime = Array(size) { 0 }
         val low = Array(size) { 0 }
         val visited = Array(size) { false }
+        val isArticulationPoint = Array(size) { false }
 
         for (u in 0 until size) {
             if (!visited[u]) {
                 dfs(
-                    root,
-                    visited,
-                    parent,
-                    childs,
-                    discovery,
-                    low,
+                    u,
                     -1,
+                    visited,
+                    discoveryTime,
+                    low,
+                    isArticulationPoint,
                     1
                 )
             }
+        }
+
+        return isArticulationPoint
+    }
+
+    private fun dfs(
+        u: Int,
+        parent: Int,
+        visited: Array<Boolean>,
+        discoveryTime: Array<Int>,
+        low: Array<Int>,
+        isArticulationPoint: Array<Boolean>,
+        time: Int
+    ) {
+        /*
+            Passos
+            - Fazer a dfs no grafo
+                - na dfs guardar o vertice pai de um em parent[u]
+                caso 1
+                - para checar se u e um vertice raiz de uma dfs tree e se
+                tem ao menos 2 filhos, para cada vertices contar a quantidade de villhos
+                usando o vetor children
+                    - Se o vertice atual u for raiz (parent[u] = -1) e tiver mas de 2 filhos
+                    esse vertice u eh um ponto de articulacao
+
+               caso 2
+               - quando vertice u nao e raiz da dfs tree e ALCANCA um vertice v
+               que de modo que nenhum vertice na subarvore formada da DFS com raiz
+               em v (filho de v) tenha uma aresta de volta para um vertice raiz na arvore
+               formada da DFS a partir de u.
+                    - Para isso precisamos manter um array discovery onde discovery[u]
+                    diz quando o vertice u foi alcançado
+              - Para cada vertice u, descobrir qual o vertice alcançado em menor tempo
+              que pode ser alcancado a na subarvore cuja raiz e u.
+                - Para isso temos um array low
+                    low[u] = min(disc[u]. disc[ancestor]) onde 'ancestor' e o vertice ancestral
+                    de u e tem um areata de u de volta para w
+
+         */
+        visited[u] = true
+        discoveryTime[u] = time
+        low[u] = time
+        var childrens = 0
+        for (v in graph[u]) {
+            /*
+                Se v nao foi visitado entao seguimos com a busca em profundidade
+                construindo a dfs tree onde v eh filho de u (u <- v)
+             */
+            if (!visited[v]) {
+                childrens += 1
+                dfs(
+                    v,
+                    u,
+                    visited,
+                    discoveryTime,
+                    low,
+                    isArticulationPoint,
+                    time + 1
+                )
+                /*
+                    Checa se a subarvore com a raiz em v tem conexao com algum vertice
+                    antecessor a u
+                 */
+                low[u] = min(low[u], low[v])
+                /*
+                     Caso 2
+                     Se u nao for raiz (parent != -1) e o menor vertice (identificador) ancestral low[v]
+                     e maior que a quantidade de vertices que foi necessario alcançar para chever em u
+                     entao u eh um ponto de articulacao
+                 */
+                if (parent != -1 && low[v] >= discoveryTime[u]) {
+                    isArticulationPoint[u] = true
+                }
+            } else if (v != parent) {
+                // atualizar o antecessor de u para o menor valor
+                low[u] = min(low[u], discoveryTime[v])
+            }
+        }
+        /*
+            Caso 1
+            Se u for vertice raiz da subarvore e tiver mais de 2 vertices filhos
+            u eh um ponto de articulacao
+         */
+        if (parent == -1 && childrens > 1) {
+            isArticulationPoint[u] = true
         }
     }
 
 }
 
-fun main() {
 
+private fun check() {
+    arrayOf(
+        arrayOf(0 to 1, 1 to 2, 2 to 3) to 4,
+        arrayOf(1 to 0, 0 to 2, 2 to 1, 0 to 3, 3 to 4) to 5,
+        arrayOf(0 to 1, 1 to 2, 2 to 0, 1 to 3, 1 to 4, 1 to 6, 3 to 5, 4 to 5) to 7
+    ).forEach { (edges, size) ->
+        val articulation = ArticulationPointGraph(size)
+        articulation += edges
+        val articulationPoint = articulation.articulationPoint()
+        val group = mutableMapOf<Boolean, MutableList<Int>>()
+        articulationPoint.forEachIndexed { idx, value ->
+            group[value]?.plusAssign(idx)
+        }
+        println(group)
+    }
+}
+
+fun main() {
+    check()
 }
