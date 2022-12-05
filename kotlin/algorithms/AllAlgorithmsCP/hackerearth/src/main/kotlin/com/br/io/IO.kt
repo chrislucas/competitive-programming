@@ -47,3 +47,33 @@ private fun runUntilEndOfFile(fn: (String) -> Unit) {
         } ?: false
     }
 }
+
+private fun <V> String.associate(
+    map: MutableMap<Char, V>,
+    aggregate: (MutableMap<Char, V>, Char) -> Unit
+): Map<Char, V> {
+    this.forEach {
+        aggregate(map, it)
+    }
+    return map
+}
+
+
+private fun <V> String.associateIndexed(
+    map: MutableMap<Char, V>,
+    aggregate: (MutableMap<Char, V>, Int, Char) -> Unit
+): Map<Char, V> {
+    this.forEachIndexed { idx, c ->
+        aggregate(map, idx, c)
+    }
+    return map
+}
+
+private fun String.half(): Pair<String, String> {
+    return if (isNotEmpty()) {
+        val mi = length / 2
+        this.substring(0, mi) to this.substring(mi, length)
+    } else {
+        "" to ""
+    }
+}

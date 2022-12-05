@@ -60,6 +60,16 @@ private fun <T> computeTimeInMillis(block: () -> T): Pair<T, Long> {
 }
 
 
+private fun <V> String.counting(
+    map: MutableMap<Char, V>,
+    aggregate: (MutableMap<Char, V>, Char) -> Unit
+): Map<Char, V> {
+    this.forEach {
+        aggregate(map, it)
+    }
+    return map
+}
+
 fun main() {
 
 }
