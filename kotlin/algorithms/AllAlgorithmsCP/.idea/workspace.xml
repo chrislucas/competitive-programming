@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/io/IO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/src/main/kotlin/com/br/io/IO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/sites/adventofcode/v2022/days/ExecDay5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/sites/adventofcode/v2022/days/ExecDay5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ExecDay4Kt">
+  <component name="RunManager" selected="Kotlin.ExecDay5Kt">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AllAlgorithmsCP" />
       <method v="2">
@@ -234,9 +234,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P3351Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.br.problems.adhoc.lvl3.P3351Kt" />
-      <module name="uri.main" />
+    <configuration name="ExecDay5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.adventofcode.v2022.days.ExecDay5Kt" />
+      <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,19 +341,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.P3351Kt" />
       <item itemvalue="Kotlin.ExecDay1Kt" />
       <item itemvalue="Kotlin.ExecDay2Kt" />
       <item itemvalue="Kotlin.ExecDay3Kt" />
       <item itemvalue="Kotlin.ExecDay4Kt" />
+      <item itemvalue="Kotlin.ExecDay5Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ExecDay5Kt" />
         <item itemvalue="Kotlin.ExecDay4Kt" />
         <item itemvalue="Kotlin.ExecDay3Kt" />
         <item itemvalue="Kotlin.ExecDay2Kt" />
         <item itemvalue="Kotlin.ExecDay1Kt" />
-        <item itemvalue="Kotlin.P3351Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -1706,6 +1706,16 @@
           <line>20</line>
           <option name="timeStamp" value="798" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/adventofcode/v2022/days/ExecDay5.kt</url>
+          <line>17</line>
+          <option name="timeStamp" value="816" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/sites/adventofcode/v2022/days/ExecDay5.kt</url>
+          <line>43</line>
+          <option name="timeStamp" value="817" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1969,8 +1979,11 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
-        <watch expression="p.contains(q)" />
-        <watch expression="q.contains(p)" />
+        <watch expression="data.length" language="kotlin" />
+        <watch expression="line[i]" />
+        <watch expression="value.isNotBlank()" />
+        <watch expression="value.isBlank()" language="kotlin" />
+        <watch expression="data.length" language="kotlin" />
       </configuration>
       <configuration name="GradleRunConfiguration">
         <watch expression="sieve.primes.get(5761459)" language="JAVA" />

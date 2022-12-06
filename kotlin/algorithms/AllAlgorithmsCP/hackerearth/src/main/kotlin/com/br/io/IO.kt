@@ -4,8 +4,6 @@ package com.br.io
 private typealias PII = Pair<Int, Int>
 private typealias PLL = Pair<Long, Long>
 
-
-
 private inline fun <T> readValues(delimiter: String = " ", transform: (String) -> T) =
     readLine()!!.split(delimiter).map { transform(it) }
 
