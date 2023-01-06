@@ -66,18 +66,20 @@ private class ArticulationPointGraph(private val size: Int) {
          */
 
         val discoveryTime = Array(size) { 0 }
-        val low = Array(size) { 0 }
+        val lowestParent = Array(size) { 0 }
         val visited = Array(size) { false }
         val isArticulationPoint = Array(size) { false }
+
+        val noParent = -1
 
         for (u in 0 until size) {
             if (!visited[u]) {
                 dfs(
                     u,
-                    -1,
+                    noParent,
                     visited,
                     discoveryTime,
-                    low,
+                    lowestParent,
                     isArticulationPoint,
                     1
                 )
@@ -92,7 +94,7 @@ private class ArticulationPointGraph(private val size: Int) {
         parent: Int,
         visited: Array<Boolean>,
         discoveryTime: Array<Int>,
-        low: Array<Int>,
+        lowestParent: Array<Int>,
         isArticulationPoint: Array<Boolean>,
         time: Int
     ) {
@@ -123,7 +125,7 @@ private class ArticulationPointGraph(private val size: Int) {
          */
         visited[u] = true
         discoveryTime[u] = time
-        low[u] = time
+        lowestParent[u] = time
         var childrens = 0
         for (v in graph[u]) {
             /*
@@ -137,7 +139,7 @@ private class ArticulationPointGraph(private val size: Int) {
                     u,
                     visited,
                     discoveryTime,
-                    low,
+                    lowestParent,
                     isArticulationPoint,
                     time + 1
                 )
@@ -145,19 +147,19 @@ private class ArticulationPointGraph(private val size: Int) {
                     Checa se a subarvore com a raiz em v tem conexao com algum vertice
                     antecessor a u
                  */
-                low[u] = min(low[u], low[v])
+                lowestParent[u] = min(lowestParent[u], lowestParent[v])
                 /*
                      Caso 2
                      Se u nao for raiz (parent != -1) e o menor vertice (identificador) ancestral low[v]
                      e maior que a quantidade de vertices que foi necessario alcançar para chever em u
                      entao u eh um ponto de articulacao
                  */
-                if (parent != -1 && low[v] >= discoveryTime[u]) {
+                if (parent != -1 && lowestParent[v] >= discoveryTime[u]) {
                     isArticulationPoint[u] = true
                 }
             } else if (v != parent) {
                 // atualizar o antecessor de u para o menor valor
-                low[u] = min(low[u], discoveryTime[v])
+                lowestParent[u] = min(lowestParent[u], discoveryTime[v])
             }
         }
         /*
@@ -176,8 +178,9 @@ private class ArticulationPointGraph(private val size: Int) {
 private fun check() {
     arrayOf(
         arrayOf(0 to 1, 1 to 2, 2 to 3) to 4,
-        arrayOf(1 to 0, 0 to 2, 2 to 1, 0 to 3, 3 to 4) to 5,
-        arrayOf(0 to 1, 1 to 2, 2 to 0, 1 to 3, 1 to 4, 1 to 6, 3 to 5, 4 to 5) to 7
+        arrayOf(0 to 1, 0 to 2, 1 to 2, 1 to 3, 1 to 4, 1 to 6, 3 to 5, 4 to 5) to 7,
+        arrayOf(0 to 1, 0 to 2, 1 to 2, 1 to 3, 1 to 4, 1 to 5) to 7,
+        arrayOf(1 to 0, 0 to 2, 2 to 1, 0 to 3, 3 to 4) to 5
     ).forEach { (edges, size) ->
         val articulation = ArticulationPointGraph(size)
         articulation += edges
