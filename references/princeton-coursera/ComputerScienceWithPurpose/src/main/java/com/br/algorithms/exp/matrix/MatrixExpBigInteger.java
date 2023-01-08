@@ -4,77 +4,109 @@ import static java.math.BigInteger.ONE;
 import static java.math.BigInteger.ZERO;
 
 import java.math.BigInteger;
-import java.util.List;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
-/**
- * https://www.geeksforgeeks.org/matrix-exponentiation/
- *
- * <p>Resumo do texto no link acima
- *
- * <p>Para resolver uma exponenciacao de matriz temos a seguinte recorrencia
- *
- * <p>1) F(n) = aF(n-1) + bF(n-2) + cF(n-3) a,b,c sao constantes
- *
- * <p>Rerepsentando a equacao 1 em termos de matriz
- *
- * <p>F_Mat_1 = F_Mat_2 * F_Mat_3
- *
- * <p>F_Mat_1: Uma matriz 3x1 na seguinte forma { {f(n)}, {f(n-1)}, {f(n-2)} }
- *
- * <p>F_Mat_3 = Tambem uma matriz 3x1 na seguinte forma { {f(n-1)}, {f(n-2)}, {f(n-3)} }
- *
- * <p>Seguindo as regras de multiplicacao a Matriz F_Mat_2 precisa ter dimensao 3x3 para multiplicar
- * F_Mat_3 (numero de colunas da matriz A precisa ser igual a de linhas da matriz B e a matriz
- * resultante tera a quantidade de linhas de A e colunas de B)
- *
- * <p>F_Mat_3 =
- *
- * <p>{ {a, b, c} {1, 0, 0} {0, 1, 0} }
- *
- * <p>
- *
- * <p>Com esses as matriz tendo esses valores a equacao F_Mat_1 = F_Mat_2 * F_Mat_3 eh verdadeira
- *
- * <p>Assumimos que: f(0) = 0, f(1) = 1 e f(2) = 1 (fibonacci \0/)
- *
- * <p>para n = 3 {{f(3)}, {f(2)}, {f(1)}} = { {a,b,c}, {1,0,0}, {0, 1, 0}} * {{f(2)}, {f(1)},
- * {f(0)}}
- *
- * <p>para n = 4 {{f(4)}, {f(3)}, {f(2)}} = { {a,b,c}, {1,0,0}, {0, 1, 0}} * {{f(3)}, {f(2)},
- * {f(1)}}
- *
- * <p>seja A = {{f(4)}, {f(3)}, {f(2)}} seja B = {{a,b,c}, {1,0,0}, {0, 1, 0}} seja FIB = {{f(2)},
- * {f(1)}, {f(0)}}
- *
- * <p>A = B * B * FIB
- *
- * <p>seja N = {{f(n)}, {f(n-1)}, {f(n-2)}}
- *
- * <p>N = B ^ (n-2) * FIB
- */
 public class MatrixExpBigInteger {
 
-  static final List<BigInteger[][]> matrixes =
-      List.of(
-          new BigInteger[][] {{ZERO, ZERO}, {ZERO, ONE}},
-          new BigInteger[][] {{ZERO, ZERO}, {ONE, ZERO}},
-          new BigInteger[][] {{ZERO, ONE}, {ZERO, ZERO}},
-          new BigInteger[][] {{ONE, ZERO}, {ZERO, ZERO}},
-          new BigInteger[][] {{ONE, ZERO, ZERO}, {ZERO, ZERO, ZERO}, {ZERO, ZERO, ZERO}});
-
-  private static BigInteger[][] fibexp(int n) {
-    BigInteger[][] res = new BigInteger[][] {{ZERO}, {ZERO}, {ZERO}};
-
-    return res;
+  private static void print(BigInteger[][] mat) {
+    StringBuilder sb = new StringBuilder();
+    for (BigInteger[] values : mat) {
+      for (int j = 0; j < values.length; j++) {
+        sb.append(String.format(j == 0 ? "%s" : " %s", values[j]));
+      }
+      sb.append("\n");
+    }
+    System.out.println(sb);
   }
 
-  private static BigInteger multipler(BigInteger a, BigInteger b, BigInteger m) {
+  private static BigInteger[][] copy(BigInteger[][] source) {
+    BigInteger[][] cpy = new BigInteger[source.length][];
+    for (int i = 0; i < source.length; i++) {
+      cpy[i] = new BigInteger[source[i].length];
+      System.arraycopy(source[i], 0, cpy[i], 0, source[i].length);
+    }
+    return cpy;
+  }
+
+  private static boolean lessThan(BigInteger a, BigInteger b) {
+    return a.compareTo(b) < 0;
+  }
+
+  private static BigInteger multiply(BigInteger a, BigInteger b, BigInteger m) {
     return (a.mod(m).multiply(b.mod(m))).mod(m);
   }
 
-  private static BigInteger[][] exp(BigInteger[][] matriz, BigInteger n, BigInteger m) {
-    return null;
+  private static boolean isOdd(BigInteger a) {
+    return ONE.equals(a.and(ONE));
   }
 
-  public static void main(String[] args) {}
+  private static void fill(BigInteger[][] matrix, BigInteger value) {
+    for (BigInteger[] bigIntegers : matrix) {
+      Arrays.fill(bigIntegers, value);
+    }
+  }
+
+  private static BigInteger[][] multiply(BigInteger[][] a, BigInteger[][] b, BigInteger m) {
+    int linA = a.length;
+    int colB = b[0].length;
+    int linB = b.length;
+    BigInteger[][] c = new BigInteger[linA][colB];
+    fill(c, ZERO);
+    for (int i = 0; i < linA; i++) {
+      for (int j = 0; j < colB; j++) {
+        for (int k = 0; k < linB; k++) {
+          c[i][j] = c[i][j].add(multiply(a[i][k], b[k][j], m));
+        }
+      }
+    }
+    return c;
+  }
+
+  /*
+     Calculadora online de exponenciacao de matriz
+     https://www.dcode.fr/matrix-power
+  */
+  private static BigInteger[][] exp(BigInteger[][] base, BigInteger e, BigInteger m) {
+    if (ONE.compareTo(e) >= 0) {
+      return base;
+    } else {
+      BigInteger[][] cpy = copy(base);
+      while (lessThan(ZERO, e)) {
+        if (isOdd(e)) {
+          cpy = multiply(cpy, base, m);
+        }
+        base = multiply(base, base, m);
+        e = e.shiftRight(1);
+      }
+      return cpy;
+    }
+  }
+
+  private static void checkExp() {
+    BigInteger[][] base =
+        new BigInteger[][] {
+          {BigInteger.valueOf(1), BigInteger.valueOf(2)},
+          {BigInteger.valueOf(3), BigInteger.valueOf(4)}
+        };
+
+    // https://www.dcode.fr/matrix-power
+    // para obter matrix ^ n mod m precisamos passar para funcao n - 1
+    // exp(base, n - 1, m)
+    print(exp(base, BigInteger.valueOf(10), BigInteger.valueOf(100000000)));
+
+    System.out.println("********************************************************");
+    Stream.of(
+            new BigInteger[][] {{ZERO, ONE}, {ZERO, ZERO}},
+            base,
+            new BigInteger[][] {{ONE, ONE, ONE}, {ONE, ZERO, ZERO}, {ZERO, ONE, ZERO}})
+        .forEach(
+            matrix -> {
+              exp(base, BigInteger.valueOf(2), BigInteger.ONE);
+            });
+  }
+
+  public static void main(String[] args) {
+    checkExp();
+  }
 }
