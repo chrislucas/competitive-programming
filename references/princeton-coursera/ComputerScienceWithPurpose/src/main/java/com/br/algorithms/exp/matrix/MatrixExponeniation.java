@@ -9,7 +9,7 @@ public class MatrixExponeniation {
    * TODO 1) implementar um algorimto de exponenciacao rapida de matriz para verificar o resultado
    * dessas matrizes sendo multiplicadas N vezes
    *
-   * <p>2) Verifica se essas matrizes tem um nome especifoco
+   * <p>>2) Verifica se essas matrizes tem um nome especifoco
    *
    * <p>https://mathworld.wolfram.com/01-Matrix.html
    */

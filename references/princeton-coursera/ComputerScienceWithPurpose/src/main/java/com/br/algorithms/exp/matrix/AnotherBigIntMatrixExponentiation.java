@@ -7,7 +7,7 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class MatrixExpBigInteger {
+public class AnotherBigIntMatrixExponentiation {
 
   private static void print(BigInteger[][] mat) {
     StringBuilder sb = new StringBuilder();
@@ -17,7 +17,7 @@ public class MatrixExpBigInteger {
       }
       sb.append("\n");
     }
-    System.out.println(sb);
+    System.out.print(sb);
   }
 
   private static BigInteger[][] copy(BigInteger[][] source) {
@@ -93,7 +93,8 @@ public class MatrixExpBigInteger {
     // https://www.dcode.fr/matrix-power
     // para obter matrix ^ n mod m precisamos passar para funcao n - 1
     // exp(base, n - 1, m)
-    print(exp(base, BigInteger.valueOf(10), BigInteger.valueOf(100000000)));
+    BigInteger m = BigInteger.valueOf(100000000);
+    print(exp(base, BigInteger.valueOf(10), m));
 
     System.out.println("********************************************************");
     Stream.of(
@@ -102,11 +103,31 @@ public class MatrixExpBigInteger {
             new BigInteger[][] {{ONE, ONE, ONE}, {ONE, ZERO, ZERO}, {ZERO, ONE, ZERO}})
         .forEach(
             matrix -> {
-              exp(base, BigInteger.valueOf(2), BigInteger.ONE);
+              print(exp(matrix, BigInteger.valueOf(6), m));
+              System.out.println("********************************************************");
             });
   }
 
+  private static void check1() {
+    final Stream<BigInteger[][]> matrixes =
+        Stream.of(
+            // new BigInteger[][]{{ZERO, ZERO}, {ZERO, ONE}},
+            // new BigInteger[][]{{ZERO, ZERO}, {ONE, ZERO}},
+            // new BigInteger[][]{{ZERO, ONE}, {ZERO, ZERO}},
+            new BigInteger[][] {{ONE, ZERO}, {ZERO, ZERO}},
+            new BigInteger[][] {{ONE, ZERO, ZERO}, {ZERO, ZERO, ZERO}, {ZERO, ZERO, ZERO}},
+            new BigInteger[][] {{ONE, BigInteger.valueOf(2)}, {BigInteger.valueOf(2), ONE}});
+
+    matrixes.forEach(
+        matrix -> {
+          BigInteger m = BigInteger.valueOf(1000000000);
+          print(exp(matrix, BigInteger.valueOf(10), m));
+          System.out.println("********************************************");
+        });
+  }
+
   public static void main(String[] args) {
-    checkExp();
+    // checkExp();
+    check1();
   }
 }

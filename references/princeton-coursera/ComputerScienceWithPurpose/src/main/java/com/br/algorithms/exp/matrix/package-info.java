@@ -13,4 +13,8 @@ package com.br.algorithms.exp.matrix;
  *
  * <p>https://www.inf.ed.ac.uk/teaching/courses/cfcs1/lectures/cfcs_l15.pdf
  * https://lapix.ufsc.br/ensino/visao/operacoes-genericas-de-convolucao/#
+ *
+ * <p>Big fibonacci numbers https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html#:
+ *
+ * <p>Recurrence using Matrix exponentiation https://codeforces.com/blog/entry/19046
  */
