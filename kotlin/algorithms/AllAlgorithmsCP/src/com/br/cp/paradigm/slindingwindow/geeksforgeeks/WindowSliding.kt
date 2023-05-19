@@ -121,7 +121,11 @@ private fun maxSumOfKConsecutivesValues() {
     val max = values.map { (values, size) -> naiveMaxSum(values, size) }
     val min = values.map { (values, size) -> naiveMinSum(values, size) }
     println("$max, $min")
-    val maxWindow = values.map { (values, size) }
+    val maxWindow = values.map { (values, size) -> windowSlidingMaxSum(values, size) }
+    val minWindow = values.map { (values, size) -> windowSlidingMinSum(values, size) }
+
+    println("$maxWindow, $minWindow")
+
 }
 
 

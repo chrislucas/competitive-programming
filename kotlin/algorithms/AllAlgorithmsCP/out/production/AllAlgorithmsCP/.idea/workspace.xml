@@ -222,7 +222,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestInstanceofNPE">
+  <component name="RunManager" selected="Kotlin.WindowSlidingKt">
     <configuration name="ChuckData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.ChuckData" />
       <module name="AllAlgorithmsCP" />
@@ -249,13 +249,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArticulationPointKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.geeksforgeeks.top10.graph.dfs.articulation.ArticulationPointKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CubicRootBuiltInKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.news.v1p8.CubicRootBuiltInKt" />
       <module name="AllAlgorithmsCP" />
@@ -265,6 +258,13 @@
     </configuration>
     <configuration name="TestChunckedFunKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.TestChunckedFunKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowSlidingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.geeksforgeeks.WindowSlidingKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -372,17 +372,17 @@
     <list>
       <item itemvalue="Application.TestInstanceofNPE" />
       <item itemvalue="Application.ChuckData" />
+      <item itemvalue="Kotlin.WindowSlidingKt" />
       <item itemvalue="Kotlin.TestChunckedFunKt" />
       <item itemvalue="Kotlin.CubicRootBuiltInKt" />
-      <item itemvalue="Kotlin.ArticulationPointKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.WindowSlidingKt" />
         <item itemvalue="Application.TestInstanceofNPE" />
         <item itemvalue="Kotlin.TestChunckedFunKt" />
         <item itemvalue="Kotlin.CubicRootBuiltInKt" />
         <item itemvalue="Application.ChuckData" />
-        <item itemvalue="Kotlin.ArticulationPointKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1762,13 +1762,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>44</line>
-          <option name="timeStamp" value="826" />
+          <line>54</line>
+          <option name="timeStamp" value="828" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>52</line>
-          <option name="timeStamp" value="827" />
+          <line>44</line>
+          <option name="timeStamp" value="829" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>49</line>
+          <option name="timeStamp" value="830" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>73</line>
+          <option name="timeStamp" value="831" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
