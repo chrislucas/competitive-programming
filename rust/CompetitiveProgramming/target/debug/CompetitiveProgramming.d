@@ -1,0 +1,1 @@
+/Users/chrsantos/Documents/repositories/personal/competitive-programming/rust/CompetitiveProgramming/target/debug/CompetitiveProgramming: /Users/chrsantos/Documents/repositories/personal/competitive-programming/rust/CompetitiveProgramming/src/main.rs /Users/chrsantos/Documents/repositories/personal/competitive-programming/rust/CompetitiveProgramming/src/othermain.rs
