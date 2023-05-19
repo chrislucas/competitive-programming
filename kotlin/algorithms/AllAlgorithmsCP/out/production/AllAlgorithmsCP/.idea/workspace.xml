@@ -5,41 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exts/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codeforces/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codeforces/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcj/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/gcj/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/dfs/articulation/ArticulationPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/dfs/articulation/ArticulationPoint.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/AP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/ArticulationPointGraph.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/cartesian/Cartesian.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/cartesian/Cartesian.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/BiconnectedComponents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/BiconnectedComponents.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uri/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/ExponentiationBySquaring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/ExponentiationBySquaring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/codeforces/MatrixExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/codeforces/MatrixExponentiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/geeksforgeeks/ExpBitManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/geeksforgeeks/ExpBitManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/matrix/linearrecorrence/BigIntegerMatrixExponentiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/matrix/linearrecorrence/BigIntegerMatrixExponentiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/usaco/MatrixExponentiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/usaco/MatrixExponentiation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +141,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
         <option value="package-info" />
         <option value="Kotlin File" />
       </list>
@@ -172,33 +175,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="true" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/codeforces/src/main/kotlin/com/br/algo/ext/integer/bitwise/NextPowerOf2.kt" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/br/cp/recursion/dp/partition/subset/minimumsumdiff" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/sbc/comp/sul2021" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.23684211" />
-    <property name="project.structure.side.proportion" value="0.46617237" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/geeksforgeeks/ds/cache&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/ds/cache" />
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/sbc/comp/sul2021" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/rangeminquery" />
       <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
-      <recent name="$PROJECT_DIR$/src/com/br/cp/graph/coloring" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/tutorials/challenge/ishouldnknow" />
+      <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/strings/dna" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/pie" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/trees/segtree/v1" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/" />
@@ -225,16 +222,29 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ArticulationPointKt">
-    <configuration default="true" type="JetRunConfigurationType">
+  <component name="RunManager" selected="Application.TestInstanceofNPE">
+    <configuration name="ChuckData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.ChuckData" />
       <module name="AllAlgorithmsCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.kotlin.chuncked.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="TestInstanceofNPE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.tutorials.TestInstanceofNPE" />
       <module name="AllAlgorithmsCP" />
-      <option name="filePath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.br.tutorials.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,29 +256,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BridgeKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.geeksforgeeks.top10.graph.dfs.bridge.BridgeKt" />
+    <configuration name="CubicRootBuiltInKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.news.v1p8.CubicRootBuiltInKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExecDay3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.adventofcode.v2022.days.ExecDay3Kt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExecDay4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.adventofcode.v2022.days.ExecDay4Kt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExecDay5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.sites.adventofcode.v2022.days.ExecDay5Kt" />
+    <configuration name="TestChunckedFunKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.TestChunckedFunKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -374,19 +370,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.ExecDay3Kt" />
-      <item itemvalue="Kotlin.ExecDay4Kt" />
-      <item itemvalue="Kotlin.ExecDay5Kt" />
+      <item itemvalue="Application.TestInstanceofNPE" />
+      <item itemvalue="Application.ChuckData" />
+      <item itemvalue="Kotlin.TestChunckedFunKt" />
+      <item itemvalue="Kotlin.CubicRootBuiltInKt" />
       <item itemvalue="Kotlin.ArticulationPointKt" />
-      <item itemvalue="Kotlin.BridgeKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestInstanceofNPE" />
+        <item itemvalue="Kotlin.TestChunckedFunKt" />
+        <item itemvalue="Kotlin.CubicRootBuiltInKt" />
+        <item itemvalue="Application.ChuckData" />
         <item itemvalue="Kotlin.ArticulationPointKt" />
-        <item itemvalue="Kotlin.BridgeKt" />
-        <item itemvalue="Kotlin.ExecDay5Kt" />
-        <item itemvalue="Kotlin.ExecDay4Kt" />
-        <item itemvalue="Kotlin.ExecDay3Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -1706,12 +1702,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/dfs/articulation/ArticulationPoint.kt</url>
-          <line>187</line>
+          <line>188</line>
           <option name="timeStamp" value="775" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/dfs/articulation/ArticulationPoint.kt</url>
-          <line>190</line>
+          <line>191</line>
           <option name="timeStamp" value="776" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -1758,6 +1754,21 @@
           <url>file://$PROJECT_DIR$/src/com/br/sites/adventofcode/v2022/days/ExecDay5.kt</url>
           <line>99</line>
           <option name="timeStamp" value="821" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/dfs/articulation/ArticulationPoint.kt</url>
+          <line>169</line>
+          <option name="timeStamp" value="822" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>44</line>
+          <option name="timeStamp" value="826" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>52</line>
+          <option name="timeStamp" value="827" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1999,6 +2010,16 @@
           <line>12</line>
           <option name="timeStamp" value="689" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/kotlin/chuncked/ChuckData.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="824" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/br/kotlin/chuncked/ChuckData.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="825" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/br/cp/site/algebra/kotlin/gcd/problems/uva/Uva10104.java</url>
           <line>45</line>
@@ -2033,6 +2054,10 @@
         <watch expression="primes.get(5761459)" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
