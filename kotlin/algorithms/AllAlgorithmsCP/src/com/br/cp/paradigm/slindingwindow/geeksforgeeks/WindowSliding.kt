@@ -66,49 +66,48 @@ private fun maxSumOfKConsecutivesValues() {
         var p = 0
         var q = 0
 
-
         if (windowSize <= values.size) {
             windowSum = max(windowSum, values.subList(0, windowSize).sum())
-            p = windowSize
+            q = windowSize - 1
             var current = windowSum
-            for (i in 1..values.size - windowSize) {
-                /*
-                    movendo a janela
-                    o truque está em remover o primeiro indice (values[i-1]) da sublista
-                    e adicionar o proximo item baseado no tamanho da janela
-                 */
-                current += values[windowSize + i] - values[i - 1]
+            // movendo a janela
+            for (i in windowSize until values.size) {
+                // o truque consiste em mover a janela para direita
+                // adicionando o item i que esta a direita da janela
+                // e removendo o item i - windowsSize que esta a esquerda
+                current += values[i] - values[i - windowSize]
                 if (current > windowSum) {
                     windowSum = current
-                    p = i
-                    q = windowSize + 1
+                    p = i - windowSize + 1
+                    q = i
                 }
             }
         }
         return Pair(p to q, windowSum)
     }
 
-    fun windowSlidingMinSum(values: List<Int>, s: Int): Pair<Pair<Int, Int>, Int> {
+    fun windowSlidingMinSum(values: List<Int>, windowSize: Int): Pair<Pair<Int, Int>, Int> {
         var windowSum = Integer.MAX_VALUE
         var p = 0
         var q = 0
 
-        if (s <= values.size) {
-            windowSum = min(windowSum, values.subList(0, s).sum())
-            p = s
+        if (windowSize <= values.size) {
+            windowSum = min(windowSum, values.subList(0, windowSize).sum())
             var current = windowSum
-            for (i in 1 .. values.size - s) {
-                current += values[s + i] - values[i - 1]
+            q = windowSize - 1
+            for (i in windowSize until  values.size) {
+                current += values[i] - values[i - windowSize]
                 if (current < windowSum) {
                     windowSum = current
-                    p = i
-                    q = s + 1
+                    p = i - windowSize + 1
+                    q = i
                 }
             }
         }
 
         return Pair(p to q, windowSum)
     }
+
 
     val values = listOf(
         listOf(100, 200, 300, 400) to 2, // 700
@@ -116,16 +115,35 @@ private fun maxSumOfKConsecutivesValues() {
         listOf(1, 4, 2, 10, 2, 3, 1, 0, 20) to 4, // 24
         listOf(4, 2, 10, 230) to 4, // 246
         listOf(5, 2, -1, 0, 3) to 5, // 9
+        listOf(1, 4, 2, 10, 2, 3, 1, 0, 20) to 4
     )
 
     val max = values.map { (values, size) -> naiveMaxSum(values, size) }
     val min = values.map { (values, size) -> naiveMinSum(values, size) }
-    println("$max, $min")
+    println("MAX: $max\nMIN: $min")
+    println("*****************************************************************************")
     val maxWindow = values.map { (values, size) -> windowSlidingMaxSum(values, size) }
     val minWindow = values.map { (values, size) -> windowSlidingMinSum(values, size) }
+    println("MAX: $maxWindow\nMIN: $minWindow")
+    println("*****************************************************************************")
+    val s = values.map { (v, k) -> maxSlidingWindow(v, k)}
+    println(s)
 
-    println("$maxWindow, $minWindow")
+}
 
+// versao final para competicao
+private fun maxSlidingWindow(values: List<Int>, k: Int): Int {
+    return if(values.size >= k) {
+        var rs = values.subList(0, k).sum()
+        var current = rs
+        for (i in k until values.size) {
+            current += values[i] - values[i - k]
+            rs = max(current , rs)
+        }
+        rs
+    } else {
+        Int.MIN_VALUE
+    }
 }
 
 

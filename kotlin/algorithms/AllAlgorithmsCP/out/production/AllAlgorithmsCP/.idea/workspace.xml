@@ -5,44 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Exts/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherepl/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/anotherepl/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/bookstatcomp/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codeforces/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/codeforces/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cp4book/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fhackercup/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/fhackercup/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hackerearth/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hackerearth/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktacademy/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ktacademy/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/trees/cartesian/Cartesian.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/trees/cartesian/Cartesian.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/BiconnectedComponents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/geeksforgeeks/top10/graph/hackeearth/ap/BiconnectedComponents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uri/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/uri/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/ExponentiationBySquaring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/ExponentiationBySquaring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/codeforces/MatrixExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/codeforces/MatrixExponentiation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/geeksforgeeks/ExpBitManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/geeksforgeeks/ExpBitManipulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/matrix/linearrecorrence/BigIntegerMatrixExponentiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/matrix/linearrecorrence/BigIntegerMatrixExponentiation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/usaco/MatrixExponentiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../references/princeton-coursera/ComputerScienceWithPurpose/src/main/java/com/br/algorithms/exp/usaco/MatrixExponentiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1762,23 +1726,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>54</line>
-          <option name="timeStamp" value="828" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>44</line>
-          <option name="timeStamp" value="829" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>49</line>
-          <option name="timeStamp" value="830" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>73</line>
+          <line>72</line>
           <option name="timeStamp" value="831" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>79</line>
+          <option name="timeStamp" value="832" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>86</line>
+          <option name="timeStamp" value="833" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>94</line>
+          <option name="timeStamp" value="834" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>98</line>
+          <option name="timeStamp" value="835" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
+          <line>108</line>
+          <option name="timeStamp" value="836" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -2022,12 +1996,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/chuncked/ChuckData.java</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="824" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/chuncked/ChuckData.java</url>
-          <line>20</line>
+          <line>19</line>
           <option name="timeStamp" value="825" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
