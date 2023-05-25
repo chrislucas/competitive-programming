@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/problems/WindowSlidingMax.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/problems/WindowSlidingMax.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +111,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -186,20 +190,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.WindowSlidingKt">
-    <configuration name="ChuckData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.ChuckData" />
-      <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.kotlin.chuncked.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.LT239Kt">
     <configuration name="TestInstanceofNPE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.tutorials.TestInstanceofNPE" />
       <module name="AllAlgorithmsCP" />
@@ -213,15 +204,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CubicRootBuiltInKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.news.v1p8.CubicRootBuiltInKt" />
+    <configuration name="LT239Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.usaco.problems.leetcode.LT239Kt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestChunckedFunKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.kotlin.chuncked.TestChunckedFunKt" />
+    <configuration name="SlidingWindowWithTwoPointerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.usaco.SlidingWindowWithTwoPointerKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoPointerTechiniqueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.geeksforgeeks.TwoPointerTechiniqueKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,18 +333,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestInstanceofNPE" />
-      <item itemvalue="Application.ChuckData" />
+      <item itemvalue="Kotlin.LT239Kt" />
+      <item itemvalue="Kotlin.SlidingWindowWithTwoPointerKt" />
+      <item itemvalue="Kotlin.TwoPointerTechiniqueKt" />
       <item itemvalue="Kotlin.WindowSlidingKt" />
-      <item itemvalue="Kotlin.TestChunckedFunKt" />
-      <item itemvalue="Kotlin.CubicRootBuiltInKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LT239Kt" />
+        <item itemvalue="Kotlin.SlidingWindowWithTwoPointerKt" />
+        <item itemvalue="Kotlin.TwoPointerTechiniqueKt" />
         <item itemvalue="Kotlin.WindowSlidingKt" />
         <item itemvalue="Application.TestInstanceofNPE" />
-        <item itemvalue="Kotlin.TestChunckedFunKt" />
-        <item itemvalue="Kotlin.CubicRootBuiltInKt" />
-        <item itemvalue="Application.ChuckData" />
       </list>
     </recent_temporary>
   </component>
@@ -1726,33 +1724,119 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="831" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>79</line>
+          <line>78</line>
           <option name="timeStamp" value="832" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>86</line>
+          <line>85</line>
           <option name="timeStamp" value="833" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>94</line>
+          <line>93</line>
           <option name="timeStamp" value="834" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>98</line>
+          <line>97</line>
           <option name="timeStamp" value="835" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt</url>
-          <line>108</line>
+          <line>107</line>
           <option name="timeStamp" value="836" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="837" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
+          <line>34</line>
+          <option name="timeStamp" value="839" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
+          <line>24</line>
+          <option name="timeStamp" value="843" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="844" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
+          <line>27</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="845" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>24</line>
+          <option name="timeStamp" value="852" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>72</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="854" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>78</line>
+          <option name="timeStamp" value="855" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>81</line>
+          <option name="timeStamp" value="857" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="858" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>66</line>
+          <option name="timeStamp" value="860" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>130</line>
+          <option name="timeStamp" value="868" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>112</line>
+          <option name="timeStamp" value="869" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>106</line>
+          <option name="timeStamp" value="870" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>127</line>
+          <option name="timeStamp" value="877" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
+          <line>125</line>
+          <option name="timeStamp" value="879" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -2032,6 +2116,14 @@
         <watch expression="value.isNotBlank()" />
         <watch expression="value.isBlank()" language="kotlin" />
         <watch expression="data.length" language="kotlin" />
+        <watch expression="acc + window.last()" />
+        <watch expression="nums[i]" />
+        <watch expression="nums[i + k - 1]" />
+        <watch expression="rs[i - 1]" />
+        <watch expression="nums[i - k + 1]" />
+        <watch expression="nums[i]" />
+        <watch expression="nums.toList().subList(i, i + k)" />
+        <watch expression="tree.last()" />
       </configuration>
       <configuration name="GradleRunConfiguration">
         <watch expression="sieve.primes.get(5761459)" language="JAVA" />
@@ -2045,6 +2137,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AllAlgorithmsCP$LT239Kt.ic" NAME="LT239Kt Coverage Results" MODIFIED="1684902165684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
