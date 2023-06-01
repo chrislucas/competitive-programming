@@ -21,18 +21,15 @@ private fun checkSlidingWindowMax() {
             o maxSum ou minSum em O(logn)
          */
         val window = values.subList(0, k).toSortedSet()
-        val acc = mutableListOf<Int>()
+        val aggregate = mutableSetOf<Int>()
         for (i in k until values.size) {
-            acc += window.last()
+            aggregate += window.last()
             val mostLeft = values[i - k]
-            window.find { it == mostLeft }
-                ?.let {
-                    window.remove(it)
-                }
+            window.find { it == mostLeft }?.let { window.remove(it) }
             window += values[i] // mostRight
         }
 
-        return acc + window.last()
+        return (aggregate + window.last()).toList()
     }
 
 
@@ -47,11 +44,17 @@ private fun checkSlidingWindowMax() {
 
     val rs = values
         .map { (values, k) ->
-            slidingWindowMaxIntervalSum(values, k)
+            val p = slidingWindowMaxIntervalSum(values, k)
+            p to p.sum()
         }
-        .flatten()
+    println(rs)
+}
 
-    println("$rs. ${rs.sum()}")
+
+typealias MultiSet<T> = LinkedHashMap<T, Int>
+
+private fun checkSlidingWindowWithMultiSet() {
+
 }
 
 

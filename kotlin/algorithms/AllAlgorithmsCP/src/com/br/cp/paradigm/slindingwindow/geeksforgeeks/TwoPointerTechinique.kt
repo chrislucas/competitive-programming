@@ -1,5 +1,7 @@
 package src.com.br.cp.paradigm.slindingwindow.geeksforgeeks
 
+import java.util.TreeSet
+
 /**
  * https://www.geeksforgeeks.org/two-pointers-technique/
  *
@@ -39,6 +41,11 @@ private fun checkTwoPointersTechnique() {
     )
     val rs = cases.map { (values, targer) -> twoPointers(values, targer) }
     println(rs)
+}
+
+
+private fun checkSlidingWindowWithTwoPointer() {
+    val set = TreeSet<Int>()
 }
 
 

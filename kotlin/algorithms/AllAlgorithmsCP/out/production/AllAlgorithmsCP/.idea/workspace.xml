@@ -5,12 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ktdatascience/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktdatascience/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktdatascience/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktdatascience/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/map/AllMaps.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/map/MultiSet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/map/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/set/AllSets.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/set/HashOrTree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/ds/set/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/ds/LT240.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/ds/LT241.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/ds/MonotoicQueue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/ds/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/paradigm/slidingwindow/LT862.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/paradigm/slidingwindow/easy/LT1876.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/leetcode/paradigm/slidingwindow/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/ds/sites/usaco/trees/EulerTour.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/ds/sites/usaco/trees/EulerTour.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/problems/WindowSlidingMax.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/problems/WindowSlidingMax.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/WindowSliding.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +71,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ktacademy">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ktdatascience">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/uri">
@@ -109,10 +131,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -143,16 +165,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/geeksforgeeks/ds/cache&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "TODO_SCOPE": "All Places",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/geeksforgeeks/ds/cache",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.30666667",
+    "settings.editor.selected.configurable": "project.kotlinCompiler",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/ds/cache" />
@@ -162,6 +187,8 @@
       <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ktdatascience/src/main/kotlin/com/br/samples/kotlindl" />
+      <recent name="$PROJECT_DIR$/src/com/br/cp/ds/map" />
       <recent name="$PROJECT_DIR$/src/com/br/tutorials/challenge/ishouldnknow" />
       <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/strings/dna" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/pie" />
@@ -190,22 +217,23 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.LT239Kt">
-    <configuration name="TestInstanceofNPE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.tutorials.TestInstanceofNPE" />
+  <component name="RunManager" selected="Kotlin.AllSetsKt">
+    <configuration name="AllSetsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.set.AllSetsKt" />
       <module name="AllAlgorithmsCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.br.tutorials.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LT239Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.usaco.problems.leetcode.LT239Kt" />
+    <configuration name="DataScienceWithKotlinKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.samples.kotlindl.DataScienceWithKotlinKt" />
+      <module name="ktdatascience.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiSetKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.map.MultiSetKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,13 +248,6 @@
     </configuration>
     <configuration name="TwoPointerTechiniqueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.geeksforgeeks.TwoPointerTechiniqueKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowSlidingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.paradigm.slindingwindow.geeksforgeeks.WindowSlidingKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -332,19 +353,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.TestInstanceofNPE" />
-      <item itemvalue="Kotlin.LT239Kt" />
+      <item itemvalue="Kotlin.AllSetsKt" />
+      <item itemvalue="Kotlin.DataScienceWithKotlinKt" />
+      <item itemvalue="Kotlin.MultiSetKt" />
       <item itemvalue="Kotlin.SlidingWindowWithTwoPointerKt" />
       <item itemvalue="Kotlin.TwoPointerTechiniqueKt" />
-      <item itemvalue="Kotlin.WindowSlidingKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.LT239Kt" />
+        <item itemvalue="Kotlin.AllSetsKt" />
+        <item itemvalue="Kotlin.DataScienceWithKotlinKt" />
+        <item itemvalue="Kotlin.MultiSetKt" />
         <item itemvalue="Kotlin.SlidingWindowWithTwoPointerKt" />
         <item itemvalue="Kotlin.TwoPointerTechiniqueKt" />
-        <item itemvalue="Kotlin.WindowSlidingKt" />
-        <item itemvalue="Application.TestInstanceofNPE" />
       </list>
     </recent_temporary>
   </component>
@@ -1754,13 +1775,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/geeksforgeeks/TwoPointerTechinique.kt</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="837" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
-          <line>34</line>
-          <option name="timeStamp" value="839" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
@@ -1769,7 +1785,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
-          <line>31</line>
+          <line>28</line>
           <option name="timeStamp" value="844" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -1782,12 +1798,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="852" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>72</line>
+          <line>73</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -1795,48 +1811,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>78</line>
+          <line>79</line>
           <option name="timeStamp" value="855" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="857" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>61</line>
-          <option name="timeStamp" value="858" />
+          <line>65</line>
+          <option name="timeStamp" value="890" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>66</line>
-          <option name="timeStamp" value="860" />
+          <line>136</line>
+          <option name="timeStamp" value="906" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>130</line>
-          <option name="timeStamp" value="868" />
+          <line>102</line>
+          <option name="timeStamp" value="927" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>112</line>
-          <option name="timeStamp" value="869" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/SlidingWindowWithTwoPointer.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="929" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>106</line>
-          <option name="timeStamp" value="870" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>127</line>
-          <option name="timeStamp" value="877" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/paradigm/slindingwindow/usaco/problems/leetcode/LT239.kt</url>
-          <line>125</line>
-          <option name="timeStamp" value="879" />
+          <url>file://$PROJECT_DIR$/src/com/br/cp/ds/map/MultiSet.kt</url>
+          <line>22</line>
+          <option name="timeStamp" value="930" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
@@ -1937,6 +1943,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/ktdatascience/src/main/kotlin/com/br/samples/kotlindl/DataScienceWithKotlin.kt</url>
+          <line>7</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="931" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/br/oj/icpckattis/adhoc/BeeHousePerimeter.java</url>
@@ -2110,21 +2125,6 @@
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="data.length" language="kotlin" />
-        <watch expression="line[i]" />
-        <watch expression="value.isNotBlank()" />
-        <watch expression="value.isBlank()" language="kotlin" />
-        <watch expression="data.length" language="kotlin" />
-        <watch expression="acc + window.last()" />
-        <watch expression="nums[i]" />
-        <watch expression="nums[i + k - 1]" />
-        <watch expression="rs[i - 1]" />
-        <watch expression="nums[i - k + 1]" />
-        <watch expression="nums[i]" />
-        <watch expression="nums.toList().subList(i, i + k)" />
-        <watch expression="tree.last()" />
-      </configuration>
       <configuration name="GradleRunConfiguration">
         <watch expression="sieve.primes.get(5761459)" language="JAVA" />
         <watch expression="primes.get(5761459)" language="JAVA" />

@@ -146,7 +146,21 @@ private fun maxSlidingWindow(values: List<Int>, k: Int): Int {
     }
 }
 
+private fun checkMaxSlidingWindow() {
+    val values = listOf(
+        listOf(100, 200, 300, 400) to 2, // 700
+        listOf(1, 4, 2, 10, 23, 3, 1, 0, 20) to 4, // 39
+        listOf(1, 4, 2, 10, 2, 3, 1, 0, 20) to 4, // 24
+        listOf(4, 2, 10, 230) to 4, // 246
+        listOf(5, 2, -1, 0, 3) to 5, // 9
+        listOf(1, 4, 2, 10, 2, 3, 1, 0, 20) to 4
+    )
+    val s = values.map { (v, k) -> maxSlidingWindow(v, k)}
+
+    println(s)
+}
+
 
 fun main() {
-    maxSumOfKConsecutivesValues()
+    checkMaxSlidingWindow()
 }
