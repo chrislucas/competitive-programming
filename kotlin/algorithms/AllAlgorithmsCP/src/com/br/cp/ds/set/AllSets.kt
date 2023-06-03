@@ -7,10 +7,11 @@ import kotlin.Comparator
  * https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077#
  */
 
-data class WrapperInt(val data: Int) : Comparable<WrapperInt> {
-    override fun compareTo(other: WrapperInt): Int = data - other.data
-
+data class ComparableWrapperInt(val data: Int) : Comparable<ComparableWrapperInt> {
+    override fun compareTo(other: ComparableWrapperInt): Int = data - other.data
 }
+
+data class Wrapper<T>(val data: T)
 
 
 private fun simpleCheckSets() {
@@ -45,11 +46,11 @@ private fun simpleCheckSets() {
 
         val set = HashSet(
             listOf(
-                WrapperInt(2),
-                WrapperInt(5),
-                WrapperInt(4),
-                WrapperInt(1),
-                WrapperInt(3)
+                ComparableWrapperInt(2),
+                ComparableWrapperInt(5),
+                ComparableWrapperInt(4),
+                ComparableWrapperInt(1),
+                ComparableWrapperInt(3)
             )
         )
 
@@ -69,31 +70,23 @@ private fun simpleCheckSets() {
     fun checkTreeSet() {
         /**
          *
-         * A treeset implementa uma RB-Tree
+         * A treeset implementa uma RB-Tree. Ela immplementa
+         * a interface
+         * @see SortedSet ao inves de Set (Sorted herda de Set),
+         * permitindo eter elementos ordenados automaticamente conforme
+         * vamos inserindo dados na estrutura
+         * - Custos
+         *   - A complexidade para adicionar remover e verificar se esta na estrutura
+         *   O(log(n)), maior que do HashSet O(1)
+         *
          */
         val set = TreeSet(
             listOf(
-                WrapperInt(2),
-                WrapperInt(1),
-                WrapperInt(3),
-                WrapperInt(5),
-                WrapperInt(4)
-            )
-        )
-        println("TreeSet:$set")
-    }
-
-    fun checkTreeSetWithComparable() {
-        val set = TreeSet(
-            Comparator<WrapperInt> { p, q -> q.data - p.data }
-        )
-        set.addAll(
-            listOf(
-                WrapperInt(2),
-                WrapperInt(1),
-                WrapperInt(3),
-                WrapperInt(5),
-                WrapperInt(4)
+                ComparableWrapperInt(2),
+                ComparableWrapperInt(1),
+                ComparableWrapperInt(3),
+                ComparableWrapperInt(5),
+                ComparableWrapperInt(4)
             )
         )
         println("TreeSet:$set")
@@ -101,26 +94,31 @@ private fun simpleCheckSets() {
 
     fun checkLinkedHashSet() {
         /**
-         * Os elementos ficam na mesma ordem que foram inseridos
+         * Os elementos ficam na mesma ordem que foram inseridos.
+         * Essa estrutura nos proporciona a performance de um HashSet.
+         *
+         * https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/LinkedHashSet.html
+         * A implementacao difere do HashSet no fato que mantem uma lista duplamente ligada
+         *  - A lista ligada define a ordem que os elementos foram inseridos e estao dispostos
          */
         val set = LinkedHashSet(
             listOf(
-                WrapperInt(2),
-                WrapperInt(1),
-                WrapperInt(3),
-                WrapperInt(5),
-                WrapperInt(4)
+                ComparableWrapperInt(2),
+                ComparableWrapperInt(1),
+                ComparableWrapperInt(3),
+                ComparableWrapperInt(5),
+                ComparableWrapperInt(4)
             )
         )
 
         println("LinkedHashSet:$set")
 
         val set2 = linkedSetOf(
-            WrapperInt(2),
-            WrapperInt(1),
-            WrapperInt(3),
-            WrapperInt(5),
-            WrapperInt(4)
+            ComparableWrapperInt(2),
+            ComparableWrapperInt(1),
+            ComparableWrapperInt(3),
+            ComparableWrapperInt(5),
+            ComparableWrapperInt(4)
         )
 
         println("LinkedHashSet:$set2")
@@ -129,11 +127,42 @@ private fun simpleCheckSets() {
 
     checkHashSet()
     checkTreeSet()
-    checkTreeSetWithComparable()
     checkLinkedHashSet()
 }
 
+private fun checkTreeSetWithComparable() {
+    val set = TreeSet(
+        Comparator<Wrapper<Pair<Int, Int>>> { p, q ->
+            val (pf, ps) = p.data
+            val (qf, qs) = q.data
+            if (pf == qf) {
+                ps - qs
+            } else {
+                pf - qs
+            }
+        }
+    )
+    set.addAll(
+        listOf(
+            Wrapper(2 to 1),
+            Wrapper(1 to 2),
+            Wrapper(3 to 5),
+            Wrapper(5 to 3),
+            Wrapper(4 to 4)
+        )
+    )
+    println("TreeSet:$set")
+}
+
+
+/**
+ * Ranking de performance
+ * 1 - Hashset
+ * 2 - LinkedHashSet
+ * 3 - TreeSet
+ */
 
 fun main() {
-    simpleCheckSets()
+    //simpleCheckSets()
+    checkTreeSetWithComparable()
 }
