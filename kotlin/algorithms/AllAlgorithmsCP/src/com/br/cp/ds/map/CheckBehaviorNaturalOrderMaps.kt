@@ -1,6 +1,7 @@
 package src.com.br.cp.ds.map
 
 import java.util.*
+import java.util.concurrent.ConcurrentSkipListMap
 import kotlin.collections.HashMap
 import kotlin.collections.LinkedHashMap
 
@@ -50,6 +51,12 @@ private fun checkMapShuffling() {
     println(alpha)
     println("Treemap\n${alpha.groupingShuffledData(TreeMap<Int, Char>())}")
     println("Treemap as SortedMap\n${alpha.groupingShuffledData(TreeMap())}")
+    /**
+     * @see ConcurrentSkipListMap
+     * https://www.geeksforgeeks.org/sortedmap-java-examples/
+     * The subInterfaces of SortedMap are ConcurrentNavigableMap<K, V>, NavigableMap<K, V>.
+     */
+    println("ConcurrentSkipListMap\n${alpha.groupingShuffledData(ConcurrentSkipListMap())}")
     println("Hashmap\n${alpha.groupingShuffledData(HashMap())}")
     println("LinkedHashmap\n${alpha.groupingShuffledData(LinkedHashMap())}")
     println("**************** SYNC MAPS **************** ")
