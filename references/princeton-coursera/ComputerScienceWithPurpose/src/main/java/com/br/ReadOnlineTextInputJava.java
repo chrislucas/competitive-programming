@@ -1,5 +1,7 @@
 package com.br;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.List;
 
@@ -16,11 +18,16 @@ public class ReadOnlineTextInputJava {
    *     download como no arquivo
    * @see ReadOnlineTextInputKt
    */
-  private static List<String> read(String file) {
+  private static List<String> read(String file) throws MalformedURLException {
+    var url = new URL(file);
     return Collections.emptyList();
   }
 
   public static void main(String[] args) {
-    System.out.println(read("https://algs4.cs.princeton.edu/11model/cardsUnicode.txt"));
+    try {
+      System.out.println(read("https://algs4.cs.princeton.edu/11model/cardsUnicode.txt"));
+    } catch (MalformedURLException e) {
+      System.out.println(e.getMessage());
+    }
   }
 }
