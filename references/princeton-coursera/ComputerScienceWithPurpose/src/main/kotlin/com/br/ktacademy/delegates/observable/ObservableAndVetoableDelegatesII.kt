@@ -1,4 +1,4 @@
-package com.br.ktacademy.delegates
+package com.br.ktacademy.delegates.observable
 
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty

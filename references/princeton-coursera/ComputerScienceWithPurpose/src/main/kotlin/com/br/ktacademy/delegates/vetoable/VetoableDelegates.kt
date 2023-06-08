@@ -1,4 +1,4 @@
-package com.br.ktacademy.delegates
+package com.br.ktacademy.delegates.vetoable
 
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty

@@ -1,0 +1,3 @@
+Ver se esta estabelicida a comunica ssh
+ssh -T git@github.com
+Importante para ver qual usuario estou usando. Mudar a chave privada no arquivo ~/.ssh/config se necessario
