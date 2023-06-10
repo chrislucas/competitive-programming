@@ -1,4 +1,4 @@
-package com.br.ktacademy.delegates.observable
+package com.br.ktacademy.delegates.observable.observers
 
 import kotlin.properties.Delegates
 
@@ -70,13 +70,23 @@ private fun checkInitObserver() {
         },
         { old: String, new: String ->
             println("3-Observable Name  Old: $old, New: $new")
-
         }
     ))
     val userSystem = UserSystem(observableUserName)
     userSystem.username.value = "lucas"
+    println("************************************************************")
     userSystem.username.value = "eduardo"
+    println("************************************************************")
     userSystem.username.value = "cassio"
+    println("************************************************************")
+
+
+    userSystem.username += { old, new ->
+        println("4-Observable Name  Old: $old, New: $new")
+    }
+
+    userSystem.username.value = "andre"
+
 }
 
 

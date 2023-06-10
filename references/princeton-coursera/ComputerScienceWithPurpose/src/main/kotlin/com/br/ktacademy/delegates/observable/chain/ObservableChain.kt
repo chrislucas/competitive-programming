@@ -1,4 +1,4 @@
-package com.br.ktacademy.delegates.observable
+package com.br.ktacademy.delegates.observable.chain
 
 import kotlin.properties.Delegates
 
