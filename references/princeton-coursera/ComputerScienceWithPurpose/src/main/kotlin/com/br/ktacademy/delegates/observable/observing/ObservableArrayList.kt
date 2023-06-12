@@ -1,11 +1,16 @@
 package com.br.ktacademy.delegates.observable.observing
 
 
-private fun <T> observableArrayListOf(
-    observerArray: ObservableArray.ObserverArray<T> = DefaultObserverArray(), size: Int = 2
-): MutableList<T> = ObservableArray(observerArray, size)
+/*
+    Fonte
+    https://stackoverflow.com/questions/57062977/property-observers-in-kotlin-while-adding-elements-to-arraylist
+ */
 
-class ObservableArray<T>(private val notify: ObserverArray<T>, override val size: Int) : ArrayList<T>(size) {
+private fun <T> observableArrayListOf(
+    observerArray: ObservableArrayList.ObserverArray<T> = DefaultObserverArray(), size: Int = 2
+): MutableList<T> = ObservableArrayList(observerArray, size)
+
+class ObservableArrayList<T>(private val notify: ObserverArray<T>, override val size: Int) : ArrayList<T>(size) {
 
     interface ObserverArray<T> {
         fun onChange(old: List<T>, new: List<T>)
@@ -30,7 +35,7 @@ class ObservableArray<T>(private val notify: ObserverArray<T>, override val size
     }
 }
 
-class DefaultObserverArray<T> : ObservableArray.ObserverArray<T> {
+class DefaultObserverArray<T> : ObservableArrayList.ObserverArray<T> {
     override fun onChange(old: List<T>, new: List<T>) {
         println("$old, $new")
     }

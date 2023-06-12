@@ -18,7 +18,6 @@ import kotlin.properties.Delegates
 
 class ObserversOfObserver<T>(initObservers: MutableList<Observer<T>> = mutableListOf()) {
 
-
     private val observersOfObserver: MutableList<Observer<T>> by Delegates.observable(initObservers) { _, old, new ->
         // newers
         val newers = (new - old.toSet())

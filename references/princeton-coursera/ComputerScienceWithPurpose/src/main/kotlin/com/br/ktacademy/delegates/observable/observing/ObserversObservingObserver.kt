@@ -60,6 +60,10 @@ private class ObservableData<T>(initValue: T, initObservers: MutableList<Observe
         observersOfData += observer
     }
 
+    /*
+         Utilizando o operador minusAssign para remover observadores e avisa o removido
+         desse evento
+     */
     operator fun minusAssign(id: String) {
         observersOfData
             .find { it.getId() == id }
