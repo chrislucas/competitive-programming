@@ -81,7 +81,31 @@ private fun checkVetoableII() {
     println(chars)
 }
 
+
+private fun checkVetoableIII() {
+    /*
+        vetoable delegate
+        POdemos usar quando uma propriedae tem algum requirimento para ser definido
+        e sempre que mudar tiver que ter alguma validacao
+     */
+    var onlyOdd: Int by Delegates.vetoable(1) { _, _, newValue ->
+        newValue and 1 == 1
+    }
+
+    onlyOdd = 2
+    println(onlyOdd)
+    onlyOdd = 3
+    println(onlyOdd)
+    onlyOdd = 4
+    println(onlyOdd)
+    onlyOdd = 5
+    println(onlyOdd)
+    onlyOdd = 6
+    println(onlyOdd)
+
+}
+
 fun main() {
-   // checkVetoableI()
+    // checkVetoableI()
     checkVetoableII()
 }

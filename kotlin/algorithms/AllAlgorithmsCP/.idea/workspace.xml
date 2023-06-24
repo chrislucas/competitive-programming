@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/ListOfAlgorithmsToStudy.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/graph/FindingEurelianPath.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/BinaryExponetiation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/EulerExponents.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/RSA.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/geeksforgeeks/ds/PageRank.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra/PageRank.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/geeksforgeeks/strings/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/geeksforgeeks/strings/package-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,9 +118,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="package-info" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -163,6 +173,7 @@
       <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/basics/print" />
       <recent name="$PROJECT_DIR$/ktdatascience/src/main/kotlin/com/br/samples/kotlindl" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/ds/map" />
@@ -194,7 +205,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CheckBehaviorNaturalOrderMapsKt">
+  <component name="RunManager" selected="Kotlin.BinaryExponetiationKt">
     <configuration name="AllMapsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.map.AllMapsKt" />
       <module name="AllAlgorithmsCP" />
@@ -202,8 +213,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllSetsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.set.AllSetsKt" />
+    <configuration name="BinaryExponetiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.BinaryExponetiationKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,8 +227,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HexFormatCheckKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.basics.print.HexFormatCheckKt" />
+    <configuration name="EulerExponentsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.EulerExponentsKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,19 +341,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Kotlin.BinaryExponetiationKt" />
+      <item itemvalue="Kotlin.EulerExponentsKt" />
       <item itemvalue="Kotlin.AllMapsKt" />
       <item itemvalue="Kotlin.CheckBehaviorNaturalOrderMapsKt" />
-      <item itemvalue="Kotlin.HexFormatCheckKt" />
-      <item itemvalue="Kotlin.AllSetsKt" />
       <item itemvalue="Kotlin.MultiSetKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.BinaryExponetiationKt" />
+        <item itemvalue="Kotlin.EulerExponentsKt" />
         <item itemvalue="Kotlin.CheckBehaviorNaturalOrderMapsKt" />
         <item itemvalue="Kotlin.AllMapsKt" />
         <item itemvalue="Kotlin.MultiSetKt" />
-        <item itemvalue="Kotlin.HexFormatCheckKt" />
-        <item itemvalue="Kotlin.AllSetsKt" />
       </list>
     </recent_temporary>
   </component>
