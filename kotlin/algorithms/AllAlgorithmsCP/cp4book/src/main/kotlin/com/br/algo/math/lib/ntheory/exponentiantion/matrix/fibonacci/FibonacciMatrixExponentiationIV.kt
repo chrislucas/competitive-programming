@@ -24,7 +24,7 @@ fun exp(nth: BigInteger) {
 
         val res = Array(this.size) { Array(that[0].size) { BigInteger.ZERO } }
 
-        for (i in 0 until this.size) { // linha de a
+        for (i in indices) { // linha de a
             for (j in 0 until that[0].size) { // coluna de b
                 for (k in 0 until this[0].size) { // linha de b ou coluna de a, ambos sao liga
                     res[i, j] += this[i, k] * that[k, j]

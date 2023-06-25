@@ -1,4 +1,4 @@
-package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory
+package src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation
 
 import java.math.BigInteger
 import java.math.BigInteger.ONE
@@ -28,7 +28,7 @@ private fun exp(base: BigInt, e: BigInt, m: BigInt): BigInt {
     } else {
         var acc = ONE
         var ce = e
-        var cBase = base
+        var cBase = base % m
         while (ce > ZERO) {
             if ((ce and ONE) == ONE) {
                 acc = mulitply(acc, cBase, m)
@@ -92,7 +92,7 @@ private fun exp(base: Long, e: Long, m: Long): Long {
     } else {
         var acc = 1L
         var ce = e
-        var cBase = base
+        var cBase = base % m
         while (ce > 0) {
             if ((ce and 1L) == 1L) {
                 acc = mulitply(acc, cBase, m)
@@ -118,7 +118,6 @@ private fun anotherComputeEulerTotientFunction(n: Int) {
         O(sqrt(n))
      */
 }
-
 
 
 private fun computeRangeEulerTotient(n: Int): Array<Int> {
@@ -170,16 +169,88 @@ private fun modularMultiplicativeInverse() {
 }
 
 
+typealias MatBigInt = Array<Array<BigInt>>
+
+private fun fibonacci(n: BigInt): MatBigInt {
+
+    /*
+        https://cp-algorithms.com/algebra/binary-exp.html#applications
+        https://cp-algorithms.com/algebra/fibonacci-numbers.html#matrix-form
+
+     */
+
+    operator fun MatBigInt.get(x: Int, y: Int) = this[x][y]
+
+    operator fun MatBigInt.set(x: Int, y: Int, v: BigInt) {
+        this[x][y] = v
+    }
+
+    infix operator fun MatBigInt.timesAssign(other: MatBigInt) {
+
+    }
+
+    val base = Array(2) { Array(2) { ONE } }
+    base[1, 1] = ZERO
+
+    val answer = Array(2) { Array(2) { ONE } }
+    answer[0, 1] = ZERO
+    answer[1, 0] = ZERO
+
+    var e = n
+    while (e > ZERO) {
+        if (e and ONE == ONE) {
+            answer *= base
+        }
+        base *= base
+        e = e shr 1
+    }
+
+    return answer
+}
+
+private fun fibonacciFastDoubling(n: BigInt) {
+    /*
+        https://cp-algorithms.com/algebra/fibonacci-numbers.html#matrix-form
+     */
+
+    val two = BigInt("2")
+
+    // fast doubling method
+    fun fdm(n: BigInt): Pair<BigInt, BigInt> {
+        if (n == ZERO) {
+            return ZERO to ONE
+        }
+        val (p, q) = fdm(n shr 1)
+        val c = p * (two * q - p)
+        val d = p * p + q * q
+
+        return if (n and ONE == ONE) {
+            d to c + d
+        } else {
+            c to d
+        }
+    }
+
+    println(fdm(n))
+}
+
+private fun checkFibonacciFastDoubling() {
+    fibonacciFastDoubling(BigInt("500"))
+}
+
+
 private fun checkExp() {
     println(exp(11, 13, 19))
     println(exp(11, 13, 1))
     println(exp(25, 14, 1))
     println(exp(2, 31313, 3))
+    println(exp(5, 31313, 3))
     println("************************************************************************")
     println(exp(BigInt("11"), BigInt("13"), BigInt("19")))
     println(exp(BigInt("11"), BigInt("13"), BigInt("1")))
     println(exp(BigInt("25"), BigInt("14"), BigInt("1")))
     println(exp(BigInt("2"), BigInt("31313"), BigInt("3")))
+    println(exp(BigInt("5"), BigInt("31313"), BigInt("3")))
 }
 
 
@@ -191,9 +262,12 @@ private fun checkExpBigInt() {
 }
 
 
-
-
-
 fun main() {
+    /*
     checkExpBigInt()
+    println("************************************************************************")
+    checkExp()
+
+     */
+    checkFibonacciFastDoubling()
 }
