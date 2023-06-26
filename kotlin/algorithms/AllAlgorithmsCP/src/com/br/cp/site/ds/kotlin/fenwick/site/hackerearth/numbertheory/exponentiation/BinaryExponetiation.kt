@@ -171,28 +171,39 @@ private fun modularMultiplicativeInverse() {
 
 typealias MatBigInt = Array<Array<BigInt>>
 
-private fun fibonacci(n: BigInt): MatBigInt {
+operator fun MatBigInt.get(x: Int, y: Int) = this[x][y]
+
+operator fun MatBigInt.set(x: Int, y: Int, v: BigInt) {
+    this[x][y] = v
+}
+
+private fun matrixFibonacci(n: BigInt): MatBigInt {
 
     /*
         https://cp-algorithms.com/algebra/binary-exp.html#applications
         https://cp-algorithms.com/algebra/fibonacci-numbers.html#matrix-form
+        https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html
 
      */
 
-    operator fun MatBigInt.get(x: Int, y: Int) = this[x][y]
+    infix operator fun MatBigInt.times(that: MatBigInt) : MatBigInt{
+        val answer = Array(this.size) { Array(that[0].size) { ZERO } }
 
-    operator fun MatBigInt.set(x: Int, y: Int, v: BigInt) {
-        this[x][y] = v
+        for (i in this.indices) {
+            for (j in that[0].indices) {
+                for (k in this[0].indices) {
+                    answer[i, j] += this[i, k] * that[k, j]
+                }
+            }
+        }
+
+        return answer
     }
 
-    infix operator fun MatBigInt.timesAssign(other: MatBigInt) {
-
-    }
-
-    val base = Array(2) { Array(2) { ONE } }
+    var base = Array(2) { Array(2) { ONE } }
     base[1, 1] = ZERO
 
-    val answer = Array(2) { Array(2) { ONE } }
+    var answer = Array(2) { Array(2) { ONE } }
     answer[0, 1] = ZERO
     answer[1, 0] = ZERO
 
@@ -206,6 +217,30 @@ private fun fibonacci(n: BigInt): MatBigInt {
     }
 
     return answer
+}
+
+private fun checkMatrixFibonacci() {
+    /*
+        https://r-knott.surrey.ac.uk/Fibonacci/fibtable.html
+     */
+
+
+    arrayOf(
+        BigInt("2"),
+        BigInt("3"),
+        BigInt("10"),
+        BigInt("100"),
+        BigInt("300"),
+        BigInt("500"),
+
+    ).forEach {
+        val rs = matrixFibonacci(it)
+        println("************************************************************************")
+        println("${rs[0, 0]}\n${rs[0, 1]}\n${rs[1, 0]}\n${rs[1, 1]}")
+    }
+    println("******************************** Fast Doubling ****************************************")
+    checkFibonacciFastDoubling()
+
 }
 
 private fun fibonacciFastDoubling(n: BigInt) {
@@ -235,6 +270,11 @@ private fun fibonacciFastDoubling(n: BigInt) {
 }
 
 private fun checkFibonacciFastDoubling() {
+    fibonacciFastDoubling(BigInt("2"))
+    fibonacciFastDoubling(BigInt("3"))
+    fibonacciFastDoubling(BigInt("10"))
+    fibonacciFastDoubling(BigInt("100"))
+    fibonacciFastDoubling(BigInt("300"))
     fibonacciFastDoubling(BigInt("500"))
 }
 
@@ -269,5 +309,7 @@ fun main() {
     checkExp()
 
      */
-    checkFibonacciFastDoubling()
+    //checkFibonacciFastDoubling()
+
+    checkMatrixFibonacci()
 }

@@ -66,16 +66,16 @@ fun exp(nth: BigInteger) {
     )
 
     val vet = arrayOf(arrayOf(BigInteger.ZERO), arrayOf(BigInteger.ONE))
-
     val res = exp(mat, nth - BigInteger.ONE) * vet // res = [ [f(n)], [f(n+1)] ]
-
-    res.forEach { vetor ->
-        println(vetor.joinToString(", "))
-    }
+    println("${res[0, 0]}, ${res[1, 0]}")
 }
 
 fun main() {
+    exp(BigInteger("2"))
     exp(BigInteger("3"))
     exp(BigInteger("10"))
+    exp(BigInteger("100"))
+    exp(BigInteger("300"))
+    exp(BigInteger("500"))
 
 }
