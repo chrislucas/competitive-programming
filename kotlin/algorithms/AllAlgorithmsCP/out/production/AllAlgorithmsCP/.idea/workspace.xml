@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="" />
+    <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/ProblemsWithMatrixExponentiation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/codeforces/MatrixExponentiationTraining.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/judgeonline/codeforces/MatrixExponentiationTraining.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/GeomOpToSetOfPoints.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/GeomOpToSetOfPoints.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,8 +113,8 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -161,6 +167,10 @@
       <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth" />
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/matrix" />
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation" />
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/primality" />
       <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/basics/print" />
       <recent name="$PROJECT_DIR$/ktdatascience/src/main/kotlin/com/br/samples/kotlindl" />
@@ -193,37 +203,37 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.BinaryExponetiationKt">
-    <configuration name="AllMapsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.map.AllMapsKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.GeomOpToSetOfPointsKt">
     <configuration name="BinaryExponetiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.BinaryExponetiationKt" />
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.BinaryExponetiationKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckBehaviorNaturalOrderMapsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.map.CheckBehaviorNaturalOrderMapsKt" />
+    <configuration name="FastDoublingMethodKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.fibonacci.FastDoublingMethodKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EulerExponentsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.EulerExponentsKt" />
+    <configuration name="FastDoublingMethodKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.fibonacci.FastDoublingMethodKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiSetKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.ds.map.MultiSetKt" />
+    <configuration name="FibonacciMatrixExponentiationIVKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.br.algo.math.lib.ntheory.exponentiantion.matrix.fibonacci.FibonacciMatrixExponentiationIVKt" />
+      <module name="cp4book.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeomOpToSetOfPointsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.geom.GeomOpToSetOfPointsKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -329,19 +339,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Kotlin.FastDoublingMethodKt" />
+      <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
+      <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
+      <item itemvalue="Kotlin.GeomOpToSetOfPointsKt" />
       <item itemvalue="Kotlin.BinaryExponetiationKt" />
-      <item itemvalue="Kotlin.EulerExponentsKt" />
-      <item itemvalue="Kotlin.AllMapsKt" />
-      <item itemvalue="Kotlin.CheckBehaviorNaturalOrderMapsKt" />
-      <item itemvalue="Kotlin.MultiSetKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.GeomOpToSetOfPointsKt" />
+        <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
         <item itemvalue="Kotlin.BinaryExponetiationKt" />
-        <item itemvalue="Kotlin.EulerExponentsKt" />
-        <item itemvalue="Kotlin.CheckBehaviorNaturalOrderMapsKt" />
-        <item itemvalue="Kotlin.AllMapsKt" />
-        <item itemvalue="Kotlin.MultiSetKt" />
+        <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
+        <item itemvalue="Kotlin.FastDoublingMethodKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1815,6 +1825,21 @@
           <line>31</line>
           <option name="timeStamp" value="929" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/cp4book/src/main/kotlin/com/br/algo/math/lib/ntheory/exponentiantion/matrix/fibonacci/FibonacciMatrixExponentiationIV.kt</url>
+          <line>69</line>
+          <option name="timeStamp" value="933" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/BinaryExponetiation.kt</url>
+          <line>238</line>
+          <option name="timeStamp" value="934" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/GeomOpToSetOfPoints.kt</url>
+          <line>57</line>
+          <option name="timeStamp" value="935" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -1927,7 +1952,7 @@
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/cp/ds/map/CheckBehaviorNaturalOrderMaps.kt</url>
           <line>90</line>
-          <properties method="main">
+          <properties>
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
