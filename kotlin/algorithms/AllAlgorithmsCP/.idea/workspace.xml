@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/ProblemsWithMatrixExponentiation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/codeforces/MatrixExponentiationTraining.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/judgeonline/codeforces/MatrixExponentiationTraining.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/fibonacci/FastDoublingMethod.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/fibonacci/FastDoublingMethod.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/GeomOpToSetOfPoints.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/mmi/ModularMultiplicativeInverse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/mmi/ModularMultiplicativeInverse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/FFT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/FFT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem1/HomogeneousCoordinate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem1/HomogeneousCoordinate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +152,7 @@
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/geeksforgeeks/ds/cache&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.30666667&quot;,
@@ -166,13 +162,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial" />
       <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/ds/cache" />
       <recent name="$PROJECT_DIR$/uri/src/main/kotlin/com/br/problems/sbc/comp/sul2021" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/fenwick" />
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/rangeminquery" />
-      <recent name="$PROJECT_DIR$/src/com/br/kotlin/collection/transformation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/mdoluarmultiplicativeinversion" />
+      <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem1" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth" />
@@ -211,7 +209,7 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MatrixExponentiationKt">
+  <component name="RunManager" selected="Kotlin.FFTKt">
     <configuration name="BinaryExponetiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.BinaryExponetiationKt" />
       <module name="AllAlgorithmsCP" />
@@ -219,15 +217,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastDoublingMethodKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.fibonacci.FastDoublingMethodKt" />
+    <configuration name="FFTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.site.geeksforgeeks.fft.FFTKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastDoublingMethodKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.fibonacci.FastDoublingMethodKt" />
+    <configuration name="FastDoublingMethodKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.fibonacci.FastDoublingMethodKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -347,19 +345,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Kotlin.FFTKt" />
       <item itemvalue="Kotlin.MatrixExponentiationKt" />
-      <item itemvalue="Kotlin.FastDoublingMethodKt" />
       <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
       <item itemvalue="Kotlin.BinaryExponetiationKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FFTKt" />
         <item itemvalue="Kotlin.MatrixExponentiationKt" />
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
         <item itemvalue="Kotlin.BinaryExponetiationKt" />
         <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
-        <item itemvalue="Kotlin.FastDoublingMethodKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1463,47 +1461,47 @@
           <option name="timeStamp" value="641" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
           <line>53</line>
           <option name="timeStamp" value="642" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
           <line>58</line>
           <option name="timeStamp" value="644" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
           <line>65</line>
           <option name="timeStamp" value="645" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/ShilAndPalindromeResearch.kt</url>
           <line>60</line>
           <option name="timeStamp" value="646" />
         </line-breakpoint>
         <line-breakpoint type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
           <line>17</line>
           <option name="timeStamp" value="649" />
         </line-breakpoint>
         <line-breakpoint type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
           <line>58</line>
           <option name="timeStamp" value="652" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
           <line>90</line>
           <option name="timeStamp" value="653" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
           <line>91</line>
           <option name="timeStamp" value="658" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v1/GCDSUM.kt</url>
           <line>84</line>
           <option name="timeStamp" value="662" />
         </line-breakpoint>
@@ -1518,62 +1516,62 @@
           <option name="timeStamp" value="683" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/EulerTotientFunc.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/EulerTotientFunc.kt</url>
           <line>95</line>
           <option name="timeStamp" value="688" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/EulerTotienFunctionForAllSmallerOrEqualsThanN.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/EulerTotienFunctionForAllSmallerOrEqualsThanN.kt</url>
           <line>36</line>
           <option name="timeStamp" value="691" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/EulerTotienFunctionForAllSmallerOrEqualsThanN.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/EulerTotienFunctionForAllSmallerOrEqualsThanN.kt</url>
           <line>102</line>
           <option name="timeStamp" value="693" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
           <line>91</line>
           <option name="timeStamp" value="694" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
           <line>107</line>
           <option name="timeStamp" value="695" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/PillaiAirthmeticalFunction.kt</url>
           <line>94</line>
           <option name="timeStamp" value="698" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>112</line>
           <option name="timeStamp" value="701" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>46</line>
           <option name="timeStamp" value="704" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>54</line>
           <option name="timeStamp" value="710" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>55</line>
           <option name="timeStamp" value="711" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>42</line>
           <option name="timeStamp" value="715" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/problems/tutorial/v2/GcdSum.kt</url>
           <line>29</line>
           <option name="timeStamp" value="716" />
         </line-breakpoint>
@@ -1839,22 +1837,22 @@
           <option name="timeStamp" value="933" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/BinaryExponetiation.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/BinaryExponetiation.kt</url>
           <line>238</line>
           <option name="timeStamp" value="934" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
-          <line>112</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
+          <line>113</line>
           <option name="timeStamp" value="937" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
-          <line>115</line>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
+          <line>116</line>
           <option name="timeStamp" value="938" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem2/MatrixExponentiation.kt</url>
           <line>57</line>
           <option name="timeStamp" value="939" />
         </line-breakpoint>
@@ -2112,7 +2110,7 @@
           <option name="timeStamp" value="673" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/java/TotientFunction.java</url>
+          <url>file://$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/java/TotientFunction.java</url>
           <line>12</line>
           <option name="timeStamp" value="689" />
         </line-breakpoint>

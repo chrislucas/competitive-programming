@@ -1,7 +1,5 @@
 package src.com.br.cp.site.ds.kotlin.site.hackerearth.numbertheory.exponentiation.matrix.hackerearth
 
-import src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.BigInt
-import src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.MatBigInt
 import java.lang.StringBuilder
 import java.math.BigInteger
 

@@ -1,6 +1,5 @@
 package src.com.br.cp.site.ds.kotlin.site.hackerearth.numbertheory.exponentiation.geom.problem1
 
-import src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.matrix.hackerearth.get
 import java.lang.StringBuilder
 import java.math.BigInteger
 
