@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a28db5-3f71-41ee-8d7a-a0310b1e8044" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cwelementoofkoltin/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/foundgameengdevmath/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AllAlgorithmsCP/META-INF/AllAlgorithmsCP.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/FFT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/FFT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem1/HomogeneousCoordinate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/geom/problem1/HomogeneousCoordinate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/hackerearth/numbertheory/exponentiation/matrix/hackerearth/ProblemsWithMatrixExponentiation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial/HonerMethodEvaluation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial/HonerMethodEvaluation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +118,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="package-info" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -141,25 +145,30 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="1qMjOTpyCxeKzAarSJJgNmuvweL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.30666667&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "TODO_SCOPE": "All Places",
+    "android.gradle.sync.needed": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/chrsantos/Documents/repositories/personal/competitive-programming/kotlin/algorithms/AllAlgorithmsCP/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.30666667",
+    "settings.editor.selected.configurable": "project.kotlinCompiler",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/polynomial" />
@@ -169,6 +178,7 @@
       <recent name="$PROJECT_DIR$/cp4book/src/main/java/com/br/algo/cp/book1/chp2/kotlin/rangeminquery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra/complexnumbers" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/geeksforgeeks/algebra/mdoluarmultiplicativeinversion" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/site/cpalgorithms/miscelaneous/fft" />
       <recent name="$PROJECT_DIR$/src/com/br/cp/site/ds/kotlin/fenwick/site/hackerearth/numbertheory/exponentiation/geom/problem2" />
@@ -209,9 +219,9 @@
       <recent name="src.com.br.cp.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FFTKt">
-    <configuration name="BinaryExponetiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.BinaryExponetiationKt" />
+  <component name="RunManager" selected="Kotlin.ComplexNumberKt">
+    <configuration name="ComplexNumberKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.geeksforgeeks.algebra.complexnumbers.ComplexNumberKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -219,13 +229,6 @@
     </configuration>
     <configuration name="FFTKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.site.geeksforgeeks.fft.FFTKt" />
-      <module name="AllAlgorithmsCP" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FastDoublingMethodKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.fibonacci.FastDoublingMethodKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,6 +243,13 @@
     </configuration>
     <configuration name="MatrixExponentiationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.fenwick.site.hackerearth.numbertheory.exponentiation.geom.problem2.MatrixExponentiationKt" />
+      <module name="AllAlgorithmsCP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheInclusionExclusionPrincipleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.br.cp.site.ds.kotlin.site.cpalgorithms.technique.TheInclusionExclusionPrincipleKt" />
       <module name="AllAlgorithmsCP" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -345,19 +355,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Kotlin.ComplexNumberKt" />
+      <item itemvalue="Kotlin.TheInclusionExclusionPrincipleKt" />
       <item itemvalue="Kotlin.FFTKt" />
       <item itemvalue="Kotlin.MatrixExponentiationKt" />
-      <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
       <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
-      <item itemvalue="Kotlin.BinaryExponetiationKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ComplexNumberKt" />
+        <item itemvalue="Kotlin.TheInclusionExclusionPrincipleKt" />
         <item itemvalue="Kotlin.FFTKt" />
         <item itemvalue="Kotlin.MatrixExponentiationKt" />
         <item itemvalue="Kotlin.FibonacciMatrixExponentiationIVKt" />
-        <item itemvalue="Kotlin.BinaryExponetiationKt" />
-        <item itemvalue="Kotlin.FastDoublingMethodKt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1856,6 +1866,11 @@
           <line>57</line>
           <option name="timeStamp" value="939" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/com/br/geeksforgeeks/algebra/complexnumbers/ComplexNumber.kt</url>
+          <line>64</line>
+          <option name="timeStamp" value="945" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/com/br/kotlin/range/CheckDoubleRange.kt</url>
           <line>39</line>
@@ -2146,6 +2161,9 @@
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="aReal / bReal" />
+      </configuration>
       <configuration name="GradleRunConfiguration">
         <watch expression="sieve.primes.get(5761459)" language="JAVA" />
         <watch expression="primes.get(5761459)" language="JAVA" />
@@ -2157,8 +2175,8 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$LT239Kt.ic" NAME="LT239Kt Coverage Results" MODIFIED="1684902165684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AllAlgorithmsCP$AKt.ic" NAME="AKt Coverage Results" MODIFIED="1626626234083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AllAlgorithmsCP$ReachableNumberKt.ic" NAME="ReachableNumberKt Coverage Results" MODIFIED="1624253560331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

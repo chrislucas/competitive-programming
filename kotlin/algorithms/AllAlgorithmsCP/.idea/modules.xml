@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hackerearth.test.iml" filepath="$PROJECT_DIR$/.idea/modules/hackerearth.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ktdatascience.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ktdatascience.main.iml" />
     </modules>
   </component>
 </project>
